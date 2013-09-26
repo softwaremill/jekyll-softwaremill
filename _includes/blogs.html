@@ -1,0 +1,30 @@
+{% capture modulo %}{{ forloop.index | modulo: 6 }}{% endcapture %}
+{% if modulo == '1' %}
+<div class="slide">
+  <div class="clearfix">
+    {% endif %}
+    <div class="news clearfix">
+      <figure class="{{ include.color }}">
+        <div class="image">
+          <img src="/img/members/{{ post.author_login }}.jpg" alt="{{ post.author }}"/>
+        </div>
+      </figure>
+
+      <div class="text">
+        <a href="{{ post.url }}">
+          <h4 class="font-dark-blue">{{ post.title }}</h4>
+        </a>
+        {{ post.date | date: "%-d %B %Y" }} | <strong>{{ post.author }}</strong><br/><br/>
+
+        <p>
+          Tutaj będzie excerpt.
+        </p>
+
+        <br/>
+        <a href="{{ post.url }}" class="read-more">Read more</a>
+      </div>
+    </div>
+    {% if forloop.last or modulo == '0' %}
+  </div>
+</div>
+{% endif %}

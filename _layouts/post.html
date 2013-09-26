@@ -1,0 +1,211 @@
+---
+layout: default
+---
+
+<div id="baner-contact">
+  <div class="wrapper font-green">What we've been up to</div>
+</div>
+
+
+<article id="post">
+
+  <div class="block border">
+    <div class="wrapper clearfix">
+      <div class="post-content">
+        <div class="post clearfix">
+          {{ content }}
+        </div>
+
+        <div class="comments-template">
+          <div id="disqus_thread">
+          </div>
+
+          <script type="text/javascript">
+            /* <![CDATA[ */
+            var disqus_url = 'https://softwaremill.com{{ page.url }}';
+            var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
+            var disqus_container_id = 'disqus_thread';
+            var disqus_domain = 'disqus.com';
+            var disqus_shortname = 'softwaremill';
+            var disqus_title = "{{ page.title }}";
+            var disqus_config = function () {
+              var config = this; // Access to the config object
+              config.language = '';
+
+              /*
+               All currently supported events:
+               * preData — fires just before we request for initial data
+               * preInit - fires after we get initial data but before we load any dependencies
+               * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+               * afterRender - fires when template is rendered but before we show it
+               * onReady - everything is done
+               */
+
+              config.callbacks.preData.push(function () {
+                // clear out the container (its filled for SEO/legacy purposes)
+                document.getElementById(disqus_container_id).innerHTML = '';
+              });
+              config.callbacks.onReady.push(function () {
+                // sync comments in the background so we don't block the page
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = '?cf_action=sync_comments&post_id=193';
+
+                var firstScript = document.getElementsByTagName("script")[0];
+                firstScript.parentNode.insertBefore(script, firstScript);
+              });
+              this.page.remote_auth_s3 = 'W10= bfaf402268c5f736bfc23cbe2ec4d33c99de3e1a 1380121109';
+              this.page.api_key = 'GBIGsmSMIgKL4P7r5voFdG2cuiOEtbYqRWEorHtdpANz8fsCTgKCukV7vDxjjVTv';
+              this.sso = {
+                name: "SoftwareMill",
+                button: "",
+                icon: "",
+                url: "https://softwaremill.com/wp-login.php",
+                logout: "https://softwaremill.com/wp-login.php?action=logout",
+                width: "800",
+                height: "700"
+              }
+            };
+            /* ]]> */
+          </script>
+
+          <script type="text/javascript">
+            /* <![CDATA[ */
+            var DsqLocal = {
+              'trackbacks': [
+              ],
+              'trackback_url': "https:\/\/softwaremill.com\/monitor-anything-with-jbison\/trackback\/"    };
+            /* ]]> */
+          </script>
+
+          <script type="text/javascript">
+            /* <![CDATA[ */
+            (function () {
+              var dsq = document.createElement('script');
+              dsq.type = 'text/javascript';
+              dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            /* ]]> */
+          </script>
+        </div>
+
+        <nav>
+          {% if page.previous %}
+          <a href="{{ page.previous.url }}" rel="prev">
+            <span class="meta-nav"></span>
+            <span class="title-nav">Older post</span>
+          </a>
+          {% endif %}
+          {% if page.next %}
+          <a href="{{ page.next.url }}" rel="next">
+            <span class="title-nav">Newer post</span>
+            <span class="meta-nav"></span>
+          </a>
+          {% endif %}
+        </nav>
+      </div>
+
+
+      <div class="post-sidebar">
+
+        <div id="secondary" class="widget-area" role="complementary">
+          <aside id="search-2" class="widget widget_search">
+            <form role="search" method="get" id="searchform" action="https://softwaremill.com/">
+              <div><label class="screen-reader-text" for="s">Search for:</label>
+                <input type="text" value="" name="s" id="s"/>
+                <input type="submit" id="searchsubmit" value="Search"/>
+              </div>
+            </form>
+          </aside>
+          <aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>
+            <ul>
+              <li class="cat-item cat-item-2">
+                <a href="/category/agile/" title="View all posts filed under Agile">Agile</a>
+                (9)
+              </li>
+              <li class="cat-item cat-item-3">
+                <a href="https://softwaremill.com/category/circular/" title="View all posts filed under Circular">Circular</a>
+                (7)
+              </li>
+              <li class="cat-item cat-item-4">
+                <a href="https://softwaremill.com/category/codebrag/" title="View all posts filed under Codebrag">Codebrag</a>
+                (2)
+              </li>
+              <li class="cat-item cat-item-5">
+                <a href="https://softwaremill.com/category/conferences/" title="View all posts filed under Conferences">Conferences</a>
+                (37)
+              </li>
+              <li class="cat-item cat-item-8">
+                <a href="https://softwaremill.com/category/eu/" title="View all posts filed under EU">EU</a> (2)
+              </li>
+              <li class="cat-item cat-item-7">
+                <a href="https://softwaremill.com/category/jbison/" title="View all posts filed under JBison">JBison</a>
+                (3)
+              </li>
+              <li class="cat-item cat-item-1">
+                <a href="https://softwaremill.com/category/bez-kategorii/" title="View all posts filed under No category">No
+                  category</a> (6)
+              </li>
+              <li class="cat-item cat-item-6">
+                <a href="https://softwaremill.com/category/projects/" title="View all posts filed under Projects">Projects</a>
+                (20)
+              </li>
+              <li class="cat-item cat-item-9">
+                <a href="https://softwaremill.com/category/red-hat/" title="View all posts filed under Red Hat">Red
+                  Hat</a> (1)
+              </li>
+              <li class="cat-item cat-item-10">
+                <a href="https://softwaremill.com/category/sponsoring/" title="View all posts filed under Sponsoring">Sponsoring</a>
+                (6)
+              </li>
+              <li class="cat-item cat-item-11">
+                <a href="https://softwaremill.com/category/team/" title="View all posts filed under Team">Team</a> (14)
+              </li>
+            </ul>
+          </aside>
+          <aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>
+            <ul>
+              <li><a href='https://softwaremill.com/2013/09/' title='September 2013'>September 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/08/' title='August 2013'>August 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/07/' title='July 2013'>July 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/06/' title='June 2013'>June 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/05/' title='May 2013'>May 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/04/' title='April 2013'>April 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/03/' title='March 2013'>March 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/02/' title='February 2013'>February 2013</a></li>
+              <li><a href='https://softwaremill.com/2013/01/' title='January 2013'>January 2013</a></li>
+              <li><a href='https://softwaremill.com/2012/12/' title='December 2012'>December 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/11/' title='November 2012'>November 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/10/' title='October 2012'>October 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/09/' title='September 2012'>September 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/08/' title='August 2012'>August 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/06/' title='June 2012'>June 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/04/' title='April 2012'>April 2012</a></li>
+              <li><a href='https://softwaremill.com/2012/02/' title='February 2012'>February 2012</a></li>
+              <li><a href='https://softwaremill.com/2011/11/' title='November 2011'>November 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/08/' title='August 2011'>August 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/07/' title='July 2011'>July 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/06/' title='June 2011'>June 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/05/' title='May 2011'>May 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/04/' title='April 2011'>April 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/03/' title='March 2011'>March 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/02/' title='February 2011'>February 2011</a></li>
+              <li><a href='https://softwaremill.com/2011/01/' title='January 2011'>January 2011</a></li>
+              <li><a href='https://softwaremill.com/2010/12/' title='December 2010'>December 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/11/' title='November 2010'>November 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/10/' title='October 2010'>October 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/08/' title='August 2010'>August 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/07/' title='July 2010'>July 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/06/' title='June 2010'>June 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/05/' title='May 2010'>May 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/04/' title='April 2010'>April 2010</a></li>
+              <li><a href='https://softwaremill.com/2010/03/' title='March 2010'>March 2010</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

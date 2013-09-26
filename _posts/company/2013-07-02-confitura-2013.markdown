@@ -1,0 +1,43 @@
+---
+layout: post
+status: publish
+published: true
+title: Filling Confitura with awesome attractions
+author: Aleksandra Puchta
+author_login: aleksandra_puchta
+author_email: puchta@softwaremill.com
+wordpress_id: 713
+wordpress_url: https://softwaremill.com/?p=713
+date: 2013-07-02 15:45:02.000000000 +02:00
+categories:
+- company
+- Codebrag
+- Conferences
+tags: []
+comments: []
+---
+
+<h6>Company news</h6>
+<div class="post-header clearfix">
+<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<h2 class="font-dark-blue font-normal">Filling Confitura with awesome attractions</h2>02 July, 2013 | <b>Aleksandra Puchta</b><br><br>
+</div>
+</div>
+<div class="post-rows">
+<div class="text">
+<p>This time round <a href="https://twitter.com/TomaszDziurko">Tomek Dziurko</a> and <a href="https://twitter.com/lukaszlenart">Łukasz Lenart</a> from our team joined the organizing committee – BIG THANKS to you guys for all your efforts to make this event special.</p>
+<p>SoftwareMill is a Silver Sponsor and we are really happy to be supporting the event again.</p>
+<p>This edition of the conference is especially important for us, as we will be showing the <a href="http://www.codebrag.com">Codebrag</a> beta for the first time.</p>
+<p>We know it’s not perfect, but hey, we won’t make it better without you! So we will show the working MVP and we will be happy to hear your feedback. Visit our stand and try it out yourself!</p>
+<p>We have also prepared a special code review-themed contest. From the surveys submitted we will draw three people who will get a raspberry pi and an ‘I am proud of my code’ T-shirt.</p>
+<p>Just fill out the survey and throw it into the ballot box at our stand. Everyone who fills out the survey will get Codebrag stickers.</p>
+<p>Continuing the tradition of providing transport for conference participants (check out the <a href="http://www.meetup.com/geecon-train">GeeCON Train</a> event), we are happy to be organizing a fun before-party bus ride from the conference to Spoina. Get ready for an ultimate experience!</p>
+<p> </p>
+</div>
+<figure><img src="https://softwaremill.com/wp-content/uploads/2013/07/medium.png" alt="Filling Confitura with awesome attractions"></figure><div class="text">
+<p>Finally, as the co-organizers of the <a href="http://2013.agilebyexample.com">AgileByExample</a> conference we are organizing a contest for all the participants of Confitura. You will have the chance to win a ticket for ABE, which will take place on 16-17<sup>th</sup> October in Warsaw.</p>
+<p>We wish you a great event, with lots of inspiration and fun.</p>
+<p>See you there!</p>
+</div>
+</div>
+<div class="post-footer">Posted in Codebrag, Conferences</div>

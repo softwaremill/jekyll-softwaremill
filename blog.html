@@ -2,44 +2,18 @@
 layout: default
 ---
 
-<article id="blog">
+<div id="baner-contact">
+  <div class="wrapper font-green">What we've been up to</div>
+</div>
 
+<article id="blog">
   <section>
     <div class="block border">
       <div class="wrapper clearfix">
         <h6>Company News</h6>
         <div class="blog-list-container" id="blogs-slider">
-          {% for post in site.posts %}
-          {% capture modulo %}{{ forloop.index | modulo: 6 }}{% endcapture %}
-          {% if modulo == '1' %}
-          <div class="slide">
-            <div class="clearfix">
-              {% endif %}
-              <div class="news clearfix">
-                <figure>
-                  <div class="image">
-                    <img src="/img/members/{{ post.author_login }}.jpg" alt="{{ post.author }}"/>
-                  </div>
-                </figure>
-
-                <div class="text">
-                  <a href="{{ post.url }}">
-                    <h4 class="font-dark-blue">{{ post.title }}</h4>
-                  </a>
-                  {{ post.date | date: "%-d %B %Y" }} | <strong>{{ post.author }}</strong><br/><br/>
-
-                  <p>
-                    Tutaj będzie excerpt.
-                  </p>
-
-                  <br/>
-                  <a href="{{ post.url }}" class="read-more">Read more</a>
-                </div>
-              </div>
-              {% if forloop.last or modulo == '0' %}
-            </div>
-          </div>
-          {% endif %}
+          {% for post in site.categories.company %}
+          {% include blogs.html color='blue' %}
           {% endfor %}
         </div>
 
@@ -49,7 +23,6 @@ layout: default
         </nav>
         <a href="#" class="see-more blog-list-link">See all</a>
       </div>
-
     </div>
   </section>
 
@@ -59,37 +32,8 @@ layout: default
       <div class="wrapper clearfix">
         <h6>Our team's posts</h6>
         <div class="blog-list-container" id="members-blogs-slider">
-          {% for post in site.posts %}
-          {% capture modulo %}{{ forloop.index | modulo: 6 }}{% endcapture %}
-          {% if modulo == '1' %}
-          <div class="slide">
-            <div class="clearfix ">
-              {% endif %}
-              <div class="news clearfix">
-                <figure class="green">
-                  <div class="image">
-                    <img src="/img/members/{{ post.author_login }}.jpg" alt="Jan Zborowski"/>
-                  </div>
-                </figure>
-
-                <div class="text">
-                  <a href="{{ post.url }}">
-                    <h4 class="font-dark-blue">{{ post.title }}</h4>
-                  </a>
-                  {{ post.date | date: "%-d %B %Y" }} | <strong>{{ post.author }}</strong><br/><br/>
-
-                  <p>
-                    Tutaj będzie excerpt.
-                  </p>
-
-                  <br/>
-                  <a href="{{ post.url }}" class="read-more">Read more</a>
-                </div>
-              </div>
-              {% if forloop.last or modulo == '0' %}
-            </div>
-          </div>
-          {% endif %}
+          {% for post in site.categories.members %}
+          {% include blogs.html color='green' %}
           {% endfor %}
         </div>
 
@@ -100,7 +44,6 @@ layout: default
 
         <a href="#" class="see-more blog-list-link">See all</a>
       </div>
-
     </div>
   </section>
 

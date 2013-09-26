@@ -1,0 +1,51 @@
+---
+layout: post
+status: publish
+published: true
+title: At Confitura 2011, SoftwareMill will give away...
+author: Jan Zborowski
+author_login: jan_zborowski
+author_email: zborowski@softwaremill.com
+wordpress_id: 957
+wordpress_url: https://softwaremill.com/?p=957
+date: 2011-06-06 16:30:55.000000000 +02:00
+categories:
+- company
+- Conferences
+tags: []
+comments: []
+---
+
+<h6>Company news</h6>
+<div class="post-header clearfix">
+<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
+<h2 class="font-dark-blue font-normal">At Confitura 2011, SoftwareMill will give away...</h2>06 June, 2011 | <b>Jan Zborowski</b><br><br>
+</div>
+</div>
+<div class="post-rows"><div class="text">
+<p id="Postyarchiwalne-AtConfitura2011,SoftwareMillwillgiveaway...">It has become a tradition for SoftwareMill to give an attractive prize at the conferences we <a title="SoftwareMill a Confitury 2011 partner!" href="http://softwaremill.pl/blog/?p=490" rel="nofollow">partner</a>. This time, we allowed all the potential winners to have a say on what they would like to get. In our survey, we included the following prizes: a tablet with android, a Kindle, an XBOX 360, a netbook, a multimedia projector, a Playstation Portable and an iPod Touch. The selection of prizes was quite wide, but interest was also big.</p>
+<p>And on that subject, we would like to announce that the lucky winner will be selected in a draw of survey participants. The surveys will be included in the conference promotional materials. You can put them in the urn set up especially for this purpose in the hall outside the conference room. The draw will be held right before the official closing of <a href="http://www.confitura.pl/" rel="nofollow">Confitura 2011</a>.</p>
+<p>The results were as follows:</p>
+<ul>
+<li>Tablet with android – <strong>36</strong>
+</li>
+<li>Kindle – <strong>23</strong>
+</li>
+<li>XBOX 360 – <strong>13</strong>
+</li>
+<li>Netbook – <strong>11</strong>
+</li>
+<li>Multimedia projector – <strong>11</strong>
+</li>
+<li>Playstation Portable – <strong>8</strong>
+</li>
+<li>iPod Touch – <strong>0</strong>
+</li>
+</ul>
+<p>Altogether <strong>102</strong> votes were cast.</p>
+<p>There is nothing left but to announce that at <a href="http://www.confitura.pl/" rel="nofollow">Confitura 2011</a> SoftwareMill will give away a<a href="http://www.samsung.com/pl/consumer/mobile-phone/mobile-phones/smartphone/GT-P1010CWAXEO/index.idx?pagetype=prd_detail" rel="nofollow"> PC Samsung Galaxy Tab P1010 WIFI Tablet</a></p>
+<p><img title="Samsung Galaxy - prize from SoftwareMill" alt="Samsung Galaxy - prize from SoftwareMill" src="https://kiwi.softwaremill.com/download/attachments/24412402/image2013-7-1%2012%3A53%3A51.png?version=1&amp;modificationDate=1372762393319&amp;api=v2" width="304" height="304" data-image-src="/download/attachments/24412402/image2013-7-1%2012%3A53%3A51.png?version=1&amp;modificationDate=1372762393319&amp;api=v2"></p>
+<p>A big thank you to everyone who voted in the survey. We will be waiting for you and your surveys next Saturday. See you at <a href="http://www.confitura.pl/" rel="nofollow">Confitura 2011</a> and good luck in the draw!</p>
+<p> </p>
+</div></div>
+<div class="post-footer">Posted in Conferences</div>
