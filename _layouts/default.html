@@ -58,15 +58,7 @@ navigation:
 
   <header class="wrapper clearfix">
     <a href="/"><h1>SoftwareMill</h1></a>
-    <nav>
-      <ul>
-        {% for link in page.navigation %}
-        <li class="page_item {% if page.url == link.url %}current_page_item{% endif %}">
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
+    {% include pages.html %}
   </header>
 
 {{ content }}
@@ -125,15 +117,7 @@ navigation:
     <div class="wrapper clearfix">
       <div class="copy">&copy; 2013 SoftwareMill. All rights reserved.</div>
       <a href="http://jbison.com" target="_blank" class="monitored">Monitored by </a>
-      <nav>
-        <ul> <li class="page_item page-item-6"><a href="/portfolio.html">Portfolio</a></li>
-<li class="page_item page-item-8"><a href="/services.html">Services</a></li>
-<li class="page_item page-item-9"><a href="/meet-the-team.html">Meet the team</a></li>
-<li class="page_item page-item-11"><a href="/blog.html">Blog</a></li>
-<li class="page_item page-item-13"><a href="/contact.html">Contact</a></li>
-<li class="page_item page-item-1161"><a href="/apache-struts.html">Apache Struts</a></li>
- </ul>
-      </nav>
+      {% include pages.html %}
     </div>
   </footer>
 

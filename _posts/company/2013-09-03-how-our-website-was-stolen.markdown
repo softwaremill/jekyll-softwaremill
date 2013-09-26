@@ -30,7 +30,7 @@ comments: []
 <p>The company that did this is called F’ed Up (<a href="https://twitter.com/fed21up">twitter.com/fed21up</a>). What they do is copy websites featured on Awwwards every few days. That way ‘their’ pages are getting awarded and they get nice traffic.</p>
 <p>To get a sense of the extent of this copy&amp;paste practice check out the screenshot of their website:</p>
 <p><a href="https://softwaremill.com/wp-content/uploads/2013/09/Screen-Shot-2013-07-30-at-4.15.37-PM.png"><img class="alignnone size-medium wp-image-1119" alt="Copycat of SoftwareMill's website" src="https://softwaremill.com/wp-content/uploads/2013/09/Screen-Shot-2013-07-30-at-4.15.37-PM-300x234.png" width="300" height="234"></a></p>
-<p>And compare them with our site: <a href="https://softwaremill.com/meet-the-team/">softwaremill.com</a></p>
+<p>And compare them with our site: <a href="https://softwaremill.com/meet-the-team.html">softwaremill.com</a></p>
 <p>Actually, you can still see one of the copied pages live: <a href="http://fedup.in/team.html">fedup.in/team</a></p>
 <p> </p>
 <h5>So here is what we did after finding out that our web layout had been stolen:</h5>
