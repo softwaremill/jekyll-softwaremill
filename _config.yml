@@ -2,3 +2,4 @@ name: SoftwareMill
 markdown: redcarpet
 pygments: true
 timezone: Europe/Warsaw
+permalink: post/:title.html
