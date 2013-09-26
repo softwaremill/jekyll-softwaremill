@@ -1,0 +1,200 @@
+
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head data-template-set="html5-reset">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>SoftwareMill - {{ page.title }}</title>
+
+  <meta name="author" content="balsamstudio.">
+  <meta name="Copyright" content="Copyright Software Mill 2013. All Rights Reserved.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.7 - http://yoast.com/wordpress/seo/ -->
+<meta name="description" content="We develop custom software solutions: web applications, back-end systems and enterprise solutions. In short, we specialize in: Java, Scala and Cloud."/>
+<meta name="keywords" content="scala, java, cloud, aws, big data"/>
+<link rel="canonical" href="https://softwaremill.com/" />
+<meta property='og:locale' content='en_US'/>
+<meta property='og:type' content='article'/>
+<meta property='og:title' content='SoftwareMill - Java, Scala, Cloud'/>
+<meta property='og:description' content='We develop custom software solutions: web applications, back-end systems and enterprise solutions. In short, we specialize in: Java, Scala and Cloud.'/>
+<meta property='og:url' content='https://softwaremill.com/'/>
+<meta property='og:site_name' content='SoftwareMill'/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="SoftwareMill &raquo; Home Comments Feed" href="https://softwaremill.com/home/feed/" />
+<link rel='stylesheet' id='codecolorer-css'  href='https://softwaremill.com/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.9' type='text/css' media='screen' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://softwaremill.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://softwaremill.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.5.1" />
+  <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+  <link rel="shortcut icon" href="https://softwaremill.com/wp-content/themes/softwaremill/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://softwaremill.com/wp-content/themes/softwaremill/assets/css/reset.css">
+  <link rel="stylesheet" href="https://softwaremill.com/wp-content/themes/softwaremill/assets/css/style.css">
+  <script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/modernizr-2.6.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-offset="100">
+
+  <header class="wrapper clearfix">
+    <a href="https://softwaremill.com"><h1>SoftwareMill</h1></a>
+    <nav>
+            <? /* exclude Home, Join Us, Apache Struts */ ?>
+      <ul> <li class="page_item page-item-6"><a href="/portfolio.html">Portfolio</a></li>
+<li class="page_item page-item-8"><a href="/services.html">Services</a></li>
+<li class="page_item page-item-9"><a href="/meet-the-team.html">Meet the team</a></li>
+<li class="page_item page-item-11"><a href="/blog.html">Blog</a></li>
+<li class="page_item page-item-13"><a href="/contact.html">Contact</a></li>
+ </ul>
+    </nav>
+  </header>
+
+{{ content }}
+
+  <aside >
+    <div class="wrapper clearfix">
+
+      <div class="newsletter">
+        <h2 class="light line">Follow us!</h2>
+        <ul class="socials">
+          <li><a href="http://www.facebook.com/SoftwareMill" target="_blank" class="fb"></a></li>
+          <li><a href="https://twitter.com/softwaremill" target="_blank" class="twitter"></a></li>
+          <li><a href="http://www.flickr.com/photos/softwaremill/" target="_blank" class="linked"></a></li>
+        </ul>
+
+        <h2 class="light">Newsletter</h2>
+
+        <p>Occasional email updates, no spam.</p>
+        <form action="https://softwaremill.com/wp-content/themes/softwaremill/newsletter.json.php" method="post" class="newsletter">
+          <input type="email" name="email" required placeholder="your email" />
+          <input type="hidden" name="lang" value="en" />
+          <input type="submit" class="submit" value="Send" />
+          <div class="message">Thank you</div>
+        </form>
+
+        <h2 class="light line join-us">Join us!</h2>
+        <a href="join-us" class="read-more">Read More</a>
+      </div>
+
+      <div class="drop-us-a-line">
+        <form action="https://softwaremill.com/wp-content/themes/softwaremill/contact.json.php" method="post" id="contact-form">
+          <h2 class="light">Drop us a line</h2>
+          <div class="error">Please fill all fields.</div>
+          <div class="success">Thank you for your message!</div>
+          <label>Your email</label>
+          <input type="email" name="email" required="required"/><br/>
+          <label>Your name</label>
+          <input type="text" name="name" required="required"/><br/>
+          <label>Your message</label>
+          <textarea type="text" name="message" required="required" ></textarea><br/>
+          <label class="trollissimo">Leave this blank</label>
+          <input type="text" name="url" class="trollissimo">
+          <input type="submit" class="submit" value="Send" />
+          <p>Or send us an email: <a href="mailto:hello@softwaremill.com" onclick="_gaq.push(['_trackPageview', '/cele/mail-hello']);">hello@softwaremill.com</a></p>
+        </form>
+      </div>
+
+      <div class="feed-the-hungry-bot">
+        <p>SoftwareMill delivers custom software solutions: web applications, back-end systems and enterprise solutions. We specialize in Java, Scala and Cloud technologies with particular interest in JBoss, Amazon Web Services and Big Data projects. We develop software solutions with care and strong belief in the agile approach.</p>
+      </div>
+
+    </div>
+  </aside>
+
+  <footer>
+    <div class="wrapper clearfix">
+      <div class="copy">&copy; 2013 SoftwareMill. All rights reserved.</div>
+      <a href="http://jbison.com" target="_blank" class="monitored">Monitored by </a>
+      <nav>
+        <ul> <li class="page_item page-item-6"><a href="/portfolio.html">Portfolio</a></li>
+<li class="page_item page-item-8"><a href="/services.html">Services</a></li>
+<li class="page_item page-item-9"><a href="/meet-the-team.html">Meet the team</a></li>
+<li class="page_item page-item-11"><a href="/blog.html">Blog</a></li>
+<li class="page_item page-item-13"><a href="/contact.html">Contact</a></li>
+<li class="page_item page-item-1161"><a href="/apache-struts.html">Apache Struts</a></li>
+ </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookies">
+    <div class="wrapper">This page uses cookies for better performance of the site. You can disable cookies in your browser settings.
+      <a href="#" class="cookies-agree">OK</a></div>
+  </div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11235106-6']);
+  _gaq.push(['_trackPageview']);
+  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1002026126;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1002026126/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/jquery.easing.1.3.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/bootstrap.scrollspy.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/jquery.cycle.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/greensock/easing/EasePack.min.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/greensock/TweenMax.min.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/greensock/TimelineMax.min.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/jquery.cookie.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/jquery.migrate.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/functions.js"></script>
+<script src="https://softwaremill.com/wp-content/themes/softwaremill/assets/js/agile.js"></script>
+
+<!-- Google Code for Tag remarketingowy -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 989548223;
+var google_conversion_label = "bxvOCLmsyAUQv53t1wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989548223/?value=0&amp;label=bxvOCLmsyAUQv53t1wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html>
