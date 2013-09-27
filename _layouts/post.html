@@ -26,7 +26,7 @@ layout: default
             var disqus_container_id = 'disqus_thread';
             var disqus_domain = 'disqus.com';
             var disqus_shortname = 'softwaremill';
-            var disqus_title = "{{ page.title }}";
+            var disqus_title = "{{ page.title | escape }}";
             var disqus_config = function () {
               var config = this; // Access to the config object
               config.language = '';
