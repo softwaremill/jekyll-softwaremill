@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Win a Playstation Vita from SoftwareMill at DevCrowd
+description: "The DevCrowd conference sponsored by SoftwareMill will be held this coming Saturday. The event's organiser is the Szczecin JUG."
+keywords: "devcrowd, scala, contest, szczecin java user group, playstation"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Find us at softwaremill.com
+description: "Find us at softwaremill.com"
+keywords: "softwaremill.com"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill's second anniversary
+description: SoftwareMill's second anniversary
+keywords: "java developers, SoftwareMill"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

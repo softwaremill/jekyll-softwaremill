@@ -1410,11 +1410,11 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	article .timeline .marker:before { content: ''; display: block; width: 4px; height: 2px; background: #fff; position: absolute; top: 5px; left: 10px; }
 	article .timeline .marker:after { content: ''; display: block; width: 7px; height: 7px; border-radius: 4px; background: #fff; position: absolute; top: 11px; left: 8px; }
 	article .timeline .marker .circle,
-	article .timeline .marker:hover .circle { bottom: auto; width: 10px !important; height: 10px !important; border: 0 !important; margin: 0 !!important; margin-left: 0 !important; top: 31px; left: 7px !important; pointer-events: none; }
+	article .timeline .marker:hover .circle { bottom: auto; width: 10px !important; height: 10px !important; border: 0 !important; margin: 0 !important; top: 31px; left: 7px !important; pointer-events: none; }
 	article .timeline .marker .desc { display: block; width: 300px; margin-left: 25px; }
 	article .timeline .marker .desc span { opacity: 1; }
 	article .timeline .marker .desc h6 { border-radius: 13px; }
-	article .timeline nav { width: 300px; height: auto; margin: 0; position: absolute; left: 0; top: 0; bottom: 0; right: none; }
+	article .timeline nav { width: 300px; height: auto; margin: 0; position: absolute; left: 0; top: 0; bottom: 0; right: 0; }
 	article .timeline nav a span.circle {
 		-webkit-transform: rotate(90deg);
 		   -moz-transform: rotate(90deg);
@@ -1501,3 +1501,5 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	#baner-nav a.prev {left: 50%; margin-left: -522px; background-size: 50%; }
 	#baner-nav a.next {left: 50%; margin-left: 488px; background-size: 50%; }
 }
+
+.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}

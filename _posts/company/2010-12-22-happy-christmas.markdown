@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Happy Christmas
+description: "Happy Christmas"
+keywords: "Happy Christmas"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

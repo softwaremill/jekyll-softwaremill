@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: JBison coming soon
+description: "JBison coming soon"
+keywords: "jbison"
 author: Tomasz Szymański
 author_login: tomasz_szymanski
 author_email: tomasz.szymanski@softwaremill.com

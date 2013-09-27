@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Circular new release!
+description: "To celebrate the summer we are launching a new version of Circular. Updated version of the system includes new features and interface."
+keywords: "circular, dms, document management system"
 author: Kinga Pukianiec
 author_login: kinga_pukianiec
 author_email: pukianiec@softwaremill.com

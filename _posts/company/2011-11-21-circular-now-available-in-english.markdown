@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Circular – now available in English
+description: "We are very happy to announce that the Circular document management system created by SoftwareMill is now also available in English."
+keywords: "document management system, dms, Circular,"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

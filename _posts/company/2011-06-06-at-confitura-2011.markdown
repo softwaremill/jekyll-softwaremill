@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: At Confitura 2011, SoftwareMill will give away...
+description: "It has become a tradition for SoftwareMill to give an attractive prize at the conferences we partner."
+keywords: "java conference, Confitura"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

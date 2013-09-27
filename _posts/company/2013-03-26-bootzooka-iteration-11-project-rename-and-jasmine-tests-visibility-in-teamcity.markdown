@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: ! 'Bootzooka Iteration 11: project rename and Jasmine tests visibility in TeamCity'
+description: "Our open source project Bootzooka is a showcase application which can be used as a starting point for the development of any real application. It's developed in scala + angularjs + twitter bootstrap."
+keywords: "open source, application, piotr buda, scala, angularjs, twitter bootstrap"
 author: Tomasz Dziurko
 author_login: tomasz_dziurko
 author_email: dziurko@softwaremill.com

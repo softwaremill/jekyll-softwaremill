@@ -2,7 +2,9 @@
 layout: post
 status: publish
 published: true
-title: Recording of "Remote Programmer 2.0" from Agile Central Europe 2011
+title: 'Recording of "Remote Programmer 2.0" from Agile Central Europe 2011'
+description: 'Recording of "Remote Programmer 2.0" from Agile Central Europe 2011'
+keywords: "agile central europe, agile, conference"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

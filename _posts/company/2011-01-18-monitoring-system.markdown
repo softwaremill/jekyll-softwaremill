@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Attikis alarm monitoring system
+description: "Attikis alarm monitoring system"
+keywords: "monitoring system for home"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

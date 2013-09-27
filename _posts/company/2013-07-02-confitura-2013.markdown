@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Filling Confitura with awesome attractions
+description: "Just few days before Confitura 2013 we have some time to reflect on this year’s event."
+keywords: "Confitura 2013, java conference, Codebrag, contest, AgileByExample"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

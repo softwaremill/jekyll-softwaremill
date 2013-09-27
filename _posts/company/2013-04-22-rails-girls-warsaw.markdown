@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Rails Girls Warsaw
+description: "Rails Girls Warsaw is a two-day event that aims at teaching women how to code. This year SoftwareMill sponsored the event in Warsaw."
+keywords: "rails girls, rails girls warsaw, women, coding, learn, support, ruby on rails"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

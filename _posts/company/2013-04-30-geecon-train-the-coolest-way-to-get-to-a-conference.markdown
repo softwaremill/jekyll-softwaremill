@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: GeeCON Train – the coolest way to get to a conference
+description: "We've organised a trip by train to one of the biggest Java conferences in Central-East Europe - GeeCON Train."
+keywords: "train, java, conference, geecon, geecon train, softwaremill,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

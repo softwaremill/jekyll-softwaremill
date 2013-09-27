@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Our impressions from Devoxx 2010
+description: "Our impressions from Devoxx 2010"
+keywords: "Devoxx 2010"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

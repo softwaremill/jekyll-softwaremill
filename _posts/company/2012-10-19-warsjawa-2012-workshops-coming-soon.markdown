@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Warsjawa 2012 workshops coming soon!
+description: "Next week (27th October) the 5th edition of Warsaw Java Workshops will take place and SoftwareMill is one of the sponsors."
+keywords: "warsjawa, workshops, difficult client, agile development, training"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

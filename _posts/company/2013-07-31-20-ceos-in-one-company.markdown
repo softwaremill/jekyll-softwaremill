@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: 20 CEOs In One Company
+description: "SoftwareMill recently introduced a completely flat organization structure."
+keywords: "flat structure, flat organization, remote work, dispersed teams"
 author: Paweł Wrzeszcz
 author_login: pawel_wrzeszcz
 author_email: wrzeszcz@softwaremill.com

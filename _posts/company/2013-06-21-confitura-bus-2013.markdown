@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Confitura bus
+description: "To make sure you get to Spoina quickly and in a great company we’ve organized a special before-party bus going right to this place."
+keywords: "Confitura 2013, java conference, bus, Spoina,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

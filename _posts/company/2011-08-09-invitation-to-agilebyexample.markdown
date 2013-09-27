@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Invitation to AgileByExample
+description: "Invitation to AgileByExample"
+keywords: "agile conference, AgileByExample"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

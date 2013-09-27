@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Backend for mobile apps - references from yap.tv
+description: "One of our clients is an US startup developing music and TV discovery apps that demonstrate social entertainment engagement."
+keywords: "mobile apps, mobile web apps, backend for mobile, back-end"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

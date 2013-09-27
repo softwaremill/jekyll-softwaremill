@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: IT@PL – the IT job market in Poland – study results
+description: "This post covers the findings from the recent study about the current situation on the IT job market in Poland."
+keywords: "IT job market, Poland, IT, developers, Antal International, Polish Information and Foreign Investment Agency, IT sector"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: EU funding for SoftwareMill
+description: "EU funding for SoftwareMill"
+keywords: "software project, EU funding"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

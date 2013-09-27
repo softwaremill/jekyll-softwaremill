@@ -3,3 +3,7 @@ markdown: redcarpet
 pygments: true
 timezone: Europe/Warsaw
 permalink: :title
+seo:
+  title: SoftwareMill - Java, Scala, Cloud
+  description: 'We develop custom software solutions: web applications, back-end systems and enterprise solutions. In short, we specialize in: Java, Scala and Cloud.'
+  keywords: scala, java, cloud, aws, big data

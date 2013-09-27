@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: 20-Person Online Meeting That Works
+description: "Here is a short summary of how we do our daily meetings in a 100% remote company of 20 people."
+keywords: "remote company, remote work, dispersed teams"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Efficient and secure document workflow with tagging system
+description: "Recently on the Circular blog we wrote about two elements that form the basis of effective processes in every company: efficient document workflow and document security."
+keywords: "document workflow, online dms, document management system"
 author: Kinga Pukianiec
 author_login: kinga_pukianiec
 author_email: pukianiec@softwaremill.com

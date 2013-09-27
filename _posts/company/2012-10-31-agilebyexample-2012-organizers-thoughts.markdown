@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: AgileByExample 2012 – organizer’s thoughts
+description: "This year, already for the second time SoftwareMill organized the international conference about agile – AgileByExample."
+keywords: "agile, conference, agile by example,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

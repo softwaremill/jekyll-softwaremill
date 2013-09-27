@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: ! 'New version of Circular: the flexible document management system'
+description: "We are proud to announce that from today the Circular document management system is available in a new version."
+keywords: "Circular, dms, document management system"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

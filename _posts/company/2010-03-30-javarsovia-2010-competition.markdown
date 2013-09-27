@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Javarsovia 2010 competition
+description: "Javarsovia 2010 competition"
+keywords: "java conference"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

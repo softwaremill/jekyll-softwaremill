@@ -2,7 +2,9 @@
 layout: post
 status: publish
 published: true
-title: ! 'How our website was stolen  '
+title: How our website was stolen
+description: "We are eager to share this story because it seems that copying website design is a popular procedure, and we would like to warn others but also ..."
+keywords: "stolen website design"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill a Confitura 2011 partner!
+description: "SoftwareMill a Confitura 2011 partner!"
+keywords: "java conference, Confitura"
 author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com

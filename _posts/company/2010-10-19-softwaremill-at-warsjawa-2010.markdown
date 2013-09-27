@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill at Warsjawa 2010
+description: "SoftwareMill at Warsjawa 2010"
+keywords: "SoftwareMill at Warsjawa 2010"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

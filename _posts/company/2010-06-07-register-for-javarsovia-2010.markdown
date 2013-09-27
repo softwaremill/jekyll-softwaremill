@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Register for Javarsovia 2010 and win an Asus EEE PC!
+description: "Register for Javarsovia 2010 and win an Asus EEE PC!"
+keywords: "javarsovia"
 author: Tomasz Szymański
 author_login: tomasz_szymanski
 author_email: tomasz.szymanski@softwaremill.com

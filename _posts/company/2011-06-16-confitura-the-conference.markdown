@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Confitura – the conference of the season
+description: "Confitura – the conference of the season"
+keywords: "confitura, contest, remote work"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

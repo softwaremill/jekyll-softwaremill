@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Skype games. On effective distributed teams
+description: "Here is an article about working in distributed teams."
+keywords: "distributed teams, challenges, remote work, agile,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

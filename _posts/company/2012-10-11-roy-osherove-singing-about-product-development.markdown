@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Roy Osherove singing about product development!
+description: "We do have really awesome keynote speakers at AgileByExample."
+keywords: "agile, conference, agile by example,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

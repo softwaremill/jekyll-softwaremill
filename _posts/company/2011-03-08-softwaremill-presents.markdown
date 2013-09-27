@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill presents
+description: "SoftwareMill presents"
+keywords: "softwaremill, java, scala"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

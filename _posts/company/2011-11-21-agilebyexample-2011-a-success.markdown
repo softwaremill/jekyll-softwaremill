@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: AgileByExample 2011 a success
+description: "Last week the first edition of AgileByExample took place. The event's main organiser was SoftwareMill, and over 130 people from 9 countries attended."
+keywords: "AgileByExample, agile, scrum, conference"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

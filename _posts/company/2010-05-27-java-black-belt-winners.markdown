@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Java Black Belt winners at GeeCON
+description: "Java Black Belt winners at GeeCON"
+keywords: "java black belt, java experts, winners, GeeCON"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

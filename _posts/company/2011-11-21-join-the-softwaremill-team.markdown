@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Join the SoftwareMill team
+description: "Join the SoftwareMill team"
+keywords: "java developer, JEE6,"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

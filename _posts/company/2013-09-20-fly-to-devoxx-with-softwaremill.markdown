@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Fly to Devoxx with SoftwareMill
+description: "Remember how SoftwareMill organised the GeeConTrain and the ConfituraBus? This autumn we would love you to join in our new initiative - DevoxxPlane!"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: ! 'Bootstrap Iteration 10: Angular usage improvements, Rogue'
+description: "Our open source project Bootzooka is a showcase application which can be used as a starting point for the development of any real application. It's developed in scala + angularjs + twitter bootstrap."
+keywords: "open source, bootzooka, application, scala, angularjs, twitter bootstrap"
 author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com

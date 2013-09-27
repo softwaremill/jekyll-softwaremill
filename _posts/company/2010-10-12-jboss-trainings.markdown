@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Certified JBoss trainings
+description: "Certified JBoss trainings"
+keywords: "jboss, trainig, experts, developers"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

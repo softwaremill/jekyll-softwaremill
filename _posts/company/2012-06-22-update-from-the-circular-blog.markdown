@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Update from the Circular blog
+description: "Circular blog has recently covered the advantages of document management over simple file sharing."
+keywords: "circular, dms, document management system"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

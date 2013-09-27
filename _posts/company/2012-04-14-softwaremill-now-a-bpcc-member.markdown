@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill now a BPCC member
+description: "SoftwareMill now a BPCC member"
+keywords: "BPCC partner, IT company, Poland"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

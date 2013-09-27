@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill at Israel trade fair
+description: "SoftwareMill at Israel trade fair"
+keywords: "trade fair, software development"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

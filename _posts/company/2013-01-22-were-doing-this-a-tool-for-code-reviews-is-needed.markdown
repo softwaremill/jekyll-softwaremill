@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: We’re doing this! A tool for code reviews is needed
+description: "Results of the survey about code reviews uncovered. We will develop a tool for code reviews."
+keywords: "codebrag, tool for code reviews, code reviews,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

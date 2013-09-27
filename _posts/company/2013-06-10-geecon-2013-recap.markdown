@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: GeeCON 2013 recap
+description: "This was the 4th edition of GeeCON I attended. The conference unlike any other brings together Java and JVM language programmers from all around Poland as well as a handful of others from neighbouring countries."
+keywords: "GeeCON, Java conference, Szczepan Faber, Daniel Spiewak, Kirk Pepperdine, Lars George and Grzegorz Kossakowski, GeeCON Train"
 author: Maciej Biłas
 author_login: maciej_bilas
 author_email: maciejb@softwaremill.com

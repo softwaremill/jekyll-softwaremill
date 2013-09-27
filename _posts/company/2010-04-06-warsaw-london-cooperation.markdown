@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Warsaw-London. SoftwareMill strategic cooperation
+description: "Warsaw-London. SoftwareMill strategic cooperation"
+keywords: "developers london, java, scala"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

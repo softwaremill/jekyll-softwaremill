@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: The first comic by SoftwareMill
+description: "At SoftwareMill we came up with our own comic series about Millkovsky. He is a stereotypical developer from Central-East Europe..."
+keywords: "comic, comic series, millkovsky, developers, poland, central-east europe,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: References from Attikis
+description: "SoftwareMill got references for the development of the project Attikis – home monitoring service integrated with home alarm system, based on VoIP technology."
+keywords: "references, attikis, home monitoring software,"
 author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com

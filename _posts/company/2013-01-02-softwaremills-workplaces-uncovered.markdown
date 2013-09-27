@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill’s workplaces uncovered
+description: "One of the big advantages of remote working is that your workplace looks just exactly how you want."
+keywords: "remote work, dispersed teams, workplaces, working from home"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

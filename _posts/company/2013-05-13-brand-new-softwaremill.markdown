@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Brand NEW SoftwareMill
+description: "This post explains the process of re-branding we've gone through - why we've changed our logo, website and what are the outcomes."
+keywords: "branding, brand, logo, softwaremill, website, re-branding, softwarehouse, new website, flat design,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

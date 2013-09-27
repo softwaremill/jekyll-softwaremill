@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Want to dig into Big Data from Stackexchange websites?
+description: "Krzysiek Grajek’s new project – SECharts enables you to see all the data aggregated and presented nicely with colourful charts."
+keywords: "big data, pet project, stack exchange, grajek, grajo"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

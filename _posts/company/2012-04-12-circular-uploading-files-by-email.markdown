@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: ! 'Circular: Uploading files by email'
+description: "There are many ways of uploading files to Circular. You can do it by:"
+keywords: "dms, document management system"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

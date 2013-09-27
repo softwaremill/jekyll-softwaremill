@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Mobicents in production – Attikis from the inside
+description: "Mobicents in production – Attikis from the inside"
+keywords: "voip, web app, application, software"
 author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com

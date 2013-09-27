@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Webcast of “Integration with ESB” from OpenSourceDay 2011
+description: "Webcast of “Integration with ESB” from OpenSourceDay 2011"
+keywords: "OpenSourceDay"
 author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com

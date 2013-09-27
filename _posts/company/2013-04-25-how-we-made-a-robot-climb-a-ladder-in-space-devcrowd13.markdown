@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: How We Made A Robot Climb A Ladder In Space – DevCrowd’13
+description: "Use Scala to help Rob the Robot reach the top of a ladder in space - the contest we've run during DevCrowd'13."
+keywords: "devcrowd, scala, contest, szczecin java user group, konrad malawski, paweł stawicki, łukasz lenart, sifteo"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

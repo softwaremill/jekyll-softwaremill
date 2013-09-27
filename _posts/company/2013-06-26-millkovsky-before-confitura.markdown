@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Millkovsky before the Confitura
+description: "Here is a special part of our comic series prepared just two weeks before the Confitura conference. This time Misha learns how to do code reviews..."
+keywords: "Confitura, code reviews, comic, Millkovsky"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

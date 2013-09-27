@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Publicly available Beta version of JBison
+description: "Publicly available Beta version of JBison"
+keywords: "JBison"
 author: Tomasz Szymański
 author_login: tomasz_szymanski
 author_email: tomasz.szymanski@softwaremill.com

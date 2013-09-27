@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill conquers Berlin
+description: "Last weekend the majority of the team went on a trip to Berlin, as a form of our monthly company meeting."
+keywords: "softwaremill, berlin, adam warski, konrad malawski, remote work, dispersed teams"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

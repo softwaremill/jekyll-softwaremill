@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Javarsovia 2010 a great success
+description: "Javarsovia 2010 a great success"
+keywords: "javarsovia"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

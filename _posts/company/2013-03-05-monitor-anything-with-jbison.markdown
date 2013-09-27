@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Monitor anything (with JBison)
+description: "We have recently released a new version of JBison (https://jbison.com), our software-as-a-service web&application monitoring website."
+keywords: "app monitoring, web monitoring, monitoring service, jbison,"
 author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com

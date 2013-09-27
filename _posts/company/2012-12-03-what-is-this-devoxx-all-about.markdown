@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: What is this Devoxx all about?
+description: "Thoughts from SoftwareMill Devoxxians."
+keywords: "devoxx, java, scala, angularjs, softwaremill"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

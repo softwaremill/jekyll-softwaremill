@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Circular document management system is ready
+description: "Circular document management system is ready"
+keywords: "document management system, dms, Circular,"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: SoftwareMill a Javarsovia 2010 Technology Partner
+description: "SoftwareMill a Javarsovia 2010 Technology Partner"
+keywords: "java conference"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

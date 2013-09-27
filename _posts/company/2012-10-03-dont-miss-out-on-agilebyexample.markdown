@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Don’t miss out on AgileByExample!
+description: "We proudly present AgileByExample conference that takes place this week – on the 4th and 5th October in Warsaw."
+keywords: "agile, conference, agile by example,"
 author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com

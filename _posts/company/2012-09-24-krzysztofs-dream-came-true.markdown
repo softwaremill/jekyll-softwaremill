@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Krzysztof’s Dream Came True
+description: "Do you remember SoftwareMill’s survey that we carried out at the Confitura 2012 conference?"
+keywords: "confitura, contest, remote work"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com

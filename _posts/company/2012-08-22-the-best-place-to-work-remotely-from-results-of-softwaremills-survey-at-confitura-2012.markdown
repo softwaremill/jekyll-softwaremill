@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: ! 'The best place to work remotely from: Results of SoftwareMill’s survey at
+description: "Confitura 2012 conference sponsored by SoftwareMill attracted Java enthusiasts from entire Poland."
+keywords: "confitura, contest, remote work"
   Confitura 2012'
 author: Jan Zborowski
 author_login: jan_zborowski

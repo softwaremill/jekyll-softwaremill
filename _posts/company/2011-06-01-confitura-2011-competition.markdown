@@ -3,6 +3,8 @@ layout: post
 status: publish
 published: true
 title: Confitura 2011 competition - Choose your prize
+description: "Confitura 2011 competition - Choose your prize"
+keywords: "java conference, Confitura"
 author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com
