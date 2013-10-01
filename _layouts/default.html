@@ -28,14 +28,14 @@ navigation:
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="canonical" href="https://softwaremill.com{{ page.url }}"/>
     <link rel="alternate" type="application/rss+xml" title="SoftwareMill blog" href="/atom.xml"/>
-    
+
     <meta property='og:title' content='{% if page.title %}{{ page.title | escape }}{% else %}{{ site.seo.title | escape }}{% endif %}'/>
     <meta property='og:description' content='{% if page.description %}{{ page.description | escape }}{% else %}{{ site.seo.description | escape }}{% endif %}'/>
     <meta property='og:url' content='https://softwaremill.com{{ page.url }}'/>
     <meta property='og:site_name' content='{{ site.seo.title | escape }}'/>
     <meta property='og:locale' content='en_US'/>
     <meta property='og:type' content='article'/>
-    
+
     <link rel='stylesheet' id='codecolorer-css' href='/res/codecolorer.css' type='text/css' media='screen'/>
     <link rel="shortcut icon" href="/res/favicon.png"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
@@ -45,6 +45,20 @@ navigation:
   </head>
 
   <body data-spy="scroll" data-offset="100">
+    <script src="/res/jquery.min.js"></script>
+    <script src="/res/jquery.easing.1.3.min.js"></script>
+    <script src="/res/jquery-ui.min.js"></script>
+    <script src="/res/bootstrap.scrollspy.js"></script>
+    <script src="/res/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="/res/jquery.cycle.js"></script>
+    <script src="/res/EasePack.min.js"></script>
+    <script src="/res/TweenMax.min.js"></script>
+    <script src="/res/TimelineMax.min.js"></script>
+    <script src="/res/jquery.cookie.js"></script>
+    <script src="/res/jquery.migrate.js"></script>
+    <script src="/res/functions.js"></script>
+    <script src="/res/agile.js"></script>
+
     <header class="wrapper clearfix">
       <a href="/"><h1>SoftwareMill</h1></a>
       {% include pages.html %}
@@ -52,130 +66,127 @@ navigation:
 
     {{ content }}
 
-  <aside>
-    <div class="wrapper clearfix">
+    {% unless page.skip_footer %}
+    <aside>
+      <div class="wrapper clearfix">
 
-      <div class="newsletter">
-        <h2 class="light line">Follow us!</h2>
-        <ul class="socials">
-          <li><a href="http://www.facebook.com/SoftwareMill" target="_blank" class="fb"></a></li>
-          <li><a href="https://twitter.com/softwaremill" target="_blank" class="twitter"></a></li>
-          <li><a href="http://www.flickr.com/photos/softwaremill/" target="_blank" class="linked"></a></li>
-        </ul>
+        <div class="newsletter">
+          <h2 class="light line">Follow us!</h2>
+          <ul class="socials">
+            <li><a href="http://www.facebook.com/SoftwareMill" target="_blank" class="fb"></a></li>
+            <li><a href="https://twitter.com/softwaremill" target="_blank" class="twitter"></a></li>
+            <li><a href="http://www.flickr.com/photos/softwaremill/" target="_blank" class="linked"></a></li>
+          </ul>
 
-        <h2 class="light">Newsletter</h2>
+          <h2 class="light">Newsletter</h2>
 
-        <p>Occasional email updates, no spam.</p>
-        <form action="https://softwaremill.com/wp-content/themes/softwaremill/newsletter.json.php" method="post" class="newsletter">
-          <input type="email" name="email" required placeholder="your email" />
-          <input type="hidden" name="lang" value="en" />
-          <input type="submit" class="submit" value="Send" />
-          <div class="message">Thank you</div>
-        </form>
+          <p>Occasional email updates, no spam.</p>
+          <form action="https://softwaremill.com/wp-content/themes/softwaremill/newsletter.json.php" method="post" class="newsletter">
+            <input type="email" name="email" required placeholder="your email"/>
+            <input type="hidden" name="lang" value="en"/>
+            <input type="submit" class="submit" value="Send"/>
+            <div class="message">Thank you</div>
+          </form>
 
-        <h2 class="light line join-us">Join us!</h2>
-        <a href="join-us" class="read-more">Read More</a>
+          <h2 class="light line join-us">Join us!</h2>
+          <a href="/join-us.html" class="read-more">Read More</a>
+        </div>
+
+        <div class="drop-us-a-line">
+          <form action="https://softwaremill.com/wp-content/themes/softwaremill/contact.json.php" method="post" id="contact-form">
+            <h2 class="light">Drop us a line</h2>
+            <div class="error">Please fill all fields.</div>
+            <div class="success">Thank you for your message!</div>
+            <label for="contact_email">Your email</label>
+            <input type="email" name="email" id="contact_email" required="required"/><br/>
+            <label for="contact_name">Your name</label>
+            <input type="text" name="name" id="contact_name" required="required"/><br/>
+            <label for="contact_message">Your message</label>
+            <textarea name="message" id="contact_message" required="required"></textarea><br/>
+            <label class="trollissimo" for="contact_trollissimo">Leave this blank</label>
+            <input type="text" name="url" class="trollissimo" id="contact_trollissimo" />
+            <input type="submit" class="submit" value="Send"/>
+            <p>
+              Or send us an email:
+              <a href="mailto:hello@softwaremill.com" onclick="_gaq.push(['_trackPageview', '/cele/mail-hello']);">hello@softwaremill.com</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="feed-the-hungry-bot">
+          <p>SoftwareMill delivers custom software solutions: web applications, back-end systems and enterprise
+            solutions. We specialize in Java, Scala and Cloud technologies with particular interest in JBoss, Amazon Web
+            Services and Big Data projects. We develop software solutions with care and strong belief in the agile
+            approach.
+          </p>
+        </div>
+
       </div>
+    </aside>
+    {% endunless %}
 
-      <div class="drop-us-a-line">
-        <form action="https://softwaremill.com/wp-content/themes/softwaremill/contact.json.php" method="post" id="contact-form">
-          <h2 class="light">Drop us a line</h2>
-          <div class="error">Please fill all fields.</div>
-          <div class="success">Thank you for your message!</div>
-          <label>Your email</label>
-          <input type="email" name="email" required="required"/><br/>
-          <label>Your name</label>
-          <input type="text" name="name" required="required"/><br/>
-          <label>Your message</label>
-          <textarea type="text" name="message" required="required" ></textarea><br/>
-          <label class="trollissimo">Leave this blank</label>
-          <input type="text" name="url" class="trollissimo">
-          <input type="submit" class="submit" value="Send" />
-          <p>Or send us an email: <a href="mailto:hello@softwaremill.com" onclick="_gaq.push(['_trackPageview', '/cele/mail-hello']);">hello@softwaremill.com</a></p>
-        </form>
+    <footer>
+      <div class="wrapper clearfix">
+        <div class="copy">&copy; 2013 SoftwareMill. All rights reserved.</div>
+        <a href="http://jbison.com" target="_blank" class="monitored">Monitored by </a>
+        {% include pages.html %}
       </div>
+    </footer>
 
-      <div class="feed-the-hungry-bot">
-        <p>SoftwareMill delivers custom software solutions: web applications, back-end systems and enterprise solutions. We specialize in Java, Scala and Cloud technologies with particular interest in JBoss, Amazon Web Services and Big Data projects. We develop software solutions with care and strong belief in the agile approach.</p>
-      </div>
-
+    <div class="cookies">
+      <div class="wrapper">This page uses cookies for better performance of the site. You can disable cookies in your
+        browser settings.
+        <a href="#" class="cookies-agree">OK</a></div>
     </div>
-  </aside>
 
-  <footer>
-    <div class="wrapper clearfix">
-      <div class="copy">&copy; 2013 SoftwareMill. All rights reserved.</div>
-      <a href="http://jbison.com" target="_blank" class="monitored">Monitored by </a>
-      {% include pages.html %}
-    </div>
-  </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11235106-6']);
+      _gaq.push(['_trackPageview']);
+      setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
 
-  <div class="cookies">
-    <div class="wrapper">This page uses cookies for better performance of the site. You can disable cookies in your browser settings.
-      <a href="#" class="cookies-agree">OK</a></div>
-  </div>
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+      //]]>
+    </script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 1002026126;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1002026126/?value=0&amp;guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-11235106-6']);
-  _gaq.push(['_trackPageview']);
-  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 989548223;
+      var google_conversion_label = "bxvOCLmsyAUQv53t1wM";
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989548223/?value=0&amp;label=bxvOCLmsyAUQv53t1wM&amp;guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-  <script type="text/javascript">
-  /* <![CDATA[ */
-  var google_conversion_id = 1002026126;
-  var google_custom_params = window.google_tag_params;
-  var google_remarketing_only = true;
-  /* ]]> */
-  </script>
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-  </script>
-  <noscript>
-  <div style="display:inline;">
-  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1002026126/?value=0&amp;guid=ON&amp;script=0"/>
-  </div>
-  </noscript>
-
-<script src="/res/jquery.min.js"></script>
-<script src="/res/jquery.easing.1.3.min.js"></script>
-<script src="/res/jquery-ui.min.js"></script>
-<script src="/res/bootstrap.scrollspy.js"></script>
-<script src="/res/jquery.ba-throttle-debounce.min.js"></script>
-<script src="/res/jquery.cycle.js"></script>
-<script src="/res/EasePack.min.js"></script>
-<script src="/res/TweenMax.min.js"></script>
-<script src="/res/TimelineMax.min.js"></script>
-<script src="/res/jquery.cookie.js"></script>
-<script src="/res/jquery.migrate.js"></script>
-<script src="/res/functions.js"></script>
-<script src="/res/agile.js"></script>
-
-<!-- Google Code for Tag remarketingowy -->
-<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 989548223;
-var google_conversion_label = "bxvOCLmsyAUQv53t1wM";
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989548223/?value=0&amp;label=bxvOCLmsyAUQv53t1wM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-
-</body>
+  </body>
 </html>
