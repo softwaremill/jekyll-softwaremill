@@ -11,6 +11,10 @@ $tweets = callTwitter('https://api.twitter.com/1.1/statuses/user_timeline.json',
   'count'            => 20
 ));
 
+if (count($tweets) < 2) {
+  exit(1);
+}
+
 foreach($tweets as $i => $tweet){
 
   if ($tweet->retweeted === TRUE){

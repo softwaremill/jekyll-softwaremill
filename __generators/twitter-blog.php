@@ -59,6 +59,7 @@ if (count($tweets) < 2){
       echo '</div>';
     echo '</div>';
   echo '</div>';
+  exit(1);
 }else{
   for($i = 0; $i < count($tweets)-count($tweets)%5; $i++){
     if ( $i%5 == 0){
