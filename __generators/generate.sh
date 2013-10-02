@@ -3,7 +3,7 @@
 cd `dirname "$0"`
 
 log() {
-  echo "[`date --rfc-3339=seconds`] $1" | tee log
+  echo "[`date --rfc-3339=seconds`] $1" | tee -a log
 }
 
 finish() {
@@ -21,6 +21,7 @@ log "Generate triggered"
 for file in twitter-blog twitter-home; do
   tmp="../_includes/generated/$file.html.tmp"
   dest="../_includes/generated/$file.html"
+  [ -f "$tmp" ] && (log 'still in progress, skipped'; break)
 
   php "$file.php" > "$tmp"
   finish "$?" "$file"
@@ -32,6 +33,7 @@ for tuple in home:1 blog:30; do
 
   tmp="../_includes/generated/team-posts-$file.html.tmp"
   dest="../_includes/generated/team-posts-$file.html"
+  [ -f "$tmp" ] && (log 'still in progress, skipped'; break)
 
   bundle exec ./team-posts.rb $limit > "$tmp"
   finish "$?" "team-posts"
