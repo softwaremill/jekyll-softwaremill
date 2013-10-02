@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+gem 'feedzirra'
+gem 'columbus'
+gem 'hpricot'
+gem 'activesupport', '3.2.5'
+gem 'actionpack', '3.2.5'
+gem 'tilt'
+gem 'sanitize'

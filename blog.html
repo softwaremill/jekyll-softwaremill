@@ -34,9 +34,7 @@ keywords: blog, java, scala, big data, aws, jboss
       <div class="wrapper clearfix">
         <h6>Our team's posts</h6>
         <div class="blog-list-container" id="members-blogs-slider">
-          {% for post in site.categories.members %}
-          {% include blogs.html color='green' %}
-          {% endfor %}
+          {% include generated/team-posts-blog.html %}
         </div>
 
         <nav id="members-blogs-slider-nav" class="clearfix">

@@ -1,88 +1,129 @@
 <?php
 return array(
-  'Adam Warski' => array(
+  array(
+    'name' => 'Adam Warski',
     'twitter' => 'adamwarski',
     'blog' => 'http://www.warski.org/blog/',
+    'username' => 'warski',
   ),
-  'Aleksandra Puchta' => array(
+  array(
+    'name' => 'Aleksandra Puchta',
     'twitter' => 'PuchtaOla',
     'blog' => NULL,
+    'username' => 'puchta',
   ),
-  'Damian Nowak' => array(
+  array(
+    'name' => 'Damian Nowak',
     'twitter' => 'nwkr',
     'blog' => 'http://www.nowaker.net/',
+    'username' => 'nowak',
   ),
-  'Jacek Kunicki' => array(
+  array(
+    'name' => 'Jacek Kunicki',
     'twitter' => 'rucek',
     'blog' => 'http://blog.kunicki.org',
+    'username' => 'kunicki',
   ),
-  'Jan Zborowski' => array(
+  array(
+    'name' => 'Jan Zborowski',
     'twitter' => NULL,
     'blog' => NULL,
+    'username' => 'zborowski',
   ),
-  'Jarosław Kijanowski' => array(
+  array(
+    'name' => 'Jarosław Kijanowski',
     'twitter' => 'jkijanowski',
     'blog' => 'http://kijanowski.blogspot.com/',
+    'username' => 'kijanowski',
   ),
-  'Kinga Pukianiec' => array(
+  array(
+    'name' => 'Kinga Pukianiec',
     'twitter' => NULL,
     'blog' => NULL,
+    'username' => 'pukianiec',
   ),
-  'Krzysztof Ciesielski' => array(
+  array(
+    'name' => 'Krzysztof Ciesielski',
     'twitter' => 'kpciesielski',
     'blog' => 'http://abstractionextraction.wordpress.com/',
+    'username' => 'ciesielski',
   ),
-  'Krzysztof Grajek' => array(
+  array(
+    'name' => 'Krzysztof Grajek',
     'twitter' => 'grajo',
     'blog' => 'http://www.softwarepassion.com/',
+    'username' => 'grajek',
   ),
-  'Łukasz Lenart' => array(
+  array(
+    'name' => 'Łukasz Lenart',
     'twitter' => 'lukaszlenart',
     'blog' => 'http://dailylog.lenart.org.pl/',
+    'username' => 'lenart',
   ),
-  'Łukasz Żuchowski' => array(
+  array(
+    'name' => 'Łukasz Żuchowski',
     'twitter' => 'zuchos',
     'blog' => 'http://blog.zuchos.com/',
+    'username' => 'zuchowski',
   ),
-  'Maciej Biłas' => array(
+  array(
+    'name' => 'Maciej Biłas',
     'twitter' => 'maciejb',
     'blog' => 'http://maciej.inszy.org/',
+    'username' => 'bilas',
   ),
-  'Maciej Hnydka' => array(
+  array(
+    'name' => 'Maciej Hnydka',
     'twitter' => NULL,
     'blog' => NULL,
+    'username' => 'hnydka',
   ),
-  'Małgorzata Wojciechowska' => array(
+  array(
+    'name' => 'Małgorzata Wojciechowska',
     'twitter' => NULL,
     'blog' => NULL,
+    'username' => 'wojciechowska',
   ),
-  'Michał Matłoka' => array(
+  array(
+    'name' => 'Michał Matłoka',
     'twitter' => 'mmatloka',
     'blog' => NULL,
+    'username' => 'no-image',
   ),
-  'Michał Ostruszka' => array(
+  array(
+    'name' => 'Michał Ostruszka',
     'twitter' => 'mostruszka',
     'blog' => 'http://michalostruszka.pl',
+    'username' => 'ostruszka',
   ),
-  'Paweł Stawicki' => array(
+  array(
+    'name' => 'Paweł Stawicki',
     'twitter' => 'pawelstawicki',
     'blog' => 'http://pawelstawicki.blogspot.com/',
+    'username' => 'stawicki',
   ),
-  'Paweł Wrzeszcz' => array(
+  array(
+    'name' => 'Paweł Wrzeszcz',
     'twitter' => 'pawelwrzeszcz',
     'blog' => 'http://pawel.wrzesz.cz/',
+    'username' => 'wrzeszcz',
   ),
-  'Piotr Buda' => array(
+  array(
+    'name' => 'Piotr Buda',
     'twitter' => 'piotrbuda',
     'blog' => 'http://piotrbuda.eu/',
+    'username' => 'buda',
   ),
-  'Tomasz Dziurko' => array(
+  array(
+    'name' => 'Tomasz Dziurko',
     'twitter' => 'TomaszDziurko',
     'blog' => 'http://tomaszdziurko.pl/',
+    'username' => 'dziurko',
   ),
-  'Tomasz Szymański' => array(
+  array(
+    'name' => 'Tomasz Szymański',
     'twitter' => 'szimano',
     'blog' => 'http://szimano.org/',
+    'username' => 'szymanski',
   ),
 );
-?>

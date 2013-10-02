@@ -1,0 +1,34 @@
+<% entries.each_slice(6).each do |group| %>
+  <% if entries.size > 1 %>
+    <div class="slide">
+      <div class="clearfix">
+        <% end %>
+
+        <% group.each do |entry| %>
+          <div class="news clearfix">
+            <figure class="green">
+              <div class="image">
+                <%= tag 'img', :src => "/img/members/#{entry.username}.jpg", :alt => entry.title.sanitize %>
+              </div>
+            </figure>
+            <div class="text">
+              <%= link_to "<h4 class='font-green'>#{entry.title.sanitize}</h4>".html_safe, entry.url %>
+
+              <%= entry.published.strftime '%-d %B %Y' %> | <strong><%= entry.author %></strong>
+              <br/><br/>
+
+              <p>
+                <%= entry.excerpt %>
+              </p>
+
+              <br/>
+              <%= link_to 'Read more', entry.url, :target => '_blank', :class => 'read-more' %>
+            </div>
+          </div>
+        <% end %>
+
+        <% if entries.size > 1 %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
