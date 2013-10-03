@@ -64,10 +64,10 @@ Call `__proxy/server.sh` to serve `_sites/` at http://localhost:8000/.
 
 crontab entry:
 
-    * * * * * export LANG="en_US.UTF-8"; source ~/.zshrc_local; cd /home/nowaker/jekyll-softwaremill; git pull; /home/nowaker/jekyll-softwaremill/__generators/generate.sh; jekyll build
+    * * * * * /home/softwaremill/softwaremill-jekyll/__generators/cron.sh
 
-Replace `~/.zshrc_local` with your profile file. The only thing we expect from the env file
-is providing `$PATH` to Rubygems binaries, which is usually `~/.gem/ruby/1.9.1/bin`.
+Make sure gem directory is in $PATH.
+
 
 ### Pre-steps
 
