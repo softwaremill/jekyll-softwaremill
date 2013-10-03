@@ -27,6 +27,32 @@ Call `__generators/generate.sh`.
 2. Go to `__generators/` and call `bundle`.
 
 
+## Sending e-mails via contact form - pre-steps
+
+`__dynamic/contact.json.php` is using built-in `mail()` function in PHP.
+It sends the e-mails via `/usr/bin/sendmail`. Server should have some sendmail-alternative installed.
+These days, `msmtp` is recommended, and it's installed on critical.sml.cumulushost.eu.
+
+User that is running the server should create `~/.msmtprc`:
+
+```
+defaults
+auth on
+tls on
+tls_trust_file /usr/share/ca-certificates/mozilla/Thawte_Premium_Server_CA.crt
+
+account default
+host smtp.gmail.com
+port 587
+from EMAIL
+user EMAIL
+password PASSWORD
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+```
+
+During the development you probably want to temporarily change `$to = 'hello@softwaremill.com';` in `__dynamic/contact.json.php`.
+
+
 ## Running in production
 
 Call `jekyll build` to generate the website in `_site`.
@@ -38,7 +64,7 @@ Call `__proxy/server.sh` to serve `_sites/` at http://localhost:8000/.
 
 crontab entry:
 
-    * * * * * export LANG="en_US.UTF-8"; source ~/.zshrc_local; cd /home/nowaker/jekyll-softwaremill; /home/nowaker/jekyll-softwaremill/__generators/generate.sh; jekyll build
+    * * * * * export LANG="en_US.UTF-8"; source ~/.zshrc_local; cd /home/nowaker/jekyll-softwaremill; git pull; /home/nowaker/jekyll-softwaremill/__generators/generate.sh; jekyll build
 
 Replace `~/.zshrc_local` with your profile file. The only thing we expect from the env file
 is providing `$PATH` to Rubygems binaries, which is usually `~/.gem/ruby/1.9.1/bin`.
@@ -70,13 +96,20 @@ TBD
 ## Q&A
 
 - Why PHP?
-- Twitter feeds collector is Balsam's code. Copy-paste ftw.
+- Twitter feeds collector, e-mail sender and newsletter is Balsam's code. Copy-paste ftw.
 
 - Why Python?
 - Python has an embedded HTTP server called SimpleHTTPServer.
-  Adding a custom 404 page and url rewriting was a matter of a few lines of code.
+  Adding a custom 404 page, url rewriting and threaded dispatching was a matter of a few lines of code.
   We don't need to mess with Apache to achieve such trivial things.
 
 - Why Ruby?
 - Jekyll is written in Ruby.
 
+## What can be done better?
+
+1. Replace crappy `__dynamic/contact.json.php` with gem [mail](https://github.com/mikel/mail).
+   This will eliminate a need for `sendmail`.
+2. Replace crappy Twitter generators written in PHP with gem [twitter](http://sferik.github.io/twitter/).
+   This will also eliminate a need for maintaining a config a PHP-based configuration file. Ruby hash would suffice.
+2. Upgrade Jekyll to [Octopress](http://octopress.org/).
