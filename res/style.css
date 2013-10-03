@@ -1503,3 +1503,27 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 }
 
 .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+
+/* as of Jekyll migration */
+
+.support {
+	font-size: 14px;
+	line-height: 21px;
+	padding: 20px 0 20px 0;
+}
+
+.support .text {
+	width: 640px;
+	float: left;
+	text-align: justify;
+	margin-right: 24px;
+}
+
+.support ul {
+	font-size: 14px;
+}
+
+.support ul li {
+	margin-bottom: 10px;
+	padding: 10px 0 10px 45px;
+}
