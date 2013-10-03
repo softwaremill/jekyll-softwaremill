@@ -17,15 +17,6 @@ Files are regenerated on every change. Note, IntelliJ saves a file after window 
 3. `bundle`
 
 
-## Running in production
-
-Call `__proxy/server.sh`. This will generate the website and serve `_sites/`, an output directory, at http://localhost:8000/.
-
-### Pre-steps
-
-1. Install Python 2.
-
-
 ## Regenerating Twitter or blogs
 
 Call `__generators/generate.sh`.
@@ -34,6 +25,27 @@ Call `__generators/generate.sh`.
 
 1. Install PHP for command line. Package name is usually "php-cli".
 2. Go to `__generators/` and call `bundle`.
+
+
+## Running in production
+
+Call `jekyll build` to generate the website in `_site`.
+
+Call `__proxy/server.sh` to serve `_sites/` at http://localhost:8000/.
+
+
+## Auto-rebuild in production
+
+crontab entry:
+
+    * * * * * export LANG="en_US.UTF-8"; source ~/.zshrc_local; cd /home/nowaker/jekyll-softwaremill; /home/nowaker/jekyll-softwaremill/__generators/generate.sh; jekyll build
+
+Replace `~/.zshrc_local` with your profile file. The only thing we expect from the env file
+is providing `$PATH` to Rubygems binaries, which is usually `~/.gem/ruby/1.9.1/bin`.
+
+### Pre-steps
+
+1. Install Python 2.
 
 
 # Technical documentation
