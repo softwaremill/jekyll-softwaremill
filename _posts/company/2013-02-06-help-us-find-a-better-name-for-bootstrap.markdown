@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 196
-wordpress_url: https://softwaremill.com/?p=196
+wordpress_url: /?p=196
 date: 2013-02-06 11:36:48.000000000 +01:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Help us find a better name for Bootstrap!</h2>06 February, 2013 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -37,7 +37,7 @@ comments: []
 <h3>We are asking YOU to come up with a better name.</h3>
 <p>You have one week to post your answers either on Twitter or our Facebook page, or below this blog post.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/03/Millkovski_by_SoftwareMill.jpg" alt="Help us find a better name for Bootstrap!"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/03/Millkovski_by_SoftwareMill.jpg" alt="Help us find a better name for Bootstrap!"></figure><div class="text">
 <p>The final name will be chosen by the whole SoftwareMill team and the winner will get a special T-shirt with the hero of our comic, <a href="http://softwaremill.pl/the-first-comic-by-softwaremill">Millkovski</a>, as a prize.</p>
 <p>You can Tweet you suggestion here: <a href="https://twitter.com/softwaremill">twitter.com/softwaremill</a></p>
 <p>Or write on our fanpage: <a href="https://www.facebook.com/SoftwareMill">facebook.com/SoftwareMill</a></p>

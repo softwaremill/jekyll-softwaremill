@@ -8,7 +8,7 @@ author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com
 wordpress_id: 1149
-wordpress_url: https://softwaremill.com/?p=1149
+wordpress_url: /?p=1149
 date: 2013-09-20 13:44:37.000000000 +02:00
 categories:
 - company
@@ -19,7 +19,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Fly to Devoxx with SoftwareMill</h2>20 September, 2013 | <b>Jan Zborowski</b><br><br>
 </div>
 </div>

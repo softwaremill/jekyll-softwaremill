@@ -9,7 +9,7 @@ author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com
 wordpress_id: 934
-wordpress_url: https://softwaremill.com/?p=934
+wordpress_url: /?p=934
 date: 2011-08-09 14:49:49.000000000 +02:00
 categories:
 - company
@@ -21,7 +21,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Invitation to AgileByExample</h2>09 August, 2011 | <b>Jan Zborowski</b><br><br>
 </div>
 </div>
@@ -33,6 +33,6 @@ comments: []
 <p>AgileByExample participants will have the opportunity to listen to well-known Polish and European <a href="http://www.agilebyexample.com/speakers/" rel="nofollow">speakers</a>, including Jutta Eckstein, Szczepan Faber and Boris Gloger to name just three.</p>
 <p>Once again, please join us and find out in practice how to apply an agile approach to managing IT projects.</p>
 <p>More about the conference – <a href="http://www.agilebyexample.com/" rel="nofollow">www.agilebyexample.com</a>.</p>
-<p> <a href="https://softwaremill.com/wp-content/uploads/2011/08/image2013-7-1-12-50-48.png"><img class="alignnone size-medium wp-image-937" alt="AgileByExample" src="https://softwaremill.com/wp-content/uploads/2011/08/image2013-7-1-12-50-48-300x40.png" width="300" height="40"></a></p>
+<p> <a href="https://softwaremill.com/img/uploads/2011/08/image2013-7-1-12-50-48.png"><img class="alignnone size-medium wp-image-937" alt="AgileByExample" src="https://softwaremill.com/img/uploads/2011/08/image2013-7-1-12-50-48-300x40.png" width="300" height="40"></a></p>
 </div></div>
 <div class="post-footer">Posted in Agile, Conferences</div>

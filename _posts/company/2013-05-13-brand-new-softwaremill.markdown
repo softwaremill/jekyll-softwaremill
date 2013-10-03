@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 269
-wordpress_url: https://softwaremill.com/?p=269
+wordpress_url: /?p=269
 date: 2013-05-13 16:42:09.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Brand NEW SoftwareMill</h2>13 May, 2013 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -29,7 +29,7 @@ comments: []
 <p>It’s a BIG day for us as we launch our new website and completely new identity. Here comes the brand new SoftwareMill!</p>
 <p>Although we do feel nostalgic about the old logo and website we also feel it’s time to move on. Especially as we’ve gone through some serious changes over the past months.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/05/Screen-Shot-2013-05-09-at-4.12.18-PM-e1368457748741.png" alt="Brand NEW SoftwareMill"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/05/Screen-Shot-2013-05-09-at-4.12.18-PM-e1368457748741.png" alt="Brand NEW SoftwareMill"></figure><div class="text">
 <p>First of all, we’ve grown a bit and there are now 21 of us, with five new people who have joined the team only this year.</p>
 <p>Secondly, we’ve built long-term relationships with most of our clients and are expanding to new markets starting with Germany.</p>
 <p>Thirdly, we are developing <a href="http://www.codebrag.com">Codebrag</a> – a tool for code reviews, which has already gathered very warm feedback. We will be launching the beta soon.</p>
@@ -41,7 +41,7 @@ comments: []
 <p>The website is in English only and we concentrated on a single (.com) domain, as the vast majority of our visitors come from abroad.</p>
 <p>At this point, also a BIG thanks to all our team for their input and patience during the process :)</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/05/DSCF0123-2.jpg" alt="Brand NEW SoftwareMill"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/05/DSCF0123-2.jpg" alt="Brand NEW SoftwareMill"></figure><div class="text">
 <p>So just before <a href="http://2013.geecon.org">GeeCON</a>, along with the <a href="http://www.meetup.com/geecon-train">GeeCON Train</a> taking off, we’re proud to launch this website. We encourage you to dive into it, as you will probably learn new things about us. Also, do try to get to the non-obvious parts ;)</p>
 <p>We are curious to know what you think about it.</p>
 <p>Please share your thoughts in the comments.</p>

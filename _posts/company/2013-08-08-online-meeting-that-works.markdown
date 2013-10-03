@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 846
-wordpress_url: https://softwaremill.com/?p=846
+wordpress_url: /?p=846
 date: 2013-08-08 13:20:11.000000000 +02:00
 categories:
 - company
@@ -21,7 +21,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">20-Person Online Meeting That Works</h2>08 August, 2013 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -38,7 +38,7 @@ comments: []
 <p>This helps us get to know each other, make connections and build relations, which is especially important when not collocated.</p>
 <p>The word ‘bakłażan’ (‘eggplant’ in Polish) is the signal for free discussion to start. This is the time to follow up on the most interesting stories or simply share some random thoughts.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/08/chrum-sml-2013.png" alt="20-Person Online Meeting That Works"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/08/chrum-sml-2013.png" alt="20-Person Online Meeting That Works"></figure><div class="text">
 <h4>The organizer</h4>
 <p>The meetings are based on the concept of self-organizing teams. Every week another person volunteers to be the Chrum* master. She makes up the questions, starts the meeting and kicks off the free discussion. The participants speak in random order, which works surprisingly well.</p>
 <h4>The tools</h4>

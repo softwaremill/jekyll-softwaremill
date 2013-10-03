@@ -9,7 +9,7 @@ author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com
 wordpress_id: 942
-wordpress_url: https://softwaremill.com/?p=942
+wordpress_url: /?p=942
 date: 2011-08-09 16:17:23.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Find us at softwaremill.com</h2>09 August, 2011 | <b>Jan Zborowski</b><br><br>
 </div>
 </div>

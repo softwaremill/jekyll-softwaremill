@@ -9,7 +9,7 @@ author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com
 wordpress_id: 1034
-wordpress_url: https://softwaremill.com/?p=1034
+wordpress_url: /?p=1034
 date: 2010-11-26 16:39:21.000000000 +01:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Our impressions from Devoxx 2010</h2>26 November, 2010 | <b>Jan Zborowski</b><br><br>
 </div>
 </div>
@@ -36,7 +36,7 @@ comments: []
 <li>Heinz Kabutz presented <a href="http://devoxx.com/display/Devoxx2K10/Reflection+Madness" rel="nofollow">“Reflection Madness”</a>, a number of coding tricks using Java Reflection API that make your life easier (or harder).</li>
 <li>Michael Coté and John Willis in <a href="http://devoxx.com/display/Devoxx2K10/Does+dev+ops+matter+for+me" rel="nofollow">“Does dev/ops matter for me?”</a> tried to convince listeners that good practices concerning the creation of application codes can also be implemented in the IT department, resulting in software that is better, and gets written and put in production faster</li>
 </ul>
-<p><a href="https://softwaremill.com/wp-content/uploads/2013/08/softwaremill_at_devoxx.jpg"><img class="alignnone size-medium wp-image-1035" alt="softwaremill at devoxx" src="https://softwaremill.com/wp-content/uploads/2013/08/softwaremill_at_devoxx-300x225.jpg" width="300" height="225"></a></p>
+<p><a href="https://softwaremill.com/img/uploads/2013/08/softwaremill_at_devoxx.jpg"><img class="alignnone size-medium wp-image-1035" alt="softwaremill at devoxx" src="https://softwaremill.com/img/uploads/2013/08/softwaremill_at_devoxx-300x225.jpg" width="300" height="225"></a></p>
 <p>We think the conference was a success and will probably be back in Antwerp in 2011, with Java 7 installed on our laptops.</p>
 </div></div>
 <div class="post-footer">Posted in Conferences</div>

@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 877
-wordpress_url: https://softwaremill.com/?p=877
+wordpress_url: /?p=877
 date: 2012-04-12 15:20:08.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Circular: Uploading files by email</h2>12 April, 2012 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>

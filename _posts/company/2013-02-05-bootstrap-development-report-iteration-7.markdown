@@ -9,7 +9,7 @@ author: Piotr Buda
 author_login: piotr_buda
 author_email: buda@softwaremill.com
 wordpress_id: 316
-wordpress_url: https://softwaremill.com/?p=316
+wordpress_url: /?p=316
 date: 2013-02-05 21:11:41.000000000 +01:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/buda.jpg" alt="Piotr Buda"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/buda.jpg" alt="Piotr Buda"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Bootstrap Development Report: Iteration 7</h2>05 February, 2013 | <b>Piotr Buda</b><br><br>
 </div>
 </div>
@@ -29,7 +29,7 @@ comments: []
 <h3><strong>Overview</strong></h3>
 <p>We just started a new iteration and it’s a great moment to share what we were able to develop during the last one. The biggest introduced feature is a brand new Profile page where login, e-mail and password are all changeable. To access the Profile page user has to be logged in and click on the “Logged in as” link.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/05/SoftwareMill_Bootzooka.png" alt="Bootstrap Development Report: Iteration 7"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/05/SoftwareMill_Bootzooka.png" alt="Bootstrap Development Report: Iteration 7"></figure><div class="text">
 <h3><strong>Custom AngularJS directives</strong></h3>
 <p>There was a need for two custom AngularJS directives to handle profile changes.</p>
 <p>The first one is called bsBlur and it’s a simple directive that wraps blur event and triggers some action. We use it in basic Profile edition – change your login and click somewhere beside the input, your data is saved! It has been introduced in <a href="https://github.com/softwaremill/bootzooka/commit/c9e52fdacec528e45a8b77b13f2118ceaaa23aef">this commit.</a></p>

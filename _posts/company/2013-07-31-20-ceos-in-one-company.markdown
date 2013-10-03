@@ -9,7 +9,7 @@ author: Paweł Wrzeszcz
 author_login: pawel_wrzeszcz
 author_email: wrzeszcz@softwaremill.com
 wordpress_id: 818
-wordpress_url: https://softwaremill.com/?p=818
+wordpress_url: /?p=818
 date: 2013-07-31 13:27:37.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/05/wrzeszcz.jpg" alt="Paweł Wrzeszcz"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/wrzeszcz.jpg" alt="Paweł Wrzeszcz"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">20 CEOs In One Company</h2>31 July, 2013 | <b>Paweł Wrzeszcz</b><br><br>
 </div>
 </div>

@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 680
-wordpress_url: https://softwaremill.com/?p=680
+wordpress_url: /?p=680
 date: 2013-06-21 11:02:31.000000000 +02:00
 categories:
 - company
@@ -21,7 +21,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Confitura bus</h2>21 June, 2013 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -41,7 +41,7 @@ comments: []
 <p>Don’t be late, as there are drinks and food waiting for you at the destination. </p>
 <p>Get ready for an ultimate experience!</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/07/medium.png" alt="Confitura bus"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/07/medium.png" alt="Confitura bus"></figure><div class="text">
 <p>P.S. Yes, we are considering a plane or boat for the next time ;) </p>
 </div>
 </div>

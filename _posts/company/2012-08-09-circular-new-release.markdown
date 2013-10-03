@@ -9,7 +9,7 @@ author: Kinga Pukianiec
 author_login: kinga_pukianiec
 author_email: pukianiec@softwaremill.com
 wordpress_id: 439
-wordpress_url: https://softwaremill.com/?p=439
+wordpress_url: /?p=439
 date: 2012-08-09 18:55:30.000000000 +02:00
 categories:
 - company
@@ -21,7 +21,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/06/pukianiec.jpg" alt="Kinga Pukianiec"></div></figure><div class="title">
+<figure><figure><div class="image"><img src="/img/members/pukianiec.jpg" alt="Kinga Pukianiec"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Circular new release!</h2>09 August, 2012 | <b>Kinga Pukianiec</b><br><br>
 </div>
 </div>

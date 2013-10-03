@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 766
-wordpress_url: https://softwaremill.com/?p=766
+wordpress_url: /?p=766
 date: 2013-07-12 16:07:30.000000000 +02:00
 categories:
 - company
@@ -21,7 +21,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Skype games. On effective distributed teams</h2>12 July, 2013 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -58,7 +58,7 @@ comments: []
 <p><i>Daily meetings of the whole company should be as little formalised as possible.</i></p>
 <p><b>When Skype is not enough</b></p>
 <p>At first daily meetings were held via Skype, but this only allowed for audio contact, and when the number of people  rose to over five there were technical problems with even this one channel. This definitely made communications poorer and soon one of the basic principles of meetings  lasting over five minutes was that visuals are also required. The team found out in practice that non-verbal communication — gestures, expressions and the simple fact that people can see each other — makes the exchange seem much more like a real conversation.</p>
-<p><img class="alignnone size-medium wp-image-782" title='"Chrum" scrum meeting at SoftwareMill' alt='"Chrum" scrum meeting at SoftwareMill' src="https://softwaremill.com/wp-content/uploads/2013/07/Chrum-screenshot-300x300.png" width="300" height="300"></p>
+<p><img class="alignnone size-medium wp-image-782" title='"Chrum" scrum meeting at SoftwareMill' alt='"Chrum" scrum meeting at SoftwareMill' src="https://softwaremill.com/img/uploads/2013/07/Chrum-screenshot-300x300.png" width="300" height="300"></p>
 <p>The problem was finding a tool allowing almost twenty people to communicate daily using the two channels. Finally, after almost a year a combination of two different tools was selected . Audio is provided by TeamSpeak, and parallel to that visuals are shown via BigBlueButton. This allows all the people in the company to see each other and at the same time for a conversation to be held freely, without interruptions.</p>
 <p>CONCLUSION<i></i></p>
 <p><i>One standard tool is not sufficient for a larger number of people to communicate remotely.</i></p>
@@ -79,10 +79,10 @@ comments: []
 <p><b>When Skype, wiki, TeamSpeak and email are not enough…</b></p>
 <p>Teams that work in the remote model on a day-to-day basis need the feeling of community and identification with their organisation more than teams that operate conventionally. For this, real-life meetings, with their very important element of informal conversations, are necessary. Initially monthly company meetings lasted morning to evening. They were filled with presentations and working together. There was no time left for real integration. However, with time the team found out that the real value of time spent together does not lie in joint work on projects, but in getting to know the team, making relationships and relaxing together.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/07/DSCF0560.jpg" alt="Skype games. On effective distributed teams"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/07/DSCF0560.jpg" alt="Skype games. On effective distributed teams"></figure><div class="text">
 <p>This does not mean the team meetings are limited to going out for a beer. The team have had the opportunity to play a cult computer game, bake Christmas cookies and go on a trip to Berlin together.  We also sometimes introduce playful elements to online meetings. One of the most interesting games involved each of us telling a story — real or made up — from their life. The task for the others was to guess whether it really happened. The team try to do unconventional things together that allow them to get to know each other better within a short time. </p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/07/DSCF0564.jpg" alt="Skype games. On effective distributed teams"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/07/DSCF0564.jpg" alt="Skype games. On effective distributed teams"></figure><div class="text">
 <p>CONCLUSION<i></i></p>
 <p><i>The true value of time spent together by a distributed team is creating relationships.</i></p>
 <p>In the case of SoftwareMill, the model of distributed teamwork has undergone a significant evolution. This is how the company’s CEO, Tomasz Szymański, sums it up: “Over four year of working together remotely showed that we have made a lot of mistakes. We tried to formalise our ways of communicating too much, the team did not have the sense that they could contribute to it or influence its shape. One of the key decisions was to go for self-organising teams, that is ones that define their own work methods, and for establishing company-wide means of communication together. Employees who have a real influence on the company’s functioning try to achieve the best solutions and feel responsible for them. </p>

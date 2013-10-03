@@ -9,7 +9,7 @@ author: Jan Zborowski
 author_login: jan_zborowski
 author_email: zborowski@softwaremill.com
 wordpress_id: 884
-wordpress_url: https://softwaremill.com/?p=884
+wordpress_url: /?p=884
 date: 2012-04-14 15:24:10.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/zborowski.jpg" alt="Jan Zborowski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">SoftwareMill now a BPCC member</h2>14 April, 2012 | <b>Jan Zborowski</b><br><br>
 </div>
 </div>

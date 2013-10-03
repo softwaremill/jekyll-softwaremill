@@ -9,7 +9,7 @@ author: Maciej Biłas
 author_login: maciej_bilas
 author_email: maciejb@softwaremill.com
 wordpress_id: 590
-wordpress_url: https://softwaremill.com/?p=590
+wordpress_url: /?p=590
 date: 2013-06-10 14:15:07.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/bilas.jpg" alt="Maciej Biłas"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/bilas.jpg" alt="Maciej Biłas"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">GeeCON 2013 recap</h2>10 June, 2013 | <b>Maciej Biłas</b><br><br>
 </div>
 </div>
@@ -34,7 +34,7 @@ comments: []
 <p>[1] <a href="https://vimeo.com/47515968">https://vimeo.com/47515968</a></p>
 <p> </p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/06/DSCF1623-ts-e1370866416703.jpg" alt="GeeCON 2013 recap"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/06/DSCF1623-ts-e1370866416703.jpg" alt="GeeCON 2013 recap"></figure><div class="text">
 <p><a href="https://twitter.com/TomaszDziurko">Tomek Dziurko</a>:</p>
 <p>This was my second GeeCON. What I remember the most from 2012 was not the talks (which were quite good actually) but all the stuff that were happening around the conference: cinema packed with passionate people, discussions during breaks and of course evenings.</p>
 <p>And this year was no different. Very good talks and even better evenings. What I like the most in GeeCON is that evenings are organised and each day after the talks you know exactly where you can meet fellow programmers and have a chat in a more relaxed atmosphere with pint of beer in your hand. But despite being familiar with all this GeeCON-sphere stuff, this year was also first time when I was actually involved in building this unique experience for other attendees by organising GeeCON Train.</p>
@@ -42,7 +42,7 @@ comments: []
 <p>So what I will remember from GeeCON 2013? Of course GeeCON Train, new interesting people met there and many new stuff I have learnt during organising it. And from talks there were two that I could recommend:<br>- “Making Java Unit Test Groovy with Spock” by Ken Sipe, because when you start using Spock suddenly all other testing libraries look ugly and hard to work with.<br>- “Java Developer Career Unplugged” by Wojtek Seliga. Non-controversial (if you saw Wojtek’s talk during Confitura 2012 you know what I mean), well presented guidance what concious decisions we should make to let our professional career flourish.</p>
 <p> </p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/06/DSCF1608-mb-e1370866338798.jpg" alt="GeeCON 2013 recap"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/06/DSCF1608-mb-e1370866338798.jpg" alt="GeeCON 2013 recap"></figure><div class="text">
 <p><a href="https://twitter.com/lukaszlenart">Lukasz Lenart</a>:</p>
 <p>This year GeeCON was a totally different for me comparing to the previous one – it was first time when I was a speaker at GeeCON :-) I’m highly involved in Apache Struts project and I was giving presentation about security vulnerabilities in the project. I was trying to present a few recently discovered security holes, that were the vector of attack and how to secure your application. Base on that I wanted to increase people awareness of overall security in applications – just to highlight some insights about testing and to be more involved in a community around framework of choice.</p>
 <p>What can I say? In my opinion it was a small disaster : I had been giving this talk on local OWASP Cracow chapter meeting, during DevCrowd conference in Szczecin to be prepared for GeeCON. And as it was the first time when I was a presenter on such a conference – stress ate me :D The stage and audience is overwhelming – with lights pointed on you, you can feel the pressure to be a presenter at the international highly rated conference for Java geeks :-)</p>

@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 184
-wordpress_url: https://softwaremill.com/?p=184
+wordpress_url: /?p=184
 date: 2013-04-10 11:26:57.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Millkovsky is back!</h2>10 April, 2013 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -33,6 +33,6 @@ comments: []
 <p>So, now everything is clear. Just read the comic and you will understand…</p>
 <p>Hope you have fun!</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/04/Millkovsky_by_SoftwareMill.png" alt="Millkovsky is back!"></figure>
+<figure><img src="https://softwaremill.com/img/uploads/2013/04/Millkovsky_by_SoftwareMill.png" alt="Millkovsky is back!"></figure>
 </div>
 <div class="post-footer">Posted in No category</div>

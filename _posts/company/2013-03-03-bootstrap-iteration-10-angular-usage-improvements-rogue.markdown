@@ -9,7 +9,7 @@ author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com
 wordpress_id: 355
-wordpress_url: https://softwaremill.com/?p=355
+wordpress_url: /?p=355
 date: 2013-03-03 21:06:29.000000000 +01:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 <p>[cc lang='abap' ][/cc][cc lang='actionscript3' ][/cc][cc lang='abap' ][/cc][cc lang='actionscript3' ][/cc][cc lang='abap' ][/cc][cc lang='abap' ][/cc][cc lang='java' ][/cc][cc lang='abap' ][/cc][cc lang='javascript' ][/cc]</p>
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/08/warski.jpg" alt="Adam Warski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/warski.jpg" alt="Adam Warski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Bootstrap Iteration 10: Angular usage improvements, Rogue</h2>03 March, 2013 | <b>Adam Warski</b><br><br>
 </div>
 </div>
@@ -39,7 +39,7 @@ comments: []
 <h3>Redistribution of files and directories</h3>
 <p>All the controllers, services, directives and filters have been extracted to separate files, which feels quite natural in a growing project. Additionaly we divided all the javascripts files into folders representing these ‘layers’, here’s a sneak peek into this new layout:</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/03/new-layout.gif" alt="Bootstrap Iteration 10: Angular usage improvements, Rogue"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/03/new-layout.gif" alt="Bootstrap Iteration 10: Angular usage improvements, Rogue"></figure><div class="text">
 <h3>Reorganization of Angular modules</h3>
 <p>The concept of ‘module’ in Angular’s sense can be leveraged to split code into logical ‘contexts’:</p>
 <ul>

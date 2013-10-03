@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 425
-wordpress_url: https://softwaremill.com/?p=425
+wordpress_url: /?p=425
 date: 2012-12-14 18:52:26.000000000 +01:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">What is this Devoxx all about? Part 3</h2>14 December, 2012 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -35,13 +35,13 @@ comments: []
 <p>The last day, Friday is always an easy day – everybody is tired (maybe because of party at Noxx ) and it’s just a half of day, the conference ends around 1 PM. Anyway I decided to enter Adam Bien’s talk – <a href="http://www.devoxx.com/display/DV12/Real+World+Java+EE">Real World Java EE</a> – I love to hear Adam, his jokes, his simple straightforward answers, his attitude is splendid. It was great talk at the end of Devoxx.</p>
 <p>See you there next year!</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/12/A7puZOrCAAAyqNH.jpg-large1.jpeg" alt="What is this Devoxx all about? Part 3"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/12/A7puZOrCAAAyqNH.jpg-large1.jpeg" alt="What is this Devoxx all about? Part 3"></figure><div class="text">
 <h3><a href="https://twitter.com/ktosopl">Konrad</a></h3>
 <p>While I found Devoxx just as good as I expected, the thing that made it unique for me was the sheer number of speakers or attendees I either already knew in person, always wanted to meet in person, or met the first time and found them to be really awesome. So the best thing about the conference was what happened between the sessions – long chats about software, organising conferences and having a chance to talk with people etc. Similarly the same can be said about the JUG Leaders BOF or GDG meetup – which is yet another thing unique at Devoxx.</p>
 <p>From the technical side I was really happy to see so much Scala on stage – seems that the language is getting a bit more mainstream finally, although it still has it’s niche I’d say. Another nice thing was that many Googlers were presenting – which usually doesn’t happen that often at one place at not-Google organised events. Some presentations were really awesome, they really do know their stuff, yet others reminded me that even in big G – people are just people, nothing more and nothing less.</p>
 <p>It was also a good time to meetup with the rest of the SoftwareMill – so I really enjoyed the few days we had together, even if running around between sessions or bars in the evenings.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/12/IMG_12551.jpg" alt="What is this Devoxx all about? Part 3"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/12/IMG_12551.jpg" alt="What is this Devoxx all about? Part 3"></figure><div class="text">
 <p>We were happy to share our insights about one of the biggest Java conferences. Hope to see you there next year!</p>
 </div>
 </div>

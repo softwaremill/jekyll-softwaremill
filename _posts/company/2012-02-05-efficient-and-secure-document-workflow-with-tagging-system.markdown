@@ -9,7 +9,7 @@ author: Kinga Pukianiec
 author_login: kinga_pukianiec
 author_email: pukianiec@softwaremill.com
 wordpress_id: 861
-wordpress_url: https://softwaremill.com/?p=861
+wordpress_url: /?p=861
 date: 2012-02-05 16:05:35.000000000 +01:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/06/pukianiec.jpg" alt="Kinga Pukianiec"></div></figure><div class="title">
+<figure><figure><div class="image"><img src="/img/members/pukianiec.jpg" alt="Kinga Pukianiec"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Efficient and secure document workflow with tagging system</h2>05 February, 2012 | <b>Kinga Pukianiec</b><br><br>
 </div>
 </div>

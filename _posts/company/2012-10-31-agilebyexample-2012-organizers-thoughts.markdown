@@ -9,7 +9,7 @@ author: Aleksandra Puchta
 author_login: aleksandra_puchta
 author_email: puchta@softwaremill.com
 wordpress_id: 433
-wordpress_url: https://softwaremill.com/?p=433
+wordpress_url: /?p=433
 date: 2012-10-31 18:54:02.000000000 +01:00
 categories:
 - company
@@ -21,7 +21,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/04/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/puchta.jpg" alt="Aleksandra Puchta"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">AgileByExample 2012 – organizer’s thoughts</h2>31 October, 2012 | <b>Aleksandra Puchta</b><br><br>
 </div>
 </div>
@@ -30,7 +30,7 @@ comments: []
 <p>This year, already for the second time SoftwareMill organized the international conference about agile – AgileByExample.</p>
 <p>And here are some thoughts that we want to share with you.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/10/DSC_6440-2.jpg" alt="AgileByExample 2012 – organizer’s thoughts"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/10/DSC_6440-2.jpg" alt="AgileByExample 2012 – organizer’s thoughts"></figure><div class="text">
 <p>From our point of view, as we love to talk about and listen about agile the event is one of the greatest times in the year.</p>
 <p>After the conference, we are usually so inspired and full of energy, that we implement the main takings as fast as possible. This year was just the same and we’ve already tried:</p>
 <ul>
@@ -42,7 +42,7 @@ comments: []
 </ul>
 <p>We will try some more and keep you posted about the results and our experiences.</p>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/10/DSC_6562.jpg" alt="AgileByExample 2012 – organizer’s thoughts"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/10/DSC_6562.jpg" alt="AgileByExample 2012 – organizer’s thoughts"></figure><div class="text">
 <p>And actually, you can do just the same, as all the slides are available at the <a href="http://2012.agilebyexample.com/speakers/">Speakers</a> page.</p>
 <p>So remind yourself or find the main takings from the conference and try some new approach to agile!</p>
 <p>Here is the TOP 3 presentations chosen by the attendees:</p>
@@ -62,7 +62,7 @@ comments: []
 <li><a href="http://blog.testowka.pl/2012/10/10/agileowe-pranie-mozgow/">Wiktor Żołnowski</a></li>
 </ul>
 </div>
-<figure><img src="https://softwaremill.com/wp-content/uploads/2013/10/DSC_6763.jpg" alt="AgileByExample 2012 – organizer’s thoughts"></figure><div class="text">
+<figure><img src="https://softwaremill.com/img/uploads/2013/10/DSC_6763.jpg" alt="AgileByExample 2012 – organizer’s thoughts"></figure><div class="text">
 <p>And if you haven’t attended AgileByExample this year, you can find some photos taken during the event at <a href="http://picasaweb.google.com/agilebyexample">http://picasaweb.google.com/agilebyexample</a>.</p>
 <p>We are really happy that the event is growing and more and more people are interested in agile.</p>
 <p>We are already looking forward to organizing the next edition of AgileByExample!</p>

@@ -9,7 +9,7 @@ author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com
 wordpress_id: 979
-wordpress_url: https://softwaremill.com/?p=979
+wordpress_url: /?p=979
 date: 2011-04-26 16:52:57.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/08/warski.jpg" alt="Adam Warski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/warski.jpg" alt="Adam Warski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Webcast of “Integration with ESB” from OpenSourceDay 2011</h2>26 April, 2011 | <b>Adam Warski</b><br><br>
 </div>
 </div>

@@ -9,7 +9,7 @@ author: Adam Warski
 author_login: adam_warski
 author_email: adam.warski@softwaremill.com
 wordpress_id: 985
-wordpress_url: https://softwaremill.com/?p=985
+wordpress_url: /?p=985
 date: 2011-04-11 15:49:51.000000000 +02:00
 categories:
 - company
@@ -20,7 +20,7 @@ comments: []
 
 <h6>Company news</h6>
 <div class="post-header clearfix">
-<figure><div class="image"><img src="https://softwaremill.com/wp-content/uploads/2013/08/warski.jpg" alt="Adam Warski"></div></figure><div class="title">
+<figure><div class="image"><img src="/img/members/warski.jpg" alt="Adam Warski"></div></figure><div class="title">
 <h2 class="font-dark-blue font-normal">Mobicents in production – Attikis from the inside</h2>11 April, 2011 | <b>Adam Warski</b><br><br>
 </div>
 </div>
