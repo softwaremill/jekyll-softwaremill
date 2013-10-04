@@ -1,10 +1,9 @@
-body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'; opacity: 0; -webkit-text-size-adjust: 100%;
+body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'; -webkit-text-size-adjust: 100%;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	-o-transition: all 400ms ease-in-out;
 	-ms-transition: all 400ms ease-in-out;
 	transition: all 400ms ease-in-out;}
-body.loaded {opacity: 1;}
 
 .trollissimo { display: none; }
 
