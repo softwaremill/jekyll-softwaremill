@@ -20,73 +20,21 @@ layout: default
           </div>
 
           <script type="text/javascript">
-            /* <![CDATA[ */
-            var disqus_url = 'https://softwaremill.com{{ page.url }}';
-            var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
-            var disqus_container_id = 'disqus_thread';
-            var disqus_domain = 'disqus.com';
+            //<![CDATA[
             var disqus_shortname = 'softwaremill';
+            var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
             var disqus_title = "{{ page.title | escape }}";
-            var disqus_config = function () {
-              var config = this; // Access to the config object
-              config.language = '';
+            var disqus_url = 'https://softwaremill.com{{ page.url }}';
 
-              /*
-               All currently supported events:
-               * preData — fires just before we request for initial data
-               * preInit - fires after we get initial data but before we load any dependencies
-               * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
-               * afterRender - fires when template is rendered but before we show it
-               * onReady - everything is done
-               */
 
-              config.callbacks.preData.push(function () {
-                // clear out the container (its filled for SEO/legacy purposes)
-                document.getElementById(disqus_container_id).innerHTML = '';
-              });
-              config.callbacks.onReady.push(function () {
-                // sync comments in the background so we don't block the page
-                var script = document.createElement('script');
-                script.async = true;
-                script.src = '?cf_action=sync_comments&post_id=193';
-
-                var firstScript = document.getElementsByTagName("script")[0];
-                firstScript.parentNode.insertBefore(script, firstScript);
-              });
-              this.page.remote_auth_s3 = 'W10= bfaf402268c5f736bfc23cbe2ec4d33c99de3e1a 1380121109';
-              this.page.api_key = 'GBIGsmSMIgKL4P7r5voFdG2cuiOEtbYqRWEorHtdpANz8fsCTgKCukV7vDxjjVTv';
-              this.sso = {
-                name: "SoftwareMill",
-                button: "",
-                icon: "",
-                url: "https://softwaremill.com/wp-login.php",
-                logout: "https://softwaremill.com/wp-login.php?action=logout",
-                width: "800",
-                height: "700"
-              }
-            };
-            /* ]]> */
-          </script>
-
-          <script type="text/javascript">
-            /* <![CDATA[ */
-            var DsqLocal = {
-              'trackbacks': [
-              ],
-              'trackback_url': "https:\/\/softwaremill.com\/monitor-anything-with-jbison\/trackback\/"    };
-            /* ]]> */
-          </script>
-
-          <script type="text/javascript">
-            /* <![CDATA[ */
             (function () {
               var dsq = document.createElement('script');
               dsq.type = 'text/javascript';
               dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
-            /* ]]> */
+            //]]>
           </script>
         </div>
 
