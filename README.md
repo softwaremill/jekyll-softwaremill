@@ -120,8 +120,8 @@ See an [example blog post][example-blog] and [Markdown documentation][markdown] 
 You may use a plain HTML. Change the file extension to `html`.
 You may also use Textile or whatever but you have to figure out yourself.
 
-[example-blog] https://github.com/softwaremill/jekyll-softwaremill/blob/master/_examples/2013-10-07-this-will-become-a-permalink-to-the-post.markdown
-[markdown] http://daringfireball.net/projects/markdown/syntax
+[example-blog]: https://github.com/softwaremill/jekyll-softwaremill/blob/master/_examples/2013-10-07-this-will-become-a-permalink-to-the-post.markdown
+[markdown]: http://daringfireball.net/projects/markdown/syntax
 
 ## Q&A
 
