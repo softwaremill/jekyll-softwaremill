@@ -110,14 +110,18 @@ $(document).ready(function (){
 		});
 	});
 
-	$('.work-item .read-more').click(function(event){
-		event.preventDefault();
+	$('.work-item .read-more, .work-item .title-read-more').click(function(event){
+    event.preventDefault();
 
-		$('.work-item.open .close').click();
+    var workItem = $(this).closest('.work-item');
 
-		$(this).parent().addClass('open');
-		$(this).parent().find('.content').slideDown('slow');
-	});
+    if (workItem.hasClass('open')) {
+      workItem.find('.close').click();
+    } else {
+      workItem.addClass('open');
+      workItem.find('.content').slideDown('slow');
+    }
+  });
 
 
 	$('.work-item .close').click(function(event){

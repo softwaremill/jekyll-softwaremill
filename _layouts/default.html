@@ -58,6 +58,7 @@ navigation:
     <script src="/res/jquery.migrate.js"></script>
     <script src="/res/functions.js"></script>
     <script src="/res/agile.js"></script>
+    {% if page.js %}<script src="{{ page.js }}"></script>{% endif %}
 
     <header class="wrapper clearfix">
       <a href="/"><h1>SoftwareMill</h1></a>

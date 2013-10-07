@@ -839,6 +839,9 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	#join-us h2 {margin-bottom: 25px;}
 
 	.work-item {padding: 25px; width: 430px; min-height: 180px; height: auto; margin: 0 0 20px 0; color: #fff; position: relative;}
+	.work-item h2 a.title-read-more {
+		color: #ffffff;
+	}
 	.work-item:last-child {margin-bottom: 0px;}
 	.work-item .read-more {background-image: url(../img/more-white.png); color: #fff; position: absolute; bottom: 15px; display: block;}
 	.work-item .read-more:hover {color: #fff;}
