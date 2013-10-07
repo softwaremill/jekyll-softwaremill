@@ -278,18 +278,14 @@
 			$w.scroll(onScroll);
 			onScroll();
 
-			if (document.location.hash.replace('#', '') == 'how-we-work') {
-				var offset = Math.max($('#how-we-work').offset().top, 0);
-				$('html,body').animate({
-					scrollTop: offset
-				},1000, 'easeOutExpo', function(){
-					$('html,body').scrollTop(offset);
-				});
-			}
-
+      var anchor = document.location.hash.replace('#', '');
+			var offset = Math.max($('#' + anchor).offset().top, 0);
+      $('html,body').animate({
+        scrollTop: offset
+      }, 1000, 'easeOutExpo', function () {
+        $('html,body').scrollTop(offset);
+      });
 		}
-
 	});
 
 })(window.jQuery);
-
