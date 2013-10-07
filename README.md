@@ -93,9 +93,35 @@ Each file should contain this on top:
     keywords: single, word, meta, description, double words
     ---
 
-## How to add a blog post?
+## How to add a blog post on company blog?
 
-TBD
+Create a new file in `_posts/company/`. The filename should be `YYYY-MM-DD-permalink-to-the-post.markdown`.
+This is what every new post needs to have on top:
+
+    ---
+    layout: simple_post
+    title: Your blog post title
+    description: A short description that will appear as a post excerpt. This will appear in Google as well. Keep it short.
+    keywords: list, of, several, most, important, words
+    author: Name Surname
+    categories:
+    - company
+    ---
+
+If you don't have an official photo yet, please remove a line with `author_login`.
+A placeholder will be rendered instead.
+
+If you remove a post from `company` category, the post will be available via a permalink only.
+It won't appear on the blog. May be useful for testing.
+
+Below the `---` you write a post in Markdown flavor. It's the same as on Github.
+See an [example blog post][example-blog] and [Markdown documentation][markdown] for details.
+
+You may use a plain HTML. Change the file extension to `html`.
+You may also use Textile or whatever but you have to figure out yourself.
+
+[example-blog] https://github.com/softwaremill/jekyll-softwaremill/blob/master/_examples/2013-10-07-this-will-become-a-permalink-to-the-post.markdown
+[markdown] http://daringfireball.net/projects/markdown/syntax
 
 ## Q&A
 

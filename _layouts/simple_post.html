@@ -1,0 +1,21 @@
+---
+layout: post
+---
+
+<h6>Company news</h6>
+<div class="post-header clearfix">
+  <figure>
+    <div class="image">
+      <img src="/img/members/{{ page.author_login | escape }}.jpg" alt="{{ page.author | escape }}"/></div>
+  </figure>
+  <div class="title">
+    <h2 class="font-dark-blue font-normal">{{ page.title | escape }}</h2>
+    {{ page.date | date: "%-d %B %Y" }} | <strong>{{ page.author | escape }}</strong>
+    <br/><br/>
+  </div>
+</div>
+<div class="post-rows">
+  <div class="text">
+    {{ content }}
+  </div>
+</div>

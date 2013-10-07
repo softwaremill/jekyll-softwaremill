@@ -22,10 +22,13 @@ layout: default
           <script type="text/javascript">
             //<![CDATA[
             var disqus_shortname = 'softwaremill';
-            var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
+            {% if page.wordpress_id %}
+              var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
+            {% else %}
+              var disqus_identifier = 'https://softwaremill.com{{ page.url }}';
+            {% endif %}
             var disqus_title = "{{ page.title | escape }}";
             var disqus_url = 'https://softwaremill.com{{ page.url }}';
-
 
             (function () {
               var dsq = document.createElement('script');
