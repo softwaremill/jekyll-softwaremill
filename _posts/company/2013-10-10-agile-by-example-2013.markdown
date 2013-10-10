@@ -6,7 +6,7 @@ keywords: agile, conference, scrum, event, agilebyexample, sutherland, appelo, s
 author: Aleksandra Puchta
 author_login: puchta
 categories:
-- companies
+- company
 ---
 
 For the third time already, we are organizing one of the greatest events for the agile community in Poland – [AgileByExample](http://2013.agilebyexample.com/).
