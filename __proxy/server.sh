@@ -5,4 +5,5 @@ cd ..
 startdir=`pwd`
 
 cd _site
-$startdir/__proxy/server.py
+$startdir/__proxy/server.py | tee -a $startdir/__proxy/log
+
