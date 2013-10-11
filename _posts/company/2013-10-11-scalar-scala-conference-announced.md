@@ -6,7 +6,7 @@ keywords: scala, conference, event, scalar, softwaremill
 author: Tomasz Dziurko
 author_login: tomasz_dziurko
 categories:
-
+- company
 ---
 
 SoftwareMill is happy to announce that we will be organizing the very first Scala conference in Central Europe - **Scalar**! It will take place on 5th of April 2014 in Warsaw, Poland.
