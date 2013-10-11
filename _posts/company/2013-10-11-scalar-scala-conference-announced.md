@@ -4,7 +4,7 @@ title: Scalar - Scala Conference announced
 description: SoftwareMill will be organizing Scalar, the very first Scala conference in Central Europe, held on 5th of April 2014 in Warsaw
 keywords: scala, conference, event, scalar, softwaremill 
 author: Tomasz Dziurko
-author_login: tdziurko
+author_login: tomasz_dziurko
 categories:
 
 ---
@@ -14,5 +14,5 @@ SoftwareMill is happy to announce that we will be organizing the very first Scal
 ![Scalar - Scala Conference in Central Europe](/img/uploads/2013/10/scalar-logo.png)
 
 
-Event will be free-to-attend as we want to build and strengthen community around Scala, a community, that we believe, is eager to share their knowledge and experience to the growing numbers of Scala developers in our region.
+Event will be free-to-attend as we want to build and strengthen community around Scala, a community, that we believe, is eager to share their knowledge and experience with the growing numbers of Scala developers in our region.
 
