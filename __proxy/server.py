@@ -11,7 +11,8 @@ class MyHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     error_message_format = open("404.html", "r").read()
 
     rewrites = {
-        "/wp-content/uploads/": "/img/uploads/"
+        "/wp-content/uploads/": "/img/uploads/",
+        "/joinus": "/join-us"
     }
 
     dynamics = {
