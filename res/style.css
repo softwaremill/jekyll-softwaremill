@@ -771,6 +771,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	#blog-list .our-teams-tweets-nav a.prev {background-image: url(../img/twitter-prev.png);}
 	#blog-list .our-teams-tweets-nav a.next {background-image: url(../img/twitter-next.png);}
 
+
+
 	.comments-template {margin: 40px 0;}
 	#post {padding: 0px;}
 	#post .block {padding: 0px;}
@@ -808,6 +810,22 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	.post-sidebar aside #s {background: #d1d2d2; color: #fff; padding: 8px 10px; width: 180px; height: 14px; border: 0px; margin-right: 10px;}
 	.post-sidebar aside #searchsubmit {background: #73c5e1; color: #000; width: 90px;}
 	.post-sidebar aside h3 {font-size: 16px; text-transform: uppercase; font-weight: 300; color: #333;}
+
+#post .post blockquote {
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	border-left: 5px solid #70b1da;
+	background-color: #d9e8f1;
+}
+
+#post .post blockquote p:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
 
 	/*
 	#respond {margin-left: 150px;}
