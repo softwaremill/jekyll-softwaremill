@@ -7,12 +7,6 @@ return array(
     'username' => 'warski',
   ),
   array(
-    'name' => 'Aleksandra Puchta',
-    'twitter' => 'PuchtaOla',
-    'blog' => NULL,
-    'username' => 'puchta',
-  ),
-  array(
     'name' => 'Damian Nowak',
     'twitter' => 'nwkr',
     'blog' => 'http://www.nowaker.net/',
@@ -96,6 +90,12 @@ return array(
     'blog' => 'http://michalostruszka.pl',
     'username' => 'ostruszka',
   ),
+  array(
+      'name' => 'Mirek Woźniak',
+      'twitter' => 'MirekWozniak',
+      'blog' => NULL,
+      'username' => 'wozniak',
+    ),
   array(
     'name' => 'Paweł Stawicki',
     'twitter' => 'pawelstawicki',
