@@ -57,6 +57,7 @@ navigation:
     <script src="/res/jquery.cookie.js"></script>
     <script src="/res/jquery.migrate.js"></script>
     <script src="/res/functions.js"></script>
+    <script src="/res/readmore.min.js"></script>
     {% if page.js %}<script src="{{ page.js }}"></script>{% endif %}
 
     <header class="wrapper clearfix">
@@ -138,6 +139,14 @@ navigation:
         browser settings.
         <a href="#" class="cookies-agree">OK</a></div>
     </div>
+    <script>
+        $('.presentation-abstract').readmore({
+            speed: 75,
+            maxHeight: 47,
+            moreLink: '<a href="#">Read complete abstract</a>',
+            lessLink: '<a href="#">Hide abstract</a>'
+        });
+    </script>
 
     <script type="text/javascript">
       //<![CDATA[

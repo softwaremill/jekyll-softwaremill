@@ -1547,3 +1547,32 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	margin-bottom: 10px;
 	padding: 10px 0 10px 45px;
 }
+
+/* Our presentations and videos page */
+#presentations .presentation-item {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+
+#presentations .presentation-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+#presentations .tag-name {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999;
+    border-radius: 10px;
+}

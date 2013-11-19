@@ -1,0 +1,154 @@
+---
+layout: default
+title: Our presentations, videos and slides - SoftwareMill
+description: Materials from presentations SoftwareMill members gave during various events and conferences, videos and slides.
+---
+<div id="baner-contact">
+    <div class="wrapper"><span class="font-green">Videos and slides from our presentations</span></div>
+</div>
+
+<div class="support" id="presentations">
+    <section>
+        <div class="block">
+            <div class="wrapper clearfix"><h2 class="light">2013</h2></div>
+        </div>
+        <div class="wrapper clearfix">
+            <div class="text presentation-item">
+                <p>
+                    <p class= "presentation-title">Listen to the sounds of your application - Maciej Biłas & Krzysztof Ciesielski</p>
+                    J-Day Krakow 2013,
+                    <span class="tag-name">devops</span>
+                    <span class="tag-name">graphite</span>
+                    <span class="tag-name">logstash</span>
+                    <span class="tag-name">monitoring</span>
+                    <span class="tag-name">log analysis</span>
+                    <span class="tag-name">metrics</span>
+                    <span class="tag-name">kibana</span>
+                <p>
+                <p>
+                    <strong>
+                        <a title="Listen to the sounds of your application - slides"
+                           href="http://www.slideshare.net/maciejb/j-day-listening-to-your-app">Slides</a>
+                    </strong>
+                </p>
+                <p>&nbsp;</p>
+                <p><strong>Abstract:</strong></p>
+                <p class="presentation-abstract">
+                    There are lots of valuable signals in our systems that we can capture and measure. Aside from
+                    monitoring physical resources and latencies,
+                    we can bring visibility to business data that we care about. We will present how to create a
+                    monitoring and alerting stack which gives
+                    a uniform view of those signals.<br/>
+                    Given such setup we can detect anomalies or system failures or examine how our application usage
+                    changes and plan our capacity in advance.
+                    During this 30 minute talk we will try to convince you – the Java developer – why you should care
+                    about applications metrics and logging
+                    from early on in development.
+                </p>
+            </div>
+
+            <div class="text presentation-item">
+                <p>
+                    <p class= "presentation-title">ElasticMQ: a fully asynchronous, Akka-based Amazon SQS server - Adam Warski</p>
+                    Devoxx - Antwerp Belgium,
+                    <span class="tag-name">scala</span>
+                    <span class="tag-name">akka</span>
+                    <span class="tag-name">spray</span>
+                    <span class="tag-name">amazon sqs</span>
+                <p>
+                <p>
+                    <strong>
+                        <a title="ElasticMQ: a fully asynchronous, Akka-based Amazon SQS server - slides"
+                           href="http://www.slideshare.net/adamw1pl/elasticmq-a-fully-asynchronous-akkabased-sqs-server">Slides</a>
+                    </strong>
+                </p>
+                <p>&nbsp;</p>
+                <p><strong>Abstract:</strong></p>
+                <p class="presentation-abstract">
+                    Amazon SQS is great if you need a simple message queueing system. Though when using SQS, it would be good
+                    to test how our code integrates with it (for example if it correctly handles the visibility timeout or
+                    queue creation parameters). Thus ElasticMQ was created: to provide an embeddable, in-memory SQS implementation.
+                    <br/>
+                    In the talk I will show how easy it is to run an embedded or stand-alone ElasticMQ server and test SQS client code,
+                    both from JVM-based and non-JVM languages.
+                    <br/>
+                    The second part will be more technical; I will briefly explain how actors are used to handle queues, how to implement
+                    long polling using futures, and how to write sequential-like code which in fact runs asynchronously using Akka Dataflow.
+                    I will also demo some of the features of Spray, an Akka-based HTTP/REST toolkit, which make it easy to quickly create APIs.
+                    <br/>
+                    The project is fully open-source. You are encouraged to fork at: <a href="https://github.com/adamw/elasticmq">https://github.com/adamw/elasticmq</a>.
+                </p>
+            </div>
+
+            <div class="text presentation-item">
+                <p>
+                    <p class= "presentation-title">The ideal module system and the harsh reality - Adam Warski</p>
+                    Devoxx - Antwerp Belgium,
+                    <span class="tag-name">scala</span>
+                    <span class="tag-name">ceylon</span>
+                    <span class="tag-name">veripacks</span>
+                    <span class="tag-name">osgi</span>
+                <p>
+                <p>
+                    <strong>
+                        <a title="The ideal module system and the harsh reality - slides"
+                           href="http://www.slideshare.net/adamw1pl/the-ideal-module-system-and-the-harsh-reality">Slides</a>
+                    </strong>
+                </p>
+                <p>&nbsp;</p>
+                <p><strong>Abstract:</strong></p>
+                <p class="presentation-abstract">
+                    I think most of us will agree that modularity is a Good Thing. However, while it is possible to create nice
+                    modular applications, current languages do not offer a lot of tools that would make this task easier.
+                    Hence we'll start by creating a (subjective) list of requirements for an "ideal" module system, just
+                    to know how much more work is needed.
+                    <br/>
+                    Then we will take a look at Java packages. We usually think about packages in a hierarchical way, yet
+                    they are treated by tools as simple identifiers. We use them for scoping, but Java only supports
+                    package-private scope. We could use them as a module system, but we create build modules instead.
+                    <br/>
+                    I'd like to show two approaches to solving this problem. One is Veripacks, a Java/Scala library which
+                    verifies transitive module-related annotations. Second is the module system in Ceylon, where modularity
+                    is one of the main features of the language. I'll also compare with OSGi, and show how it differs.
+                </p>
+            </div>
+
+            <div class="text presentation-item">
+                <p>
+                    <p class= "presentation-title">Polecane dla Ciebie: rekomendacje i Mahout - Adam Warski (in Polish)</p>
+                    Warsaw Java User Group,
+                    <span class="tag-name">mahout</span>
+                    <span class="tag-name">recommendations</span>
+                    <span class="tag-name">grouplens</span>
+                    <span class="tag-name">graphlab</span>
+                <p>
+                <p>
+                    <strong>
+                        <a title="Polecane dla Ciebie: rekomendacje i Mahout - slides"
+                           href="http://www.slideshare.net/adamw1pl/mahout-wjug">Slides</a>
+                        &nbsp;|&nbsp;
+                        <a title="Polecane dla Ciebie: rekomendacje i Mahout - video"
+                           href="http://www.youtube.com/watch?v=qS11WowjihE">Video</a>
+                    </strong>
+                </p>
+                <p>&nbsp;</p>
+                <p><strong>Abstract:</strong></p>
+                <p class="presentation-abstract">
+                    Sekcje "Wyjątkowe okazje dla Ciebie", "Użytkownicy, którzy kupili ten produkt kupili też ..." czy spersonalizowane
+                    strony startowe w sklepach internetowych to już praktycznie standard. Implementacja systemów rekomendacji
+                    była kiedyś zarezerwowana dla wyspecjalizowanych firm; dzisiaj mamy do dyspozycji parę open-sourcowych projektów,
+                    takich jak Mahout czy LensKit, które ułatwiają wyciągać informacje z dużej ilości danych o preferencjach użytkowników.
+                    <br/>
+                    Po wprowadzeniu do systemów rekomendacji, czyli omówieniu podstawowych pojęć, możliwych postaci danych wejściowych
+                    i klasyfikacji systemów ze względu na use-case'y przejdziemy do części praktycznej.
+                    <br/>
+                    Część praktyczna będzie obejmować głównie Apache Mahout (który opisuje się na stronie jako "Scalable machine learning
+                    and data mining"). Mahout zawiera implementacje większości klasycznych algorytmów do obliczania rekomendacji; zobaczymy
+                    jak w paru prostych krokach skonfigurować Mahouta i szybko otrzymać rekomendacje na podstawie własnych danych.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+</div>
