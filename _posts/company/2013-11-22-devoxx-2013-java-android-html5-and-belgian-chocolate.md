@@ -13,7 +13,7 @@ layout: simple_post
 
 ####[Jarek](https://twitter.com/jkijanowski) and the Flying Drones
  
-All's well that ends well - that’s my summary for Devoxx 2013. Although I heard “Day 1” was full of good talks, I always made a wrong choice. Now I cannot wait to watch the presentations at parleys.com about “Fault tolerance”, “Patterns, Shmatterns” and “Efficient coding in IntelliJ IDEA” just to name a few.
+All's well that ends well - that’s my summary for Devoxx 2013. Although I heard “Day 1” was full of good talks, I always made a wrong choice. Now I cannot wait to watch the presentations at [parleys.com](parleys.com) about “Fault tolerance”, “Patterns, Shmatterns” and “Efficient coding in IntelliJ IDEA” just to name a few.
  
 Day 2 made my day :) It started with “Java EE 7: What’s New in the Java EE Platform”. Sure, it was just a wrap up and I did not quite well understand the web socket example, but then Arun Gupta had a dedicated talk right after, called “Java EE 7’s Java API for WebSocket”. Great guy, great talk, very interesting topic. Thank You Arun!
 Then it was time for lunch, and as usual, the Devoxx Wednesday Salad forces you to pay a visit at the nearest burger store to grab some food.
