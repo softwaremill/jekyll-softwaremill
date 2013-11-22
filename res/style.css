@@ -1561,6 +1561,12 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
     line-height: 20px;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
+    margin-bottom: 10px;
+}
+
+#presentations .presentation-slideshare {
+    text-align: center;
+    margin-top: 10px;
 }
 
 #presentations .tag-name {
