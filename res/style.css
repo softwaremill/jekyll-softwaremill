@@ -710,18 +710,24 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	.blog-list-container.show {height: 690px; }
 	.blog-list-container .slide {width: 980px !important; background: #fff;}
 	#blogs-slider-nav,
-	#members-blogs-slider-nav {position: absolute; bottom: -20px; width: 230px; margin-left: 380px; display: none;}
+	#members-blogs-slider-nav,
+    #members-presentations-slider-nav {position: absolute; bottom: -20px; width: 230px; margin-left: 380px; display: none;}
 	#blogs-slider-nav.show,
-	#members-blogs-slider-nav.show {display: block;}
+	#members-blogs-slider-nav.show,
+    #members-presentations-slider-nav.show{display: block;}
 	#blogs-slider-nav a,
-	#members-blogs-slider-nav a {cursor: pointer; display: block; width: 40px; height: 40px; border-radius: 20px; border: 1px solid #d1d2d2;
+	#members-blogs-slider-nav a,
+    #members-presentations-slider-nav a{cursor: pointer; display: block; width: 40px; height: 40px; border-radius: 20px; border: 1px solid #d1d2d2;
 		background-color: #fff; background-repeat: no-repeat; background-position: center center;}
 	#blogs-slider-nav a:hover,
-	#members-blogs-slider-nav a:hover {background-color: #eee;}
+	#members-blogs-slider-nav a:hover,
+    #members-presentations-slider-nav a:hover {background-color: #eee;}
 	#blogs-slider-nav a.prev,
-	#members-blogs-slider-nav a.prev {background-image: url(../img/timeline-prev.png); float: left;}
+	#members-blogs-slider-nav a.prev,
+    #members-presentations-slider-nav a.prev{background-image: url(../img/timeline-prev.png); float: left;}
 	#blogs-slider-nav a.next,
-	#members-blogs-slider-nav a.next {background-image: url(../img/timeline-next.png); float: right;}
+	#members-blogs-slider-nav a.next,
+    #members-presentations-slider-nav a.next{background-image: url(../img/timeline-next.png); float: right;}
 
 	#blog {padding-top: 0px; margin-bottom: 0px;}
 	#blog .see-more {position: absolute; bottom: -20px; left: 50%; margin-left: -50px; min-width: 59px; z-index: 10;}
@@ -1194,7 +1200,7 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	.news:nth-child(2n) {width: 300px; padding: 0px; float: none;}
 	.news .text {width: 200px; line-height: 16px;}
 	.news .text h4 {font-size: 11px; line-height: 15px;}
-	#blogs-slider-nav, #members-blogs-slider-nav {margin-left: 0px; width: 300px;}
+	#blogs-slider-nav, #members-blogs-slider-nav, #members-presentations-slider-nav {margin-left: 0px; width: 300px;}
 	#blog-list {margin-top: 0px;}
 	#blog-list .col2 {width: 300px; float: none;}
 	#blog-list .col2:last-child {float: none;}
@@ -1348,7 +1354,7 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	#blog-list .members-tweets { width: 712px; margin-top: 60px; }
 	#blog-list .members-tweets .item { width: 682px; }
 	#blog-list .members-tweets .item .text { width: 600px; }
-	#blogs-slider-nav, #members-blogs-slider-nav { margin-left: 256px; }
+	#blogs-slider-nav, #members-blogs-slider-nav, #members-prsentations-slider-nav { margin-left: 256px; }
 
 	#blog .news { height: auto; min-height: 200px; }
 

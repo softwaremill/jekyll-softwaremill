@@ -201,6 +201,15 @@ $(document).ready(function (){
 		next: '#members-blogs-slider-nav .next'
 	});
 
+    $('#members-presentations-slider').cycle({
+        fx: 'fade',
+        speed: 600,
+        timeout:  0,
+        easing: 'easeOutExpo',
+        prev: '#members-presentations-slider-nav .prev',
+        next: '#members-presentations-slider-nav .next'
+    });
+
 	var now = new Date();
 	var startSlide = parseInt((now.getMonth() + 3) / 3);
 	var div = $('div[data-quarter="'+startSlide+'-'+now.getFullYear()+'"]').index();
