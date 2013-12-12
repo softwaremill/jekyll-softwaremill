@@ -7,6 +7,7 @@ foreach(['name', 'email', 'message', 'url'] as $env) {
 // wp-content/themes/softwaremill/contact.json.php
 
 $to = 'hello@softwaremill.com';
+$from = 'notifications@softwaremill.pl';
 
 $subject     = 'Contact from SoftwareMill website';
 $name        = trim(@$_POST['name']);
@@ -20,7 +21,8 @@ if (!$email || !strpos($email, '@') || !$message || $trollissimo) {
 }
 
 $subject = '=?UTF-8?B?'.$subject.'?=';
-$message_all = "from: ".$name." <".$email.">\n-----------------------------\n";
+$message_all = "from: SoftwareMill Website <".$from.">\n-----------------------------\n";
+$message_all = "Reply-To: ".$name." <".$email.">\n-----------------------------\n";
 $message_all .= wordwrap($message, 70);
 $headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";
 $headers.= 'From: '. $to . "\r\n" .
