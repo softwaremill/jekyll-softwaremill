@@ -1,0 +1,22 @@
+<div class="news clearfix">
+  <figure class="{{ include.color }}">
+    <div class="image">
+      <img src="/img/members/{{ presentation.speaker_login }}.jpg" alt="{{ presentation.speaker }}"/>
+    </div>
+  </figure>
+
+  <div class="text">
+    <a href="{{ presentation.url }}">
+      <h4 class="font-dark-blue">{{ presentation.title }}</h4>
+    </a>
+    {{ presentation.date | date: "%-d %B %Y" }} | <strong>{{ presentation.speaker }}</strong><br/>
+    <strong>{{ presentation.conference }}</strong></br>
+
+    <p>
+      {{ presentation.abstract_fragment }}
+    </p>
+
+    <br/>
+    <a href="{{ presentation.url }}" class="read-more">Read more</a>
+  </div>
+</div>

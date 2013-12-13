@@ -1,0 +1,10 @@
+{% capture modulo %}{{ forloop.index | modulo: 6 }}{% endcapture %}
+{% if modulo == '1' %}
+<div class="slide">
+  <div class="clearfix">
+    {% endif %}
+    {% include presentation.html %}
+    {% if forloop.last or modulo == '0' %}
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,26 @@
+---
+layout: post
+---
+
+<h6>Our Presentations</h6>
+<div class="presentation-header clearfix">
+  <figure>
+    <div class="image">
+      <img src="/img/members/{{ page.speaker_login | escape }}.jpg" alt="{{ page.speaker | escape }}"/></div>
+  </figure>
+  <div class="title">
+    <h2 class="font-dark-blue font-normal">{{ page.title | escape }}</h2>
+    <strong>{{ page.speaker | escape }}</strong>
+    <br/>
+    {{ page.date | date: "%-d %B %Y" }} - {{ page.conference }}
+    <br/><br/>
+    <strong>Keywords:</strong> {{ page.keywords }}
+    <br/>
+    <br/>
+  </div>
+</div>
+<div class="post-rows">
+  <div class="text">
+    {{ content }}
+  </div>
+</div>
