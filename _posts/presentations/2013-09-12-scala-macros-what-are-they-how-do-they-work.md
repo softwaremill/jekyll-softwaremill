@@ -27,7 +27,7 @@ I will present libraries, which already use macros (but without implementation d
 [Expecty](https://github.com/pniederw/expecty), [Slick](http://slick.typesafe.com/) or or my own, [MacWire](https://github.com/adamw/macwire).
 
 <h4>Slides</h4>
-<iframe src="http://www.slideshare.net/slideshow/embed_code/26131216" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/adamw1pl/scala-macros" title="Scala Macros" target="_blank">Scala Macros</a> </strong></div>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/26131216" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/adamw1pl/scala-macros" title="Scala Macros" target="_blank">Scala Macros</a> </strong></div>
 
 <h4>Video</h4>
 <iframe src="//player.vimeo.com/video/74553075" width="429" height="241" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/74553075">Scala macros: what are they, how do they work & who uses them</a></p>
