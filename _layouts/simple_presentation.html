@@ -12,7 +12,7 @@ layout: post
     <h2 class="font-violet font-normal">{{ page.title | escape }}</h2>
     <strong>{{ page.speaker | escape }}</strong>
     <br/>
-    {{ page.date | date: "%-d %B %Y" }} - {{ page.conference }}
+    <strong>{{ page.conference }}</strong>, {{ page.date | date: "%-d %B %Y" }}
     <br/><br/>
     <strong>Keywords:</strong> {{ page.keywords }}
     <br/>
