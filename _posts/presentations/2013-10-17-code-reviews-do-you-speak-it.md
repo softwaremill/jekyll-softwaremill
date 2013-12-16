@@ -10,7 +10,7 @@ categories:
 - presentations
 ---
 
-It doesn't matter whether you work in in-office colocated team or you are part of fully distributed team, you still work
+It doesn't matter whether you work in in-office collocated team or you are part of fully distributed team, you still work
 on the same codebase together with your teammates. All of you should be familiar with the codebase, be aware of changes
 being introduced (to keep sneaky bugs away) and be able to take over work on any piece of project's code. There is pair
 programing you may say, but not all teams can afford that.
