@@ -805,7 +805,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     .post .presentation-header figure {float: left; width: 52px; height: 163px; background: url(../img/news3.png); padding-left: 72px;}
     .post .presentation-header figure .image {width: 52px; height: 94px; overflow: hidden; }
     .post .presentation-header figure .image img {width: 94px; height: 94px; margin-left: -21px; max-width: 94px;}
-    .post .presentation-header .title {width: 470px; float: left; padding: 0 0 0 26px;}
+    .post .presentation-header .title {width: 470px; float: left; padding: 0 0 0 30px;}
     .post .presentation-header .title h2 {margin: 10px 0 20px 0; text-transform: uppercase;}
 
     .post .post-rows {}
@@ -1198,7 +1198,7 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	/* BLOG */
 	#blog h6 {margin-bottom: 0px;}
 	#blog .news {margin: 20px 0; height: auto; min-height: 200px; }
-	.news figure, .news figure.green, #blog .news figure, #blog .news figure.green {background-size: 80px 105px; width: 33px; height: 105px; padding-left: 47px;}
+	.news figure, .news figure.green, #blog .news figure, #blog .news figure.green, .news figure, #blog .news figure.violet {background-size: 80px 105px; width: 33px; height: 105px; padding-left: 47px;}
 	.news figure .image, #blog .news figure .image {width: 37px; height: 60px;}
 	.news figure .image img, #blog .news figure .image img {margin-left: -11px; width: 60px; height: 60px;}
 	.blog-list-container {height: 440px;}
