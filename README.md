@@ -123,6 +123,51 @@ You may also use Textile or whatever but you have to figure out yourself.
 [example-blog]: https://github.com/softwaremill/jekyll-softwaremill/blob/master/_examples/2013-10-07-this-will-become-a-permalink-to-the-post.markdown
 [markdown]: http://daringfireball.net/projects/markdown/syntax
 
+## How to add presentation post?
+
+Create a new file in `_posts/presentations/`. The filename should be `YYYY-MM-DD-permalink-to-the-post.markdown`.
+This is what every new post needs to have on top:
+
+    ---
+    layout: simple_presentation
+    title: Your conference talk topic
+    abstract_fragment: Short abstract fragment to be displayed on post thumbnail
+    keywords: list, of, several, most, important, words
+    speaker: Name Surname
+    speaker_login: login
+    categories:
+    - presentations
+    ---
+
+* login should be equal to the filaname of photo of person
+* if there's no photo yet, clone `img/members/no-image.png` no-image.png into new file person_login.png and use it as a speaker-Login
+
+If you remove a post from `presentation` category, the post will be available via a permalink only.
+It won't appear on the blog. May be useful for testing.
+
+Below the `---` you write a post in Markdown flavor. It's the same as on Github.
+See an [example presentation post][example-presentation] and [Markdown documentation][markdown] for details.
+
+You may use a plain HTML. Change the file extension to `html`.
+You may also use Textile or whatever but you have to figure out yourself.
+
+### Embedding slides
+
+Slides should be embedded using size 427x356, check [example presentation post][example-presentation] for details
+
+__IMPORTANT__: For embed code created by Slideshare you have to replace _http_ with _https_ in code snippet. Standard http won't work on softwaremill.com
+
+For Slideshare you can also remove last text section below slides, something like "from <profileName>" as in most cases only presentation title is enough.
+
+### Embedding video
+
+Video from Youtube should be embedded with 429x241, again check [example presentation post][example-presentation] to see how it should be done.
+
+[example-presentation]: https://github.com/softwaremill/jekyll-softwaremill/blob/master/_examples/2013-09-12-example-presentation-post.md
+[markdown]: http://daringfireball.net/projects/markdown/syntax
+
+
+
 ## Q&A
 
 - Why PHP?
