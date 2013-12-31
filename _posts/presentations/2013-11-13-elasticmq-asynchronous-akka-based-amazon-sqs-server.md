@@ -25,3 +25,6 @@ The project is fully open-source. You are encouraged to fork at: [https://github
 
 <h4>Slides</h4>
 <iframe src="https://www.slideshare.net/slideshow/embed_code/28292398?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/adamw1pl/elasticmq-a-fully-asynchronous-akkabased-sqs-server" title="ElasticMQ: a fully asynchronous, Akka-based SQS server" target="_blank">ElasticMQ: a fully asynchronous, Akka-based SQS server</a> </strong> </div>
+
+<h4>Video</h4>
+<iframe type="text/html" width="420" height="290" mozallowfullscreen="true" webkitallowfullscreen="true" src="https://parleys.com/share.html#play/52a5a081e4b0e619540cc47a" frameborder="0">&lt;br /&gt;</iframe>
