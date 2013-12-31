@@ -10,7 +10,7 @@ categories:
 - presentations
 ---
 
-Arquillian has plenty of useful extentions, In this talk Michał will present these that in his opinion are
+Arquillian has plenty of useful extensions, In this talk Michał will present these that in his opinion are
 the most helpful and should be used in most Arquillian-powered Java projects.
 
 <h4>Slides</h4>
