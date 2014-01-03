@@ -43,6 +43,7 @@ module Jekyll
     ATTRIBUTES_FOR_LIQUID = %w[
       year,
       month,
+      month_year_string,
       date,
       content
     ]
@@ -54,6 +55,7 @@ module Jekyll
       @month = month
       @archive_dir_name = '%04d/%02d' % [year, month]
       @date = Date.new(@year, @month)
+      @month_year = Date::MONTHNAMES[month].to_s + ' ' + year.to_s
       @layout =  site.config['monthly_archive'] && site.config['monthly_archive']['layout'] || 'monthly_archive'
       self.ext = '.html'
       self.basename = 'index'
@@ -108,6 +110,7 @@ module Jekyll
                                'content' => self.content,
                                'date' => @date,
                                'month' => @month,
+                               'month_year_string' => @month_year,
                                'year' => @year
                            })
     end
