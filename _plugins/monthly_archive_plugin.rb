@@ -58,14 +58,40 @@ module Jekyll
       self.ext = '.html'
       self.basename = 'index'
       self.content = <<-EOS
-{% for post in page.posts %}<li><a href="{{ post.url }}"><span>{{ post.title }}<span></a></li>
-{% endfor %}
+      <div class="block border">
+      {% if page.company_posts.size > 0 %}
+        <section>
+            <div class="wrapper clearfix">
+              <h6>Company News</h6>
+              <div>
+                {% for post in page.company_posts %}
+                {% include blogs.html color='blue' %}
+                {% endfor %}
+              </div>
+            </div>
+        </section>
+      {% endif %}
+
+      {% if page.presentation_posts.size > 0 %}
+        <section>
+            <div class="wrapper clearfix">
+              <h6>Our Presentations</h6>
+              <div>
+                {% for presentation in page.presentation_posts %}
+                {% include presentations.html color='violet' %}
+                {% endfor %}
+              </div>
+            </div>
+        </section>
+      {% endif %}
+
       EOS
       self.data = {
           'layout' => @layout,
           'type' => 'archive',
           'title' => "SoftwareMill - Monthly archive for #{@year}/#{@month}",
-          'posts' => posts
+          'company_posts' => posts.select { |item| item.categories.include?('company')},
+          'presentation_posts' => posts.select { |item| item.categories.include?('presentations')}
       }
     end
 
