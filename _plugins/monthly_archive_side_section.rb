@@ -5,8 +5,7 @@
 module Jekyll
 
   # Generator class invoked from Jekyll
-  class MonthlyArchiveGenerator < Generator
-    priority :highest
+  class MonthlyArchiveSideSectionGenerator < Generator
 
     def generate(site)
       year_month_month_string = []
