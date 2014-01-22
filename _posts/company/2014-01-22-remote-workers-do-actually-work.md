@@ -3,12 +3,11 @@ title: Yes, remote workers do actually work.
 description: Working remotely is a challenge, but the gains are worth it. Are you prepared to go remote?
 keywords: remote, distributed, valve, github, mongohq, softwaremill
 author: Mirek Woźniak
-author_login: no-image
+author_login: wozniak
 categories:
+- company
 layout: simple_post
 ---
-
-
 This is a response to fastcolabs’ [Do Remote Workers Actually Work?][1] post, who, in turn, commented on [MongoHQ’s post on their take at remote work][2].
 
 Remote work is a chore. 
