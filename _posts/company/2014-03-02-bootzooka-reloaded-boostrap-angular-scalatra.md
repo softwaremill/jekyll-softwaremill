@@ -4,8 +4,6 @@ description: Bootzooka is a small scaffolding project we use in SoftwareMill to 
 keywords: bootzooka, boostrap, scaffolding, angularjs, scalatra
 author: Michal Ostruszka
 author_login: ostruszka
-categories:
-- company
 layout: simple_post
 ---
 
