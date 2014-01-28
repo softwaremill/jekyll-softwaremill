@@ -5,7 +5,6 @@ keywords: remote, distributed, valve, github, mongohq, softwaremill
 author: Mirek Woźniak
 author_login: wozniak
 categories:
-- company
 layout: simple_post
 ---
 This is a response to fastcolabs’ [Do Remote Workers Actually Work?][1] post, who, in turn, commented on [MongoHQ’s post on their take at remote work][2].
