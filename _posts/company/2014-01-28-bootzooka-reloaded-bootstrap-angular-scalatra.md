@@ -18,7 +18,7 @@ Let's start with a few words of introduction. Bootzooka is a kind of scaffolding
 #### The Parts
 Bootzooka consists of highly opinionated tools we use as the default choice for our new projects. The backend is written in Scala exposing JSON API via Scalatra and MongoDB takes care of the storage. The browser part is a modern Single Page Application built on AngularJS and Twitter Bootstrap by default. 
 
-Bootzooka itself has very few "production" features; we believe that its greatest strength lies in the complete tooling and automation around the project stack. You don't have to spent time configuring the build tools, dependencies, the project structure and so on. Bootzooka brings it for free! Just load your Scala-based modern web application into Bootzooka and see it fly!
+Bootzooka itself has very few "production" features; we believe that its greatest strength lies in the complete tooling and automation around the project stack. You don't have to spend time configuring the build tools, dependencies, the project structure and so on. Bootzooka brings it for free! Just load your Scala-based modern web application into Bootzooka and see it fly!
 
 #### The New & The Changed
 In its previous incarnation Bootzooka used to be a typical, monolithic (in terms of development) web application. The support and tooling for working with JavaScript code and entire frontend part was provided via (not always perfect) SBT plugins.
