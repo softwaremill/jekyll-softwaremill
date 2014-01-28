@@ -2,7 +2,7 @@
 title: Bootzooka Reloaded - Boostrap your AngularJS & Scalatra apps!
 description: Bootzooka is a small scaffolding project we use in SoftwareMill to quicky set up new project matching Bootzooka's tech stack. And we share it on GitHub so you'll save time and effort.
 keywords: bootzooka, boostrap, scaffolding, angularjs, scalatra
-author: Michal Ostruszka
+author: Michał Ostruszka
 author_login: ostruszka
 categories:
 - company
