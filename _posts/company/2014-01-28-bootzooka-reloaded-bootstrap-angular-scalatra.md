@@ -5,6 +5,7 @@ keywords: bootzooka, boostrap, scaffolding, angularjs, scalatra
 author: Michał Ostruszka
 author_login: ostruszka
 categories:
+- company
 layout: simple_post
 ---
 
