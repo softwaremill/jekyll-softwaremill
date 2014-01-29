@@ -46,7 +46,7 @@ We've also thinned Bootzooka a bit. What does it mean? Well, we want Bootzooka t
 
 <br />
 Not so much, huh? It may sound so, but in fact you get a complete backend layer for that (ranging from talking to the DB to exposing the JSON API) together with a complete frontend solution (AngularJS application structure with a basic security and server communication). 
-It means that you can start building your application on it right away as there is a high chance that your project needs authentication and user management. Other features are up to you and Bootzooka doesn't stand in your way ot building them right.
+It means that you can start building your application on it right away as there is a high chance that your project needs authentication and user management. Other features are up to you and Bootzooka doesn't stand in your way of building them right.
 
 #### Upgrades
 As for the versions of building blocks, the following are now in Bootzooka:
