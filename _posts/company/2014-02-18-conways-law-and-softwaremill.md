@@ -1,6 +1,6 @@
 ---
 title: Conway's Law and SoftwareMill?
-description: How does Conway's Law apply to SoftwareMill and the software and products that w ecreate?
+description: How does Conway's Law apply to SoftwareMill and the software and products that we create?
 keywords: softwaremill, buildstuff, hintjens, conway, communication
 author: Adam Warski
 author_login: warski
