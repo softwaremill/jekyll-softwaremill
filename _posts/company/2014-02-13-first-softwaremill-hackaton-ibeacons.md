@@ -8,7 +8,7 @@ categories:
 layout: simple_post
 ---
 
-Last week, during our monthly face-to-dace meeting, we held the first Softwaremill hackaton. The main theme were iBeacons. As many of us already did some experiments with Bluetooth LE (the technolgy behind beacons), we had a couple of [Estimote](http://estimote.com/) beacons, [Gimbal](https://gimbal.com/) beacons, RaspberryPis with BLE dongles and iPhones/MacBooks; so on the hardware side we've been pretty well equipped.
+Last week, during our monthly face-to-face meeting, we held the first Softwaremill hackaton. The main theme were iBeacons. As many of us already did some experiments with Bluetooth LE (the technolgy behind beacons), we had a couple of [Estimote](http://estimote.com/) beacons, [Gimbal](https://gimbal.com/) beacons, RaspberryPis with BLE dongles and iPhones/MacBooks; so on the hardware side we've been pretty well equipped.
 
 We had a couple of teams, working on different apps: an android Estimote app, an iPhone triangulation app and an iPhone "Gandalf" game.
 
