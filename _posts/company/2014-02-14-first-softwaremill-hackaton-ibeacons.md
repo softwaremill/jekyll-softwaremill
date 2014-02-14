@@ -5,6 +5,7 @@ keywords: softwaremill, ibeacons, bluetooth, iphone, estimote
 author: Adam Warski
 author_login: warski
 categories:
+- company
 layout: simple_post
 ---
 
