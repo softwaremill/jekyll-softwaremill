@@ -278,10 +278,10 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 		.white-paper .let-us-know div { float: left; font-size: 16px;  color: #fff; -webkit-font-smoothing: antialiased;}
 		.white-paper .let-us-know a { float: right; margin-right: -5px;}
 
-		.conferences {float: right; width: 440px; height: 310px; padding: 20px; border: 3px solid #fff240; background: url(../img/agile-bg.png) center center no-repeat;}
+		.conferences {float: right; width: 440px; height: 310px; padding: 20px; border: 3px solid #1f7397; background: url(../img/scalar-bg-index.jpg) center center no-repeat;}
 		.conferences p {font-size: 16px; line-height: 22px; margin: 160px 0 0 0; font-weight: 300; -webkit-font-smoothing: antialiased;}
-		.conferences .see-more {border-color: #fff240; margin-top: 20px;}
-		.conferences .see-more:hover {background: #fff240; color: #000;}
+		.conferences .see-more {border-color: #1f7397; margin-top: 20px;}
+		.conferences .see-more:hover {background: #1f7397; color: #000;}
 
 		.news {width: 450px; float: left; margin-bottom: 20px;}
 		.news:nth-child(2n) {float: right; width: 458px; padding: 0 23px 0 0;}
@@ -616,7 +616,20 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 		article .col-find-us {float: left; width: 505px;}
 		article .col-find-us h1 {margin-bottom: 15px;}
 		article .col-find-us>div {padding: 20px; width: 430px; font-size: 13px; line-height: 22px; }
-		article .col-find-us .agile {height: 311px; border: 3px solid #fff240; background: url(../img/agile-bg.jpg) top center no-repeat;}
+        article .col-find-us .scalar {
+            border: 3px solid #32c1d0;
+            background: url(../img/scalar-bg.jpg) top center no-repeat;
+        }
+
+        article .col-find-us .scalar h2 {
+            margin-bottom: 60px;
+        }
+
+        .button.light-blue {
+            background: #32c1d0;
+            color: #fff;
+        }
+		article .col-find-us .agile {margin: 15px 0 0 0; border: 3px solid #fff240; background: url(../img/agile-bg.jpg) top center no-repeat;}
 		article .col-find-us .agile h2 {margin-bottom: 60px;}
 		article .col-find-us .agile .button {background: #fff; border: 1px solid #fff240; color: #000;}
 		article .col-find-us .agile .button .more {background-color: #fff240;}
