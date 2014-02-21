@@ -3,7 +3,11 @@
 cd `dirname "$0"`
 
 log() {
-  echo "[`date --rfc-3339=seconds`] $1" | tee -a log
+	if [[ `uname` == 'Darwin' ]]; then
+		echo "[`date`] $1" | tee -a log
+	else
+		echo "[`date --rfc-3339=seconds`] $1" | tee -a log
+	fi
 }
 
 finish() {
