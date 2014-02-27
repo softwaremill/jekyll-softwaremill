@@ -4,6 +4,7 @@ description: Update on the recent developments in Bootzooka - using PBKDF2 for u
 author: Adam Warski
 author_login: warski
 categories:
+- company
 layout: simple_post
 ---
 
