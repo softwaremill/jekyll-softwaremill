@@ -4,6 +4,7 @@ description: Update on the recent developments in Bootzooka - fat-jar deployment
 author: Adam Warski
 author_login: warski
 categories:
+- company
 layout: simple_post
 ---
 
