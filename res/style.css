@@ -358,6 +358,33 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	.project.codebrag .see-more {background: #cfdb00; border-color: #cfdb00; color: #000;}
 	.project.codebrag .see-more:hover {color: #fff; background: #e13d0e; border-color: #e13d0e;}
 
+	.project.sms-portal h1 {
+  	color: #79bd48;
+	}
+
+	.project.sms-portal:after {
+  	content: '';
+  	width: 100%;
+  	height: 127px;
+  	background: #79bd48;
+  	margin-top: -80px;
+  	position: absolute;
+  	z-index: -1;
+	}
+
+	.project.sms-portal .see-more {
+  	margin-top: 40px;
+  	background: #79bd48;
+  	border: 3px solid #fff;
+  	color: #fff;
+  	border-radius: 22px;
+	}
+
+	.project.sms-portal .see-more:hover {
+  	color: #000;
+  	background: #dcdcdc;
+	}
+
 	.talk-about-project {margin-top: 40px; font-size: 21px; font-weight: 300;}
 	.talk-about-project .add-project {float: left; line-height: 34px; color: #000;}
 	.talk-about-project .add-project .add {display: inline-block; width: 34px; height: 34px; border: 1px solid #cacbcb; border-radius: 17px; text-align: center; font-weight: bold; margin-left: 20px;
