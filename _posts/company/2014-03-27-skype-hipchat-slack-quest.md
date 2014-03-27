@@ -49,7 +49,7 @@ Finally, HipChat **isn't free** - it costs $2/user/month. We've tested it for a 
 Slack has avatars, pasted code looks nice (**syntax colouring**) and its API is available. Slack's got a powerful **search** - you can scan messages, files, snippets - everything! 
 It also shows others' **time zone**, which is crucial when working remotely.
 
-Slack lets you star messages, create private channels easily, *force* everyone to be on the "general" (default) channel and it [integrates with almost everything](https://softwaremill.slack.com/services/new). 
+Slack lets you star messages, create private channels easily, *force* everyone to be on the "general" (default) channel and it [integrates with almost everything](https://slack.com/integrations). 
 
 
 ####Cons####
