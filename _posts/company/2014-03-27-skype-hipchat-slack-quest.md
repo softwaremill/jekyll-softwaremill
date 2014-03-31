@@ -4,7 +4,7 @@ description: A remote, distributed team needs the very best communication tools.
 author: Mirek Woźniak
 author_login: wozniak
 categories:
-
+- company
 layout: simple_post
 ---
 
