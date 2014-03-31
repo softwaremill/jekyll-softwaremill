@@ -10,7 +10,7 @@ layout: simple_post
 
 As we [wrote some time ago](https://softwaremill.com/online-meeting-that-works/), we were quite used to using Skype + TeamSpeak + BigBlueButton as our primary company communication tools. While TS and BBB proved to be reliable as AK47, Skype "could" be a bit better. Still, it was (and still is) an almost free tool, so it had its merit.
 
-However, as we're a team of (mostly) engineers, our communication tool had to be perfect or get busted. Thus, the company-wide testing of new tools - HipChat and Slack ensued. We gave ourselves a week for each tool, after which time we would decided what to do. 
+However, as we're a team of (mostly) engineers, our communication tool had to be perfect or get busted. Thus, the company-wide testing of new tools - HipChat and Slack ensued. We gave ourselves a week for each tool, after which time we would decide on what to do. 
 
 Here's a basic pros/cons comparison for each of the three tools. It's brutally honest and very relative - this worked/didn't work for us and us only, your team might find the tools completely different. This post has been crowdsourced by the SoftwareMill team.
 
@@ -31,7 +31,7 @@ Firstly, messages get delivered only when at least two people in the conversatio
 
 ####Pros####
 
-HC's got an **app for almost every platform**, pasted code looks nice (**syntax colouring**), the API's available, you can enter/leave chatrooms as you like and creatve private channels (e.g. if you want to buy sb a present). Finally, it has got a **rich command system** (e.g. part, away, all, here etc.) and lots of integrations (even more than Slack, it seems).
+HC's got an **app for almost every platform**, pasted code looks nice (**syntax colouring**), the API's available, you can enter/leave chatrooms as you like and create private channels (e.g. if you want to buy sb a present). Finally, it has got a **rich command system** (e.g. part, away, all, here etc.) and lots of integrations (even more than Slack, it seems).
 
 ####Cons####
 
