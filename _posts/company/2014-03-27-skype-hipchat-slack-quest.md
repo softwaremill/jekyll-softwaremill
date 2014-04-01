@@ -37,7 +37,7 @@ HC's got an **app for almost every platform**, pasted code looks nice (**syntax 
 
 HC has **no avatars**, you can't set notifications for selected rooms only and you can't leave an offline message to be visible after you open HipChat.
 
-You may be logged into **one account at a time only** (except the web app), at least on a Mac; plus, there's no native client for Snow Leopard. If you're absent for a while and want to check a popular channel, you've got to **scroll all the way up** just to find there's no full conversation log there and no link to the history.Yyou've got to go to the web app and find the room's history. 
+You may be logged into **one account at a time only** (except the web app), at least on a Mac; plus, there's no native client for Snow Leopard. If you're absent for a while and want to check a popular channel, you've got to **scroll all the way up** just to find there's no full conversation log there and no link to the history. You've got to go to the web app and find the room's history. 
 
 
 Finally, HipChat **isn't free** - it costs $2/user/month. We've tested it for a week and moved on to the **new, chic Slack**. Straight from San Fran!
