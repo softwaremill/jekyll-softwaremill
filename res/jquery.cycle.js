@@ -948,9 +948,9 @@ $.fn.cycle.commonReset = function(curr,next,opts,w,h,rev) {
 	if (typeof opts.cssBefore.opacity == 'undefined')
 		opts.cssBefore.opacity = 1;
 	opts.cssBefore.display = 'block';
-	if (opts.slideResize && w !== false && next.cycleW > 0)
+	if (opts.slideResize && w !== false && next && next.cycleW > 0)
 		opts.cssBefore.width = next.cycleW;
-	if (opts.slideResize && h !== false && next.cycleH > 0)
+	if (opts.slideResize && h !== false && next && next.cycleH > 0)
 		opts.cssBefore.height = next.cycleH;
 	opts.cssAfter = opts.cssAfter || {};
 	opts.cssAfter.display = 'none';
