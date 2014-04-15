@@ -5,3 +5,5 @@ __wp_importer/_posts
 .idea
 *.iml
 .DS_Store
+.bundle
+
