@@ -1,5 +1,5 @@
 ---
-title: Scala is scaling - Scalar Conference Summary,
+title: Scaling Scala - Scalar Conference Summary
 description: A few words from the organizers of thefirst edition of Scalar, the first Scala conference in Central Europe. 
 author: Mirek Woźniak
 author_login: wozniak
@@ -8,24 +8,42 @@ categories:
 layout: simple_post
 ---
 
-Scalar was the first Scala conference in Central Europe. And one that, despite it being the first edition, went great. 
+Scalar was the first Scala conference in Central Europe. The dust has settled, so it's time to conclude it with a summary.
 
-Firstly, we'd like to thank all of you, the speakers and participants, for coming! There were around 300 people in total, coming from Poland, Germany, Austria, Great Britain, Slovenia and other countries. Scalar is made by Scala people for Scala people - and we've all proved it!
+Firstly, we'd like to thank all of you, the speakers and participants, for coming! There were **around 300 people in total**, coming from Poland, Germany, Austria, Great Britain, Slovenia and other countries. Scalar is made by Scala people for Scala people - and we've all proved it!
 
-Secondly, thanks for taking part in our feedback survey - as for the best three talks, the winners are: Simple, Fast, Agile REST with Spray.io by Adam Warski, The Dark Side of Scala by Tomasz Nurkiewicz and Lamda Implementation in Scala 2.11 and Java 8 by Grzegorz Kossakowski. 
+Secondly, thanks for taking part in our feedback survey - as for **the best three talks**, the winners are: Simple, Fast, Agile REST with Spray.io by Adam Warski, The Dark Side of Scala by Tomasz Nurkiewicz and Lamda Implementation in Scala 2.11 and Java 8 by Grzegorz Kossakowski. 
 
-As for the rest of the survey results, there were 126 replies in total, we'll provide a weighted average of the answers (where 5 - awesome, 1 - bad): 
+We've also sent **a feedback survey** about your Scalar experience, asking about the speaker lineup, venue and whether you'd want Scalar in 2015. 
 
-**Speaker lineup**: Awesome 23%, Okay 58%, Normal 10%, Could be better 8%, Bad 2%
+The reply choices ranged from from Awesome! (5), Okay (4), Norma (3), Could be better (2) to Bad (1). We received 126 replies!
 
-**Venue**: Awesome 27%, Okay 60%, Normal 8%, Could be better 5%, Bad 0%
+**How was the speaker lineup?**
 
-**Scalar in 2015?**: Yes, very much! 67%, Yes 21%, Maybe 9%, Rather not	2%, No 1%
+<div style="width:100%; text-align:center">
+<img src="/img/uploads/2014/04/speakerlineup.png"  align="center" />
+</div>
 
+**How was the venue?**
+
+<div style="width:100%; text-align:center">
+<img src="/img/uploads/2014/04/venue.png"  align="center" />
+</div>
+
+**Scalar in 2015?**
+
+<div style="width:100%; text-align:center">
+<img src="/img/uploads/2014/04/scalar2015.png"  align="center" />
+</div>
+
+
+What more can we say? Thank you very much!
 
 We've received much **attention from bloggers**: Sebastian Gębski wrote about [Scalar from a .NET dev perspective][1], Jacek Laskowski [wanted Scalar to last longer][2], Paweł Włodarski went to [Scalar not to become a Scala fanatic][3], [Szymon Stępniak and Toruń JUG representation were also present][4]. Tomek Kaczmarczyk claims [travelling 12 hours was worth it][5], Tomek Pewinski wanted to check how does [Scala community in Poland look like][6] and, finally, TeamStatus seem [not to really like Scala very much after Scalar][7]
 
-If that's still not enough, why not take a look at the [photos by Andrzej Goławski][8]. Plus, we'll compile and share the talks soon!
+If that's still not enough, why not take a look at the **[photos by Andrzej Goławski][8]**. Plus, we'll compile and share the talks soon!
+
+We'd like to thanks **our sponsors**! Typesafe & Javeo for silver sponsorship, Touk & Codebrag for sponsorship, Soundcloud for sponsoring the party and VirtusLab for partnership! 
 
 Thanks once again! Keep on scaling!
 
