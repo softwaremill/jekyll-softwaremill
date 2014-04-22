@@ -1,10 +1,10 @@
 ---
 title: Scaling Scala - Scalar Conference Summary
-description: A few words from the organizers of thefirst edition of Scalar, the first Scala conference in Central Europe. 
+description: A few words from the organizers of Scalar, the first Scala conference in Central Europe. 
 author: Mirek Woźniak
 author_login: wozniak
 categories:
-
+- company
 layout: simple_post
 ---
 
