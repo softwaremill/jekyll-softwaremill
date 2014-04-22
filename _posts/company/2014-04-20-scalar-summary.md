@@ -1,6 +1,6 @@
 ---
 title: Scaling Scala - Scalar Conference Summary
-description: A few words from the organizers of Scalar, the first Scala conference in Central Europe. 
+description: What does it take to make 300 programmers get up before 8 AM on Saturday? Organising a Scala conference, of course.
 author: Mirek Woźniak
 author_login: wozniak
 categories:
