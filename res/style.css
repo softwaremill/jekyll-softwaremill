@@ -685,7 +685,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 		article .col-leaders ol li a {padding: 8px 0 8px 20px;}
 		article .col-leaders ol li a:hover {color: #888;}
 
-		article#coming-events {margin-bottom: 60px;}
+		article#coming-events {margin-bottom: 60px; display: none;}
 		article .coffee-icon {width: 38px; height: 22px; background: url(../img/coffee.jpg) no-repeat; display: inline-block; margin-left: 10px;}
 		article .timeline {width: 980px; height: 200px;  background: url(../img/timeline-bg.png) no-repeat center bottom; position: relative;}
 		article .timeline nav {height: 30px; width: 1120px; bottom: 3px; margin: 0 0 0 -90px; position: absolute;}
