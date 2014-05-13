@@ -31,8 +31,8 @@ foreach($tweets as $i => $tweet){
 
   <div class="tweet clearfix">
     <figure><a href="http://twitter.com/softwaremill" target="_blank">
-      <img src="/img/twitter-logo01.jpg" alt="SoftwareMill's twitter" class="sm-logo" />
-      <img src="/img/twitter-logo02.jpg" alt="SoftwareMill's twitter" class="tw-logo"/>
+      <img src="/img/twitter-logo01.png" alt="SoftwareMill's twitter" class="sm-logo" />
+      <img src="/img/twitter-logo02.png" alt="SoftwareMill's twitter" class="tw-logo"/>
     </a>
     </figure>
     <div class="entry">
