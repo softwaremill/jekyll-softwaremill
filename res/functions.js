@@ -263,14 +263,29 @@ $(document).ready(function (){
 			}
 		});
 
-		setTimeout(function(){
-			if (self.hasClass('prev')){
+		if (self.hasClass('prev')){
+			setTimeout(function(){
 				$('.twitter-slider').cycle('prev');
-			}else{
+			}, 600);
+			setTimeout(function(){
+				$('.tweet').each(function(){
+					if ($(this).css('display') == 'block' && $(this).find("figure").hasClass("rotate")){
+						$(this).find('figure').removeClass('rotate');
+					}
+				});
+			}, 1100);
+		}else{
+			setTimeout(function(){
 				$('.twitter-slider').cycle('next');
-			}
-			$('.twitter-slider figure').removeClass('rotate');
-		}, 600);
+			}, 600);
+			setTimeout(function(){
+				$('.tweet').each(function(){
+					if ($(this).css('display') == 'block' && $(this).find("figure").hasClass("rotate")){
+						$(this).find('figure').removeClass('rotate');
+					}
+				});
+			}, 700);
+		}
 
 	});
 
