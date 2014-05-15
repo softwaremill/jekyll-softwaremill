@@ -243,9 +243,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 		.cases-views .view.blue .see-more:hover {background: #73c5e1; }
 
 		/* TWITTER */
-		#home .twitter-section {padding: 0px; width: 456px; height: 356px; float: left; overflow: hidden;}
-		.twitter-slider {overflow: hidden;}
-		.tweet {width: 450px; height: 350px; border: 3px solid #73c5e1; background: #73c5e1;}
+		#home .twitter-section {padding: 0px; margin-top: 50px;}
+		.tweet {width: 974px; height: 160px; border: 3px solid #73c5e1; background: #73c5e1;}
 		.tweet figure {float: left; width: 324px; position: relative;}
 		.tweet figure img {display: block; position: absolute; top: 0px;
 			-webkit-transition: all 300ms ease-in;
@@ -253,16 +252,16 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		.tweet figure img.tw-logo {top: 175px;}
-		.tweet figure img.sm-logo {top: 0px;}
-		.tweet figure.rotate img.tw-logo {top: 0px;}
-		.tweet figure.rotate img.sm-logo {top: 175px;}
+		.tweet figure img.tw-logo {left: 160px;}
+		.tweet figure img.sm-logo {left: 0px;}
+		.tweet figure.rotate img.tw-logo {left: 0px;}
+		.tweet figure.rotate img.sm-logo {left: 164px;}
 
-		.tweet .entry {float: right; width: 210px; padding: 50px 30px 30px; font-size: 16px; line-height: 22px; -webkit-font-smoothing: antialiased;}
+		.tweet .entry {float: right; width: 590px; padding: 30px; font-size: 16px; line-height: 22px; -webkit-font-smoothing: antialiased;}
 		.tweet .entry h6 {font-size: 11px; text-transform: none; font-weight: 600; margin-bottom: 25px; text-align: center; }
 		.tweet .entry h6 span {text-transform: uppercase; color: #fff;}
 		.tweet .entry a {color: #fff;}
-		.twitter-nav {position: absolute; width: 212px; margin: -70px 0 0; z-index: 40; right: 25px;}
+		.twitter-nav {position: absolute; width: 1080px; margin: -100px -50px 0 -50px;}
 		.twitter-nav a {display: block; width: 31px; height: 31px; background-color: #fff; background-repeat: no-repeat; background-position: center center; border: 1px solid #dfdfdf; border-radius: 16px;}
 		.twitter-nav a:hover {background-color: #73c5e1; border-color: #73c5e1;}
 		.twitter-nav a.prev {background-image: url(../img/twitter-prev.png); float: left;}
@@ -271,14 +270,13 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 		.twitter-nav a.next:hover {background-image: url(../img/twitter-next-hover.png);}
 
 		/* WHITE PAPER / CONFERENCES */
-		.white-paper {padding: 23px 0 0 0 ;}
+		.white-paper {float: left; width: 450px; padding: 23px 0 0 0 ;}
 		.white-paper h6 {margin-bottom: 15px;}
 		.white-paper p {font-size: 16px; line-height: 22px; font-weight: 300; margin: -9px 0 20px 0; -webkit-font-smoothing: antialiased;}
-		.white-paper .partner {display: inline-block; width: 33%; padding-top: 10px;}
 		.white-paper figure {margin: 0 auto 20px auto; text-align: center;}
-		.white-paper figcaption {color: #B3B3B3; margin-top: 10px;}
-		.white-paper .partner img {-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: grayscale(100%);}
-		.white-paper .partner:hover img {-webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); filter: grayscale(0%);}
+		.white-paper .let-us-know {background: #000; height: 40px; line-height: 40px; padding: 0 0 0 40px; border-radius: 20px; width: 330px;}
+		.white-paper .let-us-know div { float: left; font-size: 16px;  color: #fff; -webkit-font-smoothing: antialiased;}
+		.white-paper .let-us-know a { float: right; margin-right: -5px;}
 
 		.conferences {float: right; width: 440px; height: 310px; padding: 20px; border: 3px solid #1f7397; background: url(../img/scalar-bg-index.jpg) top center no-repeat;}
 		.conferences p {color: #ffffff; font-size: 16px; line-height: 22px; margin: 160px 0 0 0; font-weight: 300; -webkit-font-smoothing: antialiased;}

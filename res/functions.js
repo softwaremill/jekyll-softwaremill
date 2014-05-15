@@ -249,7 +249,7 @@ $(document).ready(function (){
 
 	$('.twitter-slider').cycle({
 		fx: 'scrollHorz',
-		speed: 1000,
+		speed: 1500,
 		timeout:  0,
 		easing: 'easeOutExpo'
 	});
@@ -271,7 +271,6 @@ $(document).ready(function (){
 			}
 			$('.twitter-slider figure').removeClass('rotate');
 		}, 600);
-
 	});
 
 	$('.our-tweets').cycle({
