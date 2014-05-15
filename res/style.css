@@ -1129,18 +1129,6 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	.services ul li.back-end, .services ul li.enterprise {margin-left: 0px;}
 	.technologies {width: 280px; float: none; padding: 20px 10px 80px 10px; height: auto;}
 	.technologies p {margin-top: 20px; font-size: 18px; line-height: 22px;}
-	.tweet { width: 300px; border: 0px; height: auto;}
-	.tweet figure {display: none;}
-	.tweet .entry {float: none; width: 240px; padding: 20px 30px; text-align: center; font-size: 11px; line-height: 14px; height: 90px;}
-	.tweet .entry h6 {margin-bottom: 15px;}
-	.twitter-slider { z-index: 10; }
-	.twitter-nav {width: 320px; z-index: 100000; margin: -80px -10px 0 -10px;}
-	.white-paper {width: 300px; float: none; margin-bottom: 20px;}
-	.white-paper p {font-size: 12px; line-height: 16px;}
-	.conferences {width: 280px; height: 200px; float: none; background-size: 300px 172px; padding: 10px;}
-	.conferences p {margin-top: 95px; font-size: 12px; line-height: 16px;}
-	.conferences .see-more {margin-top: 5px;}
-	#home .news {margin-top: 20px;}
 
 	.cases {width: 301px; height: 111px;}
 	.cases .case {width: 99px; height: 109px; padding: 0px;}
@@ -1148,6 +1136,23 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	.cases .case p {display: none;}
 	.cases .case figure {margin: 0px auto; width: 80px;}
 	.cases-nav {width: 300px; margin: 3px 0 0px 0;}
+
+	#home .twitter-section {float:none; width: 300px; height: 175px; margin: 50px auto 30px;}
+	.tweet { width: 300px; border: 0px; height: 175px;}
+	.tweet figure {display: none;}
+	.tweet .entry {float: none; width: 240px; padding: 20px 30px; text-align: center; font-size: 11px; line-height: 14px; height: 90px;}
+	.tweet .entry h6 {margin-bottom: 15px;}
+	.twitter-slider { z-index: 10; }
+	.twitter-nav {width: 250px; z-index: 100000; margin: -55px 0px 0px;}
+	.conferences {width: 274px; height: 220px; float: none; background-size: 300px 172px; padding: 10px; background-position: center 10px;}
+	.conferences p {margin-top: 95px; font-size: 12px; line-height: 16px;}
+	.conferences .see-more {margin-top: 25px;}
+
+	.white-paper {width: 300px; float: none; margin-bottom: 20px;}
+	.white-paper p {font-size: 12px; line-height: 16px;}
+	.white-paper .partner {width: 100%;}
+
+	#home .news {margin-top: 20px;}
 
 	/* PORTFOLIO */
 	.project {padding: 20px 0;}
@@ -1378,17 +1383,19 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 	.specialize-in .list ul li:nth-child(2) {}
 	.specialize-in .list ul li:nth-child(3) {width: 182px;}
 
-	.tweet { width: 724px; }
+	#home .twitter-section {width: 336px; height: 326px;}
+	.tweet { width: 336px; height: 326px;}
 	.tweet figure { display: none; }
 	.tweet .entry { float: none; margin: 0 auto; }
-	.twitter-nav { width: 762px; margin: -100px -15px 0; z-index: 100; }
+	.twitter-nav { width: 246px; margin: -100px 20px 0px; z-index: 100; }
 
-	.white-paper { width: 346px; padding-right: 20px; }
+	.white-paper { width: 712px; padding-right: 20px; }
 	.white-paper figure { text-align: center; height: 110px; }
 	.white-paper figure img { width: auto; max-width: none; max-height: 110px; }
 	.white-paper p { font-size: 12px; line-height: 16px; margin-top: -19px; }
-	.conferences { width: 320px; height: 245px; background-size: 100%; }
+	.conferences { width: 320px; height: 280px; background-size: 100%; background-position: center 15px;}
 	.conferences p { font-size: 12px; line-height: 16px; margin: 125px 0 0 0; }
+	.conferences .see-more {margin-top: 55px;}
 
 	.news { width: 336px; }
 	.news:nth-child(2n) { width: 346px; }
