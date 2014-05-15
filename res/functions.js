@@ -171,13 +171,15 @@ $(document).ready(function (){
 					}, maxAppear*800+order*800+appear*800);
 
 
-					// $(this).find('figure').delay(maxAppear*800+order*800+appear*800).animate({
-					// 	opacity: 0
-					// }, 300, function(){
-					// 	$(this).delay(150).animate({
-					// 		opacity: 1
-					// 	}, 350);
-					// });
+					/*$(this).find('figure').delay(maxAppear*800+order*800+appear*800).animate({
+						opacity: 0
+					}, 300, function(){
+						$(this).delay(150).animate({
+							opacity: 1
+						}, 350);
+					});*/
+
+					console.log($(this));
 				});
 			}
 		}
