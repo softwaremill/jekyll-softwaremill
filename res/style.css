@@ -107,7 +107,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		#baner-home .top02 .blocks .conversation figure:hover:after{opacity: 1;}
+		#baner-home .top02 .blocks .conversation figure:hover:after,
+		#baner-home .top02 .blocks .conversation figure.highlight:after{opacity: 1;}
 		#baner-home .top02 .blocks .conversation .desc {border-left: 1px solid #f083b5;}
 		#baner-home .top02 .blocks .trumpet {float: left; background: #5bb12f; height: 163px; margin-left: 489px; width: auto; position: relative; z-index: 1;}
 		#baner-home .top02 .blocks .trumpet.active {margin-left: 163px; }
@@ -118,7 +119,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		#baner-home .top02 .blocks .trumpet figure:hover:after{opacity: 1;}
+		#baner-home .top02 .blocks .trumpet figure:hover:after,
+		#baner-home .top02 .blocks .trumpet figure.highlight:after{opacity: 1;}
 		#baner-home .top02 .blocks .trumpet .desc {border-left: 1px solid #7ac34f;}
 		#baner-home .top02 .blocks .empty-green {background: #bccf02; position: absolute; top: 0px; left: 163px;}
 		#baner-home .top02 .blocks .empty-grey {background: #ececec; position: absolute; top: 0px; left: 0px;}
@@ -133,7 +135,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		#baner-home .top02 .views figure:hover:after{opacity: 1;}
+		#baner-home .top02 .views figure:hover:after,
+		#baner-home .top02 .views figure.highlight:after{opacity: 1;}
 
 		#baner-home .top03 .claim.small {top: 215px;}
 		#baner-home .top03 .blocks .rocket {background: #bccf02; height: 163px; margin-left: 489px; width: auto;}
@@ -145,7 +148,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		#baner-home .top03 .blocks .rocket figure:hover:after{opacity: 1;}
+		#baner-home .top03 .blocks .rocket figure:hover:after,
+		#baner-home .top03 .blocks .rocket figure.highlight:after{opacity: 1;}
 		#baner-home .top03 .blocks .rocket .desc {border-left: 1px solid #ccdb05;}
 		#baner-home .top03 .blocks .empty-blue {background: #73c5e1; margin-left: 489px;}
 		#baner-home .top03 .blocks .pointer {float: left; background: #eb65a0; height: 163px; margin-left: 326px; width: auto; position: relative; z-index: 1;}
@@ -157,7 +161,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		#baner-home .top03 .blocks .pointer figure:hover:after{opacity: 1;}
+		#baner-home .top03 .blocks .pointer figure:hover:after,
+		#baner-home .top03 .blocks .pointer figure.highlight:after{opacity: 1;}
 		#baner-home .top03 .blocks .pointer .desc {border-left: 1px solid #f083b5;}
 		#baner-home .top03 .blocks .empty-violet {background: #9b539c; position: absolute; top: 0px; left: 163px;}
 		#baner-home .top03 .blocks .empty-grey {background: #ececec; position: absolute; top: 0px; left: 0px;}
@@ -173,7 +178,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 			-o-transition: all 300ms ease-in;
 			-ms-transition: all 300ms ease-in;
 			transition: all 300ms ease-in;}
-		#baner-home .top03 .earth figure:hover:after{opacity: 1;}
+		#baner-home .top03 .earth figure:hover:after,
+		#baner-home .top03 .earth figure.highlight:after{opacity: 1;}
 
 
 		#baner-nav {position: relative; top: -327px; width: 980px; left: 50%; margin-left: -490px; }
