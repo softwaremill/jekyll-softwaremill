@@ -195,15 +195,17 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 
 		/* SERVICES / TECHNOLOGIES */
 		.services {float: left; width: 605px; height: 275px; padding: 20px 0;}
-		.services h2 {font-weight: 300;}
+		.services h2 {font-weight: 300; font-size: 18px;}
 		.services ul {margin: 20px 0; height: 38px;}
 		.services ul li {float: left; color: #fff; border-radius: 20px; line-height: 39px; font-size: 14px; padding: 0 55px 0 42px; background: url(../img/circle-empty.png) 4px 3px no-repeat;}
 		.services ul li.web {background-color: #73c5e1;}
 		.services ul li.back-end {background-color: #eb65a0; margin-left: -42px;}
 		.services ul li.enterprise {background-color: #bccf02; margin-left: -42px; padding-right: 15px;}
-		.services p {font-size: 28px; line-height: 34px; font-weight: 300; margin: 0 0 30px 0; -webkit-font-smoothing: antialiased;}
+		.services p {font-size: 18px; line-height: 27px; font-weight: 300; margin: 0 0 12px 0; -webkit-font-smoothing: antialiased;}
+		.services p strong {font-weight: 600;}
+		.services .see-more {margin-top: 30px;}
 
-		.technologies {float: right; background: #000; color: #fff; margin-right: 2px; width: 285px; height: 275px; padding: 20px; font-size: 24px; line-height: 30px; position: relative; -webkit-font-smoothing: antialiased;}
+		.technologies {float: right; background: #000; color: #fff; margin-right: 2px; width: 285px; height: 305px; padding: 20px; font-size: 24px; line-height: 30px; position: relative; -webkit-font-smoothing: antialiased;}
 		.technologies p {margin-top: 30px; font-weight: 300;}
 		.technologies .see-more {position: absolute; bottom: 20px; border-color: #fff;}
 		.technologies .see-more:hover {background: #73c5e1; border-color: #73c5e1; color: #000;}
