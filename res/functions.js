@@ -180,7 +180,7 @@ $(document).ready(function (){
 								$figure.trigger('click');
 							}, 200);
 						}, 500);
-					}, maxAppear*800+order*800+appear*800);
+					}, maxAppear*1000+order*1400+appear*1400);
 
 					/*setTimeout(function() {
 						$figure.trigger('click');
