@@ -12,7 +12,7 @@ Files are regenerated on every change. Note, IntelliJ saves a file after window 
 
 ### Pre-steps
 
-1. Install Ruby 1.9.3 or newer.
+1. Install Ruby version as defined in [Gemfile](https://github.com/softwaremill/jekyll-softwaremill/blob/master/Gemfile).
 2. `gem install bundler`
 3. `bundle`
 
