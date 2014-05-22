@@ -834,7 +834,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	.comments-template {margin: 40px 0;}
 	#post {padding: 0px;}
 	#post .block {padding: 0px;}
-	.post-content {float: left; width: 650px; }
+	.post-content {}
 	.post-content nav {margin: -20px 0 -20px 0; height: 42px; position: absolute; width: 650px;}
 	.post-content nav a[rel=prev] {float: left;}
 	.post-content nav a[rel=next] {float: right;}
@@ -846,7 +846,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	.post-content nav a:hover span.meta-nav,
 	.post-content nav a:hover span.title-nav {background-color: #cecece; color: #fff;}
 
-	.post {border-right: 1px solid #e5e5e5; padding-top: 40px;}
+	.post {padding-top: 40px;}
 	.post .post-header figure {float: left; width: 52px; height: 163px; background: url(../img/blog_news_figure.png); padding-left: 72px;}
 	.post .post-header figure .image {width: 52px; height: 94px; overflow: hidden; }
 	.post .post-header figure .image img {width: 94px; height: 94px; margin-left: -21px; max-width: 94px;}
@@ -860,7 +860,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     .post .presentation-header .title h2 {margin: 10px 0 20px 0; text-transform: uppercase;}
 
     .post .post-rows {}
-	.post .post-rows > .text {width: 480px; margin: 0 0 0 150px;}
+	.post .post-rows > .text {width: 750px; margin: 0 0 0 150px; font-size: 1.5em; line-height:1.5em;}
 	.post .post-rows > .text h2 {margin-bottom: 20px; font-weight: 300; text-transform: uppercase;}
 	.post .post-rows > .text h3 {margin-bottom: 20px; font-weight: 300; text-transform: uppercase; font-size: 14px; color: #aaa;}
 	.post .post-rows > .text p {margin-bottom: 20px;}
