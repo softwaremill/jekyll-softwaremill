@@ -27,6 +27,7 @@ navigation:
     <meta name="author" content="balsamstudio.com"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     {% capture url %}{{ page.url | remove: '/' | remove: 'index.html' }}/{% endcapture %}
+    {% if url == '/' %}{% capture url %}{% endcapture %}{% endif %}
     <link rel="canonical" href="https://softwaremill.com/{{ url }}"/>
     <link rel="alternate" type="application/rss+xml" title="SoftwareMill blog" href="/atom.xml"/>
 
