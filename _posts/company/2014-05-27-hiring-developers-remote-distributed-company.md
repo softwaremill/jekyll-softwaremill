@@ -41,7 +41,7 @@ With the code review successfuly concluded, we set up a longer (up to 90-minute)
 
 Finally, if we like what we've heard, we invite you to a lunch where we confirm that you're a human being and decide whether we really think we want to have you in our team. We don't require any sort of formal attire, especially if it's hot. And that's it!
 
-If everything went fine, as an employee to-be you'll probably drop in to our monthly company meetup and down some beers with us. Because you can't be 100% remote without [meeting face to face one in a while](https://softwaremill.com/skype-games-on-effective-distributed-teams/). 
+If everything went fine, as an employee to-be you'll probably drop in to our monthly company meetup and down some beers with us. Because you can't be 100% remote without [meeting face to face once in a while](https://softwaremill.com/skype-games-on-effective-distributed-teams/). 
 
 As you can see, the only actual "formal" moment of the recruitment process is the informal lunch at the very end. And the only one that isn't remote. It's very important, however, for it can tell us if the communication over voice messaging will go smoothly. The lunch isn't a formality - we had to refuse people that went through the whole process because of the communication problems exactly.
 
