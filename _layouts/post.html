@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% capture url %}{{ page.url | remove: '/' | remove: 'index.html' }}/{% endcapture %}
+{% if url == '/' %}{% capture url %}{% endcapture %}{% endif %}
+
 <div id="baner-contact">
   <div class="wrapper font-green">What we've been up to</div>
 </div>
@@ -25,10 +28,10 @@ layout: default
             {% if page.wordpress_id %}
               var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
             {% else %}
-              var disqus_identifier = 'https://softwaremill.com{{ page.url }}';
+              var disqus_identifier = 'https://softwaremill.com/{{ url | remove: '/' }}';
             {% endif %}
             var disqus_title = "{{ page.title | escape }}";
-            var disqus_url = 'https://softwaremill.com{{ page.url }}';
+            var disqus_url = 'https://softwaremill.com/{{ url }}';
 
             (function () {
               var dsq = document.createElement('script');
