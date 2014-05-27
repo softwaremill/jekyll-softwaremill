@@ -26,7 +26,8 @@ navigation:
     <meta name="Copyright" content="Copyright (c) 2013, SoftwareMill Sp. z o.o. All Rights Reserved.">
     <meta name="author" content="balsamstudio.com"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="canonical" href="https://softwaremill.com{{ page.url }}"/>
+    {% capture url %}{{ page.url | remove: '/' | remove: 'index.html' }}/{% endcapture %}
+    <link rel="canonical" href="https://softwaremill.com/{{ url }}"/>
     <link rel="alternate" type="application/rss+xml" title="SoftwareMill blog" href="/atom.xml"/>
 
     <meta property='og:title' content='{% if page.title %}{{ page.title | escape }}{% else %}{{ site.seo.title | escape }}{% endif %}'/>

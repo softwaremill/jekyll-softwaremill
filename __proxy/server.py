@@ -26,6 +26,9 @@ class MyHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                 self.path = after + self.path[before.__len__():]
                 break
 
+        if '?' in self.path:
+            self.path = self.path.split('?')[0]
+
         SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
     def do_POST(self):
