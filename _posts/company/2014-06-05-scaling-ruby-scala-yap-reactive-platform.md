@@ -1,6 +1,6 @@
 ---
 title: Scaling Ruby to Scala? Yap.TV Case Study
-description: 
+description: Yap.TV decided to re-engineer their backend systems with the help of software development from SoftwareMill.
 author: Adam Warski
 author_login: warski
 categories:
