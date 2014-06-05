@@ -40,7 +40,7 @@ But technology isn’t everything. Equally, if not more important is the way tea
 
 We tried to keep the formalism of our cooperation as low as possible. When it seemed beneficial, we used tools such as TinyPM, JIRA or Confluence. We had no strict requirement documents, instead we tried to communicate as frequently as possible to deliver what will be the highest value for Yap.TV, and hence the highest value for Yap.TV users. That way we could adapt quickly based on the continuously gathered feedback.
 
-Moreover, at SoftwareMill we have a number of proven methods for effective asynchronous and synchronous communication in a distributed setup. In the end the fact that we work remotely was barely noticeable. 
+Moreover, at SoftwareMill we have [a number of proven methods for effective asynchronous and synchronous communication in a distributed setup](https://softwaremill.com/skype-games-on-effective-distributed-teams/). In the end the fact that we work remotely was barely noticeable. 
 
 #The result
 
