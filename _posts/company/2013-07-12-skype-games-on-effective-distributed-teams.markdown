@@ -161,7 +161,7 @@ Proof that the company’s current style of communication and its model work can
 
 [join.me](https://join.me) - screen sharing, which is particularly useful for working with clients
 
-<[Jing](http://www.techsmith.com/jing.html)- application for making screencasts 
+[Jing](http://www.techsmith.com/jing.html)- application for making screencasts 
 
 [TinyPM](http://www.tinypm.com) — agile project management application
 
