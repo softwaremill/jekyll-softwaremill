@@ -76,6 +76,19 @@ Drawing might need some discipline or using another tool in order to present the
 
 We use [Trello](http://trello.com) because we like it, but any single project management tool will do the trick - just create a new board and retrospect! The only possible drawback we can think of is the lack of easy export of retro results. Or, well, clutter - providing you've got lots of boards in your organisation.
 
+**Pros**:
+
+* - Similiar to real-life retro
+* - You clearly see what went well and what wrong
+
+<br />
+**Cons**:
+
+* - Many cards mean mess
+* - Not so convenient for action points
+* - Cards must be concise
+
+<br />
 ##Document sharing with Hackpad, Google Docs
 
 Quite similiar tools, though [Hackpad](https://hackpad.com) is more for real-time collaboration. On the other hand, almost *everyone* has google account, google drive and [Google Docs](http://drive.google.com). 
