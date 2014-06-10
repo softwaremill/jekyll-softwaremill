@@ -4,7 +4,7 @@ description: Retrospectives over Skype? We'd rather draw. Or use online sticky c
 author: Mirek Woźniak
 author_login: wozniak
 categories:
-
+- company
 layout: simple_post
 ---
 
