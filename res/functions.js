@@ -29,7 +29,7 @@ $(document).ready(function (){
 			form.find('input,textarea').attr('readonly','readonly');
 			form.find('.error,.success').fadeOut(0);
 			
-			try{ _gaq.push(['_trackPageview', '/cele/formularz']); }catch(e){ }
+			try{ ga('send', 'pageview', '/cele/formularz'); }catch(e){ }
 
 			$.ajax({
 				url: form.attr('action'),
@@ -62,7 +62,7 @@ $(document).ready(function (){
 		form.find('input,textarea').attr('readonly','readonly');
 		form.find('.message').fadeOut(0);
 
-		try{ _gaq.push(['_trackPageview', '/cele/newsletter']); }catch(e){ }
+		try{ ga('send', 'pageview', '/cele/newsletter'); }catch(e){ }
 		
 		$.ajax({
 			url: form.attr('action'),
