@@ -17,4 +17,4 @@ Sending text messages on industrial scale powers many industries - banking, auth
 
 Besides the scaling problem, the IntelliSMS infrastructure development started in 2000, making some of the tech solutions obsolete. It was a sturdy big system that needed to be refurbished and able to scale easily in the future. A solid challenge for SoftwareMill. 
 
-Curious how it turned out? Check out the brief (5 page) [IntelliSMS - Scaling Mass Messaging](https://softwaremill.com/_posts/casestudy/IntelliSMSCaseStudy-JavaMongoDBChefbySoftwareMill.pdf) case study.
+Curious how it turned out? Check out the brief (5 page) [IntelliSMS - Scaling Mass Messaging](/downloads/IntelliSMSCaseStudy-JavaMongoDBChefbySoftwareMill.pdf) case study.
