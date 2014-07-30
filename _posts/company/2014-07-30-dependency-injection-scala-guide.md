@@ -4,7 +4,7 @@ description: Your Scala dependency injection handbook.
 author: Adam Warski
 author_login: warski
 categories:
-
+- company
 layout: simple_post
 ---
 
