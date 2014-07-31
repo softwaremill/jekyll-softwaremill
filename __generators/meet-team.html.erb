@@ -1,0 +1,32 @@
+<%
+   people.each do |person|
+
+   unless person['bio'].nil?
+%>
+
+    <div class="member-container <%=person['color']%>">
+        <div class="member">
+            <figure><img src="/img/members/<%= person['image']%>" alt="<%= person['name']%>"/></figure>
+            <div class="description"><h3><%= person['name']%><br/><span class="light"><%= person['title']%></span></h3>
+                <%= person['bio'].split(" ").each_with_object("") {|x,ob| break ob unless (ob.length + " ".length + x.length <= 128);ob << (" " + x)}.strip %>...</p>
+            </div>
+        </div>
+        <div class="member-more">
+            <figure><img src="/img/members/<%= person['imageColor']%>" alt="<%= person['name']%>"/>
+            </figure>
+            <a href="#" class="close"></a><h2><%= person['name']%></h2><h3><%= person['title']%></h3>
+            <%= person['bio']%>
+            <div class="socials">
+                <% unless person['twitter'].nil? %>
+                    <a href="https://twitter.com/<%= person['twitter']%>" target="_blank" class="button simple">Twitter</a>
+                <% end %>
+                <% unless person['blog'].nil? %>
+                    <a href="<%= person['blog']%>" target="_blank" class="button simple">Blog</a>
+                <% end %>
+            </div>
+        </div>
+</div>
+
+<% end
+
+   end %>
