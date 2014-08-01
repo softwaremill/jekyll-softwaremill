@@ -14,7 +14,6 @@ people = JSON.parse json_config
 people.each_with_index { |person, idx |
   img = Image.read("../img/members/"+person['imageColor'])[0]
   pixel = img.get_pixels(0,0,1,1)[0]
-  puts pixel
   if pixel.blue > pixel.green
       person['color'] = 'blue'
   else
@@ -29,4 +28,4 @@ class Context
 end
 
 template = Tilt.new 'meet-team.html.erb'
-#puts template.render Context.new, :people => people
+puts template.render Context.new, :people => people
