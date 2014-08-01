@@ -566,8 +566,8 @@ return array(
             for many years and then started
             <a href='http://www.meetup.com/Warsaw-Groovy-User-Group/'>Warszawa Groovy User Group.</a>
               Speaks from time to time at JUGs and Conference. Used to be involved in organisation of AgileByExample and Confitura.
+              Proud father of 3.
         </p>
-        <p>Proud father of 3.</p>
         ",
     ),
 );
