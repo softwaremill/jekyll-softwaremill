@@ -340,12 +340,12 @@ return array(
         'image' => 'ostruszka.jpg',
         'imageColor' => 'ostruszka-color.jpg',
         'bio' => "
-        <p>Software developer with agile background. Codes mainly on JVM in Java/JEE, recently in Scala and JRuby.
-          Passionate about web applications and creating both their client and their server sides. Test-infected, he
-          crafts his code with TDD, cares about simple design and code quality.
+        <p>\"Both-ends\" developer, in love with building web applications
+        (from monoliths to modular Single Page Apps today) since beginning of his developer career.
+        Speaker and active member of local Java, Ruby and JS groups, conference speaker at Confitura, GeeCON, ABE, 4Developers.
+        Founder of Łódź Meet.js developer meetups.
         </p>
-        <p>A proponent of Agile who believes that there is much more to Agile than just buzzwords. Involved in local
-          Łódź JUG initiatives.
+        <p>Privately husband, father and runner.
         </p>
         ",
     ),
