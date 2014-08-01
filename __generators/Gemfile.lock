@@ -40,6 +40,7 @@ GEM
       rack (>= 0.4)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rmagick (2.13.3)
     sanitize (2.1.0)
       nokogiri (>= 1.4.4)
     sax-machine (0.2.1)
@@ -59,5 +60,6 @@ DEPENDENCIES
   columbus
   feedzirra
   hpricot
+  rmagick
   sanitize
   tilt

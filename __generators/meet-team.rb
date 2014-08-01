@@ -4,15 +4,19 @@ require 'json'
 require 'tilt'
 require 'action_view'
 require 'action_view/helpers'
+require 'rmagick'
+
+include Magick
 
 json_config = `php php2json.php`
 people = JSON.parse json_config
 
 people.each_with_index { |person, idx |
-  case idx % 4
-    when 0,3
+  img = Image.read("../img/members/"+person['image'])[0]
+  pixel = img.get_pixels(0,0,1,1)[0]
+  if pixel.blue > pixel.green
       person['color'] = 'blue'
-    when 1,2
+  else
       person['color'] = 'green'
   end
 }
