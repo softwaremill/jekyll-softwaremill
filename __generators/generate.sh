@@ -42,3 +42,9 @@ for tuple in home:1 blog:30; do
   bundle exec ./team-posts.rb $limit > "$tmp"
   finish "$?" "team-posts"
 done
+
+bundle exec ./team-stats.rb > "../_includes/generated/team-stats.html"
+log "team-stats generated"
+
+bundle exec ./meet-team.rb > "../_includes/generated/meet-team.html"
+log "meet-team generated"
