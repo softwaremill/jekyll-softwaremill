@@ -554,12 +554,21 @@ return array(
         'image' => 'szymanski.jpg',
         'imageColor' => 'szymanski-color.jpg',
         'bio' => "
-        <p>He leads teams, but as he strongly believes in agile, he is a developer in those teams as well. He holds
-          several certificates in various things and is a co-leader
-          of <a href='https://groups.google.com/forum/?fromgroups#!forum/warszawa-jug'>Warszawa-JUG</a>. Apart from
-          Java, he likes writing his own compilers.
+        <p>
+            Co-founder of SoftwareMill, but still active developer, without witch he would go mad.
         </p>
-        <p>Sometimes a bit sharp, Tomasz likes skiing and canoeing.</p>
+        <p>
+            In the company he started as a team leader, but soon got bored, so he introduced a flat structure which allowed
+            him to focus more on the things he loves, allowing people to have more influence on the place they work at if they choose to.
+        </p>
+        <p>
+            He also tries his best to be active in the community.
+            He led <a href='http://www.meetup.com/Warszawa-Java-User-Group-Warszawa-JUG/'>Warszawa-JUG</a>
+            for many years and then started
+            <a href='http://www.meetup.com/Warsaw-Groovy-User-Group/'>Warszawa Groovy User Group.</a>
+              Speaks from time to time at JUGs and Conference. Used to be involved in organisation of AgileByExample and Confitura.
+        </p>
+        <p>Proud father of 3.</p>
         ",
     ),
 );
