@@ -4,7 +4,7 @@ require 'json'
 require 'tilt'
 require 'action_view'
 require 'action_view/helpers'
-require 'rmagick'
+require 'RMagick'
 
 include Magick
 
