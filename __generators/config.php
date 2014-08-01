@@ -558,11 +558,10 @@ return array(
             Co-founder of SoftwareMill, but still active developer, without witch he would go mad.
         </p>
         <p>
-            In the company he started as a team leader, but soon got bored, so he introduced a flat structure which allowed
-            him to focus more on the things he loves, allowing people to have more influence on the place they work at if they choose to.
+            He introduced a flat structure allowing people to have more influence on the place they work at if they choose to.
         </p>
         <p>
-            He also tries his best to be active in the community.
+            Active in the community.
             He led <a href='http://www.meetup.com/Warszawa-Java-User-Group-Warszawa-JUG/'>Warszawa-JUG</a>
             for many years and then started
             <a href='http://www.meetup.com/Warsaw-Groovy-User-Group/'>Warszawa Groovy User Group.</a>
