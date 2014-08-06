@@ -356,6 +356,12 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 	.project.intelli .see-more:hover {color: #000; background: #dcdcdc;}
 	.project.intelli:after {content: ''; width: 100%; height: 190px; background: #dcdcdc; margin-top: -190px; position: absolute; z-index: -1;}
 
+	.project.emotiful {padding-bottom: 0px; border-bottom: 1px solid #ccc; }
+	.project.emotiful .text {width: 300px;}
+	.project.emotiful figure {width: 650px; margin-top: auto; margin-bottom: 75px;}
+	.project.emotiful h1 {color: #2c3e50;}
+	.project.emotiful .see-more {margin-top: 40px; background: #2c3e50; border: 3px solid #fff; color: #fff; border-radius: 22px;}
+	.project.emotiful .see-more:hover {color: #000; background: #dcdcdc;}
 	.project.jbison {background: #73c5e1;}
 	.project.jbison figure {margin-top: -50px; margin-bottom: -60px;}
 	.project.jbison h1 {color: #fff;}
