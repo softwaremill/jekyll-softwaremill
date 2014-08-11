@@ -54,7 +54,7 @@ Slack lets you star messages, create private channels easily, *force* everyone t
 
 ####Cons####
 
-However! There's **no desktop app for Linux/Windows** and <del>it's only for a team/company itself - if we wanted a client to use Slack, we'd have to create an e-mail in our domain for them. You can't add people to selected rooms, it's either full access or no access.</del>
+However! There's **no desktop app for Linux/Windows** <del>and it's only for a team/company itself - if we wanted a client to use Slack, we'd have to create an e-mail in our domain for them. You can't add people to selected rooms, it's either full access or no access.</del>
 
 EDIT (11.08.2014): It seems that **Slack's exclusivity is no longer valid** - [you can now add team members that see only a selected bit of your communication](https://slack.zendesk.com/hc/en-us/articles/202518103-Restricted-Accounts-and-Single-Channel-Guest-FAQ).
 
