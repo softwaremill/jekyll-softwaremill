@@ -54,7 +54,9 @@ Slack lets you star messages, create private channels easily, *force* everyone t
 
 ####Cons####
 
-However! There's **no desktop app for Linux/Windows** and it's only for a team/company itself - if we wanted a client to use Slack, we'd have to create an e-mail in our domain for them. You **can't add people to selected rooms**, it's either full access or no access.
+However! There's **no desktop app for Linux/Windows** and <del>it's only for a team/company itself - if we wanted a client to use Slack, we'd have to create an e-mail in our domain for them. You can't add people to selected rooms, it's either full access or no access.</del>
+
+EDIT (11.08.2014): It seems that **Slack's exclusivity is no longer valid** - [you can now add team members that see only a selected bit of your communication](https://slack.zendesk.com/hc/en-us/articles/202518103-Restricted-Accounts-and-Single-Channel-Guest-FAQ).
 
 As for the bottom line, Slack's free version has a **10,000 message searchable archive**, the paid version hasn't got this limit, but it's $8/user/month. For us it means around 10-day long archive. We're considering an upgrade, though - sometimes you just need to check a project's chat archive.
 
