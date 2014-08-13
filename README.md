@@ -16,7 +16,7 @@ Files are regenerated on every change. Note, IntelliJ saves a file after window 
 2. `gem install bundler`
 3. `bundle`
 
-You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`.
+You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`. 
 
 
 ## Regenerating Twitter or blogs
@@ -27,6 +27,8 @@ Call `__generators/generate.sh`.
 
 1. Install PHP for command line. Package name is usually `php-cli`.
 2. Go to `__generators/` and call `bundle`.
+
+You may need imagemagick in __generators/ for handling images.
 
 
 ## Sending e-mails via contact form - pre-steps
