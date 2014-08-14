@@ -305,6 +305,26 @@ return array(
         ",
     ),
     array(
+        'name' => 'Michał Chmielarz',
+        'twitter' => 'mchmielu',
+        'blog' => 'http://www.devthoughts.pl/',
+        'username' => 'no-image',
+        'codingSince' => 2010,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Software Wizard',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Graduated from University of Adam Mickiewicz, Poznań. Java developer and passionate backend programmer. Familiar with enterprise integration system problems.
+        Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p> 
+        <p>Supporter of herbal tea. Likes travels and reading historical/fantasy/sf books.</p>
+        ",
+    ),
+    array(
         'name' => 'Michał Matłoka',
         'twitter' => 'mmatloka',
         'blog' => NULL,
