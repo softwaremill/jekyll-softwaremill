@@ -409,29 +409,6 @@ return array(
         ",
     ),
     array(
-        'name' => 'Paweł Wrzeszcz',
-        'twitter' => 'pawelwrzeszcz',
-        'blog' => 'http://pawel.wrzesz.cz/',
-        'username' => 'wrzeszcz',
-        'codingSince' => 2005,
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 0,
-        'parent' => 1,
-        'conference' => 1,
-        'title' => 'Co-founder and Scrum Master',
-        'image' => 'wrzeszcz.jpg',
-        'imageColor' => 'wrzeszcz-color.jpg',
-        'bio' => "
-        <p>Before co-founding SoftwareMill Paweł worked for several companies including JBoss, a distributed start-up,
-          and a large financial enterprise.
-        </p>
-        <p>As a ScrumMaster he strives to switch freely between focusing on business goals and system users’ needs, and
-          the lines of the (thoroughly tested!) application code.
-        </p>
-        ",
-    ),
-    array(
         'name' => 'Piotr Buda',
         'twitter' => 'piotrbuda',
         'blog' => 'http://piotrbuda.eu/',
