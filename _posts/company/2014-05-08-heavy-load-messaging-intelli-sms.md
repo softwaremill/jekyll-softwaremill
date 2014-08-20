@@ -4,7 +4,7 @@ description: A short story of how we built an Australian high-throughput SMS mes
 author: Mirek Woźniak
 author_login: wozniak
 categories:
-
+- company
 layout: simple_post
 ---
 
@@ -17,4 +17,9 @@ Sending text messages on industrial scale powers many industries - banking, auth
 
 Besides the scaling problem, the IntelliSMS infrastructure development started in 2000, making some of the tech solutions obsolete. It was a sturdy big system that needed to be refurbished and able to scale easily in the future. A solid challenge for SoftwareMill. 
 
-Curious how it turned out? Check out the brief (5 page) [IntelliSMS - Scaling Mass Messaging](/downloads/IntelliSMSCaseStudy-JavaMongoDBChefbySoftwareMill.pdf) case study.
+Curious how it turned out? Check out the brief [IntelliSMS - Scaling Mass Messaging](http://softwaremill.com/downloads/IntelliSMSCaseStudy.pdf) case study, explaining the challenge and our approach.
+
+<div style="width:100%; text-align:center">
+<a href="http://softwaremill.com/downloads/IntelliSMSCaseStudy.pdf"><img src="/img/portfolio/portfolio-intelli.png"/></a>
+</div>
+
