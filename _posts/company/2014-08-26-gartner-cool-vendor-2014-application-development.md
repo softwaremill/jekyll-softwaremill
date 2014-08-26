@@ -4,7 +4,7 @@ description: Gartner featured SoftwareMill in the Cool Vendor 2014 report - we'v
 author: Mirek Woźniak
 author_login: wozniak
 categories:
-
+- company
 layout: simple_post
 ---
 Looking for a cool IT vendor? Search no more! Gartner has recognized SoftwareMill in the [Cool Vendor in Application Development 2014 report](https://www.gartner.com/doc/2721117/cool-vendors-application-development-). 
