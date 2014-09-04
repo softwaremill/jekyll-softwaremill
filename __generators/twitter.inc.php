@@ -23,10 +23,11 @@ function buildAuthorizationHeader($oauth) {
 }
 
 function callTwitter($url, $query) {
-  $oauth_access_token        = "***REMOVED***";
-  $oauth_access_token_secret = "***REMOVED***";
-  $consumer_key              = "***REMOVED***";
-  $consumer_secret           = "***REMOVED***";
+  $config = require('secrets-config.php');
+  $oauth_access_token = $config['twitter']['oauth_access_token'];
+  $oauth_access_token_secret = $config['twitter']['oauth_access_token_secret'];
+  $consumer_key = $config['twitter']['consumer_key'];
+  $consumer_secret = $config['twitter']['consumer_secret'];
 
   $oauth = array(
     'oauth_consumer_key'     => $consumer_key,

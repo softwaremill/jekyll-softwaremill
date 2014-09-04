@@ -4,7 +4,7 @@ require('twitter.inc.php');
 
 // Adapted: wp-content/themes/softwaremill/page-templates/blog.php
 
-$team = require('config.php');
+$team = require('team-config.php');
 $from = '';
 foreach($team as $i=>$member){
   $username = $member['twitter'];

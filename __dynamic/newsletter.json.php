@@ -6,8 +6,8 @@ foreach(['email', 'lang'] as $env) {
 
 // wp-content/themes/softwaremill/newsletter.json.php
 
-// MailChimp API Key
-$apiKey = '***REMOVED***';
+$config = require('../__generators/secrets-config.php');
+$apiKey = $config['mailchimp'];
 
 // MailChimp list unique IDs
 $lists = array(

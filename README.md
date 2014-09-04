@@ -66,7 +66,7 @@ Call `__proxy/server.sh` to serve `_sites/` at [http://localhost:8000/](http://l
 ### Pre-steps
 
 1. Install Python 2.7.x.
-
+2. `cp __generators/secrets-config.example.php __generators/secrets-config.php` and provide some API keys.
 
 ## Auto-rebuild in production
 
