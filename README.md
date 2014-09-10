@@ -7,7 +7,7 @@
 
 Files are regenerated on every change. Note, IntelliJ saves a file after window defocus, so it's usually 2 seconds before you see the change.
 
-1. `jekyll serve -w`
+1. `bundle exec jekyll serve -w`
 2. Go to [http://localhost:4000/](http://localhost:4000).
 
 ### Pre-steps
@@ -59,7 +59,7 @@ During the development you probably want to temporarily change `$to = 'hello@sof
 
 ## Running in production
 
-Call `jekyll build` to generate the website in `_site`.
+Call `bundle exec jekyll build` to generate the website in `_site`.
 
 Call `__proxy/server.sh` to serve `_sites/` at [http://localhost:8000/](http://localhost:8000/).
 
