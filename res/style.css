@@ -503,15 +503,15 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 		margin: 4px 0 0 -45px; background: #73c5e1;}
 
 	/* contributors */
-	.contributors {width: 750px; height: 145px; margin: 0 auto;}
-	.contributors .contributor {float: left; width: 85px; height: 85px; background: #ccc; color: #fff; padding: 20px; font-size: 14px;}
+	.contributors {width: 976px; height: 145px; margin: 0 auto;}
+	.contributors .contributor {float: left; width: 85px; height: 85px; background: #ccc; color: #fff; padding: 18px; font-size: 14px;}
 	.contributors .contributor:nth-child(2n) {margin-top: 20px;}
-	.contributors .contributor:nth-child(1) {background-color: #bccf02;}
-	.contributors .contributor:nth-child(2) {background-color: #5bb12f;}
-	.contributors .contributor:nth-child(3) {background-color: #73c5e1;}
-	.contributors .contributor:nth-child(4) {background-color: #257dbe;}
-	.contributors .contributor:nth-child(5) {background-color: #eb65a0;}
-	.contributors .contributor:nth-child(6) {background-color: #b96fab;}
+	.contributors .contributor:nth-child(6n+1) {background-color: #bccf02;}
+	.contributors .contributor:nth-child(6n+2) {background-color: #5bb12f;}
+	.contributors .contributor:nth-child(6n+3) {background-color: #73c5e1;}
+	.contributors .contributor:nth-child(6n+4) {background-color: #257dbe;}
+	.contributors .contributor:nth-child(6n+5) {background-color: #eb65a0;}
+	.contributors .contributor:nth-child(6n) {background-color: #b96fab;}
 	.contributors .contributor span {display: block; width: 30px; height: 7px; background: url(../img/services-arrow.png); position: absolute; bottom: 67px;
 		-webkit-transition: all 200ms ease-in-out;
 		-moz-transition: all 200ms ease-in-out;
