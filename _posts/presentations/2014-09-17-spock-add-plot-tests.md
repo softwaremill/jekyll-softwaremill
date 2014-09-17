@@ -7,7 +7,7 @@ keywords: spock, tests, groovy, junit, mockito
 speaker: Magda Stożek
 speaker_login: stozek
 categories:
-
+- presentations
 ---
 
 
