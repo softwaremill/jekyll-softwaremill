@@ -1,14 +1,14 @@
 ---
-title: Adam Warski presenting on JavaOne 
-description: Adam Warski, one of SoftwareMill's founders, has 3 presentations at JavaOne. Here's a short sneak-peek of what he'll talk about.
+title: Adam Warski presenting on JavaOne 2014
+description: Adam Warski, one of SoftwareMill's founders, has 3 presentations at JavaOne 2014. Here's a short sneak-peek of what he'll talk about.
 author: Adam Warski
 author_login: warski
 categories:
-
+- company
 layout: simple_post
 ---
 
-JavaOne is _the_ Java conference. One that I'm very proud to be presenting at. There'll be plenty of opportunities to meet great people there. And I'm giving three talks at JavaOne - check the abstracts below!
+[JavaOne](https://www.oracle.com/javaone/index.html) is _the_ Java conference. One that I'm very proud to be presenting at. There'll be plenty of opportunities to meet great people there. And I'm giving three talks at JavaOne - check the abstracts below!
 
 **Keep It Simple with Scala (29.09) [CON1708]**
 
@@ -22,4 +22,4 @@ _With the vast amounts of data available, adding personalized recommendations to
 
 _Macros are among the new features in Scala 2.10, further extended in 2.11. A macro is simply Scala code that is executed at compile time and that manipulates the AST of a program. Although we probably write macros mostly when creating a library of a framework rather than in day-to-day work, it is definitely good to know what the mechanisms behind them are._
 
-Going to JavaOne as well? Tweet me - let's meet for a nice java coffee :)
+Going to JavaOne as well? [Tweet me](https://twitter.com/adamwarski) - let's meet for a nice java coffee :)
