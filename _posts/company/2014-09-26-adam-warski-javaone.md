@@ -8,16 +8,15 @@ categories:
 layout: simple_post
 ---
 
-JavaOne is _the_ Java conference. One that I'm very proud to be presenting at. There'll be plenty opportunities to meet great people there and, well, plenty of occasions to listen to me as well. I'm giving three talks at  JavaOne - check the abstracts below!
+JavaOne is _the_ Java conference. One that I'm very proud to be presenting at. There'll be plenty of opportunities to meet great people there. And I'm giving three talks at JavaOne - check the abstracts below!
 
 **Keep It Simple with Scala (29.09) [CON1708]**
 
-_Many people probably wouldn’t describe Scala as “simple.” In three live coding demos (hopefully at least one will work), this presentation tries to convince you otherwise. You’ll see three scenarios in which, instead of complex code, Scala, with the help of some libraries, offers simple and elegant designs._
+_Many people probably wouldn’t describe Scala as "simple." In three live coding demos, this presentation tries to convince you otherwise. You’ll see three scenarios in which, instead of complex code, Scala with the help of some libraries, offers simple and elegant designs._
 
 **Writing Recommender Systems with Java: An Introduction (30.09) [CON2558]**
 
 _With the vast amounts of data available, adding personalized recommendations to a system is often a great way to enhance the user experience. There are several tools in Java that can be used to implement a recommender system without a lot of effort. Based on experiences in building tailored recommender systems, this session presents the available approaches._
-
 
 **Scala Macros: What Are They, How Do They Work, and Who Uses Them? (2.10) [CON1740]**
 
