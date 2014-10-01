@@ -15,6 +15,7 @@ Needless to say, it was a no brainer! Here's how the machines will look like:
 <div style="width=100%; text-align:center">
 <img src="/img/uploads/2014/09/confitura-voting.jpg"/>
 </div>
+_Photo courtesy of [Maciej Biłas](https://twitter.com/maciejb)_
 
 Our own [Jacek](https://twitter.com/rucek), one of the voting machines' creators, will install the machines at JDD. Find him if you're intrigued how we put them together. 
 
