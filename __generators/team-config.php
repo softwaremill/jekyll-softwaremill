@@ -46,6 +46,26 @@ return array(
         ",
     ),
     array(
+        'name' => 'Daniel Kos',
+        'twitter' => 'unodgs',
+        'blog' => 'http://blog.digitalsoftware.pl/',
+        'username' => 'kos',
+        'codingSince' => '2000',
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'Software Developer',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p> 
+        <p>Interested in computer graphics and games as wordwrap(str)ell as in rich internet/enterprise applications.</p> 
+        <p>He also contributes to open source projects (Ultimate++). After work Daniel spends time with his two daughters, takes dancing classes and tries to do evening jogging.</p>
+        ",
+    ),
+    array(
         'name' => 'Jacek Kunicki',
         'twitter' => 'rucek',
         'blog' => 'http://blog.kunicki.org',
@@ -288,6 +308,26 @@ return array(
         ",
     ),
     array(
+        'name' => 'Magda Stożek',
+        'twitter' => 'magdastozek',
+        'blog' => NULL,
+        'username' => 'stozek',
+        'codingSince' => 2007,
+        'leader' => 1,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'Passionate Software Developer',
+        'image' => 'stozek.jpg',
+        'imageColor' => 'stozek-color.jpg',
+        'bio' => "
+        <p>Software developer devoted to doing things \"the right way\". Fan of coding standards and conventions.</p>
+        <p>Before joining SoftwareMill she worked for a small Glasgow-based chauffeur-driven transportation company and a worldwide corporation producing recruitment software.
+            Specialises in Java SE/EE but likes to learn new things all the time.</p> <p>After hours Magda enjoys tap dancing, books and board games.</p>
+        ",
+    ),
+    array(
         'name' => 'Małgorzata Wojciechowska',
         'twitter' => NULL,
         'blog' => NULL,
@@ -387,6 +427,25 @@ return array(
         ",
     ),
     array(
+        'name' => 'Oskar Strączkowski',
+        'twitter' => 'ostraczkowski',
+        'blog' => NULL,
+        'username' => 'straczkowski',
+        'codingSince' => '2009',
+        'leader' => 1,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Passionate Software Engineer',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Prior SoftwareMill, Oskar worked in Lufthansa Systems where he developed solutions for airlines.
+        He's also a glider fan and promised to take all of the team for a flight someday.</p>
+        ",
+    ),
+    array(
         'name' => 'Paweł Stawicki',
         'twitter' => 'pawelstawicki',
         'blog' => 'http://pawelstawicki.blogspot.com/',
@@ -406,6 +465,27 @@ return array(
           developing web applications in Java, Ruby and Scala.
         </p>
         <p>He likes to use bicycle to get around the city and in his spare time he runs, swims or sails.</p>
+        ",
+    ),
+    array(
+        'name' => 'Piotr Dyraga',
+        'twitter' => 'piotrdyraga',
+        'blog' => NULL,
+        'username' => 'dyraga',
+        'codingSince' => '2008',
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Senior Software Engineer',
+        'image' => 'dyraga.jpg',
+        'imageColor' => 'dyraga-color.jpg',
+        'bio' => "
+        <p>Piotr graduated computer science at Jagiellonian University. Prior joining SoftwareMill worked on projects
+            ranging from bank transaction processing engine to HTTP proxy server. He specializes in high-throughput,
+            sever-side system architectures. Big fan of Spring Framework.
+        </p>
         ",
     ),
     array(
@@ -450,90 +530,6 @@ return array(
           projects related to e-trade and navigation systems. Big fan and active promoter of Apache Wicket framework.
         </p>
         <p>He is interested in football, likes reading books and posts on DevelopersZone.</p>
-        ",
-    ),
-    array(
-        'name' => 'Oskar Strączkowski',
-        'twitter' => 'ostraczkowski',
-        'blog' => NULL,
-        'username' => 'straczkowski',
-        'codingSince' => '2009',
-        'leader' => 1,
-        'opensource' => 0,
-        'blogger' => 0,
-        'parent' => 0,
-        'conference' => 0,
-        'title' => 'Passionate Software Engineer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
-        'bio' => "
-        <p>Prior SoftwareMill, Oskar worked in Lufthansa Systems where he developed solutions for airlines.
-        He's also a glider fan and promised to take all of the team for a flight someday.</p>
-        ",
-
-    ),
-    array(
-        'name' => 'Piotr Dyraga',
-        'twitter' => 'piotrdyraga',
-        'blog' => NULL,
-        'username' => 'dyraga',
-        'codingSince' => '2008',
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 1,
-        'parent' => 0,
-        'conference' => 0,
-        'title' => 'Senior Software Engineer',
-        'image' => 'dyraga.jpg',
-        'imageColor' => 'dyraga-color.jpg',
-        'bio' => "
-        <p>Piotr graduated computer science at Jagiellonian University. Prior joining SoftwareMill worked on projects
-            ranging from bank transaction processing engine to HTTP proxy server. He specializes in high-throughput,
-            sever-side system architectures. Big fan of Spring Framework.
-        </p>
-        ",
-    ),
-    array(
-        'name' => 'Michał Mital',
-        'twitter' => 'MichalMital',
-        'blog' => NULL,
-        'username' => 'mital',
-        'codingSince' => '2010',
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 0,
-        'parent' => 0,
-        'conference' => 0,
-        'title' => 'Passionate Software Developer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
-        'bio' => "
-        <p>Michał likes clean and simple code and believes in Agile.
-        Before joining SML, Michał worked for Lufthansa Systems.
-        </p>
-        <p>He’s interested in foreign languages and wants to speak Chinese someday.
-            In his free time he also likes to do sports, especially football and running.
-        </p>
-        ",
-    ),
-    array(
-        'name' => 'Magda Stożek',
-        'twitter' => 'magdastozek',
-        'blog' => NULL,
-        'username' => 'stozek',
-        'codingSince' => 2007,
-        'leader' => 1,
-        'opensource' => 1,
-        'blogger' => 0,
-        'parent' => 1,
-        'conference' => 0,
-        'title' => 'Passionate Software Developer',
-        'image' => 'stozek.jpg',
-        'imageColor' => 'stozek-color.jpg',
-        'bio' => "
-        <p>Software developer devoted to doing things \"the right way\". Fan of coding standards and conventions.</p>
-        <p>Before joining SoftwareMill she worked for a small Glasgow-based chauffeur-driven transportation company and a worldwide corporation producing recruitment software.
-            Specialises in Java SE/EE but likes to learn new things all the time.</p> <p>After hours Magda enjoys tap dancing, books and board games.</p>
         ",
     ),
     array(
