@@ -61,7 +61,7 @@ return array(
         'imageColor' => 'no-image.jpg',
         'bio' => "
         <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p> 
-        <p>Interested in computer graphics and games as wordwrap(str)ell as in rich internet/enterprise applications.</p> 
+        <p>Interested in computer graphics and games as well as in rich internet/enterprise applications.</p> 
         <p>He also contributes to open source projects (Ultimate++). After work Daniel spends time with his two daughters, takes dancing classes and tries to do evening jogging.</p>
         ",
     ),
@@ -384,6 +384,29 @@ return array(
           Award in 2013.
         </p>
         ",
+         ),
+    array(
+        'name' => 'Michał Mital',
+        'twitter' => 'MichalMital',
+        'blog' => NULL,
+        'username' => 'mital',
+        'codingSince' => '2010',
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Passionate Software Developer',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Michał likes clean and simple code and believes in Agile.
+         Before joining SML, Michał worked for Lufthansa Systems.
+         </p>
+         <p>He’s interested in foreign languages and wants to speak Chinese someday.
+            In his free time he also likes to do sports, especially football and running.
+         </p>
+         ",
     ),
     array(
         'name' => 'Michał Ostruszka',
