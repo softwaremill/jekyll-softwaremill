@@ -4,7 +4,7 @@ description: We try to make our tests as independent of the environment as possi
 author: Paweł Stawicki
 author_login: stawicki
 categories:
-
+- company
 layout: simple_post
 ---
 
@@ -46,7 +46,7 @@ testServer = new TestServer();
 testServer.start();
 ```
 
-Stopping is quote obvious too:
+Stopping is quite obvious too:
 
 ```java
 testServer.stop();
