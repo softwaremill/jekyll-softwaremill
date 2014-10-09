@@ -402,6 +402,40 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   	background: #dcdcdc;
 	}
 
+    .project.vbroker h1 {
+    color: #81191a;
+    }
+
+    .project.vbroker .text {
+    width: 420px;
+    }
+
+    .project.vbroker .text p:last-of-type {
+    color: #fff;
+    }
+
+    .project.vbroker .see-more {
+    background: #81191a;
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 22px;
+    }
+
+    .project.vbroker .see-more:hover {
+  	color: #000;
+  	background: #dcdcdc;
+	}
+
+    .project.vbroker:after {
+    content: '';
+    width: 100%;
+    height: 180px;
+    background: #81191a;
+    margin-top: -145px;
+    position: absolute;
+    z-index: -1;
+    }
+
 	.talk-about-project {margin-top: 40px; font-size: 21px; font-weight: 300;}
 	.talk-about-project .add-project {float: left; line-height: 34px; color: #000;}
 	.talk-about-project .add-project .add {display: inline-block; width: 34px; height: 34px; border: 1px solid #cacbcb; border-radius: 17px; text-align: center; font-weight: bold; margin-left: 20px;
