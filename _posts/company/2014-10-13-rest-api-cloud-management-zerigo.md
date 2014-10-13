@@ -1,6 +1,6 @@
 ---
 title: Zerigo - Rest API for Cloud Management
-description: 
+description: We're quite diverse when it comes to the projects we take on. From flashy startups to workhorse corporate infrastructure. Or Cloud management, for this matter. Meet - the feature-rich VMware View Hosted VDI and VMware-based Cloud Servers.
 author: Jacek Kunicki
 author_login: kunicki
 categories:
