@@ -4,7 +4,7 @@ description:
 author: Jacek Kunicki
 author_login: kunicki
 categories:
-
+- company
 layout: simple_post
 ---
 
@@ -17,7 +17,3 @@ We're quite diverse when it comes to the projects we take on. From flashy startu
 Our team joined Zerigo some time ago, with [Michał](https://twitter.com/mmatloka) and [Jacek](https://twitter.com/rucek) working on the improved and extended a broker which unifies multiple VMware products’ APIs into a single REST API with complex asynchronous execution support and informative error handling. 
 
 See [Zerigo and the rest of our portfolio](https://softwaremill.com/portfolio/) and [let us know](mailto:hello@softwaremill.com) if you need a similar project!
-
-
-
-
