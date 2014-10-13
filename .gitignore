@@ -1,6 +1,7 @@
 _site
 __wp_importer/dumps
 __wp_importer/_posts
+__generators/
 
 .idea
 *.iml
