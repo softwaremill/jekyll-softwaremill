@@ -358,9 +358,9 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 
   .project.emotiful {padding-bottom: 0px; border-bottom: 1px solid #ccc; }
   .project.emotiful .text {width: 300px;}
-  .project.emotiful figure {width: 650px; margin-top: auto; margin-bottom: 75px;}
+  .project.emotiful figure {margin-top: auto; margin-bottom: 75px;}
   .project.emotiful h1 {color: #2c3e50;}
-  .project.emotiful .see-more {margin-top: 40px; background: #2c3e50; border: 3px solid #fff; color: #fff; border-radius: 22px;}
+  .project.emotiful .see-more {background: #2c3e50; border: 3px solid #fff; color: #fff; border-radius: 22px;}
   .project.emotiful .see-more:hover {color: #000; background: #dcdcdc;}
   .project.jbison {background: #73c5e1;}
   .project.jbison figure {margin-top: -50px; margin-bottom: -60px;}
@@ -389,8 +389,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   }
 
   .project.sms-portal .see-more {
-    margin-top: 40px;
-  margin-bottom: 40px;
+    margin-bottom: 20px;
     background: #79bd48;
     border: 3px solid #fff;
     color: #fff;
@@ -406,9 +405,6 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     color: #81191a;
     }
 
-    .project.vbroker .text {
-    width: 420px;
-    }
 
     .project.vbroker .text p:last-of-type {
     color: #fff;
@@ -431,7 +427,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     width: 100%;
     height: 180px;
     background: #81191a;
-    margin-top: -145px;
+    margin-top: -180px;
     position: absolute;
     z-index: -1;
     }
@@ -916,21 +912,21 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .post-sidebar aside #searchsubmit {background: #73c5e1; color: #000; width: 90px;}
   .post-sidebar aside h3 {font-size: 16px; text-transform: uppercase; font-weight: 300; color: #333;}
 
-  #post .post blockquote {
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    border-left: 5px solid #70b1da;
-    background-color: #d9e8f1;
-  }
+#post .post blockquote {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #70b1da;
+  background-color: #d9e8f1;
+}
 
-  #post .post blockquote p:last-child {
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
+#post .post blockquote p:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
   /*
   #respond {margin-left: 150px;}
@@ -1264,10 +1260,11 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   .project:nth-child(2n) .text {width: 300px; float: none;}
   .project h1 {margin-bottom: 20px;}
   .project figure, .project.intelli figure, .project.jbison figure {float: none; margin-top: 20px; width: 300px;}
-  .project .see-more, .project.intelli .see-more {margin-top: 0px;}
+  .project .see-more, .project.intelli .see-more {margin-top: 0px; margin-bottom: 20px;}
 
-  .project.vocado {border-bottom: 1px solid #e5e5e5;}
-  .project.vocado:after, .project.intelli:after {display: none;}
+  .project.vbroker .text p:last-of-type {color: black;}
+  .project.vbroker, .project.sms-portal, .project.intelli, .project.vocado  {border-bottom: 1px solid #e5e5e5;}
+  .project.vocado:after, .project.intelli:after, .project.sms-portal:after, .project.vbroker:after {display: none;}
   .project.vocado .text {width: 300px;}
   .project.vocado figure {width: 300px;}
   .project.jbison figure, .project.codebrag figure {margin: 0px !important;}
@@ -1540,12 +1537,32 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   .project .text { width: 366px; }
   .project:nth-child(2n) .text { width: 366px; }
   .project figure { width: 336px; margin-left: 0 !important; margin-right: 0 !important; margin-top: 0 !important; margin-bottom: 0 !important; }
+  .project .see-more {margin-bottom: 20px;}
+
+  .project.vbroker figure {
+    padding-top: 70px;
+  }
+  .project.vbroker:after {
+    margin-top: -160px;
+  }
+  .project.emotiful figure {
+    padding-top: 60px;
+  }
+  .project.sms-portal figure {
+    padding-top: 70px;
+  }
+  .project.sms-portal:after{
+    margin-top: -100px;
+  }
   .project.vocado { padding-bottom: 120px; }
-  .project.vocado:after { margin-top: auto; bottom: -35px; height: 170px; }
+  .project.vocado:after { margin-top: auto; bottom: 36px; height: 170px; }
   .project.vocado figure { width: 380px; margin-left: -40px !important; position: relative; bottom: -90px; }
   .project.intelli { padding-bottom: 150px; }
-  .project.intelli:after { margin-top: auto; bottom: 0px; height: 170px; }
+  .project.intelli:after { margin-top: auto; bottom: 70px; height: 170px; }
   .project.intelli figure { width: 380px; margin-left: -40px !important; position: relative; bottom: -110px; }
+  .project.attikis figure {
+    padding-top: 80px;
+  }
 
   #join-us .col2 { width: 356px; }
   .work-item { width: 306px; }
@@ -1714,4 +1731,11 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 .support ul li {
   margin-bottom: 10px;
   padding: 10px 0 10px 45px;
+}
+
+.project.vbroker:after {
+  margin-top: -145px;
+}
+.project.sms-portal:after {
+  margin-top: -98px;
 }
