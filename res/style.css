@@ -1132,6 +1132,62 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 .codecolorer-container {border: 1px solid #eee;}
 
 
+/* MOBILE BACKEND PAGE */
+.mobile-backend-page .baner-short {
+  height: auto;
+  color: #BCCF02;
+  text-align: center;
+  line-height: 1.5;
+  padding: 6rem 0 4rem;
+  font-weight: 400;
+}
+.mobile-backend-page .baner-short h1 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+}
+.mobile-backend-page .baner-short p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.mobile-backend-page .baner-short .see-more {
+  background-color: #eb65a0;
+  float: none;
+  display: inline-block;
+  font-size: 21px;
+  color: white;
+  border: none;
+}
+.mobile-backend-page .baner-short .see-more:hover {
+  background-color: #B96FAB;
+}
+.mobile-backend-page #services {
+  background-color: #BCCF02;
+  color: black;
+}
+.mobile-backend-page #services .block {
+  padding: 60px 0 0;
+}
+.mobile-backend-page #services .tools-and-technologies {
+  padding-bottom: 60px;
+}
+.mobile-backend-page #services .tools-and-technologies ul li {
+  border-bottom-color: #a2b300;
+}
+.mobile-backend-page #services .tools-and-technologies ul li:before {
+  background-color: white;
+}
+#projects-for-clients h2 {
+  font-size: 36px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+/* RESPONSIVE STYLES */
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   header h1 {
     background-image: url(../img/logo2x.png);
