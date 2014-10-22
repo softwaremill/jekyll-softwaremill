@@ -1,6 +1,6 @@
 ---
 title: Scalar 2015 announced!
-description: After a great 2014 edition, Scalar, the first Scala conference in Central comes back in 2015!
+description: After a great 2014 edition, Scalar, the first Scala conference in Central Europe comes back in 2015!
 author: Mirek Woźniak
 author_login: wozniak
 categories:
