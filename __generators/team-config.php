@@ -433,6 +433,29 @@ return array(
         ",
     ),
     array(
+        'name' => 'Mikołaj Koziarkiewicz',
+        'twitter' => '',
+        'blog' => 0,
+        'username' => 'koziarkiewicz', 
+        'codingSince' => 1996,
+        'leader' => 10,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Senior Software Engineer',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Mikołaj is an alumni of the Vienna University of Technology's Computational Intelligence programme. As such, he feels at home to different language paradigms, and therefore enjoys the current technology boom in the JVM ecosystem.
+
+        He strongly believes that taking lazy shortcuts backfires on a programmer sooner or later, and is  committed to doing things “the right way”.
+        </p>
+        <p>Besides programming, his hobbies include robotics, history of warfare, and (strategy) gaming.
+        </p>
+        ",
+    ),
+    array(
         'name' => 'Mirek Woźniak',
         'twitter' => 'MirekWozniak',
         'blog' => NULL,
