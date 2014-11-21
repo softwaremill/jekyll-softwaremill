@@ -434,8 +434,8 @@ return array(
     ),
     array(
         'name' => 'Mikołaj Koziarkiewicz',
-        'twitter' => '',
-        'blog' => 0,
+        'twitter' => NULL,
+        'blog' => NULL,
         'username' => 'koziarkiewicz', 
         'codingSince' => 1996,
         'leader' => 10,
