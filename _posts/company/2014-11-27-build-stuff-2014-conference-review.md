@@ -1,14 +1,12 @@
 ---
 title: Build Stuff 2014 Review
-description: Is Build Stuff worth it? Read our crew's impressions and find out!
+description: Is Build Stuff worth it? Read Adam's impressions and find out!
 author: Adam Warski
 author_login: warski
 categories:
 - company
 layout: simple_post
 ---
-
-BuildStuff's second edition took place in Vilnius, capital of Lithuania. A refreshing spot, cozy yet still very European. Encouraged by last year's reviews we decided to take part in the three (out of five - there were weekend workshops available) conference days. Here's what we think.
 
 We just got back from [BuildStuff ’14](http://buildstuff.lt) in Vlinius, a "software development conference". As during the last year, we had a great week; this time, apart from attending, our code-review tool - [Codebrag](http://www.codebrag.com) - was a partner.
 
