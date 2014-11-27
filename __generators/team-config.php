@@ -516,7 +516,7 @@ return array(
     array(
         'name' => 'Piotr Dyraga',
         'twitter' => 'piotrdyraga',
-        'blog' => NULL,
+        'blog' => 'http://ontheserverside.com/',
         'username' => 'dyraga',
         'codingSince' => '2008',
         'leader' => 0,
