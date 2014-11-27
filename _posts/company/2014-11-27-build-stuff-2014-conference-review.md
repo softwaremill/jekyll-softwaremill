@@ -8,7 +8,7 @@ categories:
 layout: simple_post
 ---
 
-We just got back from [BuildStuff ’14](http://buildstuff.lt) in Vlinius, a "software development conference". As during the last year, we had a great week; this time, apart from attending, our code-review tool - [Codebrag](http://www.codebrag.com) - was a partner.
+We just got back from [BuildStuff ’14](http://buildstuff.lt) in Vilnius, a "software development conference". As during the last year, we had a great week; this time, apart from attending, our code-review tool - [Codebrag](http://www.codebrag.com) - was a partner.
 
 How was it? Firstly, from an organizational point of view, everything went smoothly. Food was great and wifi was fast & stable, so the basic human needs were met. One thing to improve are the chairs: they were quite uncomfortable and too tightly packed.
 
