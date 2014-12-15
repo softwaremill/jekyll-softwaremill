@@ -8,10 +8,6 @@ return array(
     'twitter' => 'PuchtaOla',
     'blog' => NULL,
   ),
-  'Damian Nowak' => array(
-    'twitter' => 'nwkr',
-    'blog' => 'http://www.nowaker.net/',
-  ),
   'Jacek Kunicki' => array(
     'twitter' => 'rucek',
     'blog' => 'http://blog.kunicki.org',

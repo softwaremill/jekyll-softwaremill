@@ -24,28 +24,6 @@ return array(
         ",
     ),
     array(
-        'name' => 'Damian Nowak',
-        'twitter' => 'nwkr',
-        'blog' => 'http://www.nowaker.net/',
-        'username' => 'nowak',
-        'codingSince' => 2009,
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 0,
-        'parent' => 1,
-        'conference' => 0,
-        'title' => 'Senior Software Engineer',
-        'image' => 'nowak.jpg',
-        'imageColor' => 'nowak-color.jpg',
-        'bio' => "
-        <p>Worked 3 years in Atlassian’s software ecosystem – knows JIRA and Confluence very well as a user,
-          administrator and plugin developer.<br/> Not afraid of leaving the Java world – he prefers Ruby for
-          lightweight things. Proficient at xorg.conf – thanks to him at least four people on the planet are now able to
-          work with four monitors with a single machine using Nouveau driver.<br/> Father of two girls.
-        </p>
-        ",
-    ),
-    array(
         'name' => 'Daniel Kos',
         'twitter' => 'unodgs',
         'blog' => 'http://blog.digitalsoftware.pl/',
