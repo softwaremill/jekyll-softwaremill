@@ -52,6 +52,10 @@ return array(
     'twitter' => NULL,
     'blog' => NULL,
   ),
+  'Marcin Kubala' => array(
+    'twitter' => 'marcin_kubala',
+    'blog' => 'http://marcinkubala.wordpress.com',
+  ),
   'Michał Matłoka' => array(
     'twitter' => 'mmatloka',
     'blog' => NULL,

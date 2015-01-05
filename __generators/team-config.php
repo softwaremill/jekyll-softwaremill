@@ -323,6 +323,29 @@ return array(
         ",
     ),
     array(
+        'name' => 'Marcin Kubala',
+        'twitter' => 'marcin_kubala',
+        'blog' => 'http://marcinkubala.wordpress.com',
+        'username' => 'no-image',
+        'codingSince' => 2011,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Guard of the Type Safety',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Marcin enjoys pair programming with compiler, using strictly-typed languages like Scala and Java.
+        Currently fascinated by functional programming principles.
+        </p>
+        <p>Before joining SoftwareMill, Marcin worked for Qcadoo where he developed an open-source web framework and
+        application supporting manufacturing management.
+        </p>
+        ",
+    ),
+    array(
         'name' => 'Michał Chmielarz',
         'twitter' => 'mchmielu',
         'blog' => 'http://www.devthoughts.pl/',
