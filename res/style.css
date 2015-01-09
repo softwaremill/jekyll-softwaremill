@@ -329,7 +329,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .project:nth-child(2n) .text {width: 380px; float: right;}
   .project .see-more {margin-top: 20px;}
 
-  .project.blue, .project.green {border-bottom: 1px solid #ccc;}
+  .project.blue, .project.green, .project.knip {border-bottom: 1px solid #ccc;}
   .project.blue h1 {color: #2e98ba;}
   .project.blue .see-more {background: #2e98ba; border-color: #2e98ba; color: #fff;}
   .project.blue .see-more:hover {color: #000; background: #fff;}
@@ -433,6 +433,16 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   }
 
   .project.zerigodns .text {width: 360px;}
+
+  .project.knip .see-more {
+    color: #fff;
+    background: #e1594d;
+  }
+
+  .project.knip .see-more:hover {
+    color: #e1594d;
+    background: #fff;
+  }
 
   .talk-about-project {margin-top: 40px; font-size: 21px; font-weight: 300;}
   .talk-about-project .add-project {float: left; line-height: 34px; color: #000;}
