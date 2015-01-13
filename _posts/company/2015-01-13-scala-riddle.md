@@ -5,12 +5,13 @@ author: Adam Warski
 author_login: warski
 categories:
 - scala
+- company
 layout: simple_post
 ---
 
 Yesterday we came up with the following Scala riddle.
 
-We have items which may be keyed by integers or strings. We want to implement a `get` method which takes the item's type as a type parameter, and a key of the appopriate type (of course this is a simplification of the real problem :) ):
+We have items which may be keyed by integers or strings. We want to implement a `get` method which takes the item's type as a type parameter, and a key of the appopriate type as a value parameter (of course this is a simplification of the real problem :) ):
 
 ```scala
 // given:
@@ -54,7 +55,7 @@ But this fails with an "underscore error":
 get[IntItem](0)
 ```
 
-In other words, the compiler just looks at the `_` we used when defining the constraint on `T` in `get`'s defininition, and is too lazy to actually look inside the type parameter for what's the real value.
+In other words, the compiler just looks at the `_` we used when defining the constraint on `T` in `get`'s defininition, and is too lazy to actually look inside the type parameter for what's the real value (but that's only my intuition on the compiler's behavior).
 
 How to fix that? [Marcin Kubala](https://github.com/mkubala) came up with two solutions:
 
