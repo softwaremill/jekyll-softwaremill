@@ -85,14 +85,14 @@ trait ItemLike {
 }
 
 trait Item[K] extends ItemLike {
-  override type Elem = K
+  override type Key = K
 }
 
 class IntItem extends Item[Int]
 
 class StringItem extends Item[String]
   
-def get[T <: ItemLike](e: T#Elem) = ???
+def get[T <: ItemLike](e: T#Key) = ???
 ```
 
 It seems that the compiler only "looks inside" the actual type parameter that was used if the information isn't provided directly in the type that constraints it (the `<: ...` declaration). Let us know if you know the exact mechanism that is in play here.
