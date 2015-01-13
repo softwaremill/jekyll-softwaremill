@@ -1,6 +1,6 @@
 ---
 title: Scala type parameters riddle
-description: Scala type parameters riddle
+description: How to implement a method so that no extra type parameters need to be specified?
 author: Adam Warski
 author_login: warski
 categories:
