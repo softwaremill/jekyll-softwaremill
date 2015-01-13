@@ -41,10 +41,10 @@ The first attempt was to add a type member to `Item` which would point to `K`, a
 
 But this fails with an "underscore error":
 
-    // type mismatch;
-    //  found   : Int(0)
-    //  required: _$1 where type _$1
-    get[IntItem](0)
+   // type mismatch;
+   //  found   : Int(0)
+   //  required: _$1 where type _$1
+   get[IntItem](0)
 
 In other words, the compiler just looks at the `_` we used when defining the constraint on `T` in `get`'s defininition, and is too lazy to actually look inside the type parameter for what's the real value.
 
