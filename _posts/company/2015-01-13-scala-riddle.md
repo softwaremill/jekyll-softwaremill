@@ -101,7 +101,7 @@ It seems that the compiler only "looks inside" the actual type parameter that wa
 
 Or maybe you have a better solution? ;)
  
-**Update 14/01:** Following [Paweł Kaczor's](https://twitter.com/newion) remark that the key difference is that `type Key = K` is a type alias, while `type Key <: K` defines an abstract type parameter, I tried the following, and to my surprise, it works!
+**Update 14/01:** Following [Paweł Kaczor's](https://twitter.com/newion) remark that the key difference is that `type Key = K` is a type alias, while `type Key <: K` defines an abstract type member, I tried the following, and to my surprise, it works!
 
 ```scala
 trait Item[K] {
