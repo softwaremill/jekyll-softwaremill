@@ -9,6 +9,8 @@ categories:
 layout: simple_post
 ---
 
+**Update 14.01:** new solution at the bottom!
+
 Yesterday we came up with the following Scala riddle.
 
 We have items which may be keyed by integers or strings. We want to implement a `get` method which takes the item's type as a type parameter, and a key of the appopriate type as a value parameter (of course this is a simplification of the real problem :) ):
@@ -96,5 +98,22 @@ def get[T <: ItemLike](e: T#Key) = ???
 ```
 
 It seems that the compiler only "looks inside" the actual type parameter that was used if the information isn't provided directly in the type that constraints it (the `<: ...` declaration). Let us know if you know the exact mechanism that is in play here.
- 
+
 Or maybe you have a better solution? ;)
+ 
+**Update 14/01:** Following [Paweł Kaczor's](https://twitter.com/newion) remark that the key difference is that `type Key = K` is a type alias, while `type Key <: K` defines an abstract type parameter, I tried the following, and to my surprise, it works!
+
+```scala
+trait Item[K] {
+  type Key >: K <: K
+}
+
+class IntItem extends Item[Int]
+class StringItem extends Item[String]
+
+def get[T <: Item[_]](e: T#Key) = ???
+```
+
+Just as in the initial attempt, the crucial difference being that we constrain the type from both sides (`Key >: K <: K`) instead of defining an alias.
+
+Still, explanations of why the compiler behaves as it does welcome! :)
