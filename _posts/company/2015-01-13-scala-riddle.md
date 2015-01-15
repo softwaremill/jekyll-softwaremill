@@ -9,7 +9,7 @@ categories:
 layout: simple_post
 ---
 
-**Update 14.01:** new solution at the bottom!
+**Update 14.01 & 15.01:** new solution at the bottom!
 
 Yesterday we came up with the following Scala riddle.
 
@@ -101,11 +101,11 @@ It seems that the compiler only "looks inside" the actual type parameter that wa
 
 Or maybe you have a better solution? ;)
  
-**Update 14/01:** Following [Paweł Kaczor's](https://twitter.com/newion) remark that the key difference is that `type Key = K` is a type alias, while `type Key <: K` defines an abstract type member, I tried the following, and to my surprise, it works!
+**Update 14/01 & 15.01:** Following [Paweł Kaczor's](https://twitter.com/newion) remark that the key difference is that `type Key = K` is a type alias, while `type Key <: K` defines an abstract type member, and a later simplification by [Hubert Plociniczak](https://plus.google.com/115793448092501338486/posts) I tried the following, and to my surprise, it works!
 
 ```scala
 trait Item[K] {
-  type Key >: K <: K
+  type Key >: K
 }
 
 class IntItem extends Item[Int]
@@ -114,6 +114,6 @@ class StringItem extends Item[String]
 def get[T <: Item[_]](e: T#Key) = ???
 ```
 
-Just as in the initial attempt, the crucial difference being that we constrain the type from both sides (`Key >: K <: K`) instead of defining an alias.
+Just as in the initial attempt, the crucial difference being that we constrain the type from the bottom (`Key >: K`) instead of defining an alias.
 
 Still, explanations of why the compiler behaves as it does welcome! :)
