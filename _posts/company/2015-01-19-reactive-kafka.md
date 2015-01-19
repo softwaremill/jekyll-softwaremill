@@ -13,7 +13,8 @@ layout: simple_post
 A lot happened around the reactive movement last year but it’s still gaining its momentum. The same applies for the world of distributed systems which is also growing really fast. Let’s see what we can build on the intersection of these two subjects.  
 First: reactive streams - a fresh approach to process composable streams of data. Some already well-known patterns like queues can be now revisited with the reactive approach. Be sure to check [Adam’s blog](http://www.warski.org/blog/2014/06/reactive-queue-with-akka-reactive-streams/) on how to build a custom reactive queue with Akka Streams.  
 Then there’s [Apache Kafka](https://kafka.apache.org/documentation.html#gettingStarted) - a pub-sub infrastructure written in Scala. It’s aiming for distributed systems with its advanced clustering capabilities. It also provides mechanisms for accessing queues/topics on any offset. It would be nice to access Kafka with reactive API and that’s how [reactive-kafka](https://github.com/kciesielski/reactive-kafka) was born. Let’s jump straight to some code to see how it can be used:  
-```scala
+
+```scala  
 import akka.actor.ActorSystem
 import akka.stream.FlowMaterializer
 import akka.stream.scaladsl.{Sink, Source}
@@ -29,6 +30,7 @@ val subscriber = kafka.publish("hrNotifications", "groupName")
 
 Source(publisher).map(extractCandidateName).to(Sink(subscriber)).run()
 ```
+
 Such flow would listen on a topic with incoming job applications, extract candidate names and send them to a new channel (topic), dedicated for notifications in the HR department.
 If you’ve been working with Scala before, It may look pretty familiar to stream processing. Indeed, reactive streams aim to offer a similar, declarative and functional syntax. However, pretty syntax is just a nice addition.  
   
@@ -47,8 +49,9 @@ Reactive-kafka uses Akka Streams to wrap these two with standard interfaces for 
 *Publisher* - a source of messages coming out of a Kafka topic. Subscribers can subscribe to it.  
 *Subscriber* - a listener which can be subscribed to any Publisher. Writes messages to a given Kafka topic each time it receives a message.   
   
-Using these standard interfaces from the org.reactivestreams package, we can combine many kinds of reactive streams into one flow. We can now rebuild our first example and change the source stream, so that we produce Strings and feed them into our destination Kafka topic:  
-```scala
+Using these standard interfaces from the org.reactivestreams package, we can combine many kinds of reactive streams into one flow. We can now rebuild our first example and change the source stream, so that we produce Strings and feed them into our destination Kafka topic: 
+
+```scala  
 import akka.actor.ActorSystem
 import akka.stream.FlowMaterializer
 import akka.stream.scaladsl.{Sink, Source}
