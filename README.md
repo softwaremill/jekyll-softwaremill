@@ -16,8 +16,15 @@ Files are regenerated on every change. Note, IntelliJ saves a file after window 
 2. `gem install bundler`
 3. `bundle`
 
-You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`. 
+You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`.
 
+### Pre to Pre-steps - Install ruby 2.1.2 for complete non-ruby
+if (ruby -v !=2.1.2) continue
+
+1. curl -sSL https://get.rvm.io | bash -s stable
+2. source ~/.profile
+3. rvm install ruby-2.1.2
+4. in case of `certificate verify failed` navigate to [rubygems](https://rubygems.org/pages/download#formats) and get tgz and install rubygems by `ruby setup.rb`
 
 ## Regenerating Twitter or blogs
 
