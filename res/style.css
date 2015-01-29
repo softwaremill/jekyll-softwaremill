@@ -964,6 +964,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 
 
   /* JOIN US */
+  #join-us .col1 {float: left; width: 960px; padding: 0 20px 0 0;}
+  #join-us .col1 ul {list-style-type: disc; margin-left: 20px;}
   #join-us .col2 {float: left; width: 480px; padding: 0 20px 0 0;}
   #join-us .col2:last-child {padding-right: 0px;}
   #join-us .col2 ul {list-style-type: disc; margin-left: 20px;}
@@ -1405,6 +1407,7 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 
   /* JOIN US */
   #baner-contact {font-size: 26px; line-height: 30px; padding: 20px 0; height: auto;}
+  #join-us .col1 {width: 600px; padding: 0;}
   #join-us .col2 {width: 300px; padding: 0;}
   #join-us section:first-child .block {padding-top: 0px;}
   #join-us .border h2 {margin: 25px 0;}
@@ -1576,6 +1579,7 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
     padding-top: 80px;
   }
 
+  #join-us .col1 { width: 712px; }
   #join-us .col2 { width: 356px; }
   .work-item { width: 306px; }
 
