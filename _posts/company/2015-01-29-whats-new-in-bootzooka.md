@@ -19,8 +19,12 @@ which means you can freely use any part of it.
 Bootzooka has been actively developed for all the time, but in the last few weeks we introduced changes that have
 noticeable impact on the whole project. Let's take a look on it:
 
+## Flattened project structure
+Number of SBT sub-projects was decreased by pulling backend-related modules into common project called bootzooka-backend.
+This way we achieved clearer separation between server- and client-side components.
+
 ## We dropped MongoDB
-While MongoDB is a really great document store it has a limited scope of application which may be problematic when
+While MongoDB is a really great document store it has a limited scope of application kinds which may be problematic when
 you're developing the scaffold.
 With such project you cannot predict where it will be used and have absolutely no guarantee that NoSQL will fit
 particular project's needs.
@@ -31,6 +35,9 @@ Bootzooka more universal.
 We chose [H2 SQL database](http://www.h2database.com/html/main.html) because it's lightweight and doesn't require any
 3rd party software to be running (e.g. `mongod`).
 This simplifies both development on a local machine and a Continuous Integration (CI) process.
+
+Since we're in the SQL's eco-system, you're able to replace H2 with any other _'production'_ RDBMS (e.g. MySQL, PostgreSQL or Oracle)
+without any pain.
 
 [Rogue](https://github.com/foursquare/rogue) was replaced with [Slick](http://slick.typesafe.com/) - the library which
 allows to access & query SQL database in the type safe manner.
@@ -46,11 +53,11 @@ DDL & DML scripts.
 You only need to put your scripts under `db/migration/` directory (which must be present in the classpath) and obey the
 [Flyway's naming convention](http://flywaydb.org/documentation/migration/sql.html).
 
-Bootzooka store its schema evolution SQLs under `bootzooka-backend/src/main/resources/db/migration/`.
+Bootzooka stores its schema evolution SQLs under `bootzooka-backend/src/main/resources/db/migration/`.
 
 Migration will be performed automatically on an application start.
 
-Also, by extending `FlatSpecWithSql` you can bring Flyway to your integration tests and catch any problems with scripts
+Also, by extending `FlatSpecWithSql` you can bring Flyway to your integration tests and catch any problem with scripts
 during regular CI (which usually is done right after problematic change was pushed to the repository).
 
 ## Interactive REST API documentation
@@ -73,7 +80,7 @@ views development a piece of cake :)
 Old notification mechanism had a big disadvantage - it could display only one message of particular type
 (error or info) at the same time.
 
-I has been replaced with dedicated `NotificationsService` (available in `smlBootzooka.notifications` module)
+It has been replaced with dedicated `NotificationsService` (available in `smlBootzooka.notifications` module)
 that aggregates notifications and `<bs-notifications />` directive which dynamically creates
 pop-ups for each notification incoming from the given source.
 
