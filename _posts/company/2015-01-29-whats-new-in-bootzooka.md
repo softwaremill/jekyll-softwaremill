@@ -14,6 +14,9 @@ made in [Bootzooka](https://github.com/softwaremill/bootzooka).
 
 If you've never heard about Bootzooka before - it's an open-source scaffolding project for web applications
 build on top of [Scalatra](http://www.scalatra.org/) and [AngularJS](https://angularjs.org/) frameworks.
+
+The live demo is available at [bootzooka.softwaremill.com](http://bootzooka.softwaremill.com).
+
 The project is available in our [GitHub repository](https://github.com/softwaremill/bootzooka) under Apache 2.0 License
 which means you can freely use any part of it.
 
@@ -68,6 +71,9 @@ documentation from Swagger-compliant API.
 
 The interactive API docs are available at `<Bootzooka URL>/api-docs`.
 The raw JSON produced by Swagger lives at `<Bootzooka URL>/rest/api-docs`.
+
+Don't hesitate yourself to play with our demo instance's interactive API browser, available at
+[bootzooka.softwaremill.com/api-docs](http://bootzooka.softwaremill.com/api-docs) :)
 
 That's all about interesting changes in the backend. Let's check what has changed at the client-side!
 
