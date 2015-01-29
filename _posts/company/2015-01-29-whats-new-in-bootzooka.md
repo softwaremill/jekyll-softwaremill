@@ -5,6 +5,7 @@ author: Marcin Kubala
 author_login: no-image
 categories:
 - scala
+- company
 layout: simple_post
 ---
 
