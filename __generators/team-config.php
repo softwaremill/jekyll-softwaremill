@@ -595,7 +595,7 @@ return array(
         'imageColor' => 'szymanski-color.jpg',
         'bio' => "
         <p>
-            Co-founder of SoftwareMill, but still active developer, without witch he would go mad.
+            Co-founder of SoftwareMill, but still active developer, without which he would go mad.
         </p>
         <p>
             He introduced a flat structure allowing people to have more influence on the place they work at if they choose to.
