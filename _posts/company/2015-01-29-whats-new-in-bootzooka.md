@@ -13,7 +13,7 @@ In this blog post I would like to put a spotlight on most important changes we h
 made in [Bootzooka](https://github.com/softwaremill/bootzooka).
 
 If you've never heard about Bootzooka before - it's an open-source scaffolding project for web applications
-build on top of [Scalatra](http://www.scalatra.org/) and [AngularJS](https://angularjs.org/) frameworks.
+built on top of [Scalatra](http://www.scalatra.org/) and [AngularJS](https://angularjs.org/) frameworks.
 
 The live demo is available at [bootzooka.softwaremill.com](http://bootzooka.softwaremill.com).
 
