@@ -988,7 +988,13 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .work-item.blue .close {background-image: url(../img/close-blue.png);}
   .work-item.dark-green .close {background-image: url(../img/close-dark-green.png);}
   .work-item.open .read-more {display: none;}
-  .work-item.open .close {opacity: 1;}
+  .work-item.open .close {
+      opacity: 1;
+      position: absolute;
+      right: -6px;
+      top: -6px;
+      border: 1px solid #fcd700;
+  }
   .work-item.green {background: #bccf02;}
   .work-item.blue {background: #73c5e1;}
   .work-item.dark-green {background: #5bb12f;}
