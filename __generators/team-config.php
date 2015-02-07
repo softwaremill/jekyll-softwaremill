@@ -551,7 +551,7 @@ return array(
          'image' => 'no-image.jpg',
          'imageColor' => 'no-image.jpg',
          'bio' => "
-         <p>Sylwia supports the administration part of SoftwareMill, she is responsible for correspondance, helps to organize various events and deals with suppliers.
+         <p>Sylwia supports the administration part of SoftwareMill, she is responsible for correspondence, helps to organize various events and deals with suppliers.
          </p>
          <p>She loves to plan her future travels, practice astanga yoga and drink yerba mate.</p>
          ",
