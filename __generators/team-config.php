@@ -439,7 +439,7 @@ return array(
         'blog' => NULL,
         'username' => 'koziarkiewicz', 
         'codingSince' => 1996,
-        'leader' => 10,
+        'leader' => 0,
         'opensource' => 1,
         'blogger' => 1,
         'parent' => 0,
@@ -454,23 +454,6 @@ return array(
         </p>
         <p>Besides programming, his hobbies include robotics, history of warfare, and (strategy) gaming.
         </p>
-        ",
-    ),
-    array(
-        'name' => 'Mirek Woźniak',
-        'twitter' => 'MirekWozniak',
-        'blog' => NULL,
-        'username' => 'wozniak',
-        'conference' => 1,
-        'title' => 'Marketing Overlord',
-        'image' => 'wozniak.jpg',
-        'imageColor' => 'wozniak-color.jpg',
-        'bio' => "
-        <p>The court wordsmith. Mirek gets high on semantics and making people meet. He used to write reviews of computer games, stage English
-                dramas and run a film discussion club. About two years ago he landed smack dab in the middle of Kraków's IT community and stayed there since.
-            </p>
-            <p>Even though Mirek's not a programmer, he set up and used to lead Hackerspace Kraków and organised the Kraków Ruby User Group meetups.
-                In his spare time he gapes at the Volkswagen's 60s copywriting and practices Kendo (4 Kyu).</p>
         ",
     ),
     array(
@@ -558,6 +541,21 @@ return array(
         <p>Husband and father of one. Video games addict.</p>
         ",
     ),
+     array(
+         'name' => 'Sylwia Górska',
+         'twitter' => NULL,
+         'blog' => NULL,
+         'username' => 'sylwia',
+         'conference' => 0,
+         'title' => 'Office Assistant',
+         'image' => 'no-image.jpg',
+         'imageColor' => 'no-image.jpg',
+         'bio' => "
+         <p>Sylwia supports the administration part of SoftwareMill, she is responsible for correspondance, helps to organize various events and deals with suppliers.
+         </p>
+         <p>She loves to plan her future travels, practice astanga yoga and drink yerba mate.</p>
+         ",
+     ),
     array(
         'name' => 'Tomasz Dziurko',
         'twitter' => 'TomaszDziurko',
