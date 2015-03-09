@@ -541,6 +541,32 @@ return array(
         <p>Husband and father of one. Video games addict.</p>
         ",
     ),
+    array(
+        'name' => 'Wojciech Ziębicki',
+        'twitter' => 'wziebicki',
+        'blog' => NULL,
+        'username' => 'ziebicki',
+        'codingSince' => 2005,
+        'leader' => 0,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'Senior Software Engineer',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Experienced Java and Groovy programmer. He doesn’t avoid any programming languages.
+        Professionally he started programming in PHP, later switching to Java. He has been developing 
+        web applications in Java and Groovy. Before joining SoftwareMill, Wojciech worked for CGI where 
+        he developed applications primarily for clients from the banking sector. Java, Scala and Groovy enthusiast.
+        </p>
+        <p>
+        When not coding, he enjoys spending time with his family, riding his bike or playing board games.
+        </p>
+        <p>Husband and father of one.</p>
+        ",
+    ),
      array(
          'name' => 'Sylwia Górska',
          'twitter' => NULL,
