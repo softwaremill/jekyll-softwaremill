@@ -194,7 +194,6 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     #home {margin-bottom: 0px;}
     #home section {padding: 30px 0; position: relative;}
     #home section.border {border-bottom: 1px solid #e5e5e5;}
-    #home h6 { font-size: 22px !important; font-weight: bold !important; }
 
     /* SERVICES / TECHNOLOGIES */
     .services {float: left; width: 605px; height: 275px; padding: 20px 0;}
@@ -1074,6 +1073,7 @@ h2 {font-size: 24px; line-height: 30px; -webkit-font-smoothing: antialiased;}
 h3 {font-size: 18px; line-height: 24px; padding: 0px; margin: 0px 0 30px 0; -webkit-font-smoothing: antialiased;}
 h4 {font-size: 16px; line-height: 20px; text-transform: uppercase; margin-bottom: 16px; -webkit-font-smoothing: antialiased;}
 h6 {font-size: 12px; line-height: 12px; text-transform: uppercase; font-weight: 300; margin-bottom: 30px;}
+#home h6, #services h6, #blog h6, #join-us h6 { font-size: 22px !important; font-weight: bold !important; }
 b {font-weight: 600;}
 
 .loading input,
