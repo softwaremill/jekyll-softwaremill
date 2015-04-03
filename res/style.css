@@ -1007,7 +1007,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   #contact h2 {float: left; width: 410px; padding: 20px 40px 20px 0;}
   #contact>div {float: left; width: 190px; padding: 20px 30px; font-size: 14px; line-height: 22px;}
   #contact .address {padding-left: 45px;}
-  #contact .phone {background: url(../img/contact-tooltip.png) left bottom no-repeat; padding: 20px 0 61px 55px;}
+  #contact .phone {background: url(../img/contact-tooltip.png) left bottom no-repeat; padding: 20px 0 61px 55px; position: relative;}
+  #contact .phone .skype-link {width: 130px; height: 45px; position: absolute; bottom: 8px; left: 40px;}
 
 
   /* 404 */
