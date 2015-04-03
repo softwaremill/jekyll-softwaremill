@@ -465,6 +465,13 @@ if ($(window).width() > 1024){
 		$(this).append('<div class="triangle"></div>');
 	});
 
+
+	/* PORTFOLIO */
+	$('#portfolio').find('div.project').each(function () {
+		var projectId = $(this).attr('id');
+		var header = $(this).find('h1');
+		header.html('<a href="#' + projectId + '">' + header.text() + '</a>');
+	})
 });
 
 

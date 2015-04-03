@@ -333,28 +333,28 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .project .see-more {margin-top: 20px;}
 
   .project.blue, .project.green, .project.knip {border-bottom: 1px solid #ccc;}
-  .project.blue h1 {color: #2e98ba;}
+  .project.blue h1 a {color: #2e98ba;}
   .project.blue .see-more {background: #2e98ba; border-color: #2e98ba; color: #fff;}
   .project.blue .see-more:hover {color: #000; background: #fff;}
-  .project.green h1 {color: #bccf02;}
+  .project.green h1 a {color: #bccf02;}
   .project.green .see-more {background: #bccf02; border-color: #bccf02; color: #fff;}
   .project.green .see-more:hover {color: #000; background: #fff;}
 
   .project.vocado {padding-bottom: 0px;}
-  .project.vocado h1 {color: #fdc700;}
+  .project.vocado h1 a {color: #fdc700;}
   .project.vocado .see-more {background: #fdc700; border: 3px solid #fff; color: #fff; border-radius: 22px;}
   .project.vocado .see-more:hover {color: #000; background: #fff;}
   .project.vocado:after {content: ''; width: 100%; height: 190px; background: #fdc700; margin-top: -170px; position: absolute; z-index: -1;}
   .project.vocado .text {width: 310px;}
   .project.vocado figure {width: 650px; margin-top: 30px;}
   .project.attikis {border-bottom: 1px solid #ccc;}
-  .project.attikis h1 {color: #c83300;}
+  .project.attikis h1 a {color: #c83300;}
   .project.attikis .see-more {background: #c83300; border-color: #c83300; color: #fff;}
   .project.attikis .see-more:hover {color: #000; background: #fff;}
   .project.intelli {padding-bottom: 0px;}
   .project.intelli .text {width: 300px;}
   .project.intelli figure {width: 650px; margin-top: auto; margin-bottom: 35px;}
-  .project.intelli h1 {color: #f4940d;}
+  .project.intelli h1 a {color: #f4940d;}
   .project.intelli .see-more {margin-top: 40px; background: #f4940d; border: 3px solid #fff; color: #fff; border-radius: 22px;}
   .project.intelli .see-more:hover {color: #000; background: #dcdcdc;}
   .project.intelli:after {content: ''; width: 100%; height: 190px; background: #dcdcdc; margin-top: -190px; position: absolute; z-index: -1;}
@@ -362,22 +362,22 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .project.emotiful {padding-bottom: 0px; border-bottom: 1px solid #ccc; }
   .project.emotiful .text {width: 300px;}
   .project.emotiful figure {margin-top: auto; margin-bottom: 75px;}
-  .project.emotiful h1 {color: #2c3e50;}
+  .project.emotiful h1 a {color: #2c3e50;}
   .project.emotiful .see-more {background: #2c3e50; border: 3px solid #fff; color: #fff; border-radius: 22px;}
   .project.emotiful .see-more:hover {color: #000; background: #dcdcdc;}
   .project.jbison {background: #73c5e1;}
   .project.jbison figure {margin-top: -50px; margin-bottom: -60px;}
-  .project.jbison h1 {color: #fff;}
+  .project.jbison h1 a {color: #fff;}
   .project.jbison .see-more {background: #000; border-color: #000; color: #fff;}
   .project.jbison .see-more:hover {color: #73c5e1; background: #fff; border-color: #fff;}
 
   .project.codebrag {background: #310808 url(../img/codebarg-bg.png) center center no-repeat; color: #fff;}
   .project.codebrag figure {margin-top: -110px; margin-bottom: -60px;}
-  .project.codebrag h1 {color: #e13d0e;}
+  .project.codebrag h1 a {color: #e13d0e;}
   .project.codebrag .see-more {background: #cfdb00; border-color: #cfdb00; color: #000;}
   .project.codebrag .see-more:hover {color: #fff; background: #e13d0e; border-color: #e13d0e;}
 
-  .project.sms-portal h1 {
+  .project.sms-portal h1 a {
     color: #79bd48;
   }
 
@@ -404,10 +404,9 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     background: #dcdcdc;
   }
 
-  .project.vbroker h1 {
+  .project.vbroker h1 a {
     color: #81191a;
   }
-
 
   .project.vbroker .text p:last-of-type {
     color: #fff;
@@ -436,6 +435,10 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   }
 
   .project.zerigodns .text {width: 360px;}
+
+  .project.knip h1 a {
+    color: #000;
+  }
 
   .project.knip .see-more {
     color: #fff;
