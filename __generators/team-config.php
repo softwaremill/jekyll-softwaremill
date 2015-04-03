@@ -130,6 +130,25 @@ return array(
         ",
     ),
     array(
+        'name' => 'Katarzyna Leszczyńska-Bohdan',
+        'twitter' => 'k_leszczynska',
+        'blog' => NULL,
+        'username' => 'leszczynska-bohdan',
+        'leader' => 0,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 1,
+        'title' => 'PR&Marketing Manager',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>A digital native with strong experience in developing and executing social media strategies for brands. In SoftwareMill Kasia takes care of business communications.</p>
+        <p>She's gained her experience primarily in interactive agencies, where she led projects for financial, fmcg, household and HR sectors.</p>
+        <p>Privately a happy wife, cat owner and bodybuilding instructor.</p>
+        ",
+    ),
+    array(
         'name' => 'Kinga Pukianiec',
         'twitter' => NULL,
         'blog' => NULL,
