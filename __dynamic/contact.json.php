@@ -20,7 +20,6 @@ if (!$email || !strpos($email, '@') || !$message || $trollissimo) {
     exit;
 }
 
-$subject = '=?UTF-8?B?'.$subject.'?=';
 $message_all = "from: SoftwareMill Website <".$from.">\n-----------------------------\n";
 $message_all = "Reply-To: ".$name." <".$email.">\n-----------------------------\n";
 $message_all .= wordwrap($message, 70);
