@@ -7,7 +7,7 @@
 
 Files are regenerated on every change. Note, IntelliJ saves a file after window defocus, so it's usually 2 seconds before you see the change.
 
-1. `bundle exec jekyll serve -w`
+1. `bundle exec jekyll serve -w` 
 2. Go to [http://localhost:4000/](http://localhost:4000).
 
 ### Pre-steps
@@ -30,13 +30,24 @@ if (ruby -v !=2.1.2) continue
 
 Call `__generators/generate.sh`.
 
+Locally most likely you will get, don't freak out.
+
+    [Thu Apr  9 12:58:22 CEST 2015] twitter-blog FAILED
+    [Thu Apr  9 12:58:22 CEST 2015] twitter-home FAILED
+
+To solve that locally just create the missing files
+ 
+    touch _includes/generated/twitter-blog.html
+    touch _includes/generated/twitter-home.html
+
 ### Pre-steps
 
 1. Install PHP for command line. Package name is usually `php-cli`.
 2. Go to `__generators/` and call `bundle`.
 
-You may need imagemagick in __generators/ for handling images.
-
+Most likely you may need imagemagick in `__generators/` for handling images.
+1. `brew install ImageMagick`
+2. `gem install rmagick -v '2.13.3'`
 
 ## Sending e-mails via contact form - pre-steps
 
