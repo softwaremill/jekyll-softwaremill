@@ -210,7 +210,7 @@ return array(
           SoftwareMill team Krzysztof worked as a freelance developer for clients from Poland and New Zealand.<br/> He
           writes code daily at work as well as after hours, mainly in Java but experiments continuously with new
           languages. He graduated from University of Greenwich.<br/> Besides programming, he works at being a better
-          father, husband and motorcycle rider.
+          father and motorcycle rider.
         </p>
         ",
     ),
