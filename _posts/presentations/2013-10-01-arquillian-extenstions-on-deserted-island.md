@@ -5,7 +5,7 @@ conference: JUGtober Fest 2013, Poland
 abstract_fragment: Arquillian has plenty of useful extensions. In this talk Michał will present an intruduction to Arquillian universe, describing the most interesting modules, extensions and supported platforms.
 keywords: arquillian, droidium, drone, extenstions, graphene, jboss, shrinkwrap, warp
 speaker: Michał Matłoka
-speaker_login: mmatloka
+speaker_login: matloka
 categories:
 - presentations
 ---
