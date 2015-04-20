@@ -10,7 +10,8 @@ categories:
 layout: simple_post
 ---
 
-Recently in SoftwareMill we started a series of weekly online meetings around the reading club - a new idea by [Marcin](https://marcinkubala.wordpress.com/). For our first book we chose [“SBT in Action”](http://www.manning.com/suereth2/) (MEAP v15) by Joshua Suereth and Matthew Farwell. The idea worked perfectly, we are now starting our next book and more engineers from the company are joining the club. The learning curve of SBT has a pretty bad reputation and many developers find it difficult to switch from Maven/Gradle to its core concepts right away. The book explains all the important features and also reveals some really excellent advantages of this build tool. However, sometimes we found these gems to be easy to miss, insufficiently emphasized and a bit hidden between less exciting instructions about standard features. During the course of our reading club, we tried to note down what we found particularly interesting in SBT:
+Recently in SoftwareMill we started a series of weekly online meetings around the reading club - a new idea by [Marcin](https://marcinkubala.wordpress.com/). For our first book we chose [“SBT in Action”](http://www.manning.com/suereth2/) (MEAP v15) by Joshua Suereth and Matthew Farwell. The idea worked perfectly, we are now starting our next book and more engineers from the company are joining the club.  
+The learning curve of SBT has a pretty bad reputation and many developers find it difficult to switch from Maven/Gradle to its core concepts right away. The book explains all the important features and also reveals some really excellent advantages of this build tool. However, sometimes we found these gems to be easy to miss, insufficiently emphasized and a bit hidden between less exciting instructions about standard features. During the course of our reading club, we tried to note down what we found particularly interesting in SBT:
 
 ## Parallel task execution  
 This one is often mentioned as one of the main advantages. In SBT you have to specify explicit dependencies between your tasks. This allows SBT to build a dependency tree of all the tasks and decide whether certain tasks can be executed in parallel, because there is no dependency between them. This is the default behaviour and it can really speed up your build.
@@ -40,7 +41,7 @@ Libraries like scalate create scala files and then compile and load the classes.
 You can use the `all` command and run multiple tasks. If possible, these tasks will be executed in parallel, for example: `all test integrationTests`. SBT will figure out whether these tasks are independent and can be run at the same time.
 
 ## Global plugins
-Some settings and plugins (like sbt-dependency-graph or sat-idea) are specific to your tools or processes. Specifying them in the build configuration is not a good idea, but you can list them in `~/.sbt/0.13/plugins/plugins.sbt`.
+Some settings and plugins (like sbt-dependency-graph or sbt-idea) are specific to your tools or processes. Specifying them in the build configuration is not a good idea, but you can list them in `~/.sbt/0.13/plugins/plugins.sbt`.
 
 ## Autocompleting parser combinators
 Parsers are able to take an input stream and attempt to see if that string matches their expectations. If you’re writing tasks relying on user input, SBT allows you to define your own parser combinators. This way you can have powerful input validation and auto-completion with <tab>.
@@ -52,10 +53,10 @@ Sometimes input tasks are not enough. Commands allow building scripting tasks to
 - You need to alter the core `sbt.State` object (to schedule more commands to run)
 
 ## Getting debug logs
-You can always call `last` (not only in case of errors) and see what has been printed out on the debug level.
+SBT prints out a lot of additional debug stuff, but it's not visible in the console by default. You can always call `last` (not only in case of errors) and see what has been printed out on the debug level.
 
 ## Temporary settings
-You can use the `Def.setting` method to create a temporary setting. It’s a value that that cannot be discovered by the user (it never lives inside a key). Temporary settings can depend on other settings. They can also be assigned into a setting key. You can think of them as handy ‘local wrappers’ for some other settings or their transformations.
+You can use the `Def.setting` method to create a temporary setting. It’s a value that cannot be discovered by the user (it never lives inside a key). Temporary settings can depend on other settings. They can also be assigned into a setting key. You can think of them as handy ‘local wrappers’ for some other settings or their transformations.
 
 ## Revolver plugin
 This one is not really a feature of SBT, but it’s a very useful plugin. With revolver, you can easily start/stop you appliaction, but you can also run `~reStart`. 
