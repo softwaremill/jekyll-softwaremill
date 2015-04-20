@@ -14,8 +14,18 @@ In the following tests we will be looking at queueing systems at the 'safe' side
 
 ## Version history
 
-| 10 Apr 2015 | updated with new versions, added ActiveMQ; new site     
-| 1 Jul 2014 | original at [Adam Warski’s blog](http://www.warski.org/blog/2014/07/evaluating-persistent-replicated-message-queues/)
+<table>
+  <tbody>
+    <tr>
+      <td>10 Apr 2015</td>
+      <td>updated with new versions, added ActiveMQ; new site</td>
+    </tr>
+    <tr>
+      <td>1 Jul 2014</td>
+      <td>original at <a href="http://www.warski.org/blog/2014/07/evaluating-persistent-replicated-message-queues/">Adam Warski’s blog</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Tested queues
 
