@@ -27,15 +27,15 @@ I already mentioned that there are explicit task dependencies. You can easily an
 One of the most exceptional features is the `testQuick` command. It will only execute those tests which have been affected by the changed sources. If you combine it with `~` and run `~testQuick`, you’ll get continuous and immediate feedback on your changes to the code. Each time you save a change, SBT will re-launch `testQuick` and run only relevant tests. You can also use `testOnly` to manually limit scope of your tests to a single suite or suites matching an expression. For example, typing `testOnly *Auction*` will run all the suites with word `Auction` in their name. Also, don’t forget about SBT’s tab-completion, you can use `testOnly <tab>` to let SBT suggest tests for you.
 
 ## Forking JVM
-Sometimes you may want to run your tasks in a different instance of JVM. For example, if you want to fork your jvm for tests, you can specify:
-`fork in Test := true`
-and then continue with your custom options, like:
-`javaOptions in Test += "-Dspecs2.outDir=target/generated/test-reports”`.
-Other reasons why you may need to fork the JVM may be:
+Sometimes you may want to run your tasks in a different instance of JVM. For example, if you want to fork your jvm for tests, you can specify:  
+`fork in Test := true`  
+and then continue with your custom options, like:  
+`javaOptions in Test += "-Dspecs2.outDir=target/generated/test-reports”`.  
+Other reasons why you may need to fork the JVM may be:  
 - **Calling System.exit() in your code**  
-If your code creates a lot of new threads and these threads are not cleaned up before the main method returns (like in Swing).
+If your code creates a lot of new threads and these threads are not cleaned up before the main method returns (like in Swing).  
 - **Class loading**  
-Libraries like scalate create scala files and then compile and load the classes. Some JVMs may run into trouble with PermGen.
+Libraries like scalate create scala files and then compile and load the classes. Some JVMs may run into trouble with PermGen.  
 - **Executing selected multiple tasks/commands in parallel**  
 You can use the `all` command and run multiple tasks. If possible, these tasks will be executed in parallel, for example: `all test integrationTests`. SBT will figure out whether these tasks are independent and can be run at the same time.
 
@@ -46,9 +46,9 @@ Some settings and plugins (like sbt-dependency-graph or sat-idea) are specific t
 Parsers are able to take an input stream and attempt to see if that string matches their expectations. If you’re writing tasks relying on user input, SBT allows you to define your own parser combinators. This way you can have powerful input validation and auto-completion with <tab>.
 
 ## Tasks vs commands
-Sometimes input tasks are not enough. Commands allow building scripting tasks to define broader workflows. Here are some situations when you may prefer to use commands over tasks:
-- You need to reload the build or alter settings in your script (There’s a nice example in the book with calling `git tag`)
-- You need to run tasks in a specific order
+Sometimes input tasks are not enough. Commands allow building scripting tasks to define broader workflows. Here are some situations when you may prefer to use commands over tasks:  
+- You need to reload the build or alter settings in your script (There’s a nice example in the book with calling `git tag`)  
+- You need to run tasks in a specific order  
 - You need to alter the core `sbt.State` object (to schedule more commands to run)
 
 ## Getting debug logs
