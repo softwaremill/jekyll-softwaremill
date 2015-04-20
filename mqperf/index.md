@@ -1,6 +1,6 @@
 ---
-title: Intro
-layout: default
+title: Evaluating persistent, replicated message queues
+layout: long_article
 ---
 
 # Intro
