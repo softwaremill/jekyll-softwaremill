@@ -949,6 +949,13 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     text-transform: uppercase; 
     font-size: 12px; 
   }
+  .post .post-rows > .text p code,
+  .post .post-rows > .text ul code {
+    background-color: #f7f7f7;
+    padding: 0 2px;
+    border: 1px solid rgb(226, 226, 226);
+    font-size: 0.9em;
+  }
   .post .post-rows > .text p {margin-bottom: 20px;}
   .post .post-rows > .text a {color: #257dbe;}
   .post .post-rows > .text table {
@@ -974,6 +981,16 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .post .post-rows > .text table thead tr th {
     text-align: left;
     padding: 0.7em;
+  }
+  .post .post-rows > .text ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 0.9em;
+  }
+  .post .post-rows > .text ul li {
+    margin-bottom: 7px;
   }
   .post .post-rows figure {margin: 30px 19px 30px 0; text-align: right;}
   .post .post-footer {padding: 15px 0; color: #257dbe; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
