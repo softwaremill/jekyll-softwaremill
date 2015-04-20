@@ -4,7 +4,10 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'mqperf';
+    var disqus_shortname = 'softwaremill';
+    var disqus_identifier = 'mqperf';
+    var disqus_title = "{{ page.title | escape }}";
+    var disqus_url = 'https://softwaremill.com/{{ url }}';
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {

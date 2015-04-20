@@ -1,9 +1,22 @@
 
 # Mongo
 
-| *Version*     | server 3.0.1, java driver 2.13.0 |
-| *Replication* | configurable, asynchronous & synchronous |
-| *Last tested* | 10 Apr 2015 |
+<table>
+  <tbody>
+    <tr>
+      <td><em>Version</em></td>
+      <td>server 3.0.1, java driver 2.13.0</td>
+    </tr>
+    <tr>
+      <td><em>Replication</em></td>
+      <td>configurable, asynchronous &amp; synchronous</td>
+    </tr>
+    <tr>
+      <td><em>Last tested</em></td>
+      <td>10 Apr 2015</td>
+    </tr>
+  </tbody>
+</table>
 
 Mongo has two main features which make it possible to easily implement a durable, replicated message queue on top of it: very simple replication setup (we’ll be using a 3-node replica set), and various document-level atomic operations, like `find-and-modify`. The implementation is just a handful of lines of code; take a look at [MongoMq](https://github.com/adamw/mqperf/blob/master/src/main/scala/com/softwaremill/mqperf/mq/MongoMq.scala).
 
@@ -27,29 +40,153 @@ Interestingly, when using `wired tiger`, the performance is worse, at least by a
 
 Results in detail when using asynchronous replication:
 
-| Engine      | Threads | Nodes | Send msgs/s | Receive msgs/s |
-| ------------------------------------------------------------ |
-| mmap        | 1       | 1     | 7 242       | 1 601          |
-| mmap        | 5       | 1     | 10 687      | **2 761**      |
-| mmap        | 1       | 2     | 8 928       | 2 426          |
-| mmap        | 5       | 2     | **10 963**  | 2 673          |
-| wired tiger | 1       | 1     | 4 409       | **1 145**      |
-| wired tiger | 5       | 1     | 5 293       |   832          |
-| wired tiger | 1       | 2     | 3 769       |   907          |
-| wired tiger | 5       | 2     | **5 937**   |   630          |
+<table>
+  <thead>
+    <tr>
+      <th>Engine</th>
+      <th>Threads</th>
+      <th>Nodes</th>
+      <th>Send msgs/s</th>
+      <th>Receive msgs/s</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mmap</td>
+      <td>1</td>
+      <td>1</td>
+      <td>7 242</td>
+      <td>1 601</td>
+    </tr>
+    <tr>
+      <td>mmap</td>
+      <td>5</td>
+      <td>1</td>
+      <td>10 687</td>
+      <td><strong>2 761</strong></td>
+    </tr>
+    <tr>
+      <td>mmap</td>
+      <td>1</td>
+      <td>2</td>
+      <td>8 928</td>
+      <td>2 426</td>
+    </tr>
+    <tr>
+      <td>mmap</td>
+      <td>5</td>
+      <td>2</td>
+      <td><strong>10 963</strong></td>
+      <td>2 673</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4 409</td>
+      <td><strong>1 145</strong></td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>5</td>
+      <td>1</td>
+      <td>5 293</td>
+      <td>832</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3 769</td>
+      <td>907</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>5</td>
+      <td>2</td>
+      <td><strong>5 937</strong></td>
+      <td>630</td>
+    </tr>
+  </tbody>
+</table>
 
 If we use synchronous replication (wait for the replica to acknowledge the writes, instead of just one node), the send throughput falls to **8 000 msgs/s**, and the receive to about **2 800 msgs/s**. As before, results when using `wired tiger` are worse than when using `mmap`:
 
-| Engine      | Threads | Nodes | Send msgs/s | Receive msgs/s |
-| ------------------------------------------------------------ |
-| mmap        | 1       | 1     | 1 952       | 1 630          |
-| mmap        | 25      | 1     | **8 006**   | **2 819**      |
-| mmap        | 1       | 2     | 2 649       | 2 463          |
-| mmap        | 5       | 2     | 7 191       | 2 618          |
-| wired tiger | 1       | 1     | 1 531       | **1 239**      |
-| wired tiger | 5       | 1     | 2 866       |   884          |
-| wired tiger | 25      | 1     | **3 777**   |   422          |
-| wired tiger | 1       | 2     | 2 039       |   933          |
-| wired tiger | 5       | 2     | 3 004       |   530          |
+<table>
+  <thead>
+    <tr>
+      <th>Engine</th>
+      <th>Threads</th>
+      <th>Nodes</th>
+      <th>Send msgs/s</th>
+      <th>Receive msgs/s</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mmap</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1 952</td>
+      <td>1 630</td>
+    </tr>
+    <tr>
+      <td>mmap</td>
+      <td>25</td>
+      <td>1</td>
+      <td><strong>8 006</strong></td>
+      <td><strong>2 819</strong></td>
+    </tr>
+    <tr>
+      <td>mmap</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2 649</td>
+      <td>2 463</td>
+    </tr>
+    <tr>
+      <td>mmap</td>
+      <td>5</td>
+      <td>2</td>
+      <td>7 191</td>
+      <td>2 618</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1 531</td>
+      <td><strong>1 239</strong></td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2 866</td>
+      <td>884</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>25</td>
+      <td>1</td>
+      <td><strong>3 777</strong></td>
+      <td>422</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2 039</td>
+      <td>933</td>
+    </tr>
+    <tr>
+      <td>wired tiger</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3 004</td>
+      <td>530</td>
+    </tr>
+  </tbody>
+</table>
 
 Overall in my opinion, not bad for a very straightforward queue implementation on top of Mongo.
