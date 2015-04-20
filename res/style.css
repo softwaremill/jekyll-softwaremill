@@ -914,8 +914,41 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
 
     .post .post-rows {}
   .post .post-rows > .text {width: 750px; margin: 0 0 0 150px; font-size: 1.5em; line-height:1.5em;}
-  .post .post-rows > .text h2 {margin-bottom: 20px; font-weight: 300; text-transform: uppercase;}
-  .post .post-rows > .text h3 {margin-bottom: 20px; font-weight: 300; text-transform: uppercase; font-size: 14px; color: #aaa;}
+  .post .post-rows > .text h1 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 300; 
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+  .post .post-rows > .text h2 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 300; 
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .post .post-rows > .text h3 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 300; 
+    text-transform: uppercase; 
+    font-size: 18px; 
+  }
+  .post .post-rows > .text h4 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 14px; 
+  }
+  .post .post-rows > .text h5 {
+    margin-bottom: 20px;
+    margin-top: 36px;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 12px; 
+  }
   .post .post-rows > .text p {margin-bottom: 20px;}
   .post .post-rows > .text a {color: #257dbe;}
   .post .post-rows > .text table {
@@ -928,6 +961,9 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   }
   .post .post-rows > .text table tr {
     border-bottom: 1px solid #aaaaaa;
+  }
+  .post .post-rows > .text table tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
   }
   .post .post-rows > .text table tr td {
     padding: 0.7em;
