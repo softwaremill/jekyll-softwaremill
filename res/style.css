@@ -912,7 +912,9 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     .post .presentation-header .title {width: 470px; float: left; padding: 0 0 0 30px;}
     .post .presentation-header .title h2 {margin: 10px 0 20px 0; text-transform: uppercase;}
 
-    .post .post-rows {}
+    .post .post-rows {
+      position: relative;
+    }
   .post .post-rows > .text {width: 750px; margin: 0 0 0 150px; font-size: 1.5em; line-height:1.5em;}
   .post .post-rows > .text h1 {
     margin-bottom: 20px;
@@ -995,6 +997,49 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .post .post-rows figure {margin: 30px 19px 30px 0; text-align: right;}
   .post .post-footer {padding: 15px 0; color: #257dbe; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 
+  .post .post-rows > .tocify {
+    width: 200px;
+    margin-left: -72px;
+    border: none;
+    border-radius: 0;
+    text-align: right;
+    border-right: 4px solid #ba6fab;
+    margin-top: 10px;
+  }
+
+  .post .post-rows > .tocify.sticked {
+    position: absolute;
+    top:0;
+  }
+
+  .post .post-rows > .tocify.sticked-to-top {
+    position: fixed;
+    top:0;
+  }
+
+  .post .post-rows > .tocify h1 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ba6fab;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding-right: 7px;
+  }
+
+  .post .post-rows > .tocify .tocify-item a {
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 7px;
+    color: #ba6fab;
+    border-radius: 15px 0 0 15px;
+
+  }
+
+  .post .post-rows > .tocify .tocify-item.active a {
+    background-color: #ba6fab;
+    color: white;
+  }
+
   .post-sidebar {float: right; width: 300px; }
   .post-sidebar aside {background: #fff; border-top: 0px;}
   .post-sidebar aside label {display: none;}
@@ -1018,6 +1063,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+
 
   /*
   #respond {margin-left: 150px;}
