@@ -16,9 +16,9 @@ During the mini edition of the [Scalar conference](http://scalar-conf.com/) in P
 
 [Mikołaj Koziarkiewicz](http://mikołak.net/) spoke about the core concepts of [Akka](http://akka.io/) - the actor model, actor hierarchies and the guarantees that Akka provides.
 
-[Jacek Kunicki](https://twitter.com/rucek) showed how to develop a simple REST API backed by a database using [Play Framework](https://www.playframework.com/) and [Slick](http://slick.typesafe.com/). You can find the tutorial (and follow it yourself) in [his github repo](https://github.com/rucek/play-slick-quickstart). 
+[Jacek Kunicki](https://twitter.com/rucek) showed how to develop a simple REST-like API backed by a database using [Play Framework](https://www.playframework.com/) and [Slick](http://slick.typesafe.com/). You can find the tutorial (and follow it yourself) in [his github repo](https://github.com/rucek/play-slick-quickstart). 
 
-[Michał Ostruszka](https://twitter.com/mostruszka) presented another way to build a REST API, this time using the Ruby-world-inspired [Scalatra](http://www.scalatra.org/) framework. All the examples are available in [his github repo](https://github.com/mostr/scalatra-demo-scalar-mini). 
+[Michał Ostruszka](https://twitter.com/mostruszka) presented another way to build API-based web apps, this time using the Ruby-world-inspired [Scalatra](http://www.scalatra.org/) framework. All the examples are available in [his github repo](https://github.com/mostr/scalatra-demo-scalar-mini). 
 
 #### Slides
 
