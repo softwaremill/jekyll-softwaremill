@@ -585,10 +585,6 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .from-idea-to-product .contact-us h2 {line-height: 36px;}
 
 
-
-
-
-
   /* MEET THE TEAM */
 
     #baner {width: 100%; height: 360px; background: #000; padding-top: 60px; position: relative;}
@@ -997,45 +993,53 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .post .post-rows figure {margin: 30px 19px 30px 0; text-align: right;}
   .post .post-footer {padding: 15px 0; color: #257dbe; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 
-  .post .post-rows > .tocify {
+  .post .post-rows > .toc {
+    position: absolute;
+    text-align: right;
     width: 200px;
     margin-left: -72px;
-    border: none;
-    border-radius: 0;
-    text-align: right;
     border-right: 4px solid #ba6fab;
-    margin-top: 10px;
   }
 
-  .post .post-rows > .tocify.sticked {
-    position: absolute;
-    top:0;
-  }
-
-  .post .post-rows > .tocify.sticked-to-top {
+  .post .post-rows > .toc.fixed {
     position: fixed;
-    top:0;
+    top: 10px;
   }
 
-  .post .post-rows > .tocify h1 {
+  .post .post-rows > .toc.stick-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .post .post-rows > .toc.stick-top {
+    position: absolute;
+    top: 0;
+  }
+
+  .post .post-rows > .toc h1 {
     font-size: 14px;
     line-height: 21px;
     color: #ba6fab;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     text-transform: uppercase;
     padding-right: 7px;
   }
 
-  .post .post-rows > .tocify .tocify-item a {
+  li.toc-h1, 
+  li.toc-h2 {
+    margin-bottom: 6px;
+    margin-top: 3px;
+  }
+
+  .post .post-rows > .toc li a {
     padding: 3px;
     padding-left: 15px;
     padding-right: 7px;
     color: #ba6fab;
     border-radius: 15px 0 0 15px;
-
   }
 
-  .post .post-rows > .tocify .tocify-item.active a {
+  .post .post-rows > .toc li.toc-active a {
     background-color: #ba6fab;
     color: white;
   }
@@ -1337,6 +1341,11 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   }
 }
 
+@media only screen and (max-width: 689px ) {
+  .post .post-rows > .toc {
+    display: none;
+  }
+}
 
 @media only screen and (max-width : 767px) {
 
@@ -1526,6 +1535,21 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   .post-sidebar aside form {height: 30px;}
   .widget.widget_archive {padding-top: 10px;}
   #archive .title h2 {margin: 10px 0 20px 0; line-height: 26px;}
+
+  .post .post-rows > .toc {
+    margin-left: -215px;
+  }
+
+  .post .post-rows > .text table {
+    max-width: 300px;
+    overflow-y: auto;
+    font-size: 0.65em;
+  }
+
+  .post .post-rows > .text table tr td,
+  .post .post-rows > .text table thead tr th {
+    padding: 0.5em;
+  }
 
   /* CONTACT */
   #contact figure {width: 320px; margin: 0 -10px;}

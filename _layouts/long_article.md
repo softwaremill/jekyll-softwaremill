@@ -5,8 +5,7 @@ layout: default
 {% capture url %}{{ page.url | remove: '/' | remove: 'index.html' }}/{% endcapture %}
 {% if url == '/' %}{% capture url %}{% endcapture %}{% endif %}
 
-<link type="text/css" rel="stylesheet" href="jquery.tocify.css" />
-<script src="jquery.tocify.js"></script>
+<script src="toc.min.js"></script>
 
 <div id="baner-contact">
   <div class="wrapper font-green">{{ page.title | escape }}</div>
@@ -28,8 +27,9 @@ layout: default
             </div>
           </div> -->
           <div class="post-rows">
-            <div id="toc">
+            <div class="toc">
               <h1>Table of contents</h1>
+              <div id="toc"></div>
             </div>
             <div class="text">
               {{ content }}
@@ -42,28 +42,36 @@ layout: default
 </article>
 
 <link rel="stylesheet" href="/res/pygments-github.css" />
+
 <script>
-  $(function() {
-    $("#toc").tocify({context: '.text', highlightOnScroll: true, history: false, showAndHideOnScroll: true});
-  })
+  $('#toc').toc({
+    'selectors': 'h1,h2', //elements to use as headings
+    'container': '.text', //element to find all selectors in
+    'smoothScrolling': true, //enable or disable smooth scrolling on click
+    'prefix': 'toc', //prefix for anchor tags and class names
+    'highlightOnScroll': true, //add class to heading that is currently in focus
+    'highlightOffset': 100 //offset to trigger the next headline
+  });
 </script>
 
 <script>
   $(function() {
-    
-  })
-</script>
-
-<script>
-  $(document).on("scroll", function() {
-    var x = $('.header').height()+$('#banner-contact').height()+$('article#post').height()-$('#toc').height();
-    console.log(x);
-    if ($(this).scrollTop() < $('.text').offset().top) {
-      $('#toc').removeClass('sticked-to-top').addClass('sticked');
-    } else if ($(this).scrollTop() > $('.text').offset().top) {
-      $('#toc').removeClass('sticked').addClass('sticked-to-top');
-    } else if ($(this).scrollTop() > x) {
-      console.log('!');
+    if ($(window).scrollTop() > ($('.text').offset().top + $('.text').outerHeight() - $('.toc').outerHeight()) ) {
+      $('.toc').addClass('stick-bottom');
+    } else if ($(window).scrollTop() > $('.text').offset().top) {
+      $('.toc').addClass('fixed');
+    } else {
+      $('.toc').addClass('stick-top');
     }
+
+    $(document).on("scroll", function() {
+      if ($(window).scrollTop() > ($('.text').offset().top + $('.text').outerHeight() - $('.toc').outerHeight()) ) {
+        $('.toc').removeClass('stick-top').removeClass('fixed').addClass('stick-bottom');
+      } else if ($(window).scrollTop() > $('.text').offset().top) {
+        $('.toc').removeClass('stick-top').removeClass('stick-bottom').addClass('fixed');
+      } else {
+        $('.toc').removeClass('stick-bottom').removeClass('fixed').addClass('stick-top');
+      }
+    });
   })
 </script>
