@@ -45,7 +45,7 @@ layout: default
 
 <script>
   $('#toc').toc({
-    'selectors': 'h1,h2', //elements to use as headings
+    'selectors': 'h1', //elements to use as headings
     'container': '.text', //element to find all selectors in
     'smoothScrolling': true, //enable or disable smooth scrolling on click
     'prefix': 'toc', //prefix for anchor tags and class names
