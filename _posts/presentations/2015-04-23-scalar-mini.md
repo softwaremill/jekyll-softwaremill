@@ -14,7 +14,7 @@ categories:
 
 During the mini edition of the [Scalar conference](http://scalar-conf.com/) in Poznań, which we co-organized together with [allegro.tech](http://allegrotech.io/), three of use gave talks covering some of the basic Scala stuff. We have both the slides and the code to share, so read on.
 
-[Mikołaj Koziarkiewicz](http://mikołak.net/) spoke about the core concepts of [Akka](http://akka.io/) - the actor model, actor hierarchies and the guarantees that Akka provides. Have a look at the examples in [his github repo](https://github.com/mikolak-net/akka-intro-prez). 
+[Mikołaj Koziarkiewicz](http://xn--mikoak-6db.net) spoke about the core concepts of [Akka](http://akka.io/) - the actor model, actor hierarchies and the guarantees that Akka provides. Have a look at the examples in [his github repo](https://github.com/mikolak-net/akka-intro-prez). 
 
 [Jacek Kunicki](https://twitter.com/rucek) showed how to develop a simple REST-like API backed by a database using [Play Framework](https://www.playframework.com/) and [Slick](http://slick.typesafe.com/). You can find the tutorial (and follow it yourself) in [his github repo](https://github.com/rucek/play-slick-quickstart). 
 
