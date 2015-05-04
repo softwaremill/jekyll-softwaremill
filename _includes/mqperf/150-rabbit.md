@@ -13,7 +13,7 @@
     </tr>
     <tr>
       <td><em>Last tested</em></td>
-      <td>10 Apr 2015</td>
+      <td>4 May 2015</td>
     </tr>
   </tbody>
 </table>

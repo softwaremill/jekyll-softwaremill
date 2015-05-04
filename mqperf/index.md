@@ -17,7 +17,7 @@ In the following tests we will be looking at queueing systems at the 'safe' side
 <table>
   <tbody>
     <tr>
-      <td>10 Apr 2015</td>
+      <td>4 May 2015</td>
       <td>updated with new versions, added ActiveMQ; new site</td>
     </tr>
     <tr>
