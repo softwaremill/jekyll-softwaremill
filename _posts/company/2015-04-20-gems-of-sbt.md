@@ -33,12 +33,13 @@ Sometimes you may want to run your tasks in a different instance of JVM. For exa
 `fork in Test := true`
 and then continue with your custom options, like:
 `javaOptions in Test += "-Dspecs2.outDir=target/generated/test-reports”`.
-Other reasons why you may need to fork the JVM may be:
-- **Calling System.exit() in your code**
-If your code creates a lot of new threads and these threads are not cleaned up before the main method returns (like in Swing).
-- **Class loading**
-Libraries like scalate create scala files and then compile and load the classes. Some JVMs may run into trouble with PermGen.
-- **Executing selected multiple tasks/commands in parallel*ssible, these tasks will be executed in parallel, for example: `all test integrationTests`. SBT will figure out whether these tasks are independent and can be run at the same time.
+Other reasons why you may need to fork the JVM may be:  
+- **Calling System.exit() in your code**  
+If your code creates a lot of new threads and these threads are not cleaned up before the main method returns (like in Swing).  
+- **Class loading**  
+Libraries like scalate create scala files and then compile and load the classes. Some JVMs may run into trouble with PermGen.  
+- **Executing selected multiple tasks/commands in parallel**   
+You can use the `all` command and run multiple tasks. If possible, these tasks will be executed in parallel, for example: `all test integrationTests`. SBT will figure out whether these tasks are independent and can be run at the same time.
 
 ## Global plugins
 Some settings and plugins (like sbt-dependency-graph or sbt-idea) are specific to your tools or processes. Specifying them in the build configuration is not a good idea, but you can list them in `~/.sbt/0.13/plugins/plugins.sbt`.
@@ -47,10 +48,10 @@ Some settings and plugins (like sbt-dependency-graph or sbt-idea) are specific t
 Parsers are able to take an input stream and attempt to see if that string matches their expectations. If you’re writing tasks relying on user input, SBT allows you to define your own parser combinators. This way you can have powerful input validation and auto-completion with <tab>.
 
 ## Tasks vs commands
-Sometimes input tasks are not enough. Commands allow building scripting tasks to define broader workflows. Here are some situations when you may prefer to use commands over tasks:
-- You need to reload the build or alter settings in your script (There’s a nice example in the book with calling `git tag`)
-- You need to run tasks in a specific order
-- You need to alter the core `sbt.State` object (to schedule more commands to run)
+Sometimes input tasks are not enough. Commands allow building scripting tasks to define broader workflows. Here are some situations when you may prefer to use commands over tasks:  
+- You need to reload the build or alter settings in your script (There’s a nice example in the book with calling `git tag`)  
+- You need to run tasks in a specific order  
+- You need to alter the core `sbt.State` object (to schedule more commands to run)  
 
 ## Getting debug logs
 SBT prints out a lot of additional debug stuff, but it's not visible in the console by default. You can always call `last` (not only in case of errors) and see what has been printed out on the debug level.
