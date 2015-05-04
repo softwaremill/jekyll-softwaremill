@@ -3,7 +3,7 @@ title: Evaluating persistent, replicated message queues
 layout: long_article
 ---
 
-# Intro
+# Introduction
 
 Message queues are useful in a number of situations; any time we want to execute a task asynchronously, we put the task on a queue and some executor (could be another thread/process/machine) eventually runs the task. Depending on the use case, the queues can give various guarantees on message persistence and delivery. For some use-cases, it is enough to have an in-memory, volatile message queue. For others, we want to be sure that once the message send completes, it is persistently enqueued and will be eventually delivered, despite node or system crashes.
 
