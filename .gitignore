@@ -8,3 +8,4 @@ __generators/
 .DS_Store
 .bundle
 
+vagrant/.vagrant

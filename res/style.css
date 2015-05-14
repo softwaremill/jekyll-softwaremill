@@ -585,10 +585,6 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .from-idea-to-product .contact-us h2 {line-height: 36px;}
 
 
-
-
-
-
   /* MEET THE TEAM */
 
     #baner {width: 100%; height: 360px; background: #000; padding-top: 60px; position: relative;}
@@ -912,14 +908,141 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     .post .presentation-header .title {width: 470px; float: left; padding: 0 0 0 30px;}
     .post .presentation-header .title h2 {margin: 10px 0 20px 0; text-transform: uppercase;}
 
-    .post .post-rows {}
+    .post .post-rows {
+      position: relative;
+    }
   .post .post-rows > .text {width: 750px; margin: 0 0 0 150px; font-size: 1.5em; line-height:1.5em;}
-  .post .post-rows > .text h2 {margin-bottom: 20px; font-weight: 300; text-transform: uppercase;}
-  .post .post-rows > .text h3 {margin-bottom: 20px; font-weight: 300; text-transform: uppercase; font-size: 14px; color: #aaa;}
+  .post .post-rows > .text h1 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 300; 
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+  .post .post-rows > .text h2 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 300; 
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .post .post-rows > .text h3 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 300; 
+    text-transform: uppercase; 
+    font-size: 18px; 
+  }
+  .post .post-rows > .text h4 {
+    margin-bottom: 20px;
+    margin-top: 36px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 14px; 
+  }
+  .post .post-rows > .text h5 {
+    margin-bottom: 20px;
+    margin-top: 36px;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 12px; 
+  }
+  .post .post-rows > .text p code,
+  .post .post-rows > .text ul code {
+    background-color: #f7f7f7;
+    padding: 0 2px;
+    border: 1px solid rgb(226, 226, 226);
+    font-size: 0.9em;
+  }
   .post .post-rows > .text p {margin-bottom: 20px;}
   .post .post-rows > .text a {color: #257dbe;}
+  .post .post-rows > .text table {
+    width: 100%;
+    font-size: 0.85em;
+    margin-bottom: 20px;
+  }
+  .post .post-rows > .text table tbody {
+    border-top: 1px solid #aaaaaa;
+  }
+  .post .post-rows > .text table tr {
+    border-bottom: 1px solid #aaaaaa;
+  }
+  .post .post-rows > .text table tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+  }
+  .post .post-rows > .text table tr td {
+    padding: 0.7em;
+  }
+  .post .post-rows > .text table thead tr {
+    border-bottom: 2px solid black;
+  }
+  .post .post-rows > .text table thead tr th {
+    text-align: left;
+    padding: 0.7em;
+  }
+  .post .post-rows > .text ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 0.9em;
+  }
+  .post .post-rows > .text ul li {
+    margin-bottom: 7px;
+  }
   .post .post-rows figure {margin: 30px 19px 30px 0; text-align: right;}
   .post .post-footer {padding: 15px 0; color: #257dbe; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
+
+  .post .post-rows > .toc {
+    position: absolute;
+    text-align: right;
+    width: 200px;
+    margin-left: -72px;
+    border-right: 4px solid #ba6fab;
+  }
+
+  .post .post-rows > .toc.fixed {
+    position: fixed;
+    top: 10px;
+  }
+
+  .post .post-rows > .toc.stick-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .post .post-rows > .toc.stick-top {
+    position: absolute;
+    top: 0;
+  }
+
+  .post .post-rows > .toc h1 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ba6fab;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    padding-right: 7px;
+  }
+
+  li.toc-h1, 
+  li.toc-h2 {
+    margin-bottom: 6px;
+    margin-top: 3px;
+  }
+
+  .post .post-rows > .toc li a {
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 7px;
+    color: #ba6fab;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .post .post-rows > .toc li.toc-active a {
+    background-color: #ba6fab;
+    color: white;
+  }
 
   .post-sidebar {float: right; width: 300px; }
   .post-sidebar aside {background: #fff; border-top: 0px;}
@@ -935,7 +1058,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   padding-bottom: 10px;
   padding-right: 10px;
   margin-left: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-left: 5px solid #70b1da;
   background-color: #d9e8f1;
 }
@@ -944,6 +1067,8 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+
 
   /*
   #respond {margin-left: 150px;}
@@ -1216,6 +1341,11 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   }
 }
 
+@media only screen and (max-width: 689px ) {
+  .post .post-rows > .toc {
+    display: none;
+  }
+}
 
 @media only screen and (max-width : 767px) {
 
@@ -1405,6 +1535,21 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   .post-sidebar aside form {height: 30px;}
   .widget.widget_archive {padding-top: 10px;}
   #archive .title h2 {margin: 10px 0 20px 0; line-height: 26px;}
+
+  .post .post-rows > .toc {
+    margin-left: -215px;
+  }
+
+  .post .post-rows > .text table {
+    max-width: 300px;
+    overflow-y: auto;
+    font-size: 0.65em;
+  }
+
+  .post .post-rows > .text table tr td,
+  .post .post-rows > .text table thead tr th {
+    padding: 0.5em;
+  }
 
   /* CONTACT */
   #contact figure {width: 320px; margin: 0 -10px;}
