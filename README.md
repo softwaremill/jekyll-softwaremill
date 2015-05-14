@@ -5,23 +5,12 @@
 
 ## Running in development
 
-### Vagrant virtual machine
+Files are regenerated on every change. Note, IntelliJ saves a file after window defocus, so it's usually 2 seconds before you see the change.
 
-You can run vagrant machine with proper ruby version and all the necessary gems installed. To do it, just enter `vagrant`
-directory and run `vagrant up` command. At the first time it's going to take long time, as it needs to download and 
-install all the packages, rvm, ruby, gems etc.
+1. `bundle exec jekyll serve -w` 
+2. Go to [http://localhost:4000/](http://localhost:4000).
 
-Enter virtual machine by `vagrant ssh`.
-    
-When you're on vagrant machine, there is `jekyll-softwaremill` directory, which is the same directory as the one on your host, visible also on
-virtual machine. So all the changes made on your host in IDEA (or any other editor), are visible also on guest machine. 
-Commands like `bundle exec jekyll server -w` etc. should be run from this directory.
-
-Port 4000 is mapped, so when you serve the page on virtual machine, you can open a browser on your host and see the page on localhost:4000.
-    
-### Run jekyll on your host (without virtual machine)
-
-#### Pre-steps
+### Pre-steps
 
 1. Install Ruby version as defined in [Gemfile](https://github.com/softwaremill/jekyll-softwaremill/blob/master/Gemfile).
 2. `gem install bundler`
@@ -29,21 +18,13 @@ Port 4000 is mapped, so when you serve the page on virtual machine, you can open
 
 You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`.
 
-#### Pre to Pre-steps - Install ruby 2.1.2 for complete non-ruby
+### Pre to Pre-steps - Install ruby 2.1.2 for complete non-ruby
 if (ruby -v !=2.1.2) continue
 
 1. curl -sSL https://get.rvm.io | bash -s stable
 2. source ~/.profile
 3. rvm install ruby-2.1.2
 4. in case of `certificate verify failed` navigate to [rubygems](https://rubygems.org/pages/download#formats) and get tgz and install rubygems by `ruby setup.rb`
-
-# Running jekyll
-## Serve the page from jekyll
-
-Files are regenerated on every change. Note, IntelliJ saves a file after window defocus, so it's usually 2 seconds before you see the change.
-
-1. `bundle exec jekyll serve -w` 
-2. Go to [http://localhost:4000/](http://localhost:4000).
 
 ## Regenerating Twitter or blogs
 

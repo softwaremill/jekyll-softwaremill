@@ -7,7 +7,7 @@ foreach(['name', 'email', 'message', 'url'] as $env) {
 // wp-content/themes/softwaremill/contact.json.php
 
 $to = 'hello@softwaremill.com';
-$from = 'contact.form@io.softwaremill.com';
+$from = 'notifications@softwaremill.pl';
 
 $subject     = 'Contact from SoftwareMill website';
 $name        = trim(@$_POST['name']);

@@ -352,7 +352,7 @@ return array(
         'blogger' => 1,
         'parent' => 0,
         'conference' => 0,
-        'title' => 'Guardian of the Type Safety',
+        'title' => 'Guard of the Type Safety',
         'image' => 'no-image.jpg',
         'imageColor' => 'no-image.jpg',
         'bio' => "
