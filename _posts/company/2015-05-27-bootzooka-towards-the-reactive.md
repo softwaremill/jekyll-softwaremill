@@ -20,38 +20,40 @@ Scalatra offers a simple way of handling aynchronous result. We can return an `A
 
 ```scala
 post("/register", operation(register)) {
-    if (!userService.isUserDataValid(loginOpt, emailOpt, passwordOpt)) {
-      haltWithBadRequest("Wrong user data!")
-    } else {
-      val paramLogin = login
-      val paramPass = password
-      val paramEmail = email
-      new AsyncResult {
-        val is = userService.checkUserExistenceFor(paramLogin, paramEmail).flatMap {
-          case Left(error) => Future { haltWithConflict(error) }
-          case _ =>
-            userService.registerNewUser(escapeHtml4(paramLogin), paramEmail, paramPass).map(
-            _ => Created(StringJsonWrapper("success")))
-        }
+  if (!userService.isUserDataValid(loginOpt, emailOpt, passwordOpt)) {
+    haltWithBadRequest("Wrong user data!")
+  } else {
+    val paramLogin = login
+    val paramPass = password
+    val paramEmail = email
+    new AsyncResult {
+      val is = userService.checkUserExistenceFor(paramLogin, paramEmail).flatMap {
+        case Left(error) => Future { haltWithConflict(error) }
+        case _ =>
+          userService
+            .registerNewUser(escapeHtml4(paramLogin), paramEmail, paramPass).map(
+              _ => Created(StringJsonWrapper("success")))
       }
     }
   }
+}
 ```
 
-Notice that we extract `paramLogin`, `paramPass` and `paramEmail` before proceeding. That's because `login`, `password` and `email` are methods and we **can't call them them** inside a `Future`. That's a tricky thing that one must remember when working with async Scala code - **avoid closing over mutable state!**
+Notice that we extract `paramLogin`, `paramPass` and `paramEmail` before proceeding. That's because `login`, `password` and `email` are methods and we **can't call them** inside a `Future`. That's a tricky thing that one must remember when working with async Scala code - **avoid closing over mutable state!**
 Our `AsyncResult` has a field called `is` and this field should carry our result wrapped in a `Future`. To build it, we are sequentially calling two async services. First one, `checkUserExistenceFor` does a background check if a user with given name or email already exists. Since it returns a `Future`, we need to `map` or `flatMap` over it to define how we would like to proceed with the wrapped result. If requested user data does not yet exist, we are going to call another async service (`registerNewUser`) and return its result as the final one. Since we don't want to end up with a `Future[Future[T]]`, we used `flatMap`. Let's now see how does the registration service look like:
 
 ####The service layer
 
 ```scala
 def registerNewUser(login: String, email: String, password: String): Future[Unit] = {
-    val salt = Utils.randomString(128)
-    val token = UUID.randomUUID().toString
-    userDao.add(User(login, email.toLowerCase, password, salt, token)).flatMap (_ => {
-      val confirmationEmail = emailTemplatingEngine.registrationConfirmation(login)
-      emailScheduler.scheduleEmail(email, confirmationEmail)
-    })
-  }
+  val salt = Utils.randomString(128)
+  val token = UUID.randomUUID().toString
+  userDao.add(User(login, email.toLowerCase, password, salt, token))
+    .flatMap(_ => {
+    val confirmationEmail = emailTemplatingEngine.registrationConfirmation(login)
+    emailScheduler.scheduleEmail(email, confirmationEmail)
+  })
+}
 ```
 
 Here's a similar situation: our call to `userDao` is asynchronous and if it succeeds, we want to send an e-mail. Again we are using `flatMap` to compose these two values of type `Future` in a monadic way. Let's now peek into our DAO where we used new Slick 3.0 API:
@@ -60,21 +62,21 @@ Here's a similar situation: our call to `userDao` is asynchronous and if it succ
 
 ```scala
 def add(user: User): Future[Unit] = {
-    val userByLoginFut = findByLowerCasedLogin(user.login)
-    val userByEmailFut = findByEmail(user.email)
+  val userByLoginFut = findByLowerCasedLogin(user.login)
+  val userByEmailFut = findByEmail(user.email)
 
-    for {
-      userByLoginOpt <- userByLoginFut
-      userByEmailOpt <- userByEmailFut
-    } yield {
-      if (userByLoginOpt.isDefined || userByEmailOpt.isDefined) {
-        throw new IllegalArgumentException("User with given e-mail or login already exists")
-      }
-      else {
-        db.run(users += user).mapToUnit
-      }
+  for {
+    userByLoginOpt <- userByLoginFut
+    userByEmailOpt <- userByEmailFut
+  } yield {
+    if (userByLoginOpt.isDefined || userByEmailOpt.isDefined) {
+     throw new IllegalArgumentException("User already exists")
+    }
+    else {
+      db.run(users += user).mapToUnit
     }
   }
+}
 ```
 
 First we assign two new vals with future DB checks which try to find user by login and e-mail. The `for {}` block is another way of defining monadic composition. The difference here is since our `Futures` are pre-assigned, they will be executed *in parallel*. Then the `yield` block deals with results when they both come. Finally, if everything went fine, we can go with `db.run(users += user).mapToUnit`. This call sends a `DBIOAction` to our database, returning a value of type `Future[Int]`. We additionaly map this to `Future[Unit]`.
