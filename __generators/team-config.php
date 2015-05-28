@@ -260,30 +260,6 @@ return array(
         ",
     ),
     array(
-        'name' => 'Maciej Biłas',
-        'twitter' => 'maciejb',
-        'blog' => 'http://maciej.inszy.org/',
-        'username' => 'bilas',
-        'codingSince' => 2006,
-        'leader' => 1,
-        'opensource' => 1,
-        'blogger' => 1,
-        'parent' => 0,
-        'conference' => 0,
-        'title' => 'Senior Software Engineer',
-        'image' => 'bilas.jpg',
-        'imageColor' => 'bilas-color.jpg',
-        'bio' => "
-        <p>Experienced Java and Ruby programmer, worked on projects ranging from lab automation to financial institution
-          systems. Enjoys having his head wrapped around hard concurrency or scalability problems. Open source
-          contributor.
-        </p>
-        <p>If not in front of the computer you can find him in the outdoors, riding his bike or sitting at home with a
-          cup of green tea reading a book.
-        </p>
-        ",
-    ),
-    array(
         'name' => 'Maciej Hnydka',
         'twitter' => NULL,
         'blog' => NULL,
