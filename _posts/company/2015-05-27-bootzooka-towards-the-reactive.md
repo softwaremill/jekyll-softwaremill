@@ -16,7 +16,7 @@ The consequences of such change are very significant - we can return `Future` in
 
 ####The web layer
 
-Scalatra offers a simple way of handling aynchronous result. We can return an `AynscResult` which wraps a `Future` returned by inner service.
+Scalatra offers a simple way of handling aynchronous result. We can return an `AsyncResult` which wraps a `Future` returned by inner service.
 
 ```scala
 post("/register", operation(register)) {
@@ -83,9 +83,9 @@ First we assign two new vals with future DB checks which try to find user by log
 Here's the main difference between Slick 3.0 and 2.x. We compose queries of type `Query`, then we make them into executable objects of type `DBIOAction`. Such actions are monads and can also be composed, so we can define database calls based on results of previous calls without actually calling the DB. The final `DBIOAction` can be sent to the database for execution by calling `db.run()`.
 
 ####Why 'Reactive'?
-We saw that our codebase is now crawling with `Futures`. Thanks to for comprehension and flatMap we can compose them like any other monads and define our logic based on eventually returned values. This is the main elegance of monads - being able to specify computations on some data wrapped in context without explicitly unwrapping this data. But what are real gains of the new approach? Wasn't it simpler before to just define our logic without all the extra code?
+We saw that our codebase is now crawling with `Futures`. Thanks to for comprehension and flatMap we can compose them like any other monad and define our logic based on eventually returned values. This is the main elegance of monads - being able to specify computations on some data wrapped in context without explicitly unwrapping this data. But what are real gains of the new approach? Wasn't it simpler before to just define our logic without all the extra code?
 #####Elasic threads
-In typical approach, a synchronous call creates a thread in the web layer and this thread becomes blocked until our database call completes. In case of slow responses, a part of our application can easily become a bottleneck producing haning threads and affecting the availability and responsiveness of all the other features. With async DB calls threads get released quickly and they come back re-allocated after a reponse is ready to be returned.
+In typical approach, a synchronous call creates a thread in the web layer and this thread becomes blocked until our database call completes. In case of slow responses, a part of our application can easily become a bottleneck producing hanging threads and affecting the availability and responsiveness of all the other features. With async DB calls threads get released quickly and they come back re-allocated after a reponse is ready to be returned.
 #####Error isolation
 Each async call requires an implicit `ExecutionContext` which defines what thread pool will be used. You can now have much better control over different parts of the application, assigning dedicated `ExecutionContext` to them. In case when all threads in some part of your system hang due to a bug, there's still a possibility that other parts have their own thread pools and will continue to work without resource starvation. This approach to isolation of failure zones is called the Bulkhead Pattern.
 
