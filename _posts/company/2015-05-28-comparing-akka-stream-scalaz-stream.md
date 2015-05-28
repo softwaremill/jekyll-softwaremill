@@ -8,6 +8,7 @@ categories:
 - scalaz
 - scala
 - streaming
+- company
 layout: simple_post
 include_toc: true
 ---
@@ -101,7 +102,9 @@ In akka-stream, backpressure is implemented by constraining demand. If a downstr
 
 Let's compare the performance, features and API of both libraries by looking at a number of code samples, implementing the same processing logic. In general scalaz-stream has a richer API, however there are situations in which akka-stream has combinators which are absent from scalaz-stream.
 
-# Streaming an in-memory numeric stream
+All examples are [available on Github](https://github.com/softwaremill/streams-tests).
+
+# In-memory numeric stream
 
 Let's start with a simple example of transforming an in-memory numeric stream in a couple of linear steps:
 
@@ -524,10 +527,10 @@ I think things are only starting to get interesting, and we'll see much more of 
 
 I don't think there's a clear winner. Both libraries are great, provide an elegant, declarative, composable way to define stream processing. scalaz-stream puts more emphasis on making side-effects and concurrency explicit, defining the stream "functionally", while akka-stream aims to be a solid, performant foundation for building libraries and applications.
 
-akka-streams seems a bit "heavier", as it uses more threading (everything is wrapped in an actor), does quite a lot of internal buffering, so exactly when and how many elements are going to be produced may not be immediately clear. The API is in general declarative, but sometimes you need to use mutable state and imperative constructs. It's also the faster of the two, and as it implements the [reactive streams](http://www.reactive-streams.org) standard it brings a promise of easy integration into other apps using streaming data processing. Plus, it has a Java API, which can definitely have a huge impact on adoption.
+**akka-stream** seems a bit "heavier", as it uses more threading (everything is wrapped in an actor), does quite a lot of internal buffering, so exactly when and how many elements are going to be produced may not be immediately clear. The API is in general declarative, but sometimes you need to use mutable state and imperative constructs. It's also the faster of the two, and as it implements the [reactive streams](http://www.reactive-streams.org) standard it brings a promise of easy integration into other apps using streaming data processing. Plus, it has a Java API, which can definitely have a huge impact on adoption.
 
 Modelling complex flow graphs is also more intuitive (for me) in akka-stream than scalaz-stream thanks to the graph DSL. More genreally, I think understanding how data flows can be easier for a newcomer in akka-stream. But then, writing custom splits/merges requires some boilerplate.
 
-scalaz-stream is definitely harder to grasp at first (at least for me, I'm far from understanding the internals), but it gives you very precise control over threads and a clear one-at-a-time execution model. It feels lightweight and self-contained, and definitely modelling complex splits & merges in a declarative, functional way gives a "I did it" satisfaction ;). You'll have to use mutable state very rarely, if at all.
+**scalaz-stream** is definitely harder to grasp at first (at least for me, I'm far from understanding the internals), but it gives you very precise control over threads and a clear one-at-a-time execution model. It feels lightweight and self-contained, and definitely modelling complex splits & merges in a declarative, functional way gives a "I did it" satisfaction ;). You'll have to use mutable state very rarely, if at all.
 
 It's great to have choice, depending on the projects at hand and personal tastes & programming style! I hope the above examples will be helpful. If I missed some detail on how either akka-stream or scalaz-stream work, or if the code can be improved, let me know!

@@ -153,6 +153,8 @@ A placeholder will be rendered instead.
 If you remove a post from `company` category, the post will be available via a permalink only.
 It won't appear on the blog. May be useful for testing.
 
+If you'd like to add a Table of Contents to the left, add the `include_toc: true` option.
+
 Below the `---` you write a post in Markdown flavor. It's the same as on Github.
 See an [example blog post][example-blog] and [Markdown documentation][markdown] for details.
 
