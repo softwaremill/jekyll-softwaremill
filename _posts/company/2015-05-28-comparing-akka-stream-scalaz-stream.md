@@ -9,7 +9,10 @@ categories:
 - scala
 - streaming
 layout: simple_post
+include_toc: true
 ---
+
+# Introduction
 
 Stream data processing is an increasingly popular topic; it is also at the core of the "reactive" movement, which makes it even more trendy! Streaming libraries provide abstractions which let us solve a large number of "every-day" problems in an **elegant** way using stream processing combinators with a **declarative** API, hiding most of the ugly "imperative" details.
 
