@@ -884,7 +884,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   #post {padding: 0px;}
   #post .block {padding: 0px;}
   .post-content {}
-  .post-content nav {margin: -20px 0 -20px 0; height: 42px; position: absolute; width: 650px;}
+  .post-content nav {margin: -20px auto; height: 42px; width: 650px;}
   .post-content nav a[rel=prev] {float: left;}
   .post-content nav a[rel=next] {float: right;}
   .post-content nav a span {float: left; display: block;  border: 1px solid #cecece; border-radius: 20px; background: #fff;
