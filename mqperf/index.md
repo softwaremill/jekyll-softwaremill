@@ -1,5 +1,7 @@
 ---
 title: Evaluating persistent, replicated message queues
+author: Adam Warski
+author_login: warski
 layout: long_article
 ---
 

@@ -8,7 +8,7 @@ layout: default
 <script src="toc.min.js"></script>
 
 <div id="baner-contact">
-  <div class="wrapper font-green">{{ page.title | escape }}</div>
+  <div class="wrapper font-green">What we've been up to</div>
 </div>
 
 <article id="post">
@@ -16,16 +16,17 @@ layout: default
     <div class="wrapper clearfix">
       <div class="post-content">
         <div class="post clearfix">
-          <!-- <div class="post-header clearfix">
+          <div class="post-header clearfix">
             <figure>
               <div class="image">
                 <img src="/img/members/{{ page.author_login | escape }}.jpg" alt="{{ page.author | escape }}"/></div>
             </figure>
             <div class="title">
+              <h2 class="font-dark-blue font-normal">{{ page.title | escape }}</h2>
               {{ page.date | date: "%-d %B %Y" }} | <strong>{{ page.author | escape }}</strong>
               <br/><br/>
             </div>
-          </div> -->
+          </div>
           <div class="post-rows">
             <div class="toc">
               <h1>Table of contents</h1>
