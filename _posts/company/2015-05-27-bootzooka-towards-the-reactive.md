@@ -62,25 +62,28 @@ Here's a similar situation: our call to `userDao` is asynchronous and if it succ
 
 ```scala
 def add(user: User): Future[Unit] = {
-  val userByLoginFut = findByLowerCasedLogin(user.login)
-  val userByEmailFut = findByEmail(user.email)
+  val action = (for {
+    userByLoginOpt <- findByLowerCasedLoginAction(user.login)
+    userByEmailOpt <- findByEmailAction(user.email)
+    _ <- addOrThrowAction(userByLoginOpt, userByEmailOpt, user)
+  } yield ()).transactionally
 
-  for {
-    userByLoginOpt <- userByLoginFut
-    userByEmailOpt <- userByEmailFut
-  } yield {
-    if (userByLoginOpt.isDefined || userByEmailOpt.isDefined) {
-     throw new IllegalArgumentException("User already exists")
-    }
-    else {
-      db.run(users += user).mapToUnit
-    }
-  }
+  db.run(action)
 }
+
+private def addOrThrowAction(userByLoginOpt: Option[User], 
+                             userByEmailOpt: Option[User], 
+                             user: User) = {
+  if (userByLoginOpt.isDefined || userByEmailOpt.isDefined)
+    DBIO.failed(new IllegalArgumentException("User already exists"))
+  else
+    users += user
+  }
 ```
 
-First we assign two new vals with future DB checks which try to find user by login and e-mail. The `for {}` block is another way of defining monadic composition. The difference here is since our `Futures` are pre-assigned, they will be executed *in parallel*. Then the `yield` block deals with results when they both come. Finally, if everything went fine, we can go with `db.run(users += user).mapToUnit`. This call sends a `DBIOAction` to our database, returning a value of type `Future[Int]`. We additionaly map this to `Future[Unit]`.
-Here's the main difference between Slick 3.0 and 2.x. We compose queries of type `Query`, then we make them into executable objects of type `DBIOAction`. Such actions are monads and can also be composed, so we can define database calls based on results of previous calls without actually calling the DB. The final `DBIOAction` can be sent to the database for execution by calling `db.run()`.
+Here we compose a transaction out of three Slick `DBIOActions`. First two actions are queries to find the user by login
+and email. The third action is dependent on their result. If a user is found, we terminate with an exception, otherwise we 
+add a new user. This whole composite action is executed as a single transaction when we pass it to the `db.run()` call. 
 
 ####Why 'Reactive'?
 We saw that our codebase is now crawling with `Futures`. Thanks to for comprehension and flatMap we can compose them like any other monad and define our logic based on eventually returned values. This is the main elegance of monads - being able to specify computations on some data wrapped in context without explicitly unwrapping this data. But what are real gains of the new approach? Wasn't it simpler before to just define our logic without all the extra code?
