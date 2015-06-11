@@ -65,13 +65,13 @@ def add(user: User): Future[Unit] = {
   val action = (for {
     userByLoginOpt <- findByLowerCasedLoginAction(user.login)
     userByEmailOpt <- findByEmailAction(user.email)
-    _ <- addOrThrowAction(userByLoginOpt, userByEmailOpt, user)
+    _ <- addOrFailOnExistingAction(userByLoginOpt, userByEmailOpt, user)
   } yield ()).transactionally
 
   db.run(action)
 }
 
-private def addOrThrowAction(userByLoginOpt: Option[User], 
+private def addOrFailOnExistingAction(userByLoginOpt: Option[User], 
                              userByEmailOpt: Option[User], 
                              user: User) = {
   if (userByLoginOpt.isDefined || userByEmailOpt.isDefined)
