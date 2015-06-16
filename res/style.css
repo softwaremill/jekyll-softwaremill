@@ -721,7 +721,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
     article .col-find-us .agile .button {background: #fff; border: 1px solid #fff240; color: #000;}
     article .col-find-us .agile .button .more {background-color: #fff240;}
     article .col-find-us .agile .button:hover {background: #fff240; color: #000;}
-    article .col-find-us .confitura {border: 3px solid #e5e5e5; margin: 15px 0 0 0; background: url(../img/confitura-bg.jpg) top right no-repeat;}
+    article .col-find-us .confitura {border: 3px solid #e5e5e5; margin: 15px 0 0 0; background: url(../img/confitura-bg.jpg) 91% 6% no-repeat; background-size: 28%;}
     article .col-find-us .confitura h2 {margin-bottom: 45px;}
     article .col-leaders {float: right; width: 425px;}
     article .col-leaders ul>li {border-bottom: 1px solid #cccccc; position: relative;}
