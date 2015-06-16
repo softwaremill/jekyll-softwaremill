@@ -24,6 +24,30 @@ return array(
         ",
     ),
     array(
+        'name' => 'Andrzej Ludwikowski',
+        'twitter' => 'NULL',
+        'blog' => 'aludwikowski.blogspot.com',
+        'username' => 'ludwikowski',
+        'codingSince' => 2010,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'Software Journeyman',
+        'image' => 'no-image.jpg',
+        'imageColor' => 'no-image.jpg',
+        'bio' => "
+        <p>Andrzej strongly believes in DDD and CQRS approaches for core domain implementation.
+           Considers TDD, SOLID and GRASP as the best catalysts for good quality software development.
+           Author of small, but useful, open-source project for generating fluent builders.
+           Before joining SoftwareMill, he was R&D developer in bank institution.
+        </p>
+        <p>Beside programming he explores brain function and mindfulness.</p>
+        <p>Privately Andrzej is a proud father of twins.</p>
+        ",
+    ),
+    array(
         'name' => 'Daniel Kos',
         'twitter' => 'unodgs',
         'blog' => 'http://blog.digitalsoftware.pl/',
