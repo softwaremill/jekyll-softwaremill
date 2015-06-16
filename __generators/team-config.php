@@ -25,8 +25,8 @@ return array(
     ),
     array(
         'name' => 'Andrzej Ludwikowski',
-        'twitter' => 'NULL',
-        'blog' => 'aludwikowski.blogspot.com',
+        'twitter' => NULL,
+        'blog' => 'http://aludwikowski.blogspot.com/',
         'username' => 'ludwikowski',
         'codingSince' => 2010,
         'leader' => 0,
