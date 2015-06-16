@@ -39,7 +39,7 @@ return array(
         'imageColor' => 'no-image.jpg',
         'bio' => "
         <p>Andrzej strongly believes in DDD and CQRS approaches for core domain implementation.
-           Considers TDD, SOLID and GRASP as the best catalysts for good quality software development.
+           He considers TDD, SOLID and GRASP as the best catalysts for good quality software development.
            Author of small, but useful, open-source project for generating fluent builders.
            Before joining SoftwareMill, he was R&D developer in bank institution.
         </p>
