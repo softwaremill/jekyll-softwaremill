@@ -7,45 +7,53 @@
 
 ### Vagrant virtual machine
 
-You can run vagrant machine with proper ruby version and all the necessary gems installed. To do it, just enter `vagrant`
-directory and run `vagrant up` command. At the first time it's going to take long time, as it needs to download and 
-install all the packages, rvm, ruby, gems etc.
+As a sort of express lane, you can run a Vagrant virtual machine with the proper ruby version and all the necessary gems installed. To initialize it:
 
-Enter virtual machine by `vagrant ssh`.
-    
-When you're on vagrant machine, there is `jekyll-softwaremill` directory, which is the same directory as the one on your host, visible also on
-virtual machine. So all the changes made on your host in IDEA (or any other editor), are visible also on guest machine. 
-Commands like `bundle exec jekyll server -w` etc. should be run from this directory.
+ 1. Enter the `vagrant` subdirectory.
+ 2. Run the `vagrant up` command. *The first execution is going to take a while, as Vagrant needs to download and 
+install all the packages, rvm, ruby, gems, etc.*
+ 3. Enter the virtual machine with `vagrant ssh`.
+
+After that, you'll find a `jekyll-softwaremill` in the home directory, which is the same `jekyll-softwaremill` as the one on your host. So all the changes made on your host in IDEA (or any other editor), are visible also on the virtual machine.
+
+To start working within the virtual machine, on the site itself:
+
+ 1. `vagrant ssh` and `cd jekyll-softwaremill` if not there already (ignore the RVM warning).
+ 2. [Regenerate blogs](README.md#user-content-regenerating-twitter-entries-and-blog).
+ 3. [Serve the page from Jekyll](README.md#serve-the-page-from-jekyll).
 
 Port 4000 is mapped, so when you serve the page on virtual machine, you can open a browser on your host and see the page on localhost:4000.
     
-### Run jekyll on your host (without virtual machine)
+### Run jekyll on your host (outside of Vagrant)
 
-#### Pre-steps
+#### Pre-step 1 - Install Ruby 2.1.2 (where applicable)
 
-1. Install Ruby version as defined in [Gemfile](https://github.com/softwaremill/jekyll-softwaremill/blob/master/Gemfile).
-2. `gem install bundler`
-3. `bundle`
-
-You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`.
-
-#### Pre to Pre-steps - Install ruby 2.1.2 for complete non-ruby
 if (ruby -v !=2.1.2) continue
 
-1. curl -sSL https://get.rvm.io | bash -s stable
-2. source ~/.profile
-3. rvm install ruby-2.1.2
-4. in case of `certificate verify failed` navigate to [rubygems](https://rubygems.org/pages/download#formats) and get tgz and install rubygems by `ruby setup.rb`
+1. `curl -sSL https://get.rvm.io | bash -s stable`
+2. `source ~/.profile`
+3. `rvm install ruby-2.1.2`
+4. In case of `certificate verify failed` navigate to [rubygems](https://rubygems.org/pages/download#formats) and get tgz and install rubygems by `ruby setup.rb`
+
+#### Pre-step 2 - Install and apply bundler
+
+1. Ensure Ruby version is as defined in [Gemfile](https://github.com/softwaremill/jekyll-softwaremill/blob/master/Gemfile).
+2. `gem install bundler`
+3. `bundle`
+4. You may need to add `$HOME/.gem/ruby/1.9.1/bin` to `$PATH`.
+
+### Pre-step 3 - Install blog generator dependencies
+
+1. Install PHP for command line. Package name is usually `php-cli`.
+2. Go to `__generators/` and call `bundle`.
+
+Most likely you may need imagemagick in `__generators/` for handling images.
+1. `brew install ImageMagick`
+2. `gem install rmagick -v '2.13.3'`
 
 # Running jekyll
-## Serve the page from jekyll
 
-Files are regenerated on every change. Note, IntelliJ saves a file after window defocus, so it's usually 2 seconds before you see the change.
-
-1. `bundle exec jekyll serve -w` 
-2. Go to [http://localhost:4000/](http://localhost:4000).
-
-## Regenerating Twitter or blogs
+## Regenerating Twitter entries and blogs
 
 Call `__generators/generate.sh`.
 
@@ -59,14 +67,12 @@ To solve that locally just create the missing files
     touch _includes/generated/twitter-blog.html
     touch _includes/generated/twitter-home.html
 
-### Pre-steps
+## Serve the page from jekyll
 
-1. Install PHP for command line. Package name is usually `php-cli`.
-2. Go to `__generators/` and call `bundle`.
+Files are regenerated on every change. Note, IntelliJ saves a file after window defocus, so it's usually 2 seconds before you see the change.
 
-Most likely you may need imagemagick in `__generators/` for handling images.
-1. `brew install ImageMagick`
-2. `gem install rmagick -v '2.13.3'`
+1. `bundle exec jekyll serve -w` 
+2. Go to [http://localhost:4000/](http://localhost:4000).
 
 ## Sending e-mails via contact form - pre-steps
 
