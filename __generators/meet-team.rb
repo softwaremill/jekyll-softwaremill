@@ -12,9 +12,7 @@ json_config = `php php2json.php`
 people = JSON.parse json_config
 
 people.each_with_index { |person, idx |
-  img = Image.read("../img/members/"+person['imageColor'])[0]
-  pixel = img.get_pixels(0,0,1,1)[0]
-  if pixel.blue > pixel.green
+  if idx % 2 == 0
       person['color'] = 'blue'
   else
       person['color'] = 'green'

@@ -13,7 +13,6 @@ return array(
         'conference' => 1,
         'title' => 'CTO and co-founder',
         'image' => 'warski.jpg',
-        'imageColor' => 'warski-color.jpg',
         'bio' => "
         <p>Adam Warski has participated in many projects using Java and Scala technologies. He is a founder of several
           open-source projects, such as Hibernate Envers, ElasticMQ and Veripacks. Apart from writing closed- and
@@ -35,8 +34,7 @@ return array(
         'parent' => 1,
         'conference' => 0,
         'title' => 'Software Journeyman',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'andrzej_ludwikowski.jpg',
         'bio' => "
         <p>Andrzej strongly believes in DDD and CQRS approaches for implementation of core domain.
            He considers TDD, SOLID and GRASP as the best catalysts for good quality software development.
@@ -59,8 +57,7 @@ return array(
         'parent' => 1,
         'conference' => 0,
         'title' => 'Software Developer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'daniel_kos.jpg',
         'bio' => "
         <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p> 
         <p>Interested in computer graphics and games as well as in rich internet/enterprise applications.</p> 
@@ -80,7 +77,6 @@ return array(
         'conference' => 0,
         'title' => 'Senior Software Engineer',
         'image' => 'kunicki.jpg',
-        'imageColor' => 'kunicki-color.jpg',
         'bio' => "
         <p>A software engineer who cares about the quality of what he does. Specializes in Java/JEE related
           technologies, but believes that software craftsmanship is technology agnostic – thus he never limits his
@@ -103,8 +99,7 @@ return array(
         'parent' => 1,
         'conference' => 0,
         'title' => 'Passionate Software Developer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'jan_kowalski.jpg',
         'bio' => "
         <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland. 
 
@@ -121,7 +116,6 @@ return array(
         'conference' => 1,
         'title' => 'Co-founder and COO',
         'image' => 'zborowski.jpg',
-        'imageColor' => 'zborowski-color.jpg',
         'bio' => "
         <p>With SoftwareMill from the very beginning. The first normal person among the geeks, he connects the IT world
           with the non-IT surroundings.
@@ -143,7 +137,6 @@ return array(
         'conference' => 0,
         'title' => 'Integration Architect',
         'image' => 'kijanowski.jpg',
-        'imageColor' => 'kijanowski-color.jpg',
         'bio' => "
         <p>Devoted to the SML way of getting things done.<br/> Started his career at JBoss, where he was part of a
           superior QE team and worked on products like the Enterprise Application Platform (JBoss AS), the SOA Platform
@@ -164,8 +157,7 @@ return array(
         'parent' => 0,
         'conference' => 1,
         'title' => 'PR&Marketing Manager',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'kasia_l-b.jpg',
         'bio' => "
         <p>A digital native with strong experience in developing and executing social media strategies for brands. In SoftwareMill Kasia takes care of business communications.</p>
         <p>She's gained her experience primarily in interactive agencies, where she led projects for financial, fmcg, household and HR sectors.</p>
@@ -185,7 +177,6 @@ return array(
         'conference' => 0,
         'title' => 'QA engineer',
         'image' => 'pukianiec.jpg',
-        'imageColor' => 'pukianiec-color.jpg',
         'bio' => "
         <p>QA engineer with many years experience in large and small projects. At SoftwareMill she writes Selenium
           tests.
@@ -206,7 +197,6 @@ return array(
         'conference' => 0,
         'title' => 'Passionate Software Developer',
         'image' => 'ciesielski.jpg',
-        'imageColor' => 'ciesielski-color.jpg',
         'bio' => "
         <p>Passionate about programming since his early schooldays. Previously co-developed worldwide systems for mobile
           banking and the healthcare industry. A true enthusiast of the JVM ecosystem and open source. After work
@@ -228,7 +218,6 @@ return array(
         'conference' => 1,
         'title' => 'Senior Software Engineer',
         'image' => 'grajek.jpg',
-        'imageColor' => 'grajek-color.jpg',
         'bio' => "
         <p>Passionate programmer, constantly looking for better tools and methodologies.<br/> Before joining the
           SoftwareMill team Krzysztof worked as a freelance developer for clients from Poland and New Zealand.<br/> He
@@ -251,7 +240,6 @@ return array(
         'conference' => 1,
         'title' => 'Creative Software Engineer',
         'image' => 'lenart.jpg',
-        'imageColor' => 'lenart-color.jpg',
         'bio' => "
         <p>Has turned passion for programming from a hobby into profession.<br/> Łukasz believes that a good programmer
           should always try new languages and technologies. He can develop in PHP, C#, Borland Delphi, etc. – finding
@@ -274,7 +262,6 @@ return array(
         'conference' => 1,
         'title' => 'Software Wizard',
         'image' => 'zuchowski.jpg',
-        'imageColor' => 'zuchowski-color.jpg',
         'bio' => "
         <p>His job and passion is finding solution for business problems. Lukasz solves those with logic, Java language
           and a handful of frameworks. He graduated from the Technical University of Lodz. During his career he’s been
@@ -296,7 +283,6 @@ return array(
         'conference' => 0,
         'title' => 'Senior Software Engineer',
         'image' => 'hnydka.jpg',
-        'imageColor' => 'hnydka-color.jpg',
         'bio' => "
         <p>Graduated from Warsaw University of Technology. After few years of programming with Java and JEE started
           using JRuby, JavaScript libs, now getting to know Scala.
@@ -317,7 +303,6 @@ return array(
         'conference' => 0,
         'title' => 'Passionate Software Developer',
         'image' => 'stozek.jpg',
-        'imageColor' => 'stozek-color.jpg',
         'bio' => "
         <p>Software developer devoted to doing things \"the right way\". Fan of coding standards and conventions.</p>
         <p>Before joining SoftwareMill she worked for a small Glasgow-based chauffeur-driven transportation company and a worldwide corporation producing recruitment software.
@@ -332,7 +317,6 @@ return array(
         'conference' => 1,
         'title' => 'Administration & Event Coordinator',
         'image' => 'wojciechowska.jpg',
-        'imageColor' => 'wojciechowska-color.jpg',
         'bio' => "
         <p>Polish philologist, landscape architect, tour guide and karateka in one: Gosia has experience in each of
           these fields. At SoftwareMill she is responsible for correspondence, helps to organize various events,
@@ -353,8 +337,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'Guardian of the Type Safety',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'marcin_kubala.jpg',
         'bio' => "
         <p>Marcin enjoys pair programming with compiler, using strictly-typed languages like Scala and Java.
         Currently fascinated by functional programming principles.
@@ -376,8 +359,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'Software Wizard',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'michal_chmielarz.jpg',
         'bio' => "
         <p>Graduated from University of Adam Mickiewicz, Poznań. Java developer and passionate backend programmer. Familiar with enterprise integration system problems.
         Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p> 
@@ -397,7 +379,6 @@ return array(
         'conference' => 0,
         'title' => 'Software Wizard',
         'image' => 'matloka.jpg',
-        'imageColor' => 'matloka-color.jpg',
         'bio' => "
         <p>Michał is always eager to get to know new emerging technologies. He specializes in Java SE and EE
           development. His involvement in multiple open source projects led to receiving JBoss Community Recognition
@@ -417,8 +398,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'Passionate Software Developer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'michal_mital.jpg',
         'bio' => "
         <p>Michał likes clean and simple code and believes in Agile.
          Before joining SML, Michał worked for Lufthansa Systems.
@@ -441,7 +421,6 @@ return array(
         'conference' => 0,
         'title' => 'Software Wizard',
         'image' => 'ostruszka.jpg',
-        'imageColor' => 'ostruszka-color.jpg',
         'bio' => "
         <p>\"Both-ends\" developer, in love with building web applications
         (from monoliths to modular Single Page Apps today) since beginning of his developer career.
@@ -464,8 +443,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'Senior Software Engineer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'mikolaj_koziarkiewicz.jpg',
         'bio' => "
         <p>Mikołaj is an alumni of the Vienna University of Technology's Computational Intelligence programme. As such, he feels at home to different language paradigms, and therefore enjoys the current technology boom in the JVM ecosystem.
 
@@ -487,8 +465,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'Passionate Software Engineer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'oskar_straczkowski.jpg',
         'bio' => "
         <p>Prior SoftwareMill, Oskar worked in Lufthansa Systems where he developed solutions for airlines.
         He's also a glider fan and promised to take all of the team for a flight someday.</p>
@@ -507,7 +484,6 @@ return array(
         'conference' => 1,
         'title' => 'Senior Software Engineer',
         'image' => 'stawicki.jpg',
-        'imageColor' => 'stawicki-color.jpg',
         'bio' => "
         <p>A programmer by profession and passion.His adventure with programming started with a Timex 2048 computer and
           Basic in childhood. Professionally he started programming in C++, later switching to Java. He has been
@@ -529,7 +505,6 @@ return array(
         'conference' => 0,
         'title' => 'Senior Software Engineer',
         'image' => 'dyraga.jpg',
-        'imageColor' => 'dyraga-color.jpg',
         'bio' => "
         <p>Piotr graduated computer science at Jagiellonian University. Prior joining SoftwareMill worked on projects
             ranging from bank transaction processing engine to HTTP proxy server. He specializes in high-throughput,
@@ -550,7 +525,6 @@ return array(
         'conference' => 1,
         'title' => 'Passionate Software Developer',
         'image' => 'buda.jpg',
-        'imageColor' => 'buda-color.jpg',
         'bio' => "
         <p>Piotr started his professional career in 2007 at CGM Poland. He doesn’t avoid any programming languages.
           Java, Scala and Android enthusiast. Eager for knowledge both programming and technical, spends most of free
@@ -567,8 +541,7 @@ return array(
          'username' => 'sylwia',
          'conference' => 0,
          'title' => 'Office Assistant',
-         'image' => 'no-image.jpg',
-         'imageColor' => 'no-image.jpg',
+         'image' => 'sylwia_gorska.jpg',
          'bio' => "
          <p>Sylwia supports the administration part of SoftwareMill, she is responsible for correspondence, helps to organize various events and deals with suppliers.
          </p>
@@ -588,7 +561,6 @@ return array(
         'conference' => 0,
         'title' => 'Senior Software Engineer',
         'image' => 'dziurko.jpg',
-        'imageColor' => 'dziurko-color.jpg',
         'bio' => "
         <p>Tomasz likes clean code and methods with names that are over ten-characters long. He has been involved in
           projects related to e-trade and navigation systems. Big fan and active promoter of Apache Wicket framework.
@@ -609,7 +581,6 @@ return array(
         'conference' => 1,
         'title' => 'CEO & Co-founder',
         'image' => 'szymanski.jpg',
-        'imageColor' => 'szymanski-color.jpg',
         'bio' => "
         <p>
             Co-founder of SoftwareMill, but still active developer, without which he would go mad.
@@ -639,8 +610,7 @@ return array(
         'parent' => 1,
         'conference' => 0,
         'title' => 'Senior Software Engineer',
-        'image' => 'no-image.jpg',
-        'imageColor' => 'no-image.jpg',
+        'image' => 'wojtek_ziebicki.jpg',
         'bio' => "
         <p>Experienced Java and Groovy programmer. He doesn’t avoid any programming languages.
         Professionally he started programming in PHP, later switching to Java. He has been developing
