@@ -252,7 +252,7 @@ return array(
     array(
         'name' => 'Łukasz Żuchowski',
         'twitter' => 'zuchos',
-        'blog' => 'http://blog.zuchos.com/',
+        'blog' => 'http://zuchos.com/',
         'username' => 'zuchowski',
         'codingSince' => 2007,
         'leader' => 0,
