@@ -698,6 +698,7 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
       z-index: 10; opacity: 1;}
     article .member-container.blue .member-more .close {background: url(../img/close-blue.png) center center no-repeat #fff;}
     article .member-more .close:hover {opacity: 0.5;}
+    article .member-more figure img { opacity: 0.1;}
 
     /* FIND US AT */
     article .col-find-us {float: left; width: 505px;}
