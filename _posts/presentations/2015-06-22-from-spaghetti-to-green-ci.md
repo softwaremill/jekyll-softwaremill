@@ -1,7 +1,7 @@
 ---
 layout: simple_presentation
 title: From spaghetti with no `src/test` to green CI and well-sleeping developers
-conference: DevCrowd, Poland
+conference: Devoxx, Poland
 abstract_fragment: We’ll show you how to become friends with your legacy code
 keywords: spring, spock, devops, bugsnag, logstash, kibana, ci, aspectj
 speaker: Jacek Kunicki & Michał Matłoka
@@ -10,7 +10,7 @@ categories:
 - presentations
 ---
 
-We have presented this topic on Poznań Java User Group and DevCrowd 2015. If you missed those talks, you still have a chance to hear us at GeeCON 2015 and Devoxx PL - see you there!
+We have presented this topic on Poznań Java User Group, DevCrowd 2015, GeeCON 2015 and Devoxx PL. If you missed those talks, you still have a chance to hear us at Confitura - see you there!
 
 <h4>Abstract</h4>
 Yes, we did it! Over a year ago we met a monster – a legacy Spring MVC application with 50% code duplication, no tests, manual deployment and mysterious error reporting. Come and see yourself how blood, sweat and tears have then turned into a well-tested REST API, pleasant to use and develop.
@@ -23,3 +23,6 @@ Come to hear our story, share yours and let us know if we could do better!
 
 <h4>Slides</h4>
 <iframe src="https://www.slideshare.net/slideshow/embed_code/46980945?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/SoftwareMill/p-46980945" title="From spaghetti with no `src/test` to green CI and well-sleeping developers" target="_blank">From spaghetti with no `src/test` to green CI and well-sleeping developers</a> </strong></div>
+
+<h4>Video from GeeCON 2015</h4>
+<iframe src="https://player.vimeo.com/video/130729631" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/130729631">GeeCON 2015: Michał Matłoka, Jacek Kunicki - From spaghetti with no src/test to green CI, good coverage and well-sleeping devs</a> from <a href="https://vimeo.com/geecon">GeeCON Conference</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
