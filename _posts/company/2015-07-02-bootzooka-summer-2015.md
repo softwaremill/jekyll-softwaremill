@@ -7,6 +7,7 @@ categories:
 - scala
 - javascript
 - bootzooka
+- company
 layout: simple_post
 ---
 
