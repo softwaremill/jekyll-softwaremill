@@ -1348,7 +1348,7 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
   }
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 1025px) {
 
   .error-404 {background: url(../img/404-320.jpg) #000 no-repeat top center; padding-top: 380px;}
   .error-404 .parameters {display: none;}
