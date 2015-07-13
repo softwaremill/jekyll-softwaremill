@@ -384,7 +384,7 @@ return array(
           development. His involvement in multiple open source projects led to receiving JBoss Community Recognition
           Award in 2013. He is also a co-author of recently published book
           <a href='https://www.packtpub.com/application-development/java-ee-7-development-wildfly'>Java EE 7 Development with WildFly</a>.</p>
-        <p>Michał presented on Poznań Java User Group, DevCrowd 2015, GeeCON 2015, Devoxx Poland 2015 and will be speaking at Confitura.</p>
+        <p>Michał presented on Poznań Java User Group, DevCrowd 2015, GeeCON 2015, Devoxx Poland 2015 and Confitura 2015.</p>
         ",
          ),
     array(
