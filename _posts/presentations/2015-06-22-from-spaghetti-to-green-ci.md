@@ -10,7 +10,7 @@ categories:
 - presentations
 ---
 
-We have presented this topic on Poznań Java User Group, DevCrowd 2015, GeeCON 2015 and Devoxx PL. If you missed those talks, you still have a chance to hear us at Confitura - see you there!
+We have presented this topic on Poznań Java User Group, DevCrowd 2015, GeeCON 2015, Devoxx PL and Confitura 2015.
 
 <h4>Abstract</h4>
 Yes, we did it! Over a year ago we met a monster – a legacy Spring MVC application with 50% code duplication, no tests, manual deployment and mysterious error reporting. Come and see yourself how blood, sweat and tears have then turned into a well-tested REST API, pleasant to use and develop.
