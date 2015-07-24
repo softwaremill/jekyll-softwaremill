@@ -38,7 +38,7 @@ return array(
         'bio' => "
         <p>Andrzej strongly believes in DDD and CQRS approaches for implementation of core domain.
            He considers TDD, SOLID and GRASP as the best catalysts for good quality software development.
-           Author of small, but useful, open-source project for generating fluent builders.
+           Author of small open-source project for generating fluent builders.
            Before joining SoftwareMill, he was R&D developer in a financial institution.
         </p>
         <p>Beside programming he explores brain function and mindfulness.</p>
