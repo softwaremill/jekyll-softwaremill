@@ -46,6 +46,26 @@ return array(
         ",
     ),
     array(
+        'name' => 'Bartosz Andrzejczak',
+        'twitter' => 'baandrzejczak',
+        'blog' => 'http://bandrzejczak.com/',
+        'username' => 'andrzejczak',
+        'codingSince' => 2013,
+        'leader' => 1,
+        'opensource' => 0,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Software Wizard',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>Bartosz is clean code advocate and good tests fan.
+           He enjoys creating simple and elegant solutions to complicated problems.
+        </p>
+        <p>In his spare time he writes a blog, speaks at local meetups and conferences and tries to learn some science to better understand the world.</p>
+        ",
+    ),
+    array(
         'name' => 'Daniel Kos',
         'twitter' => 'unodgs',
         'blog' => 'http://blog.digitalsoftware.pl/',
