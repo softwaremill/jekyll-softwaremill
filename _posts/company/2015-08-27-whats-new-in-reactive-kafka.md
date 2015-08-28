@@ -56,7 +56,7 @@ If there's an `onError()` message signaled from the upstream, the stream cannot 
 If the problem is caused by a producer throwing exception when writing to Kafka, the exception will be propagated in a typical Akka way, up the supervision hierarchy. If we don't supervise our `KafkaActorSubscriber`, it will simply restart and keep trying to write. If we want to handle exceptions in a custom way, we need to create the subscriber as a child of another actor in order to supervise it. A `KafkaActorSubscriber` can be gracefully closed by sending it an `ActorSubscriberMessage.OnComplete`.
 
 ### Java wrappers
-The last important feature (released already in 0.7.2) are wrappers that allow us to use Reactive Kafka with Java. Many thanks to [James Morgan](https://github.com/jamesmorgan) and [Mark Harrison](Mark Harrison) for this contribution! We can now run streams in following way:
+The last important feature (released already in 0.7.2) are wrappers that allow us to use Reactive Kafka with Java. Many thanks to [James Morgan](https://github.com/jamesmorgan) and [Mark Harrison](https://github.com/markglh) for this contribution! We can now run streams in following way:
 
 ```java
 ReactiveKafka kafka = new ReactiveKafka();
