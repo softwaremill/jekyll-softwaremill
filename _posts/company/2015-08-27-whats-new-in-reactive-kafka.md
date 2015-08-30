@@ -59,37 +59,29 @@ If the problem is caused by a producer throwing exception when writing to Kafka,
 The last important feature (released already in 0.7.2) are wrappers that allow us to use Reactive Kafka with Java. Many thanks to [James Morgan](https://github.com/jamesmorgan) and [Mark Harrison](https://github.com/markglh) for this contribution! We can now run streams in following way:
 
 ```java
+tring zooKeeperHost = "localhost:2181";
+String brokerList = "localhost:9092";
+
 ReactiveKafka kafka = new ReactiveKafka();
 ActorSystem system = ActorSystem.create("ReactiveKafka");
 ActorMaterializer materializer = ActorMaterializer.create(system);
 
-ConsumerProperties<Byte[], String> cp =
-   new PropertiesBuilder.Consumer(
-     brokerList, 
-     zooKeeperHost, 
-     "topic", 
-     "groupId", 
-     new StringDecoder(null))
-   .build();
+ConsumerProperties<String> cp =
+   new PropertiesBuilder.Consumer(brokerList, zooKeeperHost, "topic", "groupId", new StringDecoder(null))
+      .build();
 
-Publisher<KeyValueKafkaMessage<Byte[], String>> publisher = kafka.consume(cp, system);
+Publisher<MessageAndMetadata<byte[], String>> publisher = kafka.consume(cp, system);
 
 ProducerProperties<String> pp = new PropertiesBuilder.Producer(
-                                  brokerList, 
-                                  zooKeeperHost, 
-                                  "topic", 
-                                  new StringEncoder(null))
-                                .build();
+   brokerList,
+   zooKeeperHost,
+   "topic",
+   new StringEncoder(null)).build();
 
 Subscriber<String> subscriber = kafka.publish(pp, system);
 
-Source
-  .from(publisher)
-  .map(KeyValueKafkaMessage::msg)
-  .to(Sink.create(subscriber))
-  .run(materializer);
+Source.from(publisher).map(msg -> msg.message()).to(Sink.create(subscriber)).run(materializer);
 ```
-
 #### Future plans
 What can be added in the nearest future? We are specifically looking forward to work on following improvements:  
 - Performance tuning for the Kafka manual committer. Currently each committer instance opens its own channel to Kafka. Perhaps channels can be pooled to increase scalability.  
