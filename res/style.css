@@ -370,6 +370,21 @@ body { color: #000; font-size: 12px; line-height: 18px; font-family: 'Open Sans'
   .project.jbison .see-more {background: #000; border-color: #000; color: #fff;}
   .project.jbison .see-more:hover {color: #73c5e1; background: #fff; border-color: #fff;}
 
+  .project.updateimpact h1 a {
+    color: #18c099;
+  }
+
+  .project.updateimpact .see-more {
+    background-color: #18c099;
+    color: white;
+    border: 1px solid #18c099;
+  }
+
+  .project.updateimpact .see-more:hover {
+    background-color: white;
+    color: #18c099;
+  }
+
   .project.codebrag {background: #310808 url(../img/codebarg-bg.png) center center no-repeat; color: #fff;}
   .project.codebrag figure {margin-top: -110px; margin-bottom: -60px;}
   .project.codebrag h1 a {color: #e13d0e;}
