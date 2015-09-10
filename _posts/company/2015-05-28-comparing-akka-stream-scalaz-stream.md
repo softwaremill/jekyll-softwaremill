@@ -25,7 +25,7 @@ We'll try to compare akka-stream and scalaz-stream in two parts: first looking a
 
 Both libraries are under active development (especially akka-stream, which is the younger of the two) and the APIs are still in flux, but that doesn't stop people from using them in production (let's face it, we all used a library version 0.0.3-beta1-M3 at least once ;) ), so let's see what they offer currently.
 
-Tested versions: akka-stream **1.0-RC3** and scalaz-stream **0.7a**.
+Tested versions: akka-stream **1.0** and scalaz-stream **0.7.2a**.
 
 # What is ...?
 
@@ -229,7 +229,7 @@ override def run(from: File, to: File) = {
   implicit val mat = ActorFlowMaterializer()
  
   val r: Future[Long] = Source.synchronousFile(from)
-    .transform(() => new ParseLinesStage("\n", 1048576))
+    .via(Framing.delimiter(ByteString("\n"), 1048576))
     .filter(!_.contains("#!@"))
     .map(_.replace("*", "0"))
     .transform(() => new IntersperseStage("\n"))
@@ -239,7 +239,7 @@ override def run(from: File, to: File) = {
 
   Await.result(r, 1.hour)
 } 
-// + code for ParseLinesStage and IntersperseStage
+// + code for IntersperseStage
 
 // scalaz
 override def run(from: File, to: File) = {
@@ -255,7 +255,7 @@ override def run(from: File, to: File) = {
 }
 ```
 
-Note the `ParseLinesStage` and `IntersperseStage` in the Akka version: these are transformation stages which have to be written by hand (or copied from the "streams cookbook"), they are not included in the distribution, at least yet. See the full example source [TransferTransformFile.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/TransferTransformFile.scala). Here, scalaz-stream provides a richer set of combinators out-of-the-box. And to be honest, reading lines from a file seems like a pretty basic use-case so I'm surprised it's not present in akka-stream.
+Note the `IntersperseStage` in the Akka version: it's a transformation stage which has to be written by hand (or copied from the "streams cookbook"), it's not included in the distribution, at least yet. See the full example source [TransferTransformFile.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/TransferTransformFile.scala). Here, scalaz-stream provides a richer set of combinators out-of-the-box.
 
 Again, let's run a performance comparison of the two implementations, transferring files of sizes 10, 100 and 500MB. The tests are executed multiple times in random order on the same machine with a SSD:
 
@@ -536,3 +536,7 @@ Modelling complex flow graphs is also more intuitive (for me) in akka-stream tha
 **scalaz-stream** is definitely harder to grasp at first (at least for me, I'm far from understanding the internals), but it gives you very precise control over threads and a clear one-at-a-time execution model. It feels lightweight and self-contained, and definitely modelling complex splits & merges in a declarative, functional way gives a "I did it" satisfaction ;). You'll have to use mutable state very rarely, if at all.
 
 It's great to have choice, depending on the projects at hand and personal tastes & programming style! I hope the above examples will be helpful. If I missed some detail on how either akka-stream or scalaz-stream work, or if the code can be improved, let me know!
+
+# Updates
+
+10/09/2015: Updating to akka-stream 1.0 
