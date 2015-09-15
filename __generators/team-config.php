@@ -220,7 +220,8 @@ return array(
         'bio' => "
         <p>Passionate about programming since his early schooldays. Previously co-developed worldwide systems for mobile
           banking and the healthcare industry. A true enthusiast of the JVM ecosystem and open source. After work
-          Krzysztof enjoys consuming tons of new knowledge and experimenting with software development.  In his free
+          Krzysztof enjoys consuming tons of new knowledge and experimenting with software development. 
+In his free
           time he sneaks out into countryside seclusion to take care of his humble apiary.
         </p>
         ",
@@ -455,7 +456,7 @@ return array(
     array(
         'name' => 'Mikołaj Koziarkiewicz',
         'twitter' => NULL,
-        'blog' => NULL,
+        'blog' => 'http://xn--mikoak-6db.net',
         'username' => 'koziarkiewicz', 
         'codingSince' => 1996,
         'leader' => 0,

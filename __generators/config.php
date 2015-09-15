@@ -64,6 +64,10 @@ return array(
     'twitter' => 'mostruszka',
     'blog' => 'http://michalostruszka.pl',
   ),
+  'Mikołaj Koziarkiewicz' => array(
+    'twitter' => NULL,
+    'blog' => 'http://xn--mikoak-6db.net',
+  ), 
   'Paweł Stawicki' => array(
     'twitter' => 'pawelstawicki',
     'blog' => 'http://pawelstawicki.blogspot.com/',
