@@ -237,7 +237,7 @@ We still need to somehow register the event listeners and model updates, create 
 
 For example, here's the [`UserModule`](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/user/UserModule.scala), defining how to create all user-related objects: user commands, user read model and the depedencies of the module.
 
-The event listeners/model update functions are added to the `Registry` (which is used by the `EventMachine` to lookup what should be done in reaction to an event), by defining a method which takes an old `Regsitry` and returns an updated one. This is used in [`Beans`](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/Beans.scala), where all of the modules are brought together (here there are only two of them).
+The event listeners/model update functions are added to the `Registry` (which is used by the `EventMachine` to lookup what should be done in reaction to an event), by defining a method which takes an old `Registry` and returns an updated one. This is used in [`Beans`](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/Beans.scala), where all of the modules are brought together (here there are only two of them).
 
 ## Handle context
 
