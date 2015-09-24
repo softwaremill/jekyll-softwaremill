@@ -1293,34 +1293,92 @@ input.submit:hover {background: #000; color: #fff; border-color: #000;}
 .codecolorer-container table td.line-numbers {color: #fff; background: #000;}
 .codecolorer-container {border: 1px solid #eee;}
 
-
-/* MOBILE BACKEND PAGE */
-.mobile-backend-page .baner-short {
+.baner-wide-centered {
   height: auto;
-  color: #BCCF02;
   text-align: center;
   line-height: 1.5;
   padding: 6rem 0 4rem;
   font-weight: 400;
 }
-.mobile-backend-page .baner-short h1 {
+
+.baner-wide-centered h1 {
   font-size: 36px;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: .5rem;
 }
-.mobile-backend-page .baner-short p {
+
+.baner-wide-centered p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 2rem;
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+
+.baner-wide-centered .see-more {
+  float: none;
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+.baner-wide-centered .see-more:hover {
+  background-color: white;
+  color: black;
+}
+
+.see-more.gh-btn,
+.see-more.fb-btn {
+  padding-left: 48px;
+}
+
+.see-more.gh-btn:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/gh-white.png);
+  width: 25px;
+  height: 24px;
+  background-size: cover;
+  top: 6px;
+  left: 14px;
+}
+.see-more.gh-btn:hover:before {
+  background-image: url(../img/gh-black.png);
+}
+
+.see-more.fb-btn:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/fb-white.png);
+  width: 21px;
+  height: 21px;
+  background-size: cover;
+  top: 8px;
+  left: 14px;
+}
+.see-more.fb-btn:hover:before {
+  background-image: url(../img/fb-black.png);
+}
+
+
+/* MOBILE BACKEND PAGE */
+.mobile-backend-page .baner-short {
+  color: #BCCF02;
+}
+.baner-wide-centered p {
+  color: #BCCF02;
 }
 .mobile-backend-page .baner-short .see-more {
   background-color: #eb65a0;
-  float: none;
-  display: inline-block;
   font-size: 21px;
   color: white;
   border: none;
+  font-weight: 400;
 }
 .mobile-backend-page .baner-short .see-more:hover {
   background-color: #B96FAB;
