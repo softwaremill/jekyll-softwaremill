@@ -19,7 +19,7 @@ After that, you'll find a `jekyll-softwaremill` in the home directory, which is 
 To start working within the virtual machine, on the site itself:
 
  1. `vagrant ssh` and `cd jekyll-softwaremill` if not there already (ignore the RVM warning).
- 2. [Regenerate blogs](README.md#user-content-regenerating-twitter-entries-and-blog).
+ 2. [Regenerate blogs](README.md#regenerating-twitter-entries-and-blogs).
  3. [Serve the page from Jekyll](README.md#serve-the-page-from-jekyll).
 
 Port 4000 is mapped, so when you serve the page on virtual machine, you can open a browser on your host and see the page on localhost:4000.
