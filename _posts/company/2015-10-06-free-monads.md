@@ -8,6 +8,7 @@ categories:
 - scala
 - monad
 - category theory
+- company
 layout: simple_post
 ---
 
@@ -25,10 +26,9 @@ Separating concerns is generally established to be a good idea in computer scien
 
 We will **describe** the external interactions as data using a family of `case class`es. Each external interaction results in data of some type (specified as a type parameter). This might be a very simple 1-class family, or a rich language corresponding to our domain. For example, if the only thing we can do is invoking a single external service:
 
-````
+````scala
 // common type for all external interactions yielding data of type A
 sealed trait External[A]
-
 case class InvokeTicketingService(count: Int) extends External[Tickets]
 ````
 
@@ -46,7 +46,7 @@ But let's not jump ahead. Now that we have our requirements, lets first see what
 
 "Free" is a term used in several related branches of mathematics, for example in universal algebra or category theory. What does it mean?
 
-Let's constrain our world to any kinds of sets which have a binary operation defined, `□: A => A => A`. This might be for example the set of integers with multiplication (where `□` becomes `*`), the set or real numbers with subtraction, or the set of strings with concatenation.
+Let's constrain our world to any kinds of sets which have a binary operation defined, `□: A => A => A`. This operation can be interpreted in a number of ways: as multiplication in the set of integers (where `□` becomes `*`), as subtraction in the set or real numbers, or as concatenation in the set of strings. We will use `□_A` to distinguish a specific interpretation from the general symbol `□`. 
 
 In the world of sets with a `□` operation, a **free structure** over a set of variables `X` will be a specific set `F` with a specific `□_F` operation (in our world, only sets with `□` exist), such that for any other `(A, □_A)`, any function `interpretVars: X -> A` will **extend uniquely** to a well-behaved function `interpret: F -> A`.
 
@@ -60,6 +60,8 @@ What does well-behaved mean? Only what you would expect:
 </div>
 
 What is `F` then? Abstract syntax trees! That is, all finite trees constructed with the help of `□` and the variables from `X`. Note that such a set belongs to our world: the interpretation of `□` in `F` takes two trees as arguments, and creates a bigger tree. For any other `A, □_A` extending a `interpretVars: X -> A` to `interpret: F -> A` is quite straightforward, for any element in `F` you just take the AST and evaluate it using `□_A`. It's also quite easy to show that there's only one such well-behaved extension.
+
+In other worlds, if we know what are the values of the variables (each variable is assigned a value from `A`), we can calculate the value of any expression.
 
 <div style="width: 100%; text-align: center">
 <img src="/img/freemonad-2.png" />
@@ -75,7 +77,7 @@ Now that we know what "free" means, we can apply that to monads! Instead of `□
 
 Hence, our programs will be abstract syntax trees expressed as nested case class instances! The base trait here is `Free[S[_], A]`, which is a program returning a value of type `A` with basic instructions of type `S[_]`:
 
-````
+````scala
 trait Free[S[_], A]
 case class Pure[S[_], A](value: A) extends Free[S, A]
 case class FlatMap[S[_], A, B](p: Free[S, A], f: A => Free[S, B]) extends Free[S, B]
@@ -108,33 +110,90 @@ That's what you are probably thinking right now - how did I ever manage to write
 
 It is of course also possible to separate construction from interpretation in other ways (or not to separate at all, but I'll assume for now that we do want the separation). Following our example, in a "traditional" OO-system you might have a service:
 
-```
+````scala
 trait TicketingService {
   def invoke(count: Int): Tickets
 }
-```
+````
 
 this looks very similar to the `case class InvokeTicketingService(count: Int) extends External[Tickets]` we had before, with the main difference being that we now have a method instead of a class. However, note that the method signature constrains us in how the method can be implemented: it needs to be synchronous, as we return a strict `Ticket` value, not e.g. a `Future[Value]`.
 
 Creating a service which returns a future instead:
 
-```
+````scala
 trait TicketingService {
   def invoke(count: Int): Future[Tickets]
 }
-```
+````
 
 doesn't really solve the problem. The details on what kind of side effects we allow and how they are interpreted already leaked into the service interface (we only allow futures). Well then we just need another level of indirection!
 
-```
+````scala
 trait TicketingService[M[_]] {
   implicit def m: Monad[M]
 
   def invoke(count: Int): M[Tickets]
 }
-```
+````
 
-Now by creating various service implementations and injecting wherever needed we can control the side effects. But then comes the next challenge. We have some code which can invoke the ticketing service multiple times, and we want to batch the calls, or surround them with some kind of transaction. Implementing that is quite straightforward when we can manipulate the program as a value; the interpreter can just start&stop the transaction at the right time. No need to propagate a transaction context or things like that. That's exactly what `DBIOAction.transactional` in [Slick 3](http://slick.typesafe.com) is doing.
+Now by creating various service implementations and injecting wherever needed we can control the side effects. But then comes the next challenge. We have some code which can invoke the ticketing service multiple times, and we want surround them with some kind of transaction. Implementing that is quite straightforward when we can manipulate the program as a value; the interpreter can just start&stop the transaction at the right time. No need to propagate a transaction context or things like that. That's exactly what `DBIOAction.transactional` in [Slick 3](http://slick.typesafe.com) is doing.
+
+How would then a more complete example look like using a free monad? We'll just use the `Free` definition from above:
+
+````scala
+sealed trait External[A]
+case class InvokeTicketingService(count: Int) extends External[Tickets]
+
+def purchaseTickets(input: UserTicketsRequest): Free[External, Option[Tickets]] = {
+  if (input.ticketCount > 0) {
+    // creates a "Suspend" node
+    Free.liftF(InvokeTicketingService(input.ticketCount)).map(Some(_))
+  } else {
+    Free.pure(None)
+  }
+}
+
+def bonusTickets(purchased: Option[Tickets]): Free[External, Option[Tickets]] = {
+  if (purchased.map(_.count).getOrElse(0) > 10) {
+    Free.liftF(InvokeTicketingService(1)).map(Some(_))
+  } else {
+    Free.pure(None)
+  }	
+}
+
+def formatResponse(purchased: Option[Ticket], bonus: Option[Ticket]): String = ...
+
+val logic: Free[External, String] = for {
+  purchased <- purchaseTickets(input)
+  bonus <- bonusTickets(purchased) 	
+} yield formatResponse(purchased, bonus)
+````
+
+The `logic` value is just a description of a program - nothing has been executed yet. We can now run it by providing an interpretation of `External` e.g. to `Future`:
+
+````scala
+val externalToServiceInvoker = new (External ~> Future) {
+  override def apply[A](e: External[A]): Future[A] = e match {
+    case InvokeTicketingService(c) => serviceInvoker.run(s"/tkts?count=$c") 
+  }
+}
+
+val result: Future[String] = logic.foldMap(externalToServiceInvoker)
+// show the result to the user
+````
+
+Or in tests, we can provide an alternative interpretation:
+
+````scala
+val testingInterpeter = new (External ~> Id) {
+  override def apply[A](e: External[A]): Id[A] = e match {
+    case InvokeTicketingService(c) => Tickets(10)
+  }
+}
+
+val result: String = logic.foldMap(testingInterpeter)
+// assert that the result is correct
+````
 
 To sum up - it is possible to live without free monads, and there's definitely a lot of very good code which proves that, but sometimes using free monads you can create elegant, composable, cleanly separated (responsibility-wise) programs. Yet another tool in our programming toolbox!
 
