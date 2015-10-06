@@ -116,7 +116,7 @@ trait TicketingService {
 }
 ````
 
-this looks very similar to the `case class InvokeTicketingService(count: Int) extends External[Tickets]` we had before, with the main difference being that we now have a method instead of a class. However, note that the method signature constrains us in how the method can be implemented: it needs to be synchronous, as we return a strict `Ticket` value, not e.g. a `Future[Value]`.
+this looks very similar to the `case class InvokeTicketingService(count: Int) extends External[Tickets]` we had before, with the main difference being that we now have a method instead of a class. However, note that the method signature constrains us in how the method can be implemented: it needs to be synchronous, as we return a strict `Tickets` value, not e.g. a `Future[Tickets]`.
 
 Creating a service which returns a future instead:
 
@@ -154,14 +154,14 @@ def purchaseTickets(input: UserTicketsRequest): Free[External, Option[Tickets]] 
 }
 
 def bonusTickets(purchased: Option[Tickets]): Free[External, Option[Tickets]] = {
-  if (purchased.map(_.count).getOrElse(0) > 10) {
+  if (purchased.exists(_.count > 10)) {
     Free.liftF(InvokeTicketingService(1)).map(Some(_))
   } else {
     Free.pure(None)
   }	
 }
 
-def formatResponse(purchased: Option[Ticket], bonus: Option[Ticket]): String = ...
+def formatResponse(purchased: Option[Tickets], bonus: Option[Tickets]): String = ...
 
 val logic: Free[External, String] = for {
   purchased <- purchaseTickets(input)
