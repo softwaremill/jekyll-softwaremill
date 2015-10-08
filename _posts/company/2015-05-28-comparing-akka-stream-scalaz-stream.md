@@ -25,7 +25,7 @@ We'll try to compare akka-stream and scalaz-stream in two parts: first looking a
 
 Both libraries are under active development (especially akka-stream, which is the younger of the two) and the APIs are still in flux, but that doesn't stop people from using them in production (let's face it, we all used a library version 0.0.3-beta1-M3 at least once ;) ), so let's see what they offer currently.
 
-Tested versions: akka-stream **1.0** and scalaz-stream **0.7.2a**.
+Tested versions: akka-stream **1.0** and scalaz-stream **0.8**.
 
 # What is ...?
 
@@ -540,3 +540,4 @@ It's great to have choice, depending on the projects at hand and personal tastes
 # Updates
 
 10/09/2015: Updating to akka-stream 1.0 
+8/10/2015: Updating to scalaz-stream 0.8
