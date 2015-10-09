@@ -61,7 +61,7 @@ What does well-behaved mean? Only what you would expect:
 
 What is `F` then? Abstract syntax trees! That is, all finite trees constructed with the help of `□` and the variables from `X`. Note that such a set belongs to our world: the interpretation of `□` in `F` takes two trees as arguments, and creates a bigger tree. For any other `A, □_A` extending a `interpretVars: X -> A` to `interpret: F -> A` is quite straightforward, for any element in `F` you just take the AST and evaluate it using `□_A`. It's also quite easy to show that there's only one such well-behaved extension.
 
-In other worlds, if we know what are the values of the variables (each variable is assigned a value from `A`), we can calculate the value of any expression.
+In other words, if we know what are the values of the variables (each variable is assigned a value from `A`), we can calculate the value of any expression.
 
 <div style="width: 100%; text-align: center">
 <img src="/img/freemonad-2.png" />
