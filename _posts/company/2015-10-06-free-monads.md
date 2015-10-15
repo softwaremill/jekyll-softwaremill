@@ -194,7 +194,7 @@ val testingInterpeter = new (External ~> Id) {
 val result: String = logic.foldMap(testingInterpeter)
 // assert that the result is correct
 ````
-
+[Check out this Gist](https://gist.github.com/kciesielski/27b53055efbb0fe0188f) if you'd like to see full working implementation.  
 To sum up - it is possible to live without free monads, and there's definitely a lot of very good code which proves that, but sometimes using free monads you can create elegant, composable, cleanly separated (responsibility-wise) programs. Yet another tool in our programming toolbox!
 
 ## Further reading
