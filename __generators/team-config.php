@@ -396,7 +396,7 @@ In his free
         'leader' => 0,
         'opensource' => 1,
         'blogger' => 0,
-        'parent' => 0,
+        'parent' => 1,
         'conference' => 0,
         'title' => 'Software Wizard',
         'image' => 'matloka.jpg',
