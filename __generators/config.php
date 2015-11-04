@@ -66,7 +66,7 @@ return array(
   ),
   'Mikołaj Koziarkiewicz' => array(
     'twitter' => NULL,
-    'blog' => 'http://xn--mikoak-6db.net',
+    'blog' => 'http://micwi.pl/',
   ), 
   'Paweł Stawicki' => array(
     'twitter' => 'pawelstawicki',
