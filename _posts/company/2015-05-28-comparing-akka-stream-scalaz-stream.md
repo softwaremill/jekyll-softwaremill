@@ -25,7 +25,7 @@ We'll try to compare akka-stream and scalaz-stream in two parts: first looking a
 
 Both libraries are under active development (especially akka-stream, which is the younger of the two) and the APIs are still in flux, but that doesn't stop people from using them in production (let's face it, we all used a library version 0.0.3-beta1-M3 at least once ;) ), so let's see what they offer currently.
 
-Tested versions: akka-stream **1.0** and scalaz-stream **0.8**.
+Tested versions: akka-stream **2.0-M1** and scalaz-stream **0.8**.
 
 # What is ...?
 
@@ -122,7 +122,7 @@ In both cases the code is quite concise and straightforward:
 // akka
 def run(input: immutable.Iterable[Int]): Option[Double] = {
   implicit val system = ActorSystem()
-  implicit val mat = ActorFlowMaterializer()
+  implicit val mat = ActorMaterializer()
 
   val r = Source(input)
     .mapConcat(n => List(n, n+1))
@@ -196,22 +196,22 @@ This is also a good entry point for a simple performance comparison! Let's see h
     <tr>
       <td>akka</td>
       <td>1 000 000</td>
-      <td>3.07s</td>
+      <td>3.50s</td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>1 000 000</td>
-      <td>9.16s</td>
+      <td>10.39s</td>
     </tr>
     <tr>
       <td>akka</td>
       <td>10 000 000</td>
-      <td><strong>31.31s</strong></td>
+      <td><strong>30.55s</strong></td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>10 000 000</td>
-      <td><strong>91.52s</strong></td>
+      <td><strong>104.81s</strong></td>
     </tr>
   </tbody>
 </table>
@@ -226,20 +226,19 @@ Another canonical example is reading data from file, transforming it and writing
 // akka
 override def run(from: File, to: File) = {
   implicit val system = ActorSystem()
-  implicit val mat = ActorFlowMaterializer()
+  implicit val mat = ActorMaterializer()
  
   val r: Future[Long] = Source.synchronousFile(from)
     .via(Framing.delimiter(ByteString("\n"), 1048576))
     .filter(!_.contains("#!@"))
     .map(_.replace("*", "0"))
-    .transform(() => new IntersperseStage("\n"))
+    .intersperse("\n")
     .map(ByteString(_))
     .toMat(Sink.synchronousFile(to))(Keep.right)
     .run()
 
   Await.result(r, 1.hour)
 } 
-// + code for IntersperseStage
 
 // scalaz
 override def run(from: File, to: File) = {
@@ -254,8 +253,6 @@ override def run(from: File, to: File) = {
   to.length()
 }
 ```
-
-Note the `IntersperseStage` in the Akka version: it's a transformation stage which has to be written by hand (or copied from the "streams cookbook"), it's not included in the distribution, at least yet. See the full example source [TransferTransformFile.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/TransferTransformFile.scala). Here, scalaz-stream provides a richer set of combinators out-of-the-box.
 
 Again, let's run a performance comparison of the two implementations, transferring files of sizes 10, 100 and 500MB. The tests are executed multiple times in random order on the same machine with a SSD:
 
@@ -281,22 +278,22 @@ Again, let's run a performance comparison of the two implementations, transferri
     <tr>
       <td>akka</td>
       <td>100</td>
-      <td>3.77</td>
+      <td>5.02</td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>100</td>
-      <td>6.42s</td>
+      <td>7.423</td>
     </tr>
     <tr>
       <td>akka</td>
       <td>500</td>
-      <td><strong>20.24s</strong></td>
+      <td><strong>21.81s</strong></td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>500</td>
-      <td><strong>30.47s</strong></td>
+      <td><strong>36.93s</strong></td>
     </tr>
   </tbody>
 </table>
@@ -340,17 +337,19 @@ How does the akka-stream version look like?
 def merge[T: Ordering](l1: List[T], l2: List[T]): List[T] = {
   val out = Sink.fold[List[T], T](Nil) { case (l, e) => l.+:(e)}
 
-  val g = FlowGraph.closed(out) { implicit builder => sink =>
+  val g = FlowGraph.create(out) { implicit builder => sink =>
     val merge = builder.add(new SortedMerge[T])
 
     Source(l1) ~> merge.in0
     Source(l2) ~> merge.in1
                   merge.out ~> sink.inlet
+
+    ClosedShape
   }
 
   implicit val system = ActorSystem()
   implicit val mat = ActorFlowMaterializer()
-  try Await.result(g.run(), 1.hour).reverse finally system.shutdown()
+  try Await.result(RunnableGraph.fromGraph(g).run(), 1.hour).reverse finally system.shutdown()
 }
 
 // + SortedMerge code!
@@ -358,9 +357,9 @@ def merge[T: Ordering](l1: List[T], l2: List[T]): List[T] = {
 
 First we define a fold-Sink which always contains the last element seen, hence will materialize to a `Future[Int]`. Then we use the (mutable) graph builder & DSL to define how data should flow in the system. To do that, we create a specialized `merge` component (more on that later), which has two inputs and one output. We connect the two inputs to the input list, and the output to the sink that we have define earlier. It's a closed graph since all inputs & outputs are connected; it is also possible to define a partial graph with a given shape. Once defined, the graph `g` is immutable and can be materialized multiple times.
 
-The most important part is of course the `SortedMerge` component which can be implemented using the provided `FlexiMerge` DSL for defining arbitrary merges. See [MergeSortedStreams.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/MergeSortedStreams.scala) for the full source, as it is a bit long. You will probably recognize a very similar state machine as we have defined in the scalaz-stream example! However, the case when one stream is finished is handled differently and we need some mutable state (`outstanding`) to store the element which was read from one of the streams but not yet emitted.
+The most important part is of course the `SortedMerge` component which can be implemented using the provided `GraphStage` DSL for defining arbitrary splits/merges. See [MergeSortedStreams.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/MergeSortedStreams.scala) for the full source, as it is quite long! I must admit that the API provided by `GraphStage` is very low-level and error-prone. I'm sure it's flexible, but it's very easy to make a mistake at some point: remembering to correctly sequence `pull`, `push`, `grab` etc. invocations (and not miss anything, as it can cause demand not to be propagated!) is tricky. I think I got that code correctly only beacuse it's checked by [ScalaCheck](https://www.scalacheck.org).
 
-Unfortunately, using the current `FlexiMerge` implementation it is **not possible** to implement the `SortedMerge` correctly, as it is not allowed to emit elements when the input stream finished (see [akka issue #16753](https://github.com/akka/akka/issues/16753)).
+Comparing to the declarative state machine from scalaz-stream, the akka-stream version is harder to read and reason about.
 
 # Parallel processing
 
@@ -372,7 +371,7 @@ First, let's look at the akka-stream version. The full source is in [ParallelPro
 override def run(in: List[Int]) = {
   val out = Sink.fold[List[Int], Int](Nil) { case (l, e) => l.+:(e)}
 
-  val g = FlowGraph.closed(out) { implicit builder => sink =>
+  val g = FlowGraph.create(out) { implicit builder => sink =>
     val start = Source(in)
     val split = builder.add(new SplitRoute[Int](
       el => if (el % 2 == 0) Left(el) else Right(el)))
@@ -384,11 +383,13 @@ override def run(in: List[Int]) = {
              split.out0 ~> f ~> merge
              split.out1 ~> f ~> merge
                                 merge ~> sink
+
+    ClosedShape
   }
 
   implicit val system = ActorSystem()
   implicit val mat = ActorFlowMaterializer()
-  try Await.result(g.run(), 1.hour).reverse finally system.shutdown()
+  try Await.result(RunnableGraph.fromGraph(g).run(), 1.hour).reverse finally system.shutdown()
 }
 ```
 
@@ -398,29 +399,67 @@ Looking at the code it is quite easy to see what's happening. This time we defin
 
 Finally, we use the built-in merge component to combine the streams again.
 
-Similarly to the merge, we need a specialised split component to split the stream elements depending if they are odd or even:
+Similarly to the previous sorted merge example, we need a specialised split component to split the stream elements depending if they are odd or even:
 
 ```scala
-class SplitRoute[T](splitFn: T => Either[T, T]) 
-  extends FlexiRoute[T, FanOutShape2[T, T, T]](
-  new FanOutShape2("SplitRoute"), OperationAttributes.name("SplitRoute")) {
+class SplitStage[T](splitFn: T => Either[T, T]) extends GraphStage[FanOutShape2[T, T, T]] {
 
-  override def createRouteLogic(s: FanOutShape2[T, T, T]) = new RouteLogic[T] {
-    override def initialState = State[Unit](DemandFromAll(s.out0, s.out1)) { 
-      (ctx, _, el) =>
-        splitFn(el) match {
-          case Left(e) => ctx.emit(s.out0)(e)
-          case Right(e) => ctx.emit(s.out1)(e)
+  val in   = Inlet[T]("SplitStage.in")
+  val out0 = Outlet[T]("SplitStage.out0")
+  val out1 = Outlet[T]("SplitStage.out1")
+
+  override def shape = new FanOutShape2[T, T, T](in, out0, out1)
+
+  override def createLogic(inheritedAttributes: Attributes) = new GraphStageLogic(shape) {
+
+    var pending: Option[(T, Outlet[T])] = None
+    var initialized = false
+
+    setHandler(in, new InHandler {
+      override def onPush() = {
+        val elAndOut = splitFn(grab(in)).fold((_, out0), (_, out1))
+        pending = Some(elAndOut)
+        tryPush()
+      }
+
+      override def onUpstreamFinish() = {
+        if (pending.isEmpty) {
+          completeStage()
         }
-        SameState
+      }
+    })
+
+    List(out0, out1).foreach {
+      setHandler(_, new OutHandler {
+        override def onPull() = {
+          if (!initialized) {
+            initialized = true
+            tryPull(in)
+          }
+
+          tryPush()
+        }
+      })
     }
 
-    override def initialCompletionHandling = eagerClose
+    private def tryPush(): Unit = {
+      pending.foreach { case (el, out) =>
+        if (isAvailable(out)) {
+          push(out, el)
+          tryPull(in)
+          pending = None
+
+          if (isClosed(in)) {
+            completeStage()
+          }
+        }
+      }
+    }
   }
 }
 ```
 
-One thing to note is while this is all quite straightforward, there is quite a lot of overhead from the library. The "core logic" of how the split is done takes about 4 lines; the rest are decorations needed to "make things work". Hopefully some libraries will emerge (either stand-alone or part of the core distribution) which will make such tasks easier.
+Again, the code is rather complex and relatively hard to follow. There's quite a lot of overhead from the library. The "core logic" of emitting the element to one output or the other is a single line; the rest are decorations needed to "make things work". Hopefully some libraries will emerge (either stand-alone or part of the core distribution) which will make such tasks easier.
 
 How does the scalaz-stream version compare?
 
@@ -470,7 +509,7 @@ object AkkSlowConsumer extends App {
   implicit val system = ActorSystem()
   implicit val mat = ActorFlowMaterializer()
   try {
-    val future = Source(0.millis, 100.millis, 1)
+    val future = Source.tick(0.millis, 100.millis, 1)
       .conflate(identity)(_ + _)
       .runForeach { el =>
         Thread.sleep(1000L)
@@ -478,7 +517,7 @@ object AkkSlowConsumer extends App {
       }
 
     Await.result(future, 1.hour)
-  } finally system.shutdown()
+  } finally system.terminate()
 }
 ```
 
@@ -521,7 +560,7 @@ Stream combinators are great, but in the end you have to somehow get the data fr
 
 In scalaz-stream, we have for example [http4s](http://http4s.org), which is a "minimal, idiomatic Scala interface for HTTP". The akka-stream counterpart is [akka-http](http://akka.io/docs/), the successor of Spray with built-in reactive streams integration. 
 
-To talk to a database, the recently announced [Slick 3.0](http://slick.typesafe.com) offers reactive streams integration, not only when reading data, but also for establishing the "right number" of connections. I don't think anybody will miss sizing the connection pool! The scalaz-stream equivalent is [doobie](https://github.com/tpolecat/doobie), a purely functional JDBC layer for Scala.
+To talk to a database, the recently announced [Slick 3](http://slick.typesafe.com) offers reactive streams integration, not only when reading data, but also for establishing the "right number" of connections. I don't think anybody will miss sizing the connection pool! The scalaz-stream equivalent is [doobie](https://github.com/tpolecat/doobie), a purely functional JDBC layer for Scala.
 
 I think things are only starting to get interesting, and we'll see much more of these libraries pop up in the near future!
 
@@ -541,3 +580,4 @@ It's great to have choice, depending on the projects at hand and personal tastes
 
 10/09/2015: Updating to akka-stream 1.0 
 8/10/2015: Updating to scalaz-stream 0.8
+16/11/2015: Updating to akka-stream 2.0-M1
