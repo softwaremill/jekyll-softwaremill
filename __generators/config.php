@@ -88,5 +88,9 @@ return array(
     'twitter' => 'szimano',
     'blog' => 'http://szimano.org/',
   ),
+  'Bartek Andrzejczak' => array(
+    'twitter' => 'baandrzejczak',
+    'blog' => 'http://bandrzejczak.com/',
+  ),
 );
 ?>
