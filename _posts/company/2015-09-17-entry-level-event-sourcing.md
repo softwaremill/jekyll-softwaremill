@@ -177,7 +177,7 @@ The project contains two modules: `events` with the generic code related to even
 
 ## Events
 
-The central type is `Event` defined in [model.scala](https://github.com/softwaremill/slick-eventsourcing/blob/master/events/src/main/scala/com/softwaremill/events/model.scala), which can be constructed incrementally using a DSL. The data associated with each event is stored in plain-old-case classes; the event type is the name of the case class, and the data is serialized to json. For example, creating a new "user registered" event and marking that it's a new aggregate in the event meta-data looks like this:
+The central type is `Event` defined in [model.scala](https://github.com/softwaremill/slick-eventsourcing/blob/master/core/src/main/scala/com/softwaremill/events/model.scala), which can be constructed incrementally using a DSL. The data associated with each event is stored in plain-old-case classes; the event type is the name of the case class, and the data is serialized to json. For example, creating a new "user registered" event and marking that it's a new aggregate in the event meta-data looks like this:
 
 ````
 val eventData = UserRegistered(login, email, encryptedPassword, salt)
@@ -194,13 +194,13 @@ object UserRegistered {
 }
 ````
 
-Another feature, which is entirely optional and not required for event sourcing, but makes life much easier, is type-safe aggregate ids. At the database level all ids are `Long`s, however both in event classes, event data objects and objects read from the dataabase you can see that the `Long`s are **tagged** with the type of the aggregate (e.g. `case class User(id: Long @@ User, ...)`. The tagging here is taken from [macwire](https://github.com/adamw/macwire), but it can also be found in [scalaz](https://github.com/scalaz/scalaz) and is based on Mile's Sabin [gist](https://gist.github.com/milessabin/89c9b47a91017973a35f), and makes sure that we won't use the wrong id at the wrong place.
+Another feature, which is entirely optional and not required for event sourcing, but makes life much easier, is type-safe aggregate ids. At the database level all ids are `Long`s, however both in event classes, event data objects and objects read from the dataabase you can see that the `Long`s are **tagged** with the type of the aggregate (e.g. `case class User(id: Long @@ User, ...)`. The tagging here is using [scala-common](https://github.com/softwaremill/scala-common).
 
 ## Side-effects
 
 In the code we make heavy use of Slick's [DBIOAction](http://slick.typesafe.com/doc/3.0.0/dbio.html) monad, which wraps all side-effecting operations that may involve the database. Thanks to Slick's strict control of access, we know if an action is reading from the database, writing to it or both; for convenience, `DBRead` and `DBWrite` type alises are defined.
 
-Using `DBIOAction`, our code creates a **description** of the actions that should happen (like: emitting an event, storing the event in the database, updating the read model etc.), the actual execution happens later. You can see that in [EventMachine](https://github.com/softwaremill/slick-eventsourcing/blob/master/events/src/main/scala/com/softwaremill/events/EventMachine.scala) (which is the event processor). All of the actions are gathered, sequenced, then a simple `.transactionally` call makes sure that they are all run in a single transaction.
+Using `DBIOAction`, our code creates a **description** of the actions that should happen (like: emitting an event, storing the event in the database, updating the read model etc.), the actual execution happens later. You can see that in [EventMachine](https://github.com/softwaremill/slick-eventsourcing/blob/master/core/src/main/scala/com/softwaremill/events/EventMachine.scala) (which is the event processor). All of the actions are gathered, sequenced, then a simple `.transactionally` call makes sure that they are all run in a single transaction.
 
 In fact, `EventMachine` also returns a `DBIOAction`. So when are thing really run? In our case, this happens at the API level: take a look at [DatabaseSupport](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/api/RoutesSupport.scala#L95), there you can see Akka HTTP directives which run `DBIOActions` and return the results to the caller.
 
@@ -208,13 +208,13 @@ Also, any `Future`s can be lifted to `DBIOAction`, if the side-effect that we wa
 
 ## Commands
 
-Commands are simply methods which return a [`CommandResult`](https://github.com/softwaremill/slick-eventsourcing/blob/master/events/src/main/scala/com/softwaremill/events/package.scala), which is an alias for a database action returning either a failure or success value, plus a list of triggered events. These events should be handled by the event processor and can, in turn, trigger more events. That's what happens in the `EventMachine.handle(CommandResult)` method.
+Commands are simply methods which return a [`CommandResult`](https://github.com/softwaremill/slick-eventsourcing/blob/master/core/src/main/scala/com/softwaremill/events/package.scala), which is an alias for a database action returning either a failure or success value, plus a list of triggered events. These events should be handled by the event processor and can, in turn, trigger more events. That's what happens in the `EventMachine.handle(CommandResult)` method.
 
 Take a look for example at [`UserCommands`](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/user/UserCommands.scala). In the `authenticate` command we do some validation (checking the password) and return either a successfull or failed command result. The `CommandResult` companion object (although `CommandResult` is only a type alias, it can have a companion object) defines some helper methods for returning results with a list of events.
 
 ## Model updates, event listeners
 
-Model updates and event listeners are again defined as [type aliases](https://github.com/softwaremill/slick-eventsourcing/blob/master/events/src/main/scala/com/softwaremill/events/package.scala) for function types:
+Model updates and event listeners are again defined as [type aliases](https://github.com/softwaremill/slick-eventsourcing/blob/master/core/src/main/scala/com/softwaremill/events/package.scala) for function types:
 
 ````
 type EventListener[T] = Event[T] => DBRead[List[PartialEvent[_, _]]]
