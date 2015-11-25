@@ -202,7 +202,7 @@ In the code we make heavy use of Slick's [DBIOAction](http://slick.typesafe.com/
 
 Using `DBIOAction`, our code creates a **description** of the actions that should happen (like: emitting an event, storing the event in the database, updating the read model etc.), the actual execution happens later. You can see that in [EventMachine](https://github.com/softwaremill/slick-eventsourcing/blob/master/core/src/main/scala/com/softwaremill/events/EventMachine.scala) (which is the event processor). All of the actions are gathered, sequenced, then a simple `.transactionally` call makes sure that they are all run in a single transaction.
 
-In fact, `EventMachine` also returns a `DBIOAction`. So when are thing really run? In our case, this happens at the API level: take a look at [DatabaseSupport](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/api/RoutesSupport.scala#L95), there you can see Akka HTTP directives which run `DBIOActions` and return the results to the caller.
+In fact, `EventMachine` also returns a `DBIOAction`. So when are thing really run? In our case, this happens at the API level: take a look at [DatabaseSupport](https://github.com/softwaremill/slick-eventsourcing/blob/master/example/src/main/scala/com/softwaremill/example/api/RoutesSupport.scala#L92), there you can see Akka HTTP directives which run `DBIOActions` and return the results to the caller.
 
 Also, any `Future`s can be lifted to `DBIOAction`, if the side-effect that we want to run doesn't involve DB operations, but e.g. sending an e-mail.
 
