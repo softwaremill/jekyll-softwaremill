@@ -25,7 +25,7 @@ We'll try to compare akka-stream and scalaz-stream in two parts: first looking a
 
 Both libraries are under active development (especially akka-stream, which is the younger of the two) and the APIs are still in flux, but that doesn't stop people from using them in production (let's face it, we all used a library version 0.0.3-beta1-M3 at least once ;) ), so let's see what they offer currently.
 
-Tested versions: akka-stream **2.0-M1** and scalaz-stream **0.8**.
+Tested versions: akka-stream **2.0-M2** and scalaz-stream **0.8**.
 
 # What is ...?
 
@@ -228,13 +228,13 @@ override def run(from: File, to: File) = {
   implicit val system = ActorSystem()
   implicit val mat = ActorMaterializer()
  
-  val r: Future[Long] = Source.synchronousFile(from)
+  val r: Future[Long] = Source.file(from)
     .via(Framing.delimiter(ByteString("\n"), 1048576))
     .filter(!_.contains("#!@"))
     .map(_.replace("*", "0"))
     .intersperse("\n")
     .map(ByteString(_))
-    .toMat(Sink.synchronousFile(to))(Keep.right)
+    .toMat(Sink.file(to))(Keep.right)
     .run()
 
   Await.result(r, 1.hour)
@@ -357,7 +357,7 @@ def merge[T: Ordering](l1: List[T], l2: List[T]): List[T] = {
 
 First we define a fold-Sink which always contains the last element seen, hence will materialize to a `Future[Int]`. Then we use the (mutable) graph builder & DSL to define how data should flow in the system. To do that, we create a specialized `merge` component (more on that later), which has two inputs and one output. We connect the two inputs to the input list, and the output to the sink that we have define earlier. It's a closed graph since all inputs & outputs are connected; it is also possible to define a partial graph with a given shape. Once defined, the graph `g` is immutable and can be materialized multiple times.
 
-The most important part is of course the `SortedMerge` component which can be implemented using the provided `GraphStage` DSL for defining arbitrary splits/merges. See [MergeSortedStreams.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/MergeSortedStreams.scala) for the full source, as it is quite long! I must admit that the API provided by `GraphStage` is very low-level and error-prone. I'm sure it's flexible, but it's very easy to make a mistake at some point: remembering to correctly sequence `pull`, `push`, `grab` etc. invocations (and not miss anything, as it can cause demand not to be propagated!) is tricky. I think I got that code correctly only beacuse it's checked by [ScalaCheck](https://www.scalacheck.org).
+The most important part is of course the `SortedMerge` component which can be implemented using the provided `GraphStage` DSL for defining arbitrary splits/merges. See [MergeSortedStreams.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/MergeSortedStreams.scala) for the full source. The main part looks quite similar to the scalaz version, you can see kind of a state machine, either reading from the left or from the right. Using two helper methods which handle the various possible combinations of either the input or output getting closed (and it's quite tricky to get these right, if you forget to call e.g. `pull()` you can end up waiting infinitely! I think I got that code correctly only beacuse it's checked by [ScalaCheck](https://www.scalacheck.org).), the "core" logic looks quite clean.
 
 Comparing to the declarative state machine from scalaz-stream, the akka-stream version is harder to read and reason about.
 
@@ -412,54 +412,30 @@ class SplitStage[T](splitFn: T => Either[T, T]) extends GraphStage[FanOutShape2[
 
   override def createLogic(inheritedAttributes: Attributes) = new GraphStageLogic(shape) {
 
-    var pending: Option[(T, Outlet[T])] = None
-    var initialized = false
+    setHandler(in, ignoreTerminateInput)
+    setHandler(out0, eagerTerminateOutput)
+    setHandler(out1, eagerTerminateOutput)
 
-    setHandler(in, new InHandler {
-      override def onPush() = {
-        val elAndOut = splitFn(grab(in)).fold((_, out0), (_, out1))
-        pending = Some(elAndOut)
-        tryPush()
-      }
-
-      override def onUpstreamFinish() = {
-        if (pending.isEmpty) {
-          completeStage()
-        }
-      }
-    })
-
-    List(out0, out1).foreach {
-      setHandler(_, new OutHandler {
-        override def onPull() = {
-          if (!initialized) {
-            initialized = true
-            tryPull(in)
-          }
-
-          tryPush()
-        }
-      })
-    }
-
-    private def tryPush(): Unit = {
-      pending.foreach { case (el, out) =>
-        if (isAvailable(out)) {
-          push(out, el)
-          tryPull(in)
-          pending = None
-
-          if (isClosed(in)) {
-            completeStage()
-          }
+    def doRead(): Unit = {
+      if (isClosed(in)) {
+        completeStage()
+      } else {
+        setHandler(in, eagerTerminateInput)
+        read(in) { el =>
+          setHandler(in, ignoreTerminateInput)
+          splitFn(el).fold(doEmit(out0, _), doEmit(out1, _))
         }
       }
     }
+
+    def doEmit(out: Outlet[T], el: T): Unit = emit(out, el, doRead)
+
+    override def preStart() = doRead()
   }
 }
 ```
 
-Again, the code is rather complex and relatively hard to follow. There's quite a lot of overhead from the library. The "core logic" of emitting the element to one output or the other is a single line; the rest are decorations needed to "make things work". Hopefully some libraries will emerge (either stand-alone or part of the core distribution) which will make such tasks easier.
+The code is simpler than the `SortedMerge` case, though still we have to deal with some low-level concerns of how to handle input/output termination (so that no element is missed). The "core logic" of emitting the element to one output or the other is a single line; the rest are decorations needed to "make things work".
 
 How does the scalaz-stream version compare?
 
@@ -581,3 +557,4 @@ It's great to have choice, depending on the projects at hand and personal tastes
 10/09/2015: Updating to akka-stream 1.0 
 8/10/2015: Updating to scalaz-stream 0.8
 16/11/2015: Updating to akka-stream 2.0-M1
+1/12/2015: Updating to akka-stream 2.0-M2
