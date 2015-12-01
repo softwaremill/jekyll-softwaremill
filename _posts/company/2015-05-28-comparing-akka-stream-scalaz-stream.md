@@ -554,7 +554,7 @@ It's great to have choice, depending on the projects at hand and personal tastes
 
 # Updates
 
-10/09/2015: Updating to akka-stream 1.0 
-8/10/2015: Updating to scalaz-stream 0.8
-16/11/2015: Updating to akka-stream 2.0-M1
-1/12/2015: Updating to akka-stream 2.0-M2
+* 10/09/2015: Updating to akka-stream 1.0 
+* 8/10/2015: Updating to scalaz-stream 0.8
+* 16/11/2015: Updating to akka-stream 2.0-M1
+* 1/12/2015: Updating to akka-stream 2.0-M2
