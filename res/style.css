@@ -1140,13 +1140,26 @@ input[type="radio"] {
   .work-item .content .how-to-apply p {margin-bottom: 15px;}
   .work-item .close {background: url(../img/close-green.png) center center no-repeat #fff; width: 38px; height: 38px; border-radius: 19px; position: absolute; top: -6px; right: -6px;
       z-index: 10; opacity: 0; border: 1px solid #fcd700;}
-  .work-item.blue .close {background-image: url(../img/close-blue.png);}
-  .work-item.dark-green .close {background-image: url(../img/close-dark-green.png);}
   .work-item.open .read-more {display: none;}
   .work-item.open .close {opacity: 1;}
+
   .work-item.green {background: #bccf02;}
+  .work-item.green .close {background-image: url(../img/close-green.png);}
+
   .work-item.blue {background: #73c5e1;}
+  .work-item.blue .close {background-image: url(../img/close-blue.png);}
+
   .work-item.dark-green {background: #5bb12f;}
+  .work-item.dark-green .close {background-image: url(../img/close-dark-green.png);}
+
+  .work-item.dark-blue {background-color: #257dbe;}
+  .work-item.dark-blue .close {background-image: url(../img/close-blue.png);}
+
+  .work-item.pink {background-color: #eb65a0;}
+  .work-item.pink .close {background-image: url(../img/close-pink.png);}
+
+  .work-item.violet {background-color: #b96fab;}
+  .work-item.violet .close {background-image: url(../img/close-violet.png);}
 
 
 
