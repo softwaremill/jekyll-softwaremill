@@ -349,7 +349,7 @@ def merge[T: Ordering](l1: List[T], l2: List[T]): List[T] = {
 
   implicit val system = ActorSystem()
   implicit val mat = ActorFlowMaterializer()
-  try Await.result(RunnableGraph.fromGraph(g).run(), 1.hour).reverse finally system.shutdown()
+  try Await.result(RunnableGraph.fromGraph(g).run(), 1.hour).reverse finally system.terminate()
 }
 
 // + SortedMerge code!
@@ -389,7 +389,7 @@ override def run(in: List[Int]) = {
 
   implicit val system = ActorSystem()
   implicit val mat = ActorFlowMaterializer()
-  try Await.result(RunnableGraph.fromGraph(g).run(), 1.hour).reverse finally system.shutdown()
+  try Await.result(RunnableGraph.fromGraph(g).run(), 1.hour).reverse finally system.terminate()
 }
 ```
 
