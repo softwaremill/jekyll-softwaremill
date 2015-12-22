@@ -84,7 +84,7 @@ The "blueprint" in scalaz-stream is a description of a state machine, which can 
 
 There are three options to "compile" the stream blueprint into a `Task`, which can be later run synchronously or asynchronously: `run`, `runLast` and `runLog`. The first discards the output values, running the stream only for its side-effects. The second returns the last value produced by the stream, and `runLog` returns all values (which can be dangerous, if the stream is very large).
 
-In akka-stream, the "blueprint" is a fully connected flow graph. When executed the graph is first fused (when possible, multiple processing nodes are combined into one for performance), and each such combined node is materialised into an actor, which runs the actual processing logic. Apart from running appropriate logic, each transformation component can materialise into a value. E.g. a `Source` can materialise into a future which is completed when the source is done producing elements. A `Sink` can be materialised into a future indicating that the stream is finished, or into a fold over the stream elements (hence we can get the last or all elements produced by the stream).
+In akka-stream, the "blueprint" is a fully connected flow graph. When executed the graph is first fused (unless explicitly marked with async boundaries, multiple processing nodes are combined into one for performance), and each such combined node is materialised into an actor, which runs the actual processing logic. Apart from running appropriate logic, each transformation component can materialise into a value. E.g. a `Source` can materialise into a future which is completed when the source is done producing elements. A `Sink` can be materialised into a future indicating that the stream is finished, or into a fold over the stream elements (hence we can get the last or all elements produced by the stream).
 
 # Push vs pull
 
@@ -158,7 +158,9 @@ private def processFromIterator[T](iterator: Iterator[T]): Process0[T] = {
 
 Apart from the fact that scalaz-stream doesn't have a built-in way to create a `Process` from an `Iterator`, the code is quite similar. `map` and `filter` should be familiar to any Scala programmer, and `chunk` or `grouped` are self-explanatory.
 
-An important difference is that in the akka version, multiple threads are potentially involved, as each transformation stage is materialized into an actor and the actors run concurrently. In scalaz, concurrency is explicit, and unless we explicitly define at which point computations should be done in the background, they are run on the same thread.
+An important difference is that in the akka version, multiple threads are potentially involved, depending if auto-fusing is enabled. Either each transformation stage is materialized into an actor and the actors run concurrently, or the transformation is first fused for performance into one, and everything happens in one actor. 
+
+In scalaz, concurrency is always explicit, and unless we explicitly define at which point computations should be done in the background, they are run on the same thread.
 
 The example would be also trivial to write using the normal collections API of course, but the important thing is that the stream processing would look the same and work equally well however large the input is, without reading all data into memory.
 
@@ -368,6 +370,7 @@ override def run(in: List[Int]) = {
     val merge = builder.add(Merge[Int](2))
 
     val f = Flow[Int].map { el => Thread.sleep(1000L); el * 2 }
+       .addAttributes(Attributes.asyncBoundary)
 
     start ~> split.in
              split.out0 ~> f ~> merge
@@ -385,7 +388,7 @@ override def run(in: List[Int]) = {
 
 Note that using the graph DSL we can create nice ASCII-art representing our graph! Unfortunately IntelliJ doesn't keep it during code reformatting ;)
 
-Looking at the code it is quite easy to see what's happening. This time we define a sink which collects all elements received in a list. Then we define a graph where we connect the input stream to the input of the split, and we use the same transformation blueprint (`f`) to connect it to both outputs of the sink. Note that while we use the same blueprint, it will be materialised *twice* into two different actors.
+Looking at the code it is quite easy to see what's happening. This time we define a sink which collects all elements received in a list. Then we define a graph where we connect the input stream to the input of the split, and we use the same transformation blueprint (`f`) to connect it to both outputs of the sink. Note that while we use the same blueprint, it will be materialised *twice*. We also define `f` as an async boundary, meaning that it should be materialised into its own actor, hence running concurrently to other stages. Without that attribute, everything would run in a single thread.
 
 Finally, we use the built-in merge component to combine the streams again.
 
@@ -529,7 +532,7 @@ I think things are only starting to get interesting, and we'll see much more of 
 
 I don't think there's a clear winner. Both libraries are great, provide an elegant, declarative, composable way to define stream processing. scalaz-stream puts more emphasis on making side-effects and concurrency explicit, defining the stream "functionally", while akka-stream aims to be a solid, performant foundation for building libraries and applications.
 
-**akka-stream** seems a bit "heavier", as it uses more threading (everything is wrapped in an actor), does quite a lot of internal buffering, so exactly when and how many elements are going to be produced may not be immediately clear. The API is in general declarative, but sometimes you need to use mutable state and imperative constructs. It's also the faster of the two, and as it implements the [reactive streams](http://www.reactive-streams.org) standard it brings a promise of easy integration into other apps using streaming data processing. Plus, it has a Java API, which can definitely have a huge impact on adoption.
+**akka-stream** seems a bit "heavier", as it uses more threading (stages get wrapped in actors), does quite a lot of internal buffering, so exactly when and how many elements are going to be produced may not be immediately clear. The API is in general declarative, but sometimes you need to use mutable state and imperative constructs. It's also the faster of the two, and as it implements the [reactive streams](http://www.reactive-streams.org) standard it brings a promise of easy integration into other apps using streaming data processing. Plus, it has a Java API, which can definitely have a huge impact on adoption.
 
 Modelling complex flow graphs is also more intuitive (for me) in akka-stream than scalaz-stream thanks to the graph DSL. More genreally, I think understanding how data flows can be easier for a newcomer in akka-stream. But then, writing custom splits/merges requires some boilerplate.
 
