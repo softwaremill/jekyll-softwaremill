@@ -84,7 +84,7 @@ The "blueprint" in scalaz-stream is a description of a state machine, which can 
 
 There are three options to "compile" the stream blueprint into a `Task`, which can be later run synchronously or asynchronously: `run`, `runLast` and `runLog`. The first discards the output values, running the stream only for its side-effects. The second returns the last value produced by the stream, and `runLog` returns all values (which can be dangerous, if the stream is very large).
 
-In akka-stream, the "blueprint" is a fully connected flow graph. When executed, each graph node is usually materialised into an actor, which runs the actual processing logic. Apart from running appropriate logic, each transformation component can materialise into a value. E.g. a `Source` can materialise into a future which is completed when the source is done producing elements. A `Sink` can be materialised into a future indicating that the stream is finished, or into a fold over the stream elements (hence we can get the last or all elements produced by the stream).
+In akka-stream, the "blueprint" is a fully connected flow graph. When executed the graph is first fused (when possible, multiple processing nodes are combined into one for performance), and each such combined node is materialised into an actor, which runs the actual processing logic. Apart from running appropriate logic, each transformation component can materialise into a value. E.g. a `Source` can materialise into a future which is completed when the source is done producing elements. A `Sink` can be materialised into a future indicating that the stream is finished, or into a fold over the stream elements (hence we can get the last or all elements produced by the stream).
 
 # Push vs pull
 
