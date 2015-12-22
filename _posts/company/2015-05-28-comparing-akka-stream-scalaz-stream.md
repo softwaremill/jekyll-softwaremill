@@ -25,7 +25,7 @@ We'll try to compare akka-stream and scalaz-stream in two parts: first looking a
 
 Both libraries are under active development (especially akka-stream, which is the younger of the two) and the APIs are still in flux, but that doesn't stop people from using them in production (let's face it, we all used a library version 0.0.3-beta1-M3 at least once ;) ), so let's see what they offer currently.
 
-Tested versions: akka-stream **2.0-M2** and scalaz-stream **0.8**.
+Tested versions: akka-stream **2.0** and scalaz-stream **0.8**.
 
 # What is ...?
 
@@ -124,7 +124,7 @@ def run(input: immutable.Iterable[Int]): Option[Double] = {
   implicit val system = ActorSystem()
   implicit val mat = ActorMaterializer()
 
-  val r = Source(input)
+  val r = Source.fromIterator(input)
     .mapConcat(n => List(n, n+1))
     .filter(_ % 17 != 0)
     .grouped(10)
@@ -162,7 +162,7 @@ An important difference is that in the akka version, multiple threads are potent
 
 The example would be also trivial to write using the normal collections API of course, but the important thing is that the stream processing would look the same and work equally well however large the input is, without reading all data into memory.
 
-This is also a good entry point for a simple performance comparison! Let's see how these implementations compare in a totally unscientific benchmark running on inputs of size from 10 000 to 10 000 000 elements:
+This is also a good entry point for a simple performance comparison! Let's see how these implementations compare in a totally unscientific benchmark running on inputs of size from 100 000 to 10 000 000 elements:
 
 <table>
   <thead>
@@ -175,48 +175,38 @@ This is also a good entry point for a simple performance comparison! Let's see h
   <tbody>
     <tr>
       <td>akka</td>
-      <td>10 000</td>
-      <td>0.10s</td>
-    </tr>
-    <tr>
-      <td>scalaz</td>
-      <td>10 000</td>
-      <td>0.17s</td>
-    </tr>
-    <tr>
-      <td>akka</td>
       <td>100 000</td>
-      <td>0.35s</td>
+      <td>0.06s</td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>100 000</td>
-      <td>0.92s</td>
+      <td>0.87s</td>
     </tr>
     <tr>
       <td>akka</td>
       <td>1 000 000</td>
-      <td>3.50s</td>
+      <td>0.51s</td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>1 000 000</td>
-      <td>10.39s</td>
+      <td>8.65s</td>
     </tr>
     <tr>
       <td>akka</td>
       <td>10 000 000</td>
-      <td><strong>30.55s</strong></td>
+      <td><strong>4.99s</strong></td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>10 000 000</td>
-      <td><strong>104.81s</strong></td>
+      <td><strong>85.55s</strong></td>
     </tr>
   </tbody>
 </table>
 
-akka-stream is doing much more threading, however scalaz-stream has a high overhead because it creates a lot of short-lived intermediate objects. In the end, the akka version ends up being **3x** faster.
+akka-stream is doing much more threading, however scalaz-stream has a high overhead because it creates a lot of short-lived intermediate objects. In the end, the akka version ends up being **17x** faster.
 
 # Streaming & transforming a file
 
@@ -228,13 +218,13 @@ override def run(from: File, to: File) = {
   implicit val system = ActorSystem()
   implicit val mat = ActorMaterializer()
  
-  val r: Future[Long] = Source.file(from)
+  val r: Future[Long] = FileIO.fromFile(from)
     .via(Framing.delimiter(ByteString("\n"), 1048576))
     .filter(!_.contains("#!@"))
     .map(_.replace("*", "0"))
     .intersperse("\n")
     .map(ByteString(_))
-    .toMat(Sink.file(to))(Keep.right)
+    .toMat(FileIO.toFile(to))(Keep.right)
     .run()
 
   Await.result(r, 1.hour)
@@ -268,37 +258,37 @@ Again, let's run a performance comparison of the two implementations, transferri
     <tr>
       <td>akka</td>
       <td>10</td>
-      <td>0.41s</td>
+      <td>0.33s</td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>10</td>
-      <td>0.63s</td>
+      <td>0.78s</td>
     </tr>
     <tr>
       <td>akka</td>
       <td>100</td>
-      <td>5.02</td>
+      <td>3.16</td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>100</td>
-      <td>7.423</td>
+      <td>7.57</td>
     </tr>
     <tr>
       <td>akka</td>
       <td>500</td>
-      <td><strong>21.81s</strong></td>
+      <td><strong>14.41s</strong></td>
     </tr>
     <tr>
       <td>scalaz</td>
       <td>500</td>
-      <td><strong>36.93s</strong></td>
+      <td><strong>37.69s</strong></td>
     </tr>
   </tbody>
 </table>
 
-akka-stream is still faster, however the difference is much smaller then before, about **1.5x**. In this test probably the I/O is the most significant, with the stream processing having a smaller impact on the end results.
+akka-stream is still faster, however the difference is much smaller then before, about **2.5x**. In this test probably the I/O is the most significant, with the stream processing having a smaller impact on the end results.
 
 # Merging sorted streams
 
@@ -337,12 +327,12 @@ How does the akka-stream version look like?
 def merge[T: Ordering](l1: List[T], l2: List[T]): List[T] = {
   val out = Sink.fold[List[T], T](Nil) { case (l, e) => l.+:(e)}
 
-  val g = FlowGraph.create(out) { implicit builder => sink =>
+  val g = GraphDSL.create(out) { implicit builder => sink =>
     val merge = builder.add(new SortedMerge[T])
 
     Source(l1) ~> merge.in0
     Source(l2) ~> merge.in1
-                  merge.out ~> sink.inlet
+                  merge.out ~> sink.in
 
     ClosedShape
   }
@@ -357,9 +347,9 @@ def merge[T: Ordering](l1: List[T], l2: List[T]): List[T] = {
 
 First we define a fold-Sink which always contains the last element seen, hence will materialize to a `Future[Int]`. Then we use the (mutable) graph builder & DSL to define how data should flow in the system. To do that, we create a specialized `merge` component (more on that later), which has two inputs and one output. We connect the two inputs to the input list, and the output to the sink that we have define earlier. It's a closed graph since all inputs & outputs are connected; it is also possible to define a partial graph with a given shape. Once defined, the graph `g` is immutable and can be materialized multiple times.
 
-The most important part is of course the `SortedMerge` component which can be implemented using the provided `GraphStage` DSL for defining arbitrary splits/merges. See [MergeSortedStreams.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/MergeSortedStreams.scala) for the full source. The main part looks quite similar to the scalaz version, you can see again a state machine, either reading from the left or from the right. Using two helper methods which handle the various possible combinations of the inputs getting closed and what should happen then (and it's quite tricky to get these right, if you forget to call e.g. `pull()` you can end up waiting infinitely! I think I got that code correctly only because it's checked by [ScalaCheck](https://www.scalacheck.org).), the main logic looks quite clean.
+The most important part is of course the `SortedMerge` component which can be implemented using the provided `GraphStage` DSL for defining arbitrary splits/merges. See [MergeSortedStreams.scala](https://github.com/softwaremill/streams-tests/blob/master/src/main/scala/com/softwaremill/streams/MergeSortedStreams.scala) for the full source. The main part looks quite similar to the scalaz version, you can see again a state machine, either reading from the left or from the right. Again, it can be a bit tricky to switch to such mode of thinking, but the main logic looks nice and clean, with some bolierplate to define the stage's inputs & outputs.
 
-The akka-stream version is more error-prone than scalaz-stream, because of the mutable calls in the `GraphStage`, and a bit harder to reason about as we need to add special-cases for termination in a couple of places.
+The akka-stream version is more error-prone than scalaz-stream, because of the mutable calls in the `GraphStage`, however these are mostly hidden using a function-based API.
 
 # Parallel processing
 
@@ -371,7 +361,7 @@ First, let's look at the akka-stream version. The full source is in [ParallelPro
 override def run(in: List[Int]) = {
   val out = Sink.fold[List[Int], Int](Nil) { case (l, e) => l.+:(e)}
 
-  val g = FlowGraph.create(out) { implicit builder => sink =>
+  val g = GraphDSL.create(out) { implicit builder => sink =>
     val start = Source(in)
     val split = builder.add(new SplitRoute[Int](
       el => if (el % 2 == 0) Left(el) else Right(el)))
@@ -417,25 +407,20 @@ class SplitStage[T](splitFn: T => Either[T, T]) extends GraphStage[FanOutShape2[
     setHandler(out1, eagerTerminateOutput)
 
     def doRead(): Unit = {
-      if (isClosed(in)) {
-        completeStage()
-      } else {
-        setHandler(in, eagerTerminateInput)
-        read(in) { el =>
-          setHandler(in, ignoreTerminateInput)
-          splitFn(el).fold(doEmit(out0, _), doEmit(out1, _))
-        }
-      }
+      read(in)(
+        el => splitFn(el).fold(doEmit(out0, _), doEmit(out1, _)),
+        () => completeStage()
+      )
     }
 
-    def doEmit(out: Outlet[T], el: T): Unit = emit(out, el, doRead)
+    def doEmit(out: Outlet[T], el: T): Unit = emit(out, el, doRead _)
 
     override def preStart() = doRead()
   }
 }
 ```
 
-The code is simpler than the `SortedMerge` case, though still we have to deal with some low-level concerns of how to handle input/output termination (so that no element is missed). The "core logic" of emitting the element to one output or the other is a single line; the rest are decorations needed to "make things work".
+The code is simpler than the `SortedMerge` case. The "core logic" of emitting the element to one output or the other is a single line; the rest are decorations needed to "make things work".
 
 How does the scalaz-stream version compare?
 
@@ -558,3 +543,4 @@ It's great to have choice, depending on the projects at hand and personal tastes
 * 8/10/2015: Updating to scalaz-stream 0.8
 * 16/11/2015: Updating to akka-stream 2.0-M1
 * 1/12/2015: Updating to akka-stream 2.0-M2
+* 22/12/2015: Updating to akka-stream 2.0
