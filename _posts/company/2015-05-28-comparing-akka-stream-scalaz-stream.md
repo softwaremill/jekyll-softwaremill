@@ -475,6 +475,7 @@ object AkkSlowConsumer extends App {
   try {
     val future = Source.tick(0.millis, 100.millis, 1)
       .conflate(identity)(_ + _)
+      .withAttributes(Attributes.asyncBoundary)
       .runForeach { el =>
         Thread.sleep(1000L)
         println(el)
@@ -485,11 +486,11 @@ object AkkSlowConsumer extends App {
 }
 ```
 
-Because akka is a push-pull hybrid, things are quite easy, especially that there's a built-in `conflate` combinator which does exactly what we want. Another one with similar functionality is `groupedWithin`.
+Because akka is a push-pull hybrid, things are quite easy, especially that there's a built-in `conflate` combinator which does exactly what we want. Another one with similar functionality is `groupedWithin`. We have to add an async boundary, though, so that the conflate & the sink run in parallel.
 
-If you had to guess what will be the output of that app, what would it be? I would probably say that values of about 10 (+/- 1 depending on exact scheduling) would be printed, as the producer is 10x faster than the consumer and we add up the elements while waiting for the consumer. However, the actual output is an alternating 19 and 1, or 20 and 1. Why?
+If you had to guess what will be the output of that app, what would it be? I would probably say that values of about 10 (+/- 1 depending on exact scheduling) would be printed, as the producer is 10x faster than the consumer and we add up the elements while waiting for the consumer. However, the actual output is a stream of 1s and an occasional cumulated value of 50-70. Why?
 
-The answer is buffering. The sink will request a couple of elements in advance, hence in the beginning you will see a couple of `1` printed (4x in my case - it seems that's the initial demand). However that will cause some elements to build up in the conflate stage (`10 - initial demand`), so you should see a `6`. Subsequently, it seems that the demand is adjusted, resulting sometimes in two elements being requested from `conflate` at a time (producing `19` and `1`), and sometimes none.
+The answer is buffering. The sink will request a number of elements in advance, hence in the beginning you will see a `1`s printed. However that will cause some elements to build up in the conflate stage, so when the initial buffer runs out, you'll see the value that conflate accumulated. Then once again the buffer is partially cleared, resulting in `1`s being delivered, and some more elements build up in conflate.
 
 And now the scalaz-stream version:
 
