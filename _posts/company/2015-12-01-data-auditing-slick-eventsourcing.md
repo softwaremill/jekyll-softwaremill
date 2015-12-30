@@ -6,7 +6,7 @@ author_login: warski
 categories:
 - scala
 - slick
-- event sourcnig
+- event sourcing
 - audit
 - company
 layout: simple_post
