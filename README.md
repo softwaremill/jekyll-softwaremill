@@ -117,7 +117,7 @@ crontab entry:
 
     * * * * * /home/softwaremill/jekyll-softwaremill/__generators/cron.sh
 
-Make sure gem directory is in $PATH.
+Make sure gem directory is in $PATH. Content is regenerated every 20 minutes.
 
 
 # Technical documentation
