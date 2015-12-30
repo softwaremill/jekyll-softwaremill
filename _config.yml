@@ -1,4 +1,6 @@
 name: SoftwareMill
+url: https://softwaremill.com/
+description: 'SoftwareMill - the best place to work for true engineers delivering software that matters to our business clients'
 markdown: redcarpet
 pygments: true
 timezone: Europe/Warsaw
