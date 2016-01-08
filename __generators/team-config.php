@@ -49,7 +49,7 @@ return array(
         'name' => 'Bartosz Andrzejczak',
         'twitter' => 'baandrzejczak',
         'blog' => 'http://bandrzejczak.com/',
-        'username' => 'andrzejczak',
+        'username' => 'no-image',
         'codingSince' => 2013,
         'leader' => 1,
         'opensource' => 0,
