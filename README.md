@@ -1,6 +1,5 @@
 # softwaremill.com v2.5 based on Jekyll
 
-
 # Quick howtos
 
 ## Running in development
