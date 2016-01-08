@@ -92,5 +92,9 @@ return array(
     'twitter' => 'baandrzejczak',
     'blog' => 'http://bandrzejczak.com/',
   ),
+  'Andrzej Ludwikowski' => array(
+    'twitter' => 'aludwikowski',
+    'blog' => 'http://aludwikowski.blogspot.com/',
+  )
 );
 ?>
