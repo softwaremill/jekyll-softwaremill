@@ -40,10 +40,6 @@ return array(
     'twitter' => 'zuchos',
     'blog' => 'http://blog.zuchos.com/',
   ),
-  'Maciej Biłas' => array(
-    'twitter' => 'maciejb',
-    'blog' => 'http://maciej.inszy.org/',
-  ),
   'Maciej Hnydka' => array(
     'twitter' => NULL,
     'blog' => NULL,
