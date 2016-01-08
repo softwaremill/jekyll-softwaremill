@@ -85,25 +85,6 @@ return array(
         ",
     ),
     array(
-        'name' => 'Marcin Baraniecki',
-        'twitter' => NULL,
-        'blog' => NULL,
-        'username' => 'belfz',
-        'codingSince' => 2013,
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 0,
-        'parent' => 0,
-        'conference' => 1,
-        'title' => 'Front-end Lion',
-        'image' => 'no-image.jpg',
-        'bio' => "
-        <p>Marcin literally loves everything about the front-end, especially JavaScript technologies and HTML5 magic. Previously worked for Irish clients from travel & flight industry, developing responsive web applications.
-        </p>
-        <p>P1-level scuba diver. Enjoys astrophotography, board games, and asian food.</p>
-        ",
-    ),
-    array(
         'name' => 'Jacek Kunicki',
         'twitter' => 'rucek',
         'blog' => 'http://blog.kunicki.org',
@@ -363,6 +344,25 @@ In his free
           struggles with growing piles of documents and supports the Board.
         </p>
         <p>In her spare time she writes computer games reviews and reads science fiction.</p>
+        ",
+    ),
+    array(
+        'name' => 'Marcin Baraniecki',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'belfz',
+        'codingSince' => 2013,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 1,
+        'title' => 'Front-end Lion',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>Marcin literally loves everything about the front-end, especially JavaScript technologies and HTML5 magic. Previously worked for Irish clients from travel & flight industry, developing responsive web applications.
+        </p>
+        <p>P1-level scuba diver. Enjoys astrophotography, board games and asian food.</p>
         ",
     ),
     array(
