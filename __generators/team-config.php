@@ -85,6 +85,25 @@ return array(
         ",
     ),
     array(
+        'name' => 'Darek Kaczyński',
+        'twitter' => 'dkaczynski',
+        'blog' => NULL,
+        'username' => 'roadrunn',
+        'codingSince' => 2005,
+        'leader' => 1,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 1,
+        'title' => 'Senior Software Engineer',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>A JVM based software engineer having most experience with all things Spring. Groovy and functional programming principles fan, also expanding his DevOps toolbox.</p>
+        <p>Warsaw Spring Labs meetup founder an speaker and Devoxx4Kids co-organizer.</p>
+        <p>A father of two. In free time a grand strategy, RPG and board gamer. Outdoors a biker and skier.</p>
+        ",
+    ),
+    array(
         'name' => 'Jacek Kunicki',
         'twitter' => 'rucek',
         'blog' => 'http://blog.kunicki.org',
