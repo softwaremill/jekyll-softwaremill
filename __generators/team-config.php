@@ -79,28 +79,9 @@ return array(
         'title' => 'Software Developer',
         'image' => 'daniel_kos.jpg',
         'bio' => "
-        <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p> 
-        <p>Interested in computer graphics and games as well as in rich internet/enterprise applications.</p> 
+        <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p>
+        <p>Interested in computer graphics and games as well as in rich internet/enterprise applications.</p>
         <p>He also contributes to open source projects (Ultimate++). After work Daniel spends time with his two daughters, takes dancing classes and tries to do evening jogging.</p>
-        ",
-    ),
-    array(
-        'name' => 'Marcin Baraniecki',
-        'twitter' => NULL,
-        'blog' => NULL,
-        'username' => 'belfz',
-        'codingSince' => 2013,
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 0,
-        'parent' => 0,
-        'conference' => 1,
-        'title' => 'Front-end Lion',
-        'image' => 'no-image.jpg',
-        'bio' => "
-        <p>Marcin literally loves everything about the front-end, especially JavaScript technologies and HTML5 magic. Previously worked for Irish clients from travel & flight industry, developing responsive web applications.
-        </p>
-        <p>P1-level scuba diver. Enjoys astrophotography, board games, and asian food.</p>
         ",
     ),
     array(
@@ -140,7 +121,7 @@ return array(
         'title' => 'Passionate Software Developer',
         'image' => 'jan_kowalski.jpg',
         'bio' => "
-        <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland. 
+        <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland.
 
         </p>
         <p>He likes clean, short tests in spock and automating things like one command provisioning. Fan of JavaScript web frameworks.</p>
@@ -239,7 +220,7 @@ return array(
         'bio' => "
         <p>Passionate about programming since his early schooldays. Previously co-developed worldwide systems for mobile
           banking and the healthcare industry. A true enthusiast of the JVM ecosystem and open source. After work
-          Krzysztof enjoys consuming tons of new knowledge and experimenting with software development. 
+          Krzysztof enjoys consuming tons of new knowledge and experimenting with software development.
 In his free
           time he sneaks out into countryside seclusion to take care of his humble apiary.
         </p>
@@ -366,6 +347,25 @@ In his free
         ",
     ),
     array(
+        'name' => 'Marcin Baraniecki',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'belfz',
+        'codingSince' => 2013,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 1,
+        'title' => 'Front-end Lion',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>Marcin literally loves everything about the front-end, especially JavaScript technologies and HTML5 magic. Previously worked for Irish clients from travel & flight industry, developing responsive web applications.
+        </p>
+        <p>P1-level scuba diver. Enjoys astrophotography, board games, and asian food.</p>
+        ",
+    ),
+    array(
         'name' => 'Marcin Kubala',
         'twitter' => 'marcin_kubala',
         'blog' => 'http://marcinkubala.wordpress.com',
@@ -402,7 +402,7 @@ In his free
         'image' => 'michal_chmielarz.jpg',
         'bio' => "
         <p>Graduated from University of Adam Mickiewicz, Poznań. Java developer and passionate backend programmer. Familiar with enterprise integration system problems.
-        Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p> 
+        Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p>
         <p>Supporter of herbal tea. Likes travels and reading historical/fantasy/sf books.</p>
         ",
     ),
@@ -476,7 +476,7 @@ In his free
         'name' => 'Mikołaj Koziarkiewicz',
         'twitter' => NULL,
         'blog' => 'http://xn--mikoak-6db.net',
-        'username' => 'koziarkiewicz', 
+        'username' => 'koziarkiewicz',
         'codingSince' => 1996,
         'leader' => 0,
         'opensource' => 1,
