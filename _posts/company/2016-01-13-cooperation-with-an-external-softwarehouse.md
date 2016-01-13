@@ -2,7 +2,7 @@
 title: Cooperation with an external software house
 description: What is most important in cooperation with external software developers?
 author: Katarzyna Leszczyńska-Bohdan
-author_login: Katarzyna_Leszczyńska-Bohdan
+author_login: kasia_l-b
 categories:
 - company
 layout: simple_post
