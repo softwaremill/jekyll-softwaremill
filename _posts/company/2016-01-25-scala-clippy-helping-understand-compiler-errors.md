@@ -7,6 +7,7 @@ categories:
 - scala
 - clippy
 - compiler
+- company
 layout: simple_post
 ---
 
