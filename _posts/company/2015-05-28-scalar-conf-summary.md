@@ -2,7 +2,7 @@
 title: Scalar Conference 2015 Summary
 description: Scalar Conference 2015 Summary
 author: Katarzyna Leszczyńska-Bohdan
-author_login: no-image
+author_login: kasia_l-b
 categories:
 - scalar
 - scala

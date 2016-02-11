@@ -4,10 +4,6 @@ return array(
     'twitter' => 'adamwarski',
     'blog' => 'http://www.warski.org/blog/',
   ),
-  'Aleksandra Puchta' => array(
-    'twitter' => 'PuchtaOla',
-    'blog' => NULL,
-  ),
   'Jacek Kunicki' => array(
     'twitter' => 'rucek',
     'blog' => 'http://blog.kunicki.org',
@@ -40,10 +36,6 @@ return array(
     'twitter' => 'zuchos',
     'blog' => 'http://blog.zuchos.com/',
   ),
-  'Maciej Biłas' => array(
-    'twitter' => 'maciejb',
-    'blog' => 'http://maciej.inszy.org/',
-  ),
   'Maciej Hnydka' => array(
     'twitter' => NULL,
     'blog' => NULL,
@@ -56,6 +48,10 @@ return array(
     'twitter' => 'marcin_kubala',
     'blog' => 'http://marcinkubala.wordpress.com',
   ),
+  'Piotr Dyraga' => array(
+    'twitter' => 'piotrdyraga',
+    'blog' => 'http://ontheserverside.com',
+  ),
   'Michał Matłoka' => array(
     'twitter' => 'mmatloka',
     'blog' => NULL,
@@ -66,15 +62,11 @@ return array(
   ),
   'Mikołaj Koziarkiewicz' => array(
     'twitter' => NULL,
-    'blog' => 'http://xn--mikoak-6db.net',
+    'blog' => 'http://micwi.pl/',
   ), 
   'Paweł Stawicki' => array(
     'twitter' => 'pawelstawicki',
     'blog' => 'http://pawelstawicki.blogspot.com/',
-  ),
-  'Paweł Wrzeszcz' => array(
-    'twitter' => 'pawelwrzeszcz',
-    'blog' => 'http://pawel.wrzesz.cz/',
   ),
   'Piotr Buda' => array(
     'twitter' => 'piotrbuda',
@@ -88,5 +80,13 @@ return array(
     'twitter' => 'szimano',
     'blog' => 'http://szimano.org/',
   ),
+  'Bartek Andrzejczak' => array(
+    'twitter' => 'baandrzejczak',
+    'blog' => 'http://bandrzejczak.com/',
+  ),
+  'Andrzej Ludwikowski' => array(
+    'twitter' => 'aludwikowski',
+    'blog' => 'http://aludwikowski.blogspot.com/',
+  )
 );
 ?>

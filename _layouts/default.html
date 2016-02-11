@@ -26,13 +26,11 @@ navigation:
     <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.seo.description | escape }}{% endif %}"/>
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.seo.keywords }}{% endif %}"/>
     <meta name="Copyright" content="Copyright (c) 2015, SoftwareMill Sp. z o.o. All Rights Reserved.">
-    <meta name="author" content="balsamstudio.com"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     {% capture url %}{{ page.url | remove: '/' | remove: 'index.html' }}/{% endcapture %}
     {% if url == '/' %}{% capture url %}{% endcapture %}{% endif %}
     <link rel="canonical" href="https://softwaremill.com/{{ url }}"/>
-    <link rel="alternate" type="application/rss+xml" title="SoftwareMill blog" href="/atom.xml"/>
-
+    <link href="https://softwaremill.com/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts from SoftwareMill" />
     <meta property='og:title' content='{% if page.title %}{{ page.title | escape }}{% else %}{{ site.seo.title | escape }}{% endif %}'/>
     <meta property='og:description' content='{% if page.description %}{{ page.description | escape }}{% else %}{{ site.seo.description | escape }}{% endif %}'/>
     <meta property='og:url' content='https://softwaremill.com/{{ url }}'/>
