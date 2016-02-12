@@ -36,7 +36,7 @@ which may leave you wondering what did you do to the compiler and why is it mean
 You can use Scala Clippy today by adding the following setting to your SBT build:
 
 ```
-addCompilerPlugin("com.softwaremill.clippy" % "plugin" % "0.1" 
+addCompilerPlugin("com.softwaremill.clippy" % "plugin" % "0.2" 
   cross CrossVersion.full)
 ```
 
