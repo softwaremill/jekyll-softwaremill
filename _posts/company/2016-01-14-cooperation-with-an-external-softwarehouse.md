@@ -121,7 +121,7 @@ That is why we have prepared answers for some of the most frequently asked quest
    + offering nearshoring from Poland - highly-skilled and motivated developers working in similar time zone and able to regularly visit clients’ offices
    + providing a small, efficient team of experienced full-stack developers, able to shift focus in a very agile way (e.g. from backend to frontend)
    + offering very close cooperation with business - as part of our company culture
-   + cooperation with Typesafe (Scala creators) -  SoftwareMill is a Select System Integrator
+   + cooperation with Lightbend (Scala creators) -  SoftwareMill is a Select System Integrator
 
 
 We take care of complete project development process, always trying to keep in mind that we want to develop a maintainable, working software which brings value to our clients.
