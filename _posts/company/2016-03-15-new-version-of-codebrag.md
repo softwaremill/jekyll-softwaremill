@@ -32,7 +32,7 @@ Thanks to [Ruben Gerits](https://github.com/gerits) it is possible now to define
 inside Codebrag. What does it mean? If you have a large development team, and you would like limit the number of people
 involved in the code review process, you can form a team in Codebrag to narrow the pool of commits they have to review.
 It works very simply: if a team member made a change, that change will only be visible to other team members from
-her team. If someone isn't assigned to any team, she will see all the commits as usual.
+their team. If someone isn't assigned to any team, they will see all the commits as usual.
 
 ![](/img/uploads/2016/03/2016-03-15-cbr-2.png)
 
