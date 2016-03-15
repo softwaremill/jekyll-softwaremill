@@ -279,7 +279,7 @@ In his free
         'parent' => 1,
         'conference' => 1,
         'title' => 'Creative Software Engineer',
-        'image' => 'lenart.jpg',
+        'image' => 'lukasz_lenart.jpg',
         'bio' => "
         <p>Has turned passion for programming from a hobby into profession.<br/> Łukasz believes that a good programmer
           should always try new languages and technologies. He can develop in PHP, C#, Borland Delphi, etc. – finding
