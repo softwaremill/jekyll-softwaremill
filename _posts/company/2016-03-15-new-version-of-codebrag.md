@@ -19,16 +19,16 @@ The most annoying thing for me, when I was joining a new project where Codebrag 
 on the beginning. It was not possible to mark all commits as reviewed at once and you have had to mark them one by one
 spending a lot of time on this useless activity ;-)
 
-Now you can mark all commits as reviewed by hitting just one button
+Now you can mark all commits as reviewed by hitting just one button:
 
 ![](/img/uploads/2016/03/2016-03-15-cbr-1.png)
 
-The button is available after opening any commit whicj is on your `TO REVIEW` list. With one shot you mark all of them
+The button is available after opening any commit which is on your `TO REVIEW` list. With one shot you mark all of them
 as reviewed!
 
 ### manage your teams
 
-Thanks to [Ruben Gerits](https://github.com/gerits) it is possible to define teams and manage members of the teams
+Thanks to [Ruben Gerits](https://github.com/gerits) it is possible now to define teams and manage members of the teams
 inside Codebrag. What does it mean? If you have a large development team and you want to, that just some members
 of the team are involved in code review of some parts of your project, you can form a team in Codebrag to narrow
 pool of commits they have to review. It works very simple: if a team member made a change, that change will only be
