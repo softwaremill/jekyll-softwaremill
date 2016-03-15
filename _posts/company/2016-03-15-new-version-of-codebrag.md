@@ -2,7 +2,7 @@
 title: New version of Codebrag is out!
 description: Added support for Teams, possibility to mark all commits as reviewed and other small improvements
 author: Lukasz Lenart
-author_login: lukaszlenart
+author_login: lukasz_lenart
 categories:
 - scala
 - codebrag
