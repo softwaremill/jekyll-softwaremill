@@ -49,7 +49,7 @@ return array(
         'name' => 'Bartosz Andrzejczak',
         'twitter' => 'baandrzejczak',
         'blog' => 'http://bandrzejczak.com/',
-        'username' => 'andrzejczak',
+        'username' => 'no-image',
         'codingSince' => 2013,
         'leader' => 1,
         'opensource' => 0,
@@ -79,9 +79,28 @@ return array(
         'title' => 'Software Developer',
         'image' => 'daniel_kos.jpg',
         'bio' => "
-        <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p> 
-        <p>Interested in computer graphics and games as well as in rich internet/enterprise applications.</p> 
+        <p>Experienced C++/Java developer drifting towards functional languages. Attached to concepts and ideas not to particular technologies.</p>
+        <p>Interested in computer graphics and games as well as in rich internet/enterprise applications.</p>
         <p>He also contributes to open source projects (Ultimate++). After work Daniel spends time with his two daughters, takes dancing classes and tries to do evening jogging.</p>
+        ",
+    ),
+    array(
+        'name' => 'Darek Kaczyński',
+        'twitter' => 'dkaczynski',
+        'blog' => NULL,
+        'username' => 'roadrunn',
+        'codingSince' => 2005,
+        'leader' => 1,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 1,
+        'title' => 'Senior Software Engineer',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>A JVM based software engineer having most experience with all things Spring. Groovy and functional programming principles fan, also expanding his DevOps toolbox.</p>
+        <p>Warsaw Spring Labs meetup founder an speaker and Devoxx4Kids co-organizer.</p>
+        <p>A father of two. In free time a grand strategy, RPG and board gamer. Outdoors a biker and skier.</p>
         ",
     ),
     array(
@@ -121,7 +140,7 @@ return array(
         'title' => 'Passionate Software Developer',
         'image' => 'jan_kowalski.jpg',
         'bio' => "
-        <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland. 
+        <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland.
 
         </p>
         <p>He likes clean, short tests in spock and automating things like one command provisioning. Fan of JavaScript web frameworks.</p>
@@ -220,7 +239,7 @@ return array(
         'bio' => "
         <p>Passionate about programming since his early schooldays. Previously co-developed worldwide systems for mobile
           banking and the healthcare industry. A true enthusiast of the JVM ecosystem and open source. After work
-          Krzysztof enjoys consuming tons of new knowledge and experimenting with software development. 
+          Krzysztof enjoys consuming tons of new knowledge and experimenting with software development.
 In his free
           time he sneaks out into countryside seclusion to take care of his humble apiary.
         </p>
@@ -260,7 +279,7 @@ In his free
         'parent' => 1,
         'conference' => 1,
         'title' => 'Creative Software Engineer',
-        'image' => 'lenart.jpg',
+        'image' => 'lukasz_lenart.jpg',
         'bio' => "
         <p>Has turned passion for programming from a hobby into profession.<br/> Łukasz believes that a good programmer
           should always try new languages and technologies. He can develop in PHP, C#, Borland Delphi, etc. – finding
@@ -362,7 +381,7 @@ In his free
         'bio' => "
         <p>Marcin literally loves everything about the front-end, especially JavaScript technologies and HTML5 magic. Previously worked for Irish clients from travel & flight industry, developing responsive web applications.
         </p>
-        <p>P1-level scuba diver. Enjoys astrophotography, board games and asian food.</p>
+        <p>P1-level scuba diver. Enjoys astrophotography, board games, and asian food.</p>
         ",
     ),
     array(
@@ -402,7 +421,7 @@ In his free
         'image' => 'michal_chmielarz.jpg',
         'bio' => "
         <p>Graduated from University of Adam Mickiewicz, Poznań. Java developer and passionate backend programmer. Familiar with enterprise integration system problems.
-        Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p> 
+        Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p>
         <p>Supporter of herbal tea. Likes travels and reading historical/fantasy/sf books.</p>
         ",
     ),
@@ -476,7 +495,7 @@ In his free
         'name' => 'Mikołaj Koziarkiewicz',
         'twitter' => NULL,
         'blog' => 'http://xn--mikoak-6db.net',
-        'username' => 'koziarkiewicz', 
+        'username' => 'koziarkiewicz',
         'codingSince' => 1996,
         'leader' => 0,
         'opensource' => 1,

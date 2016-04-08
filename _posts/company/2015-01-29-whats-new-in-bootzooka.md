@@ -2,7 +2,7 @@
 title: What's new in Bootzooka?
 description: Let's take a closer look at most important changes made in our web application scaffolding project.
 author: Marcin Kubala
-author_login: no-image
+author_login: marcin_kubala
 categories:
 - scala
 - company

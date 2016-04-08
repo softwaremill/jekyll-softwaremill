@@ -3,7 +3,7 @@ title: Devoxx 2013 - Java, Android, HTML5 and Belgian Chocolate
 description: 3500 participants, 200 presentations, 195 speakers and 6 people from SoftwareMill. What a conference!
 keywords: devoxx, java, cloud, big data, web, html5, jvm, android, mobile, softwaremill, warski, paas,
 author: Mirek Woźniak
-author_login: no-image
+author_login: wozniak
 categories:
 - company
 layout: simple_post
