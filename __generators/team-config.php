@@ -377,7 +377,7 @@ In his free
         'parent' => 0,
         'conference' => 1,
         'title' => 'Front-end Lion',
-        'image' => 'no-image.jpg',
+        'image' => 'MarcinB.jpg',
         'bio' => "
         <p>Marcin literally loves everything about the front-end, especially JavaScript technologies and HTML5 magic. Previously worked for Irish clients from travel & flight industry, developing responsive web applications.
         </p>
