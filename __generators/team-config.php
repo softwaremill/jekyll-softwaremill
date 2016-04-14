@@ -49,7 +49,7 @@ return array(
         'name' => 'Bartosz Andrzejczak',
         'twitter' => 'baandrzejczak',
         'blog' => 'http://bandrzejczak.com/',
-        'username' => 'no-image',
+        'username' => 'bartosz_andrzejczak',
         'codingSince' => 2013,
         'leader' => 1,
         'opensource' => 0,
@@ -57,7 +57,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'Software Wizard',
-        'image' => 'no-image.jpg',
+        'image' => 'bartosz_andrzejczak.jpg',
         'bio' => "
         <p>Bartosz is clean code advocate and good tests fan.
            He enjoys creating simple and elegant solutions to complicated problems.
@@ -88,7 +88,7 @@ return array(
         'name' => 'Darek Kaczyński',
         'twitter' => 'dkaczynski',
         'blog' => NULL,
-        'username' => 'roadrunn',
+        'username' => 'darek_kaczynski',
         'codingSince' => 2005,
         'leader' => 1,
         'opensource' => 1,
@@ -96,7 +96,7 @@ return array(
         'parent' => 1,
         'conference' => 1,
         'title' => 'Senior Software Engineer',
-        'image' => 'no-image.jpg',
+        'image' => 'darek_kaczynski.jpg',
         'bio' => "
         <p>A JVM based software engineer having most experience with all things Spring. Groovy and functional programming principles fan, also expanding his DevOps toolbox.</p>
         <p>Warsaw Spring Labs meetup founder an speaker and Devoxx4Kids co-organizer.</p>
@@ -127,6 +127,23 @@ return array(
         ",
     ),
     array(
+        'name' => 'Jakub Dzikowski',
+        'twitter' => NULL,
+        'blog' => 'https://dzikowski.github.io',
+        'username' => 'jakub_dzikowski',
+        'codingSince' => 2008,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Agile Samurai',
+        'image' => 'jakub_dzikowski.jpg',
+        'bio' => "<p>Full stack developer of web applications and a lifelong learner, always eager to try out new technologies or improve his technical and non-technical skills.
+                  </p>Jakub has been working in software development since 2008. He has gained substantial experience of Java, Scala and client-side technologies.
+                  He has a great passion for functional programming, enjoys both front-end and back-end development and never makes compromises on software quality.</p>",
+    ),
+    array(
         'name' => 'Jan Kowalski',
         'twitter' => 'hanskoff',
         'blog' => NULL,
@@ -146,6 +163,23 @@ return array(
         <p>He likes clean, short tests in spock and automating things like one command provisioning. Fan of JavaScript web frameworks.</p>
         <p>Privately husband and father, squash player and seasoned skier. In summer, Jan enjoys kite-surfing.</p>
         ",
+    ),
+    array(
+        'name' => 'Jan Rotter',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'jan_rotter',
+        'codingSince' => 2006,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'DevOps Engineer',
+        'image' => 'no-image.jpg',
+        'bio' => "<p>Janek is an experienced Linux systems administrator and a C++ developer. He is a devotee of elegant solutions, and an Unix philosophy follower. He strongly believes that less is more, more or less.
+
+                 </p><p>When away from keyboard, he is Mister Fixit, a beginning beekeeper and a runner.</p>",
     ),
     array(
         'name' => 'Jan Zborowski',
@@ -184,6 +218,23 @@ return array(
           conference.
         </p>
         ",
+    ),
+    array(
+        'name' => 'Jesper Loth',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'jesper_loth',
+        'codingSince' => 1992,
+        'leader' => 0,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'Business Development Nordic & DACH',
+        'image' => 'jesper_loth.jpg',
+        'bio' => "<p>Not only not a geek, but also the only non-Pole in the company. Jesper, who is Danish, has since the mid-nineties worked in Scandinavian-Polish business development.
+                </p><p>To Jesper, Business Development is not sales, but creating cooperation between SoftwareMill and our clients, and connecting with other High-Tech organizations, as well as Universities.
+                </p><p>Privately living in Warsaw, and yes - Jesper speaks Polish and Danish at home.</p>",
     ),
     array(
         'name' => 'Katarzyna Leszczyńska-Bohdan',
@@ -407,6 +458,22 @@ In his free
         ",
     ),
     array(
+        'name' => 'Marta Smektała',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'marta_smektala',
+        'codingSince' => 2015,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 1,
+        'title' => 'UX/UI Designer',
+        'image' => 'marta_smektala.jpg',
+        'bio' => "<p>Marta graduated Computer Science at Adam Mickiewicz University. Her passion is the UX and UI design process. She also works on graphics projects. Marta is active with the Polish UX community.
+                  </p><p>Privately loves sports, fashion and pug dogs.</p>",
+    ),
+    array(
         'name' => 'Michał Chmielarz',
         'twitter' => 'mchmielu',
         'blog' => 'http://www.devthoughts.pl/',
@@ -421,7 +488,7 @@ In his free
         'image' => 'michal_chmielarz.jpg',
         'bio' => "
         <p>Graduated from University of Adam Mickiewicz, Poznań. Java developer and passionate backend programmer. Familiar with enterprise integration system problems.
-        Currently starting his adventure in Scala world. Privately husband, amateur of millet groats cooked in a million ways and novice gardener.</p>
+        Currently starting his adventure in Scala world. Amateur of millet groats cooked in a million ways and novice gardener.</p>
         <p>Supporter of herbal tea. Likes travels and reading historical/fantasy/sf books.</p>
         ",
     ),
@@ -553,26 +620,6 @@ In his free
         ",
     ),
     array(
-        'name' => 'Piotr Dyraga',
-        'twitter' => 'piotrdyraga',
-        'blog' => 'http://ontheserverside.com/',
-        'username' => 'dyraga',
-        'codingSince' => '2008',
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 1,
-        'parent' => 0,
-        'conference' => 0,
-        'title' => 'Senior Software Engineer',
-        'image' => 'dyraga.jpg',
-        'bio' => "
-        <p>Piotr graduated computer science at Jagiellonian University. Prior joining SoftwareMill worked on projects
-            ranging from bank transaction processing engine to HTTP proxy server. He specializes in high-throughput,
-            sever-side system architectures. Big fan of Spring Framework.
-        </p>
-        ",
-    ),
-    array(
         'name' => 'Piotr Buda',
         'twitter' => 'piotrbuda',
         'blog' => 'http://piotrbuda.eu/',
@@ -593,6 +640,43 @@ In his free
         </p>
         <p>Husband and father of one. Video games addict.</p>
         ",
+    ),
+    array(
+        'name' => 'Piotr Dyraga',
+        'twitter' => 'piotrdyraga',
+        'blog' => 'http://ontheserverside.com/',
+        'username' => 'dyraga',
+        'codingSince' => '2008',
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 1,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Senior Software Engineer',
+        'image' => 'dyraga.jpg',
+        'bio' => "
+        <p>Piotr graduated computer science at Jagiellonian University. Prior joining SoftwareMill worked on projects
+            ranging from bank transaction processing engine to HTTP proxy server. He specializes in high-throughput,
+            sever-side system architectures. Big fan of Spring Framework.
+        </p>
+        ",
+    ),
+    array(
+        'name' => 'Sebastian Drygalski',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'drygalski',
+        'codingSince' => 2007,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Mobile and Data Science Wizard',
+        'image' => 'no-image.jpg',
+        'bio' => "<p>Sebastian uses his passion to make the most smooth, beautiful and user friendly mobile apps that can exist,
+        backed by Machine Learning and Data Science, which he is also fascinated by. He doesn't like to compromise, both in terms of polishing his apps and accuracy of his algorithms.
+                  </p><p>He is addicted to futurology, future of human race and prospect of developing technological singularity. He can never have enough of hard sci-fi, so he writes a book of his own, incorporating a universum focused on the Fermi paradox, Kardashev Scale and Strong AI.</p>",
     ),
      array(
          'name' => 'Sylwia Górska',
@@ -627,6 +711,23 @@ In his free
         </p>
         <p>He is interested in football, likes reading books and posts on DevelopersZone.</p>
         ",
+    ),
+    array(
+        'name' => 'Tomasz Łuczak',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'tomasz_luczak',
+        'codingSince' => 2009,
+        'leader' => 0,
+        'opensource' => 1,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 0,
+        'title' => 'Senior Software Engineer',
+        'image' => 'tomasz_luczak.jpg',
+        'bio' => "<p>Tomek strongly believes in clean code, and an emphasis on rich domain models as well as microservices-based architectures. Before joining SoftwareMill he was involved in implementing front office applications in banking.
+                  </p><p>Particularly interested in scalable architectures and natural language processing.
+                  <p>Tomek likes cycling, squash and Italy.</p>",
     ),
     array(
         'name' => 'Tomasz Szymański',
