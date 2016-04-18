@@ -2,7 +2,7 @@
 layout: simple_presentation
 title: Seriously awesome introduction to observables and reactive programming - explained by example
 conference: meet.js Poznań, March 2016
-abstract_fragment: Comparing Akka & Scalaz streams
+abstract_fragment: A summary of meet.js talk & presentation
 keywords: javascript, functional, reactive
 speaker: Marcin Baraniecki
 speaker_login: MarcinB
