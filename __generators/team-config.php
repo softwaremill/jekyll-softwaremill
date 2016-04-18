@@ -155,7 +155,7 @@ return array(
         'parent' => 1,
         'conference' => 0,
         'title' => 'Passionate Software Developer',
-        'image' => 'jan_kowalski.jpg',
+        'image' => 'kowalski.jpg',
         'bio' => "
         <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland.
 
