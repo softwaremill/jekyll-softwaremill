@@ -146,7 +146,7 @@ return array(
     array(
         'name' => 'Jan Kowalski',
         'twitter' => 'hanskoff',
-        'blog' => NULL,
+        'blog' => 'https://hanskoff.github.io',
         'username' => 'kowalski',
         'codingSince' => 2007,
         'leader' => 0,
@@ -160,8 +160,8 @@ return array(
         <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland.
 
         </p>
-        <p>He likes clean, short tests in spock and automating things like one command provisioning. Fan of JavaScript web frameworks.</p>
-        <p>Privately husband and father, squash player and seasoned skier. In summer, Jan enjoys kite-surfing.</p>
+        <p>He likes clean, short unit tests and automating things like provisioning. Fan of Continous Delivery book and AngularJS framework.</p>
+        <p>Privately husband and father, squash player and seasoned skier. In summer, Jan enjoys wind-surfing.</p>
         ",
     ),
     array(
