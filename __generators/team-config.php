@@ -420,7 +420,7 @@ In his free
         'name' => 'Marcin Baraniecki',
         'twitter' => NULL,
         'blog' => NULL,
-        'username' => 'belfz',
+        'username' => 'MarcinB',
         'codingSince' => 2013,
         'leader' => 0,
         'opensource' => 1,
