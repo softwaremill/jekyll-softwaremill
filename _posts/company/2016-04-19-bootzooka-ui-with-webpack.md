@@ -19,14 +19,17 @@ Since some time Webpack is desireable technology in all modern javascript web ap
 Looks like best time of grunt and bower is gone. Moving to Webpack significantly reduces the configuration code one needs to write (compare `gruntfile.js` (327 loc) + `bower.json`(31 loc) vs `webpack.config.js` (61 loc)). That change eliminates one factor - big files - of build system complexity.
 For this change we got inspiration from [egghead.io](https://egghead.io/series/angular-and-webpack-for-modular-applications) Webpack lessons.
 
+
 ### What has changed?
   - no grunt
   - no bower
   - ES2015 (plus import/export syntax)
   - Webpack (also for unit tests)
 
+
 ### Npm scripts now
 We make use of npm scripts (instead of `grunt` in `bootzooka/ui` directory):
+
   - **npm start** - start hotreloading Webpack dev server
   - **npm run build** - create a distribution
   - **npm run dist** - create a distribution and serve with http-server
