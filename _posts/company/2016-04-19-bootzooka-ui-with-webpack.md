@@ -12,7 +12,7 @@ categories:
 layout: simple_post
 ---
 
-Together with Marcin Baraniecki we have worked on switching Bootzooka's UI build system to [Webpack](http://webpack.github.io/docs/what-is-webpack.html).
+Together with Marcin Baraniecki we have worked on switching [Bootzooka's](https://github.com/softwaremill/bootzooka) UI build system to [Webpack](http://webpack.github.io/docs/what-is-webpack.html).
 
 Since some time Webpack is desireable technology in all modern javascript web application build process. Hopefully Bootzooka’s application code using ES2015 modules system and import/export feature makes a really interesting combination for you.
 
@@ -31,5 +31,9 @@ We make use of npm scripts (instead of `grunt` in `bootzooka/ui` directory):
   - **npm run build** - create a distribution
   - **npm run dist** - create a distribution and serve with http-server
   - **npm run test** - run karma unit tests
+
+
+[Read more](http://softwaremill.github.io/bootzooka/frontend.html)
+
 
 The biggest benefit we got with this change is the true modularity of angular webapp. Take a look at `components` (this name moves us towards angular 2.0 future upgrade ;) directory. Each subdirectory is a complete component which might be copy&pasted to your own project and imported to main index.js (assuming you are using angular-ui) - it should work out of the box.  Engaging isn’t it?
