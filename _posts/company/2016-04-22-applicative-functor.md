@@ -1,4 +1,4 @@
-
+---
 title: The underrated applicative functor
 description: Monads are cool but there's much more to the world of functional tools and patterns.
 author: Krzysiek Ciesielski
@@ -12,13 +12,13 @@ Developers who enter the realm of functional programming quite quickly stumble u
 
 ##What are applicative functors?
 
-First of all, applicative functor is a [typeclass](http://www.cakesolutions.net/teamblogs/demystifying-implicits-and-typeclasses-in-scala). I really like the graphical explanation that can be found if [“Functors, Applicatives, And Monads In Pictures”](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html).
+First of all, applicative functor is a [typeclass](http://www.cakesolutions.net/teamblogs/demystifying-implicits-and-typeclasses-in-scala). It allows applying a wrapped function to a wrapped value. Here's a depiction from [“Functors, Applicatives, And Monads In Pictures”](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html).
 
-[img]
+![](/img/uploads/2016/04/blog-applicative-01.png)
 
 However, I think that it would be better to start with a bit different approach. We can think of applicative as a type which wraps a  value. Having two such wrapped values, we can apply a two-argument function to these values and preserve the outer context (wrapping). If we call this “application” map2, then we can get something like this:
 
-[img]
+![](/img/uploads/2016/04/blog-applicative-02.png)
 
 This way of looking should bring us a bit closer to more practical understanding. Having two wrapped values is much more familiar than having a "function wrapped in context”.
 
