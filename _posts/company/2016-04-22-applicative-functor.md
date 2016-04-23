@@ -5,6 +5,7 @@ author: Krzysiek Ciesielski
 author_login: ciesielski
 categories:
 - scala
+- company
 - fp
 layout: simple_post
 ---
@@ -12,7 +13,7 @@ Developers who enter the realm of functional programming quite quickly stumble u
 
 ##What are applicative functors?
 
-First of all, applicative functor is a [typeclass](http://www.cakesolutions.net/teamblogs/demystifying-implicits-and-typeclasses-in-scala). It allows applying a wrapped function to a wrapped value. Here's a depiction from [“Functors, Applicatives, And Monads In Pictures”](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html).
+First of all, applicative functor forms a [typeclass](http://www.cakesolutions.net/teamblogs/demystifying-implicits-and-typeclasses-in-scala) which can be implemented in Scala. It allows applying a wrapped function to a wrapped value. Here's a depiction from [“Functors, Applicatives, And Monads In Pictures”](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html).
 
 ![](/img/uploads/2016/04/blog-applicative-01.png)
 
@@ -24,7 +25,7 @@ This way of looking should bring us a bit closer to more practical understanding
 
 ##Independent calculations
 
-Monads impose certain structure to the flow. We apply a function to the wrapped value and we receive a new wrapped value. This means than getting subsequent wrapped values depends on results of previous calculations. A typical example would be something like:
+Monads impose certain structure to the flow. We apply a function to the wrapped value and we receive a new wrapped value which becomes "flattened" with the outer wrapper. This means that getting subsequent wrapped values depends on results of previous calculations. A typical example would be something like:
 
 ```scala
 for {
@@ -34,7 +35,7 @@ for {
   yield Result(user, photo)
 ```
 
-Getting `Future[Photo]` is possible only after we fully resolve the previous step, `Future[User]`. However, we often find cases like this:
+The `getProfilePhoto()` function **depends on `user`**, so calling `Future[Photo]` is possible only after we fully resolve the previous step, `Future[User]`. However, we often find cases like this:
 
 ```scala
 val res: Future[Result] = for {
@@ -44,7 +45,7 @@ val res: Future[Result] = for {
   yield Result(user, data)
 ```
 
-In this example, we deal with `Future[User]` and `Future[Data]` which we want to uwrap and pass to `Result.apply`. Why would we need monadic flow, which forces us to view this code as a sequence of steps? Here’s a good case for applicatives. All monads are also applicatives, we can just work with  `Future`, `Option` and many other well known types. There are even more applicatives than monads, in fact. When we decompose our example, we get:
+In this example, we deal with **independent** `Future[User]` and `Future[Data]` which we want to uwrap and pass to `Result.apply`. Why would we need monadic flow, which forces us to view this code as a sequence of steps? Here’s a good case for applicatives. All monads are also applicatives, we can just work with  `Future`, `Option` and many other well known types. There are even more applicatives than monads, in fact. When we decompose our example, we get:
 
 ```scala
 import cats._
@@ -71,6 +72,7 @@ import cats.syntax.cartesian._
 The “scream” operator |@| (also known as “Admiral Ackbar” or "Macaulay Culkin”) finally gets us what we wanted - our independent computations are now represented in a much elegant way. The monadic flow may look like imperative code, while here we have a more functional representation of our actual intent. Apart from adjusting code structure we help future readers to recognise parts that can be parallelized or refactored due to their independence.
 
 Another good example is the `Validated` applicative, again available in Cats toolbox. Its dual in Scalaz, the `Validation` applicative was often called “a gateway drug to Scalaz”. `Validated` allows performing a series of validations but it doesn’t stop the chain in case of failure. All failed validations are accumulated into one final result, which carries full, combined error. In following example:
+
 ```scala
 val result = (validateName(name) |@| validateAge(age) |@| validateEmail(email))(User.apply)
 ```
