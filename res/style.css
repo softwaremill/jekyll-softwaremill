@@ -1093,6 +1093,13 @@ input[type="radio"] {
   margin-bottom: 0;
 }
 
+.post .post-gallery-img {
+  width: 183px;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: middle;
+}
+
 
 
   /*
