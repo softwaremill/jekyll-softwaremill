@@ -1,7 +1,7 @@
 ---
 layout: gallery_article
-title: Your blog post title
-description: A short description that will appear as a post excerpt. This will appear in Google as well. Keep it short.
+title: Scala Memes from Scalar 2016
+description: All Scala mems done during Scalar 2016
 keywords: list, of, several, most, important, words
 author: Name Surname
 categories:
