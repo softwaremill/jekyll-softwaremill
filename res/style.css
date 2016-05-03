@@ -1094,9 +1094,9 @@ input[type="radio"] {
 }
 
 .post .post-gallery-img {
-  width: 183px;
+  width: 226px;
   display: inline-block;
-  margin: 5px;
+  margin: 10px;
   vertical-align: middle;
 }
 

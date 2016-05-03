@@ -1,9 +1,10 @@
 ---
 layout: gallery_article
 title: Scala Memes from Scalar 2016
-description: All Scala mems done during Scalar 2016
+description: All Scala mems created during Scalar 2016
 keywords: list, of, several, most, important, words
-author: Name Surname
+author: Adam Warski
+author_login: warski
 categories:
 - company
 ---
