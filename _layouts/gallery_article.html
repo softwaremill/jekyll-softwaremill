@@ -1,69 +1,26 @@
 ---
-layout: default
+layout: post
 ---
 
-{% capture url %}{{ page.url | remove: '/' | remove: 'index.html' }}/{% endcapture %}
-{% if url == '/' %}{% capture url %}{% endcapture %}{% endif %}
-
-<div id="baner-contact">
-  <div class="wrapper font-green">What we've been up to</div>
+<h6>Company news</h6>
+<div class="post-header clearfix">
+  <figure>
+    <div class="image">
+      <img src="/img/members/{{ page.author_login | escape }}.jpg" alt="{{ page.author | escape }}"/></div>
+  </figure>
+  <div class="title">
+    <h2 class="font-dark-blue font-normal">{{ page.title | escape }}</h2>
+    {{ page.date | date: "%-d %B %Y" }} | <strong>{{ page.author | escape }}</strong>
+    <br/><br/>
+  </div>
 </div>
 
-
-<article id="post">
-
-  <div class="block border">
-    <div class="wrapper clearfix">
-      <div class="post-content">
-        <div class="post clearfix">
-          {{ content }}
-        </div>
-
-        <div class="comments-template">
-          <div id="disqus_thread">
-          </div>
-
-          <script type="text/javascript">
-            //<![CDATA[
-            var disqus_shortname = 'softwaremill';
-            {% if page.wordpress_id %}
-              var disqus_identifier = '{{ page.wordpress_id }} https://softwaremill.com/?p={{ page.wordpress_id }}';
-            {% else %}
-              var disqus_identifier = 'https://softwaremill.com/{{ url | remove: '/' }}';
-            {% endif %}
-            var disqus_title = "{{ page.title | escape }}";
-            var disqus_url = 'https://softwaremill.com/{{ url }}';
-
-            (function () {
-              var dsq = document.createElement('script');
-              dsq.type = 'text/javascript';
-              dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-            //]]>
-          </script>
-        </div>
-
-        <nav>
-          {% if page.previous %}
-          <a href="{{ page.previous.url }}" rel="prev">
-            <span class="meta-nav"></span>
-            <span class="title-nav">Older post</span>
-          </a>
-          {% endif %}
-          {% if page.next %}
-          <a href="{{ page.next.url }}" rel="next">
-            <span class="title-nav">Newer post</span>
-            <span class="meta-nav"></span>
-          </a>
-          {% endif %}
-        </nav>
-      </div>
-
-    </div>
+<div class="post-rows">
+  <div class="text">
+    {{ content }}
   </div>
-</article>
+</div>
+
 
 <link rel="stylesheet" href="/res/magnific-popup.css">
 <script src="/res/jquery.magnific-popup.min.js"></script>
