@@ -287,5 +287,5 @@ As usual with contests, choosing the winner wasn't an easy task! Below are all t
 And here are the happy winners, congratulations and hope to see you next year!
 
 <p>
-<img alt="" src="/img/uploads/2016/05/scalar-2016-lego-winners.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+<img alt="" src="/img/uploads/2016/05/lego-winners.jpg" style="display: block; margin-left: auto; margin-right: auto;">
 </p>
