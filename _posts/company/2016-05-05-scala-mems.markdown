@@ -2,14 +2,20 @@
 layout: gallery_article
 title: Scala Memes from Scalar 2016
 description: All Scala mems created during Scalar 2016
-keywords: list, of, several, most, important, words
+keywords: scalar, scala, memes
 author: Adam Warski
 author_login: warski
 categories:
 - company
 ---
 
-Some text here 
+We all know how much fun coding in Scala brings, so why not share it with the world! During last month's <a href="http://scalar-conf.com">Scalar conference</a> SoftwareMill organized a contest for the best Scala Meme. The prizes were hard to resist:
+
+<p>
+<img alt="" src="https://pbs.twimg.com/media/CgJwYN9W4AAA97D.jpg:small" style="display: block; margin-left: auto; margin-right: auto;">
+</p>
+
+As usual with contests, choosing the winner wasn't an easy task! Below are all the entries, enjoy!
 
 <div class="gallery-item">
     <a class="post-gallery-img"
@@ -277,3 +283,9 @@ Some text here
     </a>
 
 </div>
+
+And here are the happy winners, congratulations and hope to see you next year!
+
+<p>
+<img alt="" src="/img/uploads/2016/05/scalar-2016-lego-winners.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+</p>
