@@ -1,7 +1,7 @@
 ---
 layout: gallery_article
 title: Scala Memes from Scalar 2016
-description: All Scala mems created during Scalar 2016
+description: Scalar 2016 contest Scala Memes!
 keywords: scalar, scala, memes
 author: Adam Warski
 author_login: warski
