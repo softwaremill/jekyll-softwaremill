@@ -112,7 +112,7 @@ Call `__proxy/server.sh` to serve `_sites/` at [http://localhost:8000/](http://l
 
 ## Auto-rebuild in production
 
-crontab entry:
+Crontab entry:
 
     * * * * * /home/softwaremill/jekyll-softwaremill/__generators/cron.sh
 
