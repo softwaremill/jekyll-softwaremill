@@ -282,6 +282,14 @@ As usual with contests, choosing the winner wasn't an easy task! Below are all t
         <img src="https://i.imgflip.com/12llwx.jpg">
     </a>
 
+    <a class="post-gallery-img"
+                href="https://pbs.twimg.com/media/CgKfIIbWcAA8ACc.jpg",
+         data-source="https://pbs.twimg.com/media/CgKfIIbWcAA8ACc.jpg", 
+               title="Jakub Kozłowski", 
+    data-author-link="https://twitter.com/kubukoz">
+        <img src="https://pbs.twimg.com/media/CgKfIIbWcAA8ACc.jpg">
+    </a>
+
 </div>
 
 And here are the happy winners, congratulations and hope to see you next year!
