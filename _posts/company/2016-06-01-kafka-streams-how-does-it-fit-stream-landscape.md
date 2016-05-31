@@ -12,15 +12,15 @@ categories:
 layout: simple_post
 ---
 
-[Apache Kafka](http://kafka.apache.org) development recently increased pace, and we now have [Kafka 0.10.0.0 at our disposal](http://www.confluent.io/blog/announcing-apache-kafka-0.10-and-confluent-platform-3.0). One of the main features of the release is Kafka Streams, a **library** for transforming and combining data streams which live in Kafka. The streaming space is quickly becoming crowded, so how is Kafka Streams different and where does it fit in the stream-processing developers toolbox? When can you consider using Kafka Streams over [Apache Fink](http://flink.apache.org), [Spark Streaming](http://spark.apache.org) or [Reactive Kafka](https://github.com/akka/reactive-kafka)? (Which is our own Kafka <-> Reactive Streams connector).
+[Apache Kafka](http://kafka.apache.org) development recently increased pace, and we now have [Kafka 0.10.0.0 at our disposal](http://www.confluent.io/blog/announcing-apache-kafka-0.10-and-confluent-platform-3.0). One of the main features of the release is Kafka Streams, a **library** for transforming and combining data streams which live in Kafka. The streaming space is quickly becoming crowded, so how is Kafka Streams different and where does it fit in the stream-processing developers toolbox? When can you consider using Kafka Streams over [Apache Flink](http://flink.apache.org), [Spark Streaming](http://spark.apache.org) or [Reactive Kafka](https://github.com/akka/reactive-kafka)? (Which is our own Kafka <-> Reactive Streams connector).
 
 Let’s take a look at the characteristic of the library, which make it stand out from its competitors. It’s not going to be a comprehensive guide in any way (for that, there’s quite extensive [documentation](http://docs.confluent.io/3.0.0/streams) from Confluent), but rather a short overview.
 
 # Kafka-centric
 
-First of all, that’s probably not surprising (the name kind of reveals that), but Kafka Streams is designed to consumer from & produce data to Kafka topics. That’s both an advantage - such specialisation opens new opportunities for the API, and a restriction - other streaming libraries are much more general.
+First of all, that’s probably not surprising (the name kind of reveals that), but Kafka Streams is designed to consume from & produce data to Kafka topics. That’s both an advantage - such specialisation opens new opportunities for the API, and a restriction - other streaming libraries are much more general.
 
-It is of course possible to ingest data from different data sources, or write to different data sources - but for that, you need to go to through a Kafka topic as well, and use e.g. [Kafka Connect](http://docs.confluent.io/3.0.0/connect/index.html) to get the data in/out.
+It is of course possible to ingest data from different data sources, or write to different data sources - but for that, you need to go through a Kafka topic as well, and use e.g. [Kafka Connect](http://docs.confluent.io/3.0.0/connect/index.html) to get the data in/out.
 
 # Back-pressure/buffering
 
