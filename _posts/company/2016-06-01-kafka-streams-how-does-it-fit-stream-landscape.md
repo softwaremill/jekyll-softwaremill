@@ -9,6 +9,7 @@ categories:
 - bigdata
 - spark
 - flink
+- company
 layout: simple_post
 ---
 
@@ -54,11 +55,11 @@ I’m not aware of other streaming systems offering such capabilities out-of-the
 
 A standard set of stream operations is available, such as `map` and `filter`, both on element keys & values. It is also possible to map a single element to multiple elements using `flatMap` - however here we can only map to an `Iterable`, not a `KStream`, so it’s not a “real” flat map; however as the assumption is that most streams are infinite, flat mapping to a stream wouldn’t make sense anyway.
 
-It is possible to write the results to a Kafka topic (`to`), or wite & continue processing (`through`).
+It is possible to write the results to a Kafka topic (`to`), or write & continue processing (`through`).
 
 We can also `transform`/`process` elements using a custom processor, which can be stateful. This operation is useful for custom, hand-written aggregations.
 
-However, the most interesting operations are joins & aggregations. It is possible to inner/outer/left join two `KStream`s, a `KStream` to a `KTable` or two `KTables`. For example, left-joining a user-purchases stream to a user-address table, it is possible to enrich each purchase element with the address of the buyer, flip the key-value pairs and compute aggregate data on in which city butter is most popular. This particular type of join works by storing the current (local) `KTable` state in the local store, and looking up a value for each incoming stream element. Another join type is for two `KStreams`; it is then mandatory to specify a time window, in which elements from both elements will be matched. For the joins to work, both streams must use same types of keys, as the joins always match on the key values.
+However, the most interesting operations are joins & aggregations. It is possible to inner/outer/left join two `KStream`s, a `KStream` to a `KTable` or two `KTables`. For example, left-joining a user-purchases stream to a user-address table, it is possible to enrich each purchase element with the address of the buyer, flip the key-value pairs and compute aggregate data on in which city butter is most popular. This particular type of join works by storing the current (local) `KTable` state in the local store, and looking up a value for each incoming stream element. Another join type is for two `KStreams`; it is then mandatory to specify a time window, in which elements from both streams will be matched. For the joins to work, both streams must use same types of keys, as the joins always match on the key values.
 
 As for aggregations, we can `count`, `reduceByKey`, obtaining a table with incremental reductions for each key. Here also the local store is used, to store the current reduction for each key. This is a specialized version of `aggregateByKey`, where you can specify arbitrary value aggregations. It is also possible to do time-windowed aggregations, arbitrarily specifying the window step & length (giving overlapping or disjoint windows)
 
@@ -66,7 +67,7 @@ As for aggregations, we can `count`, `reduceByKey`, obtaining a table with incre
 
 Finally, how Kafka Streams handles time is also worth mentioning. It is possible to use different timestamps for windowing operations: event time (defined by whatever creates the event), ingestion time (when the event is stored into Kafka), and processing time (when the event is processed). When aggregating elements in time windows, it is possible to use any of these timestamps (by using a custom or one of the built-in `TimestampExtractor`s).
 
-When using even-time, there’s a possibility of some of the records arriving out-of-order. That’s supported as well: when windowing, there’s a defined retention period, for which a window is stored in the local store (by default 1 day). If the out-of-order event arrives before that, a new window update will be emitted (windowing operations result in a `KTable` - a changelog - so each new entry for a given key should be interpreted as updating the previous value).
+When using event-time as the message timestamp, there’s a possibility of some of the records arriving out-of-order (we don't have any guarantees that the messages will arrive totally ordered). That’s supported as well: when windowing, there’s a defined retention period, for which a window is stored in the local store (by default 1 day). If the out-of-order event arrives before that, a new window update will be emitted (windowing operations result in a `KTable` - a changelog - so each new entry for a given key should be interpreted as updating the previous value).
 
 This flexibility in time handling can certainly be very useful for streaming operations.
 
@@ -76,6 +77,6 @@ Summing up, Kafka Streams offers a very interesting feature set for transforming
 
 However, it is a rather focused library, and it’s very well suited for certain types of tasks; that’s also why some of its design can be so optimized for how Kafka works. If you need to do a simple Kafka topic-to-topic transformation, count elements by key, enrich a stream with data from another topic, or run an aggregation: Kafka Streams is for you.
 
-But there’s of course a huge field of use-cases where other streaming libraries excell. If, for example, you need asynchronous event processing, integrate with various data sources/sinks, send/receive data over the network or to combine multiple streams (where only one of them is Kafka-based) in a back-pressure aware way, then take a look at [Reactive Kafka](https://github.com/akka/reactive-kafka). If you are looking for ML, SQL interfaces, graph processing or a complete stream processing framework, take a look at [Spark](http://spark.apache.org) or [Flink](http://flink.apache.org).
+But there’s of course a huge field of use-cases where other streaming libraries excel. If, for example, you need asynchronous event processing, integrate with various data sources/sinks, send/receive data over the network or to combine multiple streams (where only one of them is Kafka-based) in a back-pressure aware way, then take a look at [Reactive Kafka](https://github.com/akka/reactive-kafka). If you are looking for ML, SQL interfaces, graph processing or a complete stream processing framework, take a look at [Spark](http://spark.apache.org), [Flink](http://flink.apache.org) or [Storm](http://storm.apache.org).
 
 I can easily imagine a system where both Kafka Streams, Reactive Kafka and Spark is used, all playing a different role in the overall data-processing pipeline. With Kafka Streams we gain yet another building block to make our developer life a bit easier.
