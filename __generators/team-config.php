@@ -104,6 +104,23 @@ return array(
         ",
     ),
     array(
+      'name' => 'Ida Bzowska',
+      'twitter' => NULL,
+      'blog' => NULL,
+      'username' => 'bzowska',
+      'leader' => 1,
+      'opensource' => 0,
+      'blogger' => 0,
+      'parent' => 0,
+      'conference' => 0,
+      'title' => 'Community Evangelist',
+      'image' => 'no-image.jpg',
+      'bio' => "
+      <p>Passionate about people. Ida is active within the IT community, spending her time organizing numerous conferences and meetups.</p>
+      <p>Believes that every day is an opportunity to learn something new.</p>
+      <p>In her free time she tries to understand her dog and sleep more. Coffee and soft-cover-books lover.</p>",
+    ),
+    array(
         'name' => 'Jacek Kunicki',
         'twitter' => 'rucek',
         'blog' => 'http://blog.kunicki.org',
@@ -225,7 +242,7 @@ return array(
         'blogger' => 0,
         'parent' => 0,
         'conference' => 1,
-        'title' => 'PR&Marketing Manager',
+        'title' => 'Head of Marketing &amp; Communications',
         'image' => 'kasia_l-b.jpg',
         'bio' => "
         <p>A digital native with strong experience in developing and executing social media strategies for brands. In SoftwareMill Kasia takes care of business communications.</p>
@@ -359,6 +376,24 @@ In his free
         </p>
         <p>Lately likes to read some non technical books after work.</p>
         ",
+    ),
+    array(
+      'name' => 'Maciek Opala',
+      'twitter' => 'czaszo',
+      'blog' => NULL,
+      'username' => 'opala',
+      'codingSince' => 1998,
+      'leader' => 0,
+      'opensource' => 1,
+      'blogger' => 0,
+      'parent' => 0,
+      'conference' => 1,
+      'title' => 'Senior Software Engineer',
+      'image' => 'no-image.jpg',
+      'bio' => "
+      <p>Maciek likes well formatted, clean, readable code with idiomatic flavor. Specializes in Java technology and its surroundings, actively working on it for the last 7 years.</p>
+      <p>Particularly interested in developing the server side of applications. Also keen on scripting languages and shell programming.
+      Especially interested in API design, object-oriented analysis and design, design patterns and clean code principles.</p>",
     ),
     array(
         'name' => 'Magda Stożek',
