@@ -47,9 +47,7 @@ It’s definitely good that Kafka chose to go this way, instead of introducing y
 
 An important feature of Kafka’s Streams are stateful stream processors. You have the possibility to attach a local per-task store (a task is a combination of a set of topic’s partitions and a topology). The store can be either in-memory or use [RocksDB](http://rocksdb.org). Even though these stores are local (hence, giving fast access times), they are backed by a Kafka topic, which contains the changelog for each such store; hence, in case of a re-balancing of tasks, such store can be re-created on any other node. In that sense, the store is distributed and fault-tolerant (via the usual Kafka mechanisms).
 
-These local stores are very useful for all kinds of local stateful operations, such as aggregations and joins.
-
-I’m not aware of other streaming systems offering such capabilities out-of-the-box. I think the design here offers a lot of possibilities. You need to keep in mind, however, that the store is *local*, and contains information only for a single task (which handles onlt a subset of the input data). Hence this mechanism won’t be useful for global aggregations.
+These local stores are very useful for all kinds of local stateful operations, such as aggregations and joins (a similar feature is available e.g. in Flink); I think the design here offers a lot of possibilities. You need to keep in mind, however, that the store is *local*, and contains information only for a single task (which handles onlt a subset of the input data). Hence this mechanism won’t be useful for global aggregations.
 
 # Available operations
 
