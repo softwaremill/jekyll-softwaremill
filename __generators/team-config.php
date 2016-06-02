@@ -144,27 +144,6 @@ return array(
                   He has a great passion for functional programming, enjoys both front-end and back-end development and never makes compromises on software quality.</p>",
     ),
     array(
-        'name' => 'Jan Kowalski',
-        'twitter' => 'hanskoff',
-        'blog' => 'https://hanskoff.github.io',
-        'username' => 'kowalski',
-        'codingSince' => 2007,
-        'leader' => 0,
-        'opensource' => 1,
-        'blogger' => 1,
-        'parent' => 1,
-        'conference' => 0,
-        'title' => 'Passionate Software Developer',
-        'image' => 'kowalski.jpg',
-        'bio' => "
-        <p>Jan graduated mathematics from University of Warsaw and derives his passion from successfully completed non-obvious tasks. Formerly he helped to feed hadoop in Allegro - a popular e-commerce platform in Poland.
-
-        </p>
-        <p>He likes clean, short unit tests and automating things like provisioning. Fan of Continous Delivery book and AngularJS framework.</p>
-        <p>Privately husband and father, squash player and seasoned skier. In summer, Jan enjoys wind-surfing.</p>
-        ",
-    ),
-    array(
         'name' => 'Jan Rotter',
         'twitter' => NULL,
         'blog' => NULL,
