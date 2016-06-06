@@ -25,14 +25,14 @@ going to share a few trick that could make your work with TeamSpeak even more pr
 
 ## Away from keyboard status
 
-There are only few more irritating things than a situation where you are describing a complicated problem to developers in your team
+There is almost nothing more irritating than describing a complicated problem to developers in your team
 for a few minutes only to notice that all of them are away from their computers. Of course you can always ask beforehand, but...
 this quickly becomes a tedious task. To avoid such situations we have introduced a habit to use "Toggle away" TeamSpeak status 
 (marked with red rectangles):
 
 ![everyone-is-away](/img/uploads/2016/05/team_speak_away_all.png)
 
-So in one glance you can check if person is away or not. Clicking this "toggle" it each time is rather a slow and quickly becomes a tedious task 
+So in one glance you can check if person is away or not. Clicking this "toggle" each time is rather a slow and quickly becomes a tedious task 
 so we have added a handy shortcut to toggle it on and off. This way we have reached another important topic.
 
 ## Shortcuts, shortcuts, shortcuts
