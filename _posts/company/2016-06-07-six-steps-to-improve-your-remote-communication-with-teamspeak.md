@@ -70,7 +70,7 @@ significantly improves the situation:
 
  - close small, moving news moving banner at the bottom of your client window
  - turn off Animated GIF Support in _Preferences -> Design_
- - turn off Echo Reduction and Echo cancellation in _Preferences -> Capture_
+ - turn off Echo Reduction and Echo cancellation in _Preferences -> Capture_ (however, depending on your headphones/speakers setup, this might reduce sound quality) 
 
 After such tuning my TS client rarely goes above 10% of CPU.
 
