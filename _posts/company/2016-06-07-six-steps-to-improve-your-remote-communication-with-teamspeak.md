@@ -5,6 +5,7 @@ author: Tomasz Dziurko
 author_login: tomasz_dziurko
 categories:
 - remote work
+- company
 layout: simple_post
 ---
 
