@@ -501,6 +501,9 @@ input[type="radio"] {
   #services .col2:last-child {padding-right: 0px;}
   #services .col3 {float: left; width: 310px; padding: 0 25px 0 0;}
   #services .col3:last-child {padding-right: 0px;}
+  #services .col4 {float: left; width: 230px; padding: 0 0 0 0;}
+  #services .col4:last-child {padding-right: 0px;}
+
 
   #services .agile { width: 977px; height: 700px; margin: 0 auto 30px; position: relative; background: url(../img/agile-732.png) no-repeat 50% 50%; }
   .agile-animation-injected #services .agile { background: none; width: 977px; height: 652px; }
@@ -539,7 +542,7 @@ input[type="radio"] {
   .agile-fixed-wrapper { position: fixed; }
 
   /* trouble / idea */
-  .trouble-idea .block{padding: 50px 0;}
+  .trouble-idea .block {padding: 50px 0;}
   .trouble-idea .icon {float: left; width: 72px; height: 57px;}
   .trouble-idea h2 {float: left; margin-left: 20px;}
   .trouble-idea .icon.trouble { background: url(../img/services-icon-trouble.png) no-repeat;}
@@ -548,22 +551,25 @@ input[type="radio"] {
   /* We specialize in */
   .specialize-in .list {padding-bottom: 0px; z-index: 100;}
   .specialize-in .list ul {margin: 20px 0 0 0; height: 51px;}
-  .specialize-in .list ul li {float: left; color: #fff; border-radius: 26px; line-height: 51px; font-size: 18px; padding: 0 0 0 60px; background: url(../img/circle-empty-big.png) 4px 4px no-repeat; width: 308px;}
+  .specialize-in .list ul li {float: left; color: #fff; border-radius: 26px; line-height: 51px; font-size: 18px; padding: 0 0 0 60px; background: url(../img/circle-empty-big.png) 4px 4px no-repeat; width: 212px;}
   .specialize-in .list ul li:nth-child(1) {background-color: #73c5e1; }
   .specialize-in .list ul li:nth-child(2) {background-color: #eb65a0; margin-left: -42px;}
-  .specialize-in .list ul li:nth-child(3) {background-color: #bccf02; margin-left: -42px; width: 266px;}
+  .specialize-in .list ul li:nth-child(3) {background-color: #bccf02; margin-left: -42px;}
+  .specialize-in .list ul li:nth-child(4) {background-color: #b370ae; margin-left: -42px;}
   .specialize-in .list-details {margin-top: -25px;}
-  .specialize-in .list-details .title {display: none; color: #fff; border-radius: 26px; line-height: 51px; font-size: 18px; padding: 0 0 0 60px; background: url(../img/circle-empty-big.png) 4px 4px no-repeat; width: 280px; margin-top: 10px;}
-  .specialize-in .list-details .col3:nth-child(1) .title {background-color: #73c5e1; margin-top: -55px;}
-  .specialize-in .list-details .col3:nth-child(2) .title {background-color: #eb65a0;}
-  .specialize-in .list-details .col3:nth-child(3) .title {background-color: #bccf02;}
-  .specialize-in .list-details ul {font-size: 14px; margin: 30px 0 0 20px;}
+  .specialize-in .list-details .title {display: none; color: #fff; border-radius: 26px; line-height: 51px; font-size: 18px; padding: 0 0 0 60px; background: url(../img/circle-empty-big.png) 4px 4px no-repeat; margin-top: 10px;}
+  .specialize-in .list-details .col4:nth-child(1) .title {background-color: #73c5e1; margin-top: -55px;}
+  .specialize-in .list-details .col4:nth-child(2) .title {background-color: #eb65a0;}
+  .specialize-in .list-details .col4:nth-child(3) .title {background-color: #bccf02;}
+  .specialize-in .list-details .col4:nth-child(4) .title {background-color: #b370ae;}
+  .specialize-in .list-details ul {font-size: 14px; margin: 20px 0 0 0;}
   .specialize-in .list-details ul li {margin-bottom: 15px; padding-left: 38px;}
   .specialize-in .list-details ul li:before {float: left; content: ''; width: 8px; height: 8px; display: block; border-radius: 4px;
     margin: 4px 0 0 -38px;}
-  .specialize-in .list-details .col3:nth-child(1) ul li:before {background: #73c5e1; }
-  .specialize-in .list-details .col3:nth-child(2) ul li:before {background: #eb65a0;}
-  .specialize-in .list-details .col3:nth-child(3) ul li:before {background: #bccf02;}
+  .specialize-in .list-details .col4:nth-child(1) ul li:before {background: #73c5e1;}
+  .specialize-in .list-details .col4:nth-child(2) ul li:before {background: #eb65a0;}
+  .specialize-in .list-details .col4:nth-child(3) ul li:before {background: #bccf02;}
+  .specialize-in .list-details .col4:nth-child(4) ul li:before {background: #b370ae;}
   .security {border-top: 1px solid #353535; text-align: center;}
 
   /* tools-and-technologies */
@@ -1759,7 +1765,8 @@ a#do_logout {
 
   .specialize-in .list ul li {width: 224px; font-size: 14px; }
   .specialize-in .list ul li:nth-child(2) {}
-  .specialize-in .list ul li:nth-child(3) {width: 182px;}
+  .specialize-in .list ul li:nth-child(3) {}
+  .specialize-in .list ul li:nth-child(4) {}
 
   #home .twitter-section {width: 336px; height: 326px;}
   .tweet { width: 336px; height: 326px;}
