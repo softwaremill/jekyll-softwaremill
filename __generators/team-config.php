@@ -378,7 +378,7 @@ In his free
         ",
     ),
     array(
-      'name' => 'Maciek Opala',
+      'name' => 'Maciek Opała',
       'twitter' => 'czaszo',
       'blog' => NULL,
       'username' => 'opala',
