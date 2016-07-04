@@ -194,7 +194,7 @@ object UserRegistered {
 }
 ````
 
-Another feature, which is entirely optional and not required for event sourcing, but makes life much easier, is type-safe aggregate ids. At the database level all ids are `Long`s, however both in event classes, event data objects and objects read from the dataabase you can see that the `Long`s are **tagged** with the type of the aggregate (e.g. `case class User(id: Long @@ User, ...)`. The tagging here is using [scala-common](https://github.com/softwaremill/scala-common).
+Another feature, which is entirely optional and not required for event sourcing, but makes life much easier, is type-safe aggregate ids. At the database level all ids are `Long`s, however both in event classes, event data objects and objects read from the database you can see that the `Long`s are **tagged** with the type of the aggregate (e.g. `case class User(id: Long @@ User, ...)`. The tagging here is using [scala-common](https://github.com/softwaremill/scala-common).
 
 ## Side-effects
 
