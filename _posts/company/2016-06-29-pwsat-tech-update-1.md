@@ -13,7 +13,7 @@ layout: simple_post
 ​
 While we advertise it more prominently [in other media](https://www.facebook.com/SoftwareMill/photos/a.687334144705834.1073741839.286344158138170/687335164705732/?type=3&theater) 
 than on this blog, some of the readers may be aware that we support [PW-Sat2](http://pw-sat.pl/en/),
-a [3U cubesat](https://en.wikipedia.org/wiki/CubeSat) project created by a group students from the Warsaw University of Technology.
+a [2U cubesat](https://en.wikipedia.org/wiki/CubeSat) project created by a group students from the Warsaw University of Technology.
 
 Specifically, we're responsible for developing the ground station component. It comprises the following functionality:
 
