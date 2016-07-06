@@ -298,7 +298,7 @@ niż to miało miejsce w meczu z Irlandią Północną. Ale po porównaniu z rap
 
 ## Podsumowanie
 
-Na tym kończymy częśc pierwszą naszej analizy wpisów z Twittera, zapraszamy do 
+Na tym kończymy część pierwszą naszej analizy wpisów z Twittera, zapraszamy do 
 przeczytania [części drugiej](/polska-na-euro2016-z-perspektywy-twittera-faza-pucharowa/), 
 dotyczącej fazy pucharowej z udziałem Polaków.  
 
