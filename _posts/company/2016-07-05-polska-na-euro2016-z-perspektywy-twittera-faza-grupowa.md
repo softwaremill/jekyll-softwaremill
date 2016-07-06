@@ -6,6 +6,7 @@ author_login: tomasz_dziurko
 categories:
 - twitter
 - analytics
+- company
 
 layout: simple_post
 ---

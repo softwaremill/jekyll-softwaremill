@@ -4,7 +4,9 @@ description: Druga część naszej analizy wpisów na Twitterze dotyczących wys
 author: Tomasz Dziurko
 author_login: tomasz_dziurko
 categories:
+- twitter
 - analytics
+- company
 
 layout: simple_post
 ---
@@ -78,7 +80,7 @@ teraz od razu przejdziemy do spotkań Polaków.
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-Mecz był bardzo emocjonujący i na Twitterze widać radość z wygranym rzutów karnych: cieszy się Lewandowski, cieszą się kibice. 
+Mecz był bardzo emocjonujący i na Twitterze widać radość z wygranych rzutów karnych: cieszy się Lewandowski, cieszą się kibice. 
 Sporo pisano o Kubie Błaszczykowskim, który strzelił bramkę w regulaminowym czasie gry oraz pewnie wykonał rzut karny. 
 
 Zagranicznego Twittera swoim wpisem zdominował Russel Crowe, który wiernie wspierał 
@@ -161,20 +163,20 @@ niż to miało miejsce w meczu z Irlandią Północną. Ale po porównaniu z rap
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="fr" dir="ltr">Le <a href="https://twitter.com/hashtag/POR?src=hash">#POR</a> au terme des 90 minutes dans cet <a href="https://twitter.com/hashtag/EURO2016?src=hash">#EURO2016</a>:<br><br>1-1 vs <a href="https://twitter.com/hashtag/ISL?src=hash">#ISL</a><br>0-0 vs <a href="https://twitter.com/hashtag/AUT?src=hash">#AUT</a><br>3-3 vs <a href="https://twitter.com/hashtag/HUN?src=hash">#HUN</a> <br>0-0 vs <a href="https://twitter.com/hashtag/CRO?src=hash">#CRO</a><br>1-1 vs <a href="https://twitter.com/hashtag/POL?src=hash">#POL</a> <a href="https://t.co/55VPfnht5v">pic.twitter.com/55VPfnht5v</a></p>&mdash; Actu Foot (@ActuFoot_) <a href="https://twitter.com/ActuFoot_/status/748620028661145600">June 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Polscy kibice przed meczem emocjonowali się pojedynkiem Ronaldo z Lewandowskim, a potem doceniali 
+Polscy kibice przed meczem emocjonowali się pojedynkiem Ronaldo z Lewandowskim a potem doceniali 
 postawę Pazdana oraz, już po odpadnięciu w konkursie rzutów karnych, całego zespołu. Polakom podobała się również bramka Lewandowskiego, który w końcu przełamał się na tym turnieju.  
 
-Z kolei zagraniczni kibice z racji trudnego do wymówienia nazwiska Jędrzejczyka żartowali, że to dobry kandydat na hasło do stadionowego WiFi.
-Nasz wierny kibic Russel Crow zagrzewał Polaków do walki, a po meczu nie krył smutku, ale i gratulował wyniku na Euro naszej reprezentacji. 
+Z kolei zagraniczni kibice z racji trudnego do wymówienia nazwiska Jędrzejczyka żartowali, że jego nazwisko to dobry kandydat na hasło do stadionowego WiFi.
+Nasz wierny kibic Russel Crowe zagrzewał Polaków do walki, a po meczu nie krył smutku, ale i gratulował wyniku na Euro naszej reprezentacji. 
 Zagraniczni komentatorzy zauważyli również, że Portugalia dotarła tak daleko z samymi remisami w regularnym czasie gry.
  
  
 # Podsumowanie
 
-Euro dla Polaków dobiegło końca, ale mamy nadzieję, że tym zestawieniem udało się nam 
+Euro dla Polaków dobiegło końca, mamy jednak nadzieję, że tym zestawieniem udało się nam 
 uchwycić najważniejsze, najciekawsze i najzabawniejsze momenty tego turnieju na Twitterze. 
 Turnieju historycznego dla naszej reprezentacji, bo nie tylko udało się nam zdobyć pierwszego gola na Euro, ale 
-również wygrać pierwszy mecz, wyjść z grupy i odpaść po rzutach karnych dopiero w ćwierćfinale 
+również wygrać pierwszy mecz, wyjść z grupy i odpaść po rzutach karnych dopiero w ćwierćfinale, 
 nie przegrywając żadnego meczu.
 
 
