@@ -32,7 +32,7 @@ return array(
         'opensource' => 1,
         'blogger' => 1,
         'parent' => 1,
-        'conference' => 0,
+        'conference' => 1,
         'title' => 'Software Journeyman',
         'image' => 'andrzej_ludwikowski.jpg',
         'bio' => "
