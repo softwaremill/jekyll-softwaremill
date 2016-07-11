@@ -5,7 +5,7 @@ conference: GeeCON 2013, Poland
 abstract_fragment: In this talk I would like to present few recently discovered security vulnerabilities in the Apache Struts 2 web framework and based on that try to increase developers' awareness of the overall application security.
 keywords: security, web frameworks, struts 2
 speaker: Łukasz Lenart
-speaker_login: lenart
+speaker_login: lukasz_lenart
 categories:
 - presentations
 ---
