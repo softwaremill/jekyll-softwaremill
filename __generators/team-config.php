@@ -492,7 +492,7 @@ In his free
         'twitter' => 'mchmielu',
         'blog' => 'http://www.devthoughts.pl/',
         'username' => 'michal_chmielarz',
-        'codingSince' => 2010,
+        'codingSince' => 2007,
         'leader' => 0,
         'opensource' => 1,
         'blogger' => 1,
