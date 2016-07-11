@@ -5,7 +5,7 @@ conference: DevCrowd 2013, Poland
 abstract_fragment: W tej prezentacji chciałbym pokazać kilka błędów bezpieczeństwa odkrytych swego czasu w Apache Struts 2 i bazując na tym podnieść ogólną świadomość programistów dotyczącą bezpieczeństwa aplikacji webowych.
 keywords: security, web frameworks, struts 2
 speaker: Łukasz Lenart
-speaker_login: lenart
+speaker_login: lukasz_lenart
 categories:
 - presentations
 ---
