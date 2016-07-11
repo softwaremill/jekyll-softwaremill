@@ -520,11 +520,9 @@ In his free
         'title' => 'Software Wizard',
         'image' => 'matloka.jpg',
         'bio' => "
-        <p>Michał is always eager to get to know new emerging technologies. He specializes in Java SE and EE
-          development. His involvement in multiple open source projects led to receiving JBoss Community Recognition
-          Award in 2013. He is also a co-author of recently published book
-          <a href='https://www.packtpub.com/application-development/java-ee-7-development-wildfly'>Java EE 7 Development with WildFly</a>.</p>
-        <p>Michał presented on Poznań Java User Group, DevCrowd 2015, GeeCON 2015, Devoxx Poland 2015 and Confitura 2015.</p>
+        <p>Michał is always eager to get to know new emerging technologies. Through his career he worked with C, Java, Java EE, Spring, Scala and Big data. His involvement in multiple open source projects led to receiving JBoss Community Recognition
+          Award in 2013. He is also a co-author of <a href='https://www.packtpub.com/application-development/java-ee-7-development-wildfly'>Java EE 7 Development with WildFly</a> book.</p>
+        <p>Michał presented on Devoxx Poland 2015, GeeCON 2015, Poznań JUG, DevCrowd 2015 and Confitura 2015.</p>
         ",
          ),
     array(
