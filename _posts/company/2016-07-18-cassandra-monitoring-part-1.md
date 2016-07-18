@@ -65,9 +65,9 @@ There are a lot of options for Cassandra monitoring (and management), however no
 
 If you want to dive deeper into the topic of metrics, then these links might be interesting for you (some quoted already in the article):
 
-* https://www.datadoghq.com/blog/monitoring-101-collecting-data/
-* https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/
-* https://www.datadoghq.com/blog/how-to-collect-cassandra-metrics/
-* https://www.datadoghq.com/blog/monitoring-cassandra-with-datadog/
-* https://medium.com/@mlowicki/alternatives-to-datastax-opscenter-8ad893efe063#.wpetbdrj9
-* https://medium.com/@mlowicki/cassandra-metrics-and-their-use-in-grafana-1f0dc33f9cca#.37bkpooc4
+* [Monitoring 101: Collecting the right data](https://www.datadoghq.com/blog/monitoring-101-collecting-data/)
+* [How to monitor Cassandra performance metrics](https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/)
+* [How to collect Cassandra metrics](https://www.datadoghq.com/blog/how-to-collect-cassandra-metrics/)
+* [Monitoring Cassandra with Datadog](https://www.datadoghq.com/blog/monitoring-cassandra-with-datadog/)
+* [Alternatives to DataStax OpsCenter](https://medium.com/@mlowicki/alternatives-to-datastax-opscenter-8ad893efe063#.wpetbdrj9)
+* [Cassandra metrics and their use in Grafana](https://medium.com/@mlowicki/cassandra-metrics-and-their-use-in-grafana-1f0dc33f9cca#.37bkpooc4)
