@@ -54,7 +54,7 @@ In other words if your cluster uses open source Cassandra 2.2 or 3.x then OpsCen
 
 ## DataDog
 
-In contrast, [DataDog](datadoghq.com) is a SaaS solution. It is capable of monitoring, but also supports a lot of other databases and services. However it is [free](https://www.datadoghq.com/pricing/) for only no more than 5 hosts with major [limitations](https://www.datadoghq.com/pricing/).
+In contrast, [DataDog](https://www.datadoghq.com/) is a SaaS solution. It is capable of monitoring, but also supports a lot of other databases and services. However it is [free](https://www.datadoghq.com/pricing/) for only no more than 5 hosts with major [limitations](https://www.datadoghq.com/pricing/).
 
 DataDog requires an agent installed on every Cassandra node. It reads Cassandra [logs](https://github.com/DataDog/dd-agent/blob/master/dogstream/cassandra.py) and metrics using JMX. The agent is [open source](https://github.com/DataDog/dd-agent) so you can check what exactly it’s doing.
 
