@@ -4,6 +4,7 @@ description: Introduction to possible variants of Cassandra Monitoring
 author: Michał Matłoka
 author_login: matloka
 categories:
+- company
 - cassandra
 - monitoring
 - bigdata
@@ -39,7 +40,7 @@ The JMX interface also offers some management features! For example under `org.a
 
 Note: by default remote JMX is disabled. If you really need it, you can enable it in `cassandra-env.sh`.
 
-For metrics gathering Cassandra internally leverages [`io.dropwizard.metrics`](http://metrics.dropwizard.io/)  (only from version `2.2`, previously library was named `com.yammer.metrics` and to be more confusing  `io.dropwizard.metrics` uses `com.codahale.metrics` package names). Those are the metrics presented via JMX. However, it is possible to access them in a different way. From Cassandra 2.0.2 it is possible to configure reporters, so that every configured period Cassandra forwards those metrics e.g. to [Graphite](https://graphiteapp.org/). This is implemented by [`metrics-reporter-config`](https://github.com/addthis/metrics-reporter-config) library  (see [CASSANDRA-4430](https://issues.apache.org/jira/browse/CASSANDRA-4430)) and provides a nice automatic way to process metrics in different systems, store and display them or check for alarms.
+For metrics gathering Cassandra internally leverages [`io.dropwizard.metrics`](http://metrics.dropwizard.io/)  (only from version `2.2`, previously library was named `com.yammer.metrics` and to be more confusing  `io.dropwizard.metrics` uses `com.codahale.metrics` package names). Those are the metrics presented via JMX. However, it is possible to access them in a different way. Cassandra 2.0.2 and up allows to configure reporters, so that every configured period Cassandra forwards those metrics e.g. to [Graphite](https://graphiteapp.org/). This is implemented by [`metrics-reporter-config`](https://github.com/addthis/metrics-reporter-config) library  (see [CASSANDRA-4430](https://issues.apache.org/jira/browse/CASSANDRA-4430)) and provides a nice automatic way to process metrics in different systems, store and display them or check for alarms.
 
 We will cover the concept of reporters in more detail, in the next part of this blogpost series.
 
