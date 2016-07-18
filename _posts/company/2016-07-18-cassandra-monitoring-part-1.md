@@ -12,11 +12,12 @@ layout: simple_post
 ---
 
 *This is the first part of the Cassandra Monitoring miniseries, index of all parts below:*
-1. *[Cassandra Monitoring - part I - Introduction](https://softwaremill.com/blog/cassandra-monitoring-part-1)*
+
+1. *[Cassandra Monitoring - part I - Introduction](https://softwaremill.com/cassandra-monitoring-part-1/)*
 
 # Cassandra Monitoring
 
-In this series we would like to focus on the Cassandra NoSQL database. If you would like to read more about general metric collection then you can find a great post on the [DataDog Blog](https://www.datadoghq.com/blog/monitoring-101-collecting-data/). Here, we are not going to focus on **what** specifically you can gather from Cassandra, but rather **how**. Again, for details about different Cassandra metrics see the [another DataDog  blogpost](https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/).
+In this series we would like to focus on the Cassandra NoSQL database monitoring. If you would like to read more about general metric collection then you can find a great post on the [DataDog Blog](https://www.datadoghq.com/blog/monitoring-101-collecting-data/). Here, we are not going to focus on **what** specifically you can gather from Cassandra, but rather **how**. Again, for details about different Cassandra metrics see the [another DataDog  blogpost](https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/).
 In the upcoming parts we are also going to present our open source contributions which make Cassandra monitoring easier and more effective.
 
 ## Nodetool
@@ -56,13 +57,14 @@ In contrast, [DataDog](datadoghq.com) is a SaaS solution. It is capable of monit
 
 DataDog requires an agent installed on every Cassandra node. It reads Cassandra [logs](https://github.com/DataDog/dd-agent/blob/master/dogstream/cassandra.py) and metrics using JMX. The agent is [open source](https://github.com/DataDog/dd-agent) so you can check what exactly it’s doing.
 
-![DataDog](/img/uploads/2016/07/cassandra-monitoring-1-datadog.jpg)[Source](https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/)
+![DataDog](/img/uploads/2016/07/cassandra-monitoring-1-datadog.png)[Source](https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/)
 
 ## Conclusions
 
 There are a lot of options for Cassandra monitoring (and management), however none of them are perfect. If you are still using open source Cassandra 2.1 or below, or DataStax Enterprise, then you can use OpsCenter. If you are open to Cloud and SaaS then DataDog monitoring might be for you. Otherwise, you might be interested in Cassandra reporters and solutions based on [Graphite](https://graphiteapp.org/) or [InfluxDB](https://influxdata.com/time-series-platform/influxdb/) and [Grafana](http://grafana.org/) which we will describe in the next parts of this blog series. We will compare the different options and show how to configure them for different Cassandra versions.
 
 If you want to dive deeper into the topic of metrics, then these links might be interesting for you (some quoted already in the article):
+
 * https://www.datadoghq.com/blog/monitoring-101-collecting-data/
 * https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/
 * https://www.datadoghq.com/blog/how-to-collect-cassandra-metrics/
