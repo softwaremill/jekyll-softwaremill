@@ -19,3 +19,7 @@ In this mainly **live-coding talk** we’ll see one way of implementing transact
 <h4>Slides</h4>
 
 [View here](http://www.slideshare.net/adamw1pl/slick-eventsourcing)
+
+<h4>Video</h4>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zxgWuO1LEF0?list=PLLMLOC3WM2r7kLKJPHKnyJgdiBGWaKlJf" frameborder="0" allowfullscreen></iframe>
