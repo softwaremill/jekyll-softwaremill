@@ -293,7 +293,7 @@ input[type="radio"] {
     .white-paper {padding: 23px 0 0 0 ;}
     .white-paper h6 {margin-bottom: 15px;}
     .white-paper p {font-size: 16px; line-height: 22px; font-weight: 300; margin: -9px 0 20px 0; -webkit-font-smoothing: antialiased;}
-    .white-paper .partner {display: inline-block; width: 33%; padding-top: 10px;}
+    .white-paper .partner {display: inline-block; width: 49%; padding-top: 10px;}
     .white-paper figure {margin: 0 auto 20px auto; text-align: center;}
     .white-paper figcaption {color: #B3B3B3; margin-top: 10px;}
     .white-paper .partner img {-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: grayscale(100%);}
