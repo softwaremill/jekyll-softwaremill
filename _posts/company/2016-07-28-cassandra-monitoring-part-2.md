@@ -95,7 +95,7 @@ Official Cassandra images exist on [Docker Hub](https://hub.docker.com/_/cassand
 2. Reporting [configuration](https://github.com/apache/cassandra/blob/trunk/conf/metrics-reporter-config-sample.yaml) needs to be created.
 3. Edit `cassandra-env.sh` in order to add the following line: `JVM_OPTS="$JVM_OPTS -Dcassandra.metricsReporterConfigFile=<reporting-configuration>.yaml"` with the path to the configuration created in the previous step.
 
-
+<br/>
 In this example we are going to use Cassandra 3.7.
 
 Adding required files is pretty simple when you use a standalone Cassandra distribution; however, for Docker we need to create a new image. We will go with a "minimalistic" approach and extend the official one. To build the image, you need to create a directory in which we will place a `Dockerfile`, reporting configuration and the appropriate `.jar`.
