@@ -20,6 +20,7 @@ layout: simple_post
 1. *[Cassandra Monitoring - part I - Introduction](https://softwaremill.com/cassandra-monitoring-part-1/)*
 2. *[Cassandra Monitoring - part II - Graphite/InfluxDB & Grafana on Docker](https://softwaremill.com/cassandra-monitoring-part-2/)*
 
+
 In this blogpost we will continue exploring the topic of [Cassandra](http://cassandra.apache.org/) metric reporters mentioned in [Part I](https://softwaremill.com/cassandra-monitoring-part-1/). Our goal is to configure a reporter that sends metrics to an external time series database. For visualization we will use [Grafana](http://grafana.org/), which can read data directly from various time series databases. We are going to heavily leverage [Docker](https://www.docker.com/), so that we can omit the irrelevant setup details of various projects. To make it easier to set up a full working example, we have prepared a [Docker Compose](https://www.docker.com/products/docker-compose) script in our [GitHub repository](https://github.com/softwaremill/cassandra-monitoring).
 
 As a prerequisite for following this post, please install [Docker](https://docs.docker.com/engine/installation/) and [Docker Compose](https://docs.docker.com/compose/) on your machine. For instructions please see the linked docs.
@@ -47,6 +48,7 @@ Let's start with setting up a time series database. We will now describe two mut
 Unfortunately there is no official [Graphite](https://graphiteapp.org/) Docker image, so we have to use one of the non-official ones from [Docker Hub](https://hub.docker.com/r/sitespeedio/graphite/).
 
 In order to run the selected image, execute:
+
 ```
 docker run -d  -p 8080:80 -p 2003:2003 --net monitoring-network --name graphite sitespeedio/graphite:0.9.14
 ```
@@ -164,10 +166,12 @@ for [Graphite](https://github.com/softwaremill/cassandra-monitoring/tree/feature
 ### Running
 
 In order to build the image, you have to execute the following command in the directory with the `Dockerfile`:
+
 ```
 docker build -t cassandra-graphite .
 ```
 Then create the container and attach it to our network:
+
 ```
 docker run -d -p 9042:9042 --net monitoring-network --name cassandra-graphite cassandra-graphite
 ```
@@ -202,11 +206,13 @@ In order to draw a graph you first need to create a Data Source referring to the
 curl 'http://admin:admin@127.0.0.1:3000/api/datasources' -X POST \
 -H 'Content-Type: application/json;charset=UTF-8' \
 --data-binary '{"name":"graphite","type":"graphite","url":"http://graphite:80",
-"access":"proxy","isDefault":true,"basicAuth":true,"basicAuthUser":"guest","basicAuthPassword":"guest"}'
+"access":"proxy","isDefault":true,
+"basicAuth":true,"basicAuthUser":"guest","basicAuthPassword":"guest"}'
 ```
 Url `http://graphite:80` refers to Graphite container hostname.
 
 ### InfluxDB
+
 ```
 curl 'http://admin:admin@127.0.0.1:3000/api/datasources' -X POST \
 -H 'Content-Type: application/json;charset=UTF-8' \
