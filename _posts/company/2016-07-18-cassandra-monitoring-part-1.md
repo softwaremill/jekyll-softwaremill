@@ -15,6 +15,7 @@ layout: simple_post
 *This is the first part of the Cassandra Monitoring miniseries, index of all parts below:*
 
 1. *[Cassandra Monitoring - part I - Introduction](https://softwaremill.com/cassandra-monitoring-part-1/)*
+2. *[Cassandra Monitoring - part II - Graphite/InfluxDB & Grafana on Docker](https://softwaremill.com/cassandra-monitoring-part-2/)*
 
 # Cassandra Monitoring
 
@@ -62,7 +63,7 @@ DataDog requires an agent installed on every Cassandra node. It reads Cassandra 
 
 ## Conclusions
 
-There are a lot of options for Cassandra monitoring (and management), however none of them are perfect. If you are still using open source Cassandra 2.1 or below, or DataStax Enterprise, then you can use OpsCenter. If you are open to Cloud and SaaS then DataDog monitoring might be for you. Otherwise, you might be interested in Cassandra reporters and solutions based on [Graphite](https://graphiteapp.org/) or [InfluxDB](https://influxdata.com/time-series-platform/influxdb/) and [Grafana](http://grafana.org/) which we will describe in the next parts of this blog series. We will compare the different options and show how to configure them for different Cassandra versions.
+There are a lot of options for Cassandra monitoring (and management), however none of them are perfect. If you are still using open source Cassandra 2.1 or below, or DataStax Enterprise, then you can use OpsCenter. If you are open to Cloud and SaaS then DataDog monitoring might be for you. Otherwise, you might be interested in Cassandra reporters and solutions based on [Graphite](https://graphiteapp.org/) or [InfluxDB](https://influxdata.com/time-series-platform/influxdb/) and [Grafana](http://grafana.org/) which we will describe in the [next parts](https://softwaremill.com/cassandra-monitoring-part-2/) of this blog series. We will compare the different options and show how to configure them for different Cassandra versions.
 
 If you want to dive deeper into the topic of metrics, then these links might be interesting for you (some quoted already in the article):
 

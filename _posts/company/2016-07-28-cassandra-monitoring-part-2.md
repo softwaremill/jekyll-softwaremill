@@ -4,6 +4,7 @@ description: How to send metrics from Cassandra to Graphite or InfluxDB and disp
 author: Michał Matłoka
 author_login: matloka
 categories:
+- company
 - cassandra
 - monitoring
 - bigdata
