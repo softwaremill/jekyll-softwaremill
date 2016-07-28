@@ -16,6 +16,7 @@ layout: simple_post
 ---
 
 *This is the second part of the Cassandra Monitoring miniseries, index of all parts below:*
+
 1. *[Cassandra Monitoring - part I - Introduction](https://softwaremill.com/cassandra-monitoring-part-1/)*
 2. *[Cassandra Monitoring - part II - Graphite/InfluxDB & Grafana on Docker](https://softwaremill.com/cassandra-monitoring-part-2/)*
 
@@ -30,6 +31,7 @@ We are going to describe two configuration variants - Cassandra-Graphite-Grafana
 Both variants will require 3 containers each. Cassandra and Grafana will need access to the time series store. Links between Docker containers are currently a [legacy](https://docs.docker.com/v1.11/engine/userguide/networking/default_network/dockerlinks/) feature, so we are going to use [Docker networking](https://docs.docker.com/v1.11/engine/userguide/networking/dockernetworks/). We are going to create just one network and attach all containers to it. Each of the containers will be accessible in our network under a hostname identical to their name.
 
 To create the network you need to run:
+
 ```
 docker network create monitoring-network
 ```
@@ -95,6 +97,7 @@ Adding required files is pretty simple when you use a standalone Cassandra distr
 
 ### Cassandra-Graphite-Grafana:
 `Dockerfile`:
+
 ```
 FROM cassandra:3.7
 
@@ -104,6 +107,7 @@ COPY metrics-graphite-3.1.0.jar /usr/share/cassandra/lib/
 ```
 
 `graphite.yaml`:
+
 ```
 graphite:
 -
@@ -121,6 +125,7 @@ graphite:
 ```
 ### Cassandra-InfluxDB-Grafana over Graphite protocol:
 `Dockerfile`:
+
 ```
 FROM cassandra:3.7
 
@@ -130,6 +135,7 @@ COPY metrics-graphite-3.1.0.jar /usr/share/cassandra/lib/
 ```
 
 `influxdb.yaml`:
+
 ```
 graphite:
 -
