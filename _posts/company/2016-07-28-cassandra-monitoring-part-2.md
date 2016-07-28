@@ -20,6 +20,7 @@ layout: simple_post
 1. *[Cassandra Monitoring - part I - Introduction](https://softwaremill.com/cassandra-monitoring-part-1/)*
 2. *[Cassandra Monitoring - part II - Graphite/InfluxDB & Grafana on Docker](https://softwaremill.com/cassandra-monitoring-part-2/)*
 
+# Cassandra Monitoring with Graphite/InfluxDB & Grafana on Docker
 
 In this blogpost we will continue exploring the topic of [Cassandra](http://cassandra.apache.org/) metric reporters mentioned in [Part I](https://softwaremill.com/cassandra-monitoring-part-1/). Our goal is to configure a reporter that sends metrics to an external time series database. For visualization we will use [Grafana](http://grafana.org/), which can read data directly from various time series databases. We are going to heavily leverage [Docker](https://www.docker.com/), so that we can omit the irrelevant setup details of various projects. To make it easier to set up a full working example, we have prepared a [Docker Compose](https://www.docker.com/products/docker-compose) script in our [GitHub repository](https://github.com/softwaremill/cassandra-monitoring).
 
@@ -50,7 +51,8 @@ Unfortunately there is no official [Graphite](https://graphiteapp.org/) Docker i
 In order to run the selected image, execute:
 
 ```
-docker run -d  -p 8080:80 -p 2003:2003 --net monitoring-network --name graphite sitespeedio/graphite:0.9.14
+docker run -d  -p 8080:80 -p 2003:2003 --net monitoring-network \
+    --name graphite sitespeedio/graphite:0.9.14
 ```
 This means that we are running the `sitespeedio/graphite:0.9.14` image, creating a container named `graphite`, attached to network `monitoring-network`, mapping the container’s internal ports to local `8080` and `2003`. Everything is going to work in the background (`-d`).
 
@@ -92,6 +94,7 @@ Official Cassandra images exist on [Docker Hub](https://hub.docker.com/_/cassand
 1. Cassandra distribution is minimalistic and does not include the JAR used for Graphite reporting. For Cassandra >= 2.2 the [`metrics-graphite-3.1.0.jar`](http://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar) is required and for <= 2.1 the [`metrics-graphite-2.2.0.jar`](http://repo1.maven.org/maven2/com/yammer/metrics/metrics-graphite/2.2.0/metrics-graphite-2.2.0.jar).
 2. Reporting [configuration](https://github.com/apache/cassandra/blob/trunk/conf/metrics-reporter-config-sample.yaml) needs to be created.
 3. Edit `cassandra-env.sh` in order to add the following line: `JVM_OPTS="$JVM_OPTS -Dcassandra.metricsReporterConfigFile=<reporting-configuration>.yaml"` with the path to the configuration created in the previous step.
+
 
 In this example we are going to use Cassandra 3.7.
 
@@ -161,7 +164,7 @@ Both of these setups use the Graphite protocol, so they are almost identical. Th
 Additionally, in both cases you need to put the [`metrics-graphite-3.1.0.jar`](http://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar) in the same directory with the `Dockerfile` and reporting configuration.
 
 Both of these Cassandra scenarios are available on GitHub
-for [Graphite](https://github.com/softwaremill/cassandra-monitoring/tree/feature/part-II-prototype/part-II-cassandra-graphite-grafana/cassandra-graphite) and for [InfluxDB over Graphite protocol](https://github.com/softwaremill/cassandra-monitoring/tree/feature/part-II-prototype/part-II-cassandra-influx-via-graphite-grafana/cassandra-influx-via-graphite).
+for [Graphite](https://github.com/softwaremill/cassandra-monitoring/tree/master/part-II-cassandra-graphite-grafana/cassandra-graphite) and for [InfluxDB over Graphite protocol](https://github.com/softwaremill/cassandra-monitoring/tree/master/part-II-cassandra-influx-via-graphite-grafana/cassandra-influx-via-graphite).
 
 ### Running
 
@@ -173,7 +176,8 @@ docker build -t cassandra-graphite .
 Then create the container and attach it to our network:
 
 ```
-docker run -d -p 9042:9042 --net monitoring-network --name cassandra-graphite cassandra-graphite
+docker run -d -p 9042:9042 --net monitoring-network \
+    --name cassandra-graphite cassandra-graphite
 ```
 
 Please watch Cassandra logs for errors with `docker logs -f cassandra-graphite`. Every 60 seconds Cassandra should report its metrics to the corresponding time series database. You can check it in the web UI or using the CLI.
