@@ -1,7 +1,7 @@
 ---
 title: Cassandra Monitoring - part II - Graphite/InfluxDB & Grafana on Docker
 description: How to send metrics from Cassandra to Graphite or InfluxDB and display them in Grafana
-author: Micha≥ Mat≥oka
+author: Micha≈Ç Mat≈Çoka
 author_login: matloka
 categories:
 - cassandra
@@ -48,7 +48,7 @@ In order to run the selected image, execute:
 ```
 docker run -d  -p 8080:80 -p 2003:2003 --net monitoring-network --name graphite sitespeedio/graphite:0.9.14
 ```
-This means that we are running the `sitespeedio/graphite:0.9.14` image, creating a container named `graphite`, attached to network `monitoring-network`, mapping the containerís internal ports to local `8080` and `2003`. Everything is going to work in the background (`-d`).
+This means that we are running the `sitespeedio/graphite:0.9.14` image, creating a container named `graphite`, attached to network `monitoring-network`, mapping the container‚Äôs internal ports to local `8080` and `2003`. Everything is going to work in the background (`-d`).
 
 The `http://localhost:8080` presents a simple web interface. Port `2003` is for the API. Default user and password is `guest` and `guest`.
 
@@ -235,6 +235,3 @@ Monitoring Cassandra using Graphite or InfluxDB (with data sent over Graphite pr
 If you'd like to quickly run one of the described variants, see our [GitHub](https://github.com/softwaremill/cassandra-monitoring) leveraging [Docker Compose](https://www.docker.com/products/docker-compose).
 
 In the next part of this series we will focus on the Cassandra-InfluxDB-Grafana stack. We will show improvements over Cassandra-InfluxDB reporting (omitting Graphite protocol) and the resulting advantages on the Grafana level.
-
-
-
