@@ -51,7 +51,9 @@ This makes sense, because how should a deserializer know how to transform (add a
 # Limits
 
 There are a couple of issues logged against the Schema Registry and here are some I thought to highlight:
+
 * [Can not rollback the old schema as the newest version under the same subject](https://github.com/confluentinc/schema-registry/issues/270)
+
 * [Example showing how to delete/remove a topic/subject from Schema-Registry](https://github.com/confluentinc/schema-registry/issues/227)
 
 # Conclusions and miscellaneous notes
