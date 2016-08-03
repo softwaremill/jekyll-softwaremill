@@ -1,29 +1,25 @@
 ---
-title: Twitter o Polsce na Euro 2016 - trochę statystyk - część 2 - faza pucharowa
-description: Druga część naszej analizy wpisów na Twitterze dotyczących występów Polski na Euro 2016, tym razem z fazy pucharowej
+title: Twitter on Poland at the Euro 2016 - some statistics - part 2 - knockout phase
+description: Second part of our analysis of tweets about Poland games during at Euro 2016, this time during knockout phase 
 author: Tomasz Dziurko
 author_login: tomasz_dziurko
 categories:
 - twitter
 - analytics
-- company
 
 layout: simple_post
 ---
 ​
-_For English version please read [Twitter on Poland at the Euro 2016 - some statistics - part 2 - knockout phase](/twitter-on-poland-at-euro-2016-knockout-phase)._
-
-Witajcie w drugiej części analizy występów naszej reprezentacji na Euro 2016. 
-W [poprzednim wpisie](/polska-na-euro2016-z-perspektywy-twittera-faza-grupowa/) przedstawiliśmy statystyki z meczów fazy grupowej, a 
-w tym wpisie pokażemy najciekawsze tweety dotyczące meczów fazy pucharowej. 
-
-Opis sposobu zbierania danych oraz kryteriów oceny został zawarty w pierwszej części, wiec 
-teraz od razu przejdziemy do spotkań Polaków.
+Welcome to the second part of the analysis of the performances of our 
+representation during the Euro 2016. [In the previous post](/twitter-on-poland-at-euro-2016-group-phase), we’ve presented the statistics from matches of the group stage, 
+and in this post we’ll show the most interesting tweets regarding the matches of the knockout stage.
 
 
-#  Szwajcaria - Polska 1 - 1 (k. 4 - 5)
+The description of the methods of gathering data and the assessment criteria can be found in the first part, so now we’ll go straight for the matches of the Polish team.
 
-## Top 5 najpopularniejszych polskich wpisów o meczu
+#  Switzerland - Poland 1 - 1 (p. 4 - 5)
+
+## Top 5 most popular polish tweets about the match
 
 ## 1
 
@@ -54,7 +50,7 @@ teraz od razu przejdziemy do spotkań Polaków.
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="pl" dir="ltr">ON NADAL NIE WIERZY W TO CO SIĘ STAŁO <a href="https://twitter.com/hashtag/POLSUI?src=hash">#POLSUI</a> <a href="https://t.co/1T9Vo4ioTl">pic.twitter.com/1T9Vo4ioTl</a></p>&mdash; ㅤ (@gomezsreasons) <a href="https://twitter.com/gomezsreasons/status/746733171417419776">June 25, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Top 5 zagranicznych wpisów o meczu
+## Top 5 most popular tweets from the abroad about the match
 
 ## 1
 
@@ -81,36 +77,38 @@ teraz od razu przejdziemy do spotkań Polaków.
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Unfortunately Jakub Blaszczykowski will never trend on Twitter because only about 20 people know how to spell his name <a href="https://twitter.com/hashtag/SUIPOL?src=hash">#SUIPOL</a> <a href="https://twitter.com/hashtag/EURO2016?src=hash">#EURO2016</a></p>&mdash; Footy Humour (@FootyHumour) <a href="https://twitter.com/FootyHumour/status/746700575664914432">June 25, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-Mecz był bardzo emocjonujący i na Twitterze widać radość z wygranych rzutów karnych: cieszy się Lewandowski, cieszą się kibice. 
-Sporo pisano o Kubie Błaszczykowskim, który strzelił bramkę w regulaminowym czasie gry oraz pewnie wykonał rzut karny. 
-
-Zagranicznego Twittera swoim wpisem zdominował Russel Crowe, który wiernie wspierał 
-naszą reprezentację podczas całego turnieju. Kibice zachwycali się również 
-przepiękną bramką Shaquiriego.
+The match has been exhilarating and the joy from the won penalty shots can be seen on Twitter: 
+Lewandowski is delighted, the fans are delighted. Much has been written about 
+Kuba Błaszczykowski who scored during the match, and successfully performed the penalty shot.
 
 
-## Liczba tweetów w trakcie meczu
-
-![tweety-o-meczach-Polaków](/img/uploads/2016/07/tweety_suipol.png) 
-
-(każdy prostokąt pokazuje liczbę wpisów z okresu 3 minut: 0-3, 3-6 minuta meczu, itd.)
-
-Ponieważ brakowało goli, widać mniejsze skoki aktywności na Twitterze 
-niż to miało miejsce w meczu z Irlandią Północną. Ale po porównaniu z raportem meczowym widać pewną korelację z wydarzeniami na boisku:
-
-* rozpoczęcie spotkania 
-
-* 39 minuta: bramka Błaszczykowskiego na 1-0
-
-* 82 minuta: piękne wyrówmnanie dla Szwajcarów
-
-* rzuty karne i wygrana Polaków po konkursie jedenastek, mamy awans do ćwierćfinału 
+Twitter abroad has been dominated by the tweets by Russel Crowe, who has been 
+committed to rooting for our team during the entire tournament. Fans were also 
+enchanted by the beautiful goal by Shaqiri.
 
 
-#  Polska - Portugalia 1 - 1 (k. 3 - 5)
+## Number of tweets during the match
 
-## Top 5 najpopularniejszych polskich wpisów o meczu
+![tweets-about-Poland-games](/img/uploads/2016/07/tweety_suipol.png) 
+
+(each rectangle shows the number of tweets within a three minute period: 0-3, 3-6 minutes of the match and so forth)
+
+Because there were no goals, there were also lower fluctuations of activity on Twitter 
+than during the match with Northern Ireland. But after comparing with 
+the match report, there is some correlation with what happened on the field:
+
+* The beginning of the mach
+
+* 39th minute: Błaszczykowski’s goal setting the score at 1-0
+
+* 82nd minute: a beautiful equalizing goal by the Swiss
+
+* Penalty shots and Poland’s triumph, we advance to the quarterfinals
+
+
+# Poland - Portugal 1 - 1 (p. 3 - 5)
+
+## Top 5 most popular polish tweets about the match
 
 ## 1
 
@@ -138,7 +136,7 @@ niż to miało miejsce w meczu z Irlandią Północną. Ale po porównaniu z rap
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-## Top 5 zagranicznych wpisów o meczu
+## Top 5 most popular tweets from the abroad about the match
 
 ## 1
 
@@ -165,22 +163,23 @@ niż to miało miejsce w meczu z Irlandią Północną. Ale po porównaniu z rap
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="fr" dir="ltr">Le <a href="https://twitter.com/hashtag/POR?src=hash">#POR</a> au terme des 90 minutes dans cet <a href="https://twitter.com/hashtag/EURO2016?src=hash">#EURO2016</a>:<br><br>1-1 vs <a href="https://twitter.com/hashtag/ISL?src=hash">#ISL</a><br>0-0 vs <a href="https://twitter.com/hashtag/AUT?src=hash">#AUT</a><br>3-3 vs <a href="https://twitter.com/hashtag/HUN?src=hash">#HUN</a> <br>0-0 vs <a href="https://twitter.com/hashtag/CRO?src=hash">#CRO</a><br>1-1 vs <a href="https://twitter.com/hashtag/POL?src=hash">#POL</a> <a href="https://t.co/55VPfnht5v">pic.twitter.com/55VPfnht5v</a></p>&mdash; Actu Foot (@ActuFoot_) <a href="https://twitter.com/ActuFoot_/status/748620028661145600">June 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Polscy kibice przed meczem emocjonowali się pojedynkiem Ronaldo z Lewandowskim a potem doceniali 
-postawę Pazdana oraz, już po odpadnięciu w konkursie rzutów karnych, całego zespołu. Polakom podobała się również bramka Lewandowskiego, który w końcu przełamał się na tym turnieju.  
+Before the match, Polish fans were excited at the thought of a confrontation between 
+Lewandowski and Ronaldo and later gave credit to Pazdan’s sportsmanship and, after dropping out after the penalty shots, to the entire team. 
+Poles also liked the goal by Lewandowski, who finally came through in this tournament. 
 
-Z kolei zagraniczni kibice z racji trudnego do wymówienia nazwiska Jędrzejczyka żartowali, że jego nazwisko to dobry kandydat na hasło do stadionowego WiFi.
-Nasz wierny kibic Russel Crowe zagrzewał Polaków do walki, a po meczu nie krył smutku, ale i gratulował wyniku na Euro naszej reprezentacji. 
-Zagraniczni komentatorzy zauważyli również, że Portugalia dotarła tak daleko z samymi remisami w regularnym czasie gry.
- 
- 
-# Podsumowanie
-
-Euro dla Polaków dobiegło końca, mamy jednak nadzieję, że tym zestawieniem udało się nam 
-uchwycić najważniejsze, najciekawsze i najzabawniejsze momenty tego turnieju na Twitterze. 
-Turnieju historycznego dla naszej reprezentacji, bo nie tylko udało się nam zdobyć pierwszego gola na Euro, ale 
-również wygrać pierwszy mecz, wyjść z grupy i odpaść po rzutach karnych dopiero w ćwierćfinale, 
-nie przegrywając żadnego meczu.
+In turn, foreign fans joked about Jędrzejczyk’s difficult to pronounce surname, 
+that it would be a great choice for the stadium’s Wi-Fi password. Our faithful 
+fan, Russel Crowe, encouraged the Polish team to fight, and did not hide his sorrow after the match, 
+but also congratulated our representation on the achievement at the Euro. 
+Foreign commentators also noticed that Portugal came so far achieving only draws within the match time.
 
 
 
+# Summary
 
+The Euro has come to an end for the Polish team. However, we hope that 
+with this analysis we’ve managed to capture the most important, 
+interesting and funniest moments of this tournament on Twitter. A historic 
+tournament for our team, because not only did we manage to score our first goal 
+during the Euro, but also won the first match, got out of the group stage 
+and dropped out only after the penalty shots in the quarterfinal, not losing a single match.
