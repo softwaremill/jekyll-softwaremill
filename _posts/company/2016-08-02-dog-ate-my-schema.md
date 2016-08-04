@@ -69,5 +69,5 @@ Using the Schema Registry is in that sense *transparent*, that only the Avro ser
 
 There is an development overhead related to providing the schema, no matter if using the [generic approach](https://github.com/softwaremill/confluent-playground/tree/master/avro-serialization#avro-generic-approach) or [specific approach](https://github.com/softwaremill/confluent-playground/tree/master/avro-serialization#avro-specific-approach). A price to pay for a safe way to interchange messages.
 
-*So, what is your excuse not use the the Schema Registry?*
+*So, what is your excuse for not using the the Schema Registry?*
 
