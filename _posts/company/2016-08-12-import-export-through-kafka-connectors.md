@@ -158,6 +158,7 @@ $ ./bin/connect-standalone etc/kafka/connect-standalone.properties etc/kafka-con
 ```
 
 If you see this:
+
 ```
 [2016-07-09 15:47:02,258] ERROR Stopping after connector error (org.apache.kafka.connect.cli.ConnectStandalone:100)
 java.lang.IllegalArgumentException: Number of groups must be positive.
@@ -181,9 +182,11 @@ This is just the tip of the iceberg. You can configure white and black lists to 
 
 What about that precision in `LOCALTIMESTAMP(3)`? Compared to `now()`, it creates a timestamp rounded to the milliseconds part, like `2016-07-09 15:12:58.257` instead of `2016-07-09 15:12:58.257191`.
 Now when you look at the /tmp/connect.offsets file, you'll see that the timestamp, used to find new or modified records, is in milliseconds:
+
 ```
 ... {"incrementing":6,"timestamp":1470209167516}...
 ```
+
 If you would use the full available precision with `now()` or `LOCALTIMESTAMP`, the persisted offset by the Kafka Connector would always be smaller than the value in the database (15:12:58.257 < 15:12:58.257191), what the connector would interpret as the record not having been processed yet. As a consequence, the connector would reprocess the last record in an endless loop every 5 seconds.
 
 On a final note, when you add a new table, it will be picked up by the connector automatically and a new topic will be fed with the table's records. It just may take up to `table.poll.interval.ms` (by default 60000ms), another configurable connector property.
@@ -267,6 +270,7 @@ CLASSPATH=/PATH_TO_PROJECT/cassandra-connector/stream-reactor/kafka-connect-cass
 ```
 
 To verify the data has been moved to Kafka, run:
+
 ```
 $ ./bin/kafka-console-consumer --zookeeper 127.0.0.1:2181 --from-beginning --topic metrics-topic
 
@@ -284,6 +288,7 @@ connect.cassandra.import.mode=incremental
 ```
 
 The create column has to be of type `TIMEUUID`. Running the connector and adding a new record into Cassandra results in a new message showing up in the Kafka topic:
+
 ```
 cqlsh> insert into connector.metrics(device_id, created, button) values('nextdoor', now(), 2);
 ```
