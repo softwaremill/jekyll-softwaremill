@@ -1,5 +1,5 @@
 ---
-title: Kafka Connect - Import / Export for Apache Kafka
+title: Kafka Connect - Import Export for Apache Kafka
 description: Evaluating Kafka Connectors to import data into Kafka and export data to various targets
 author: Jarosław Kijanowski
 author_login: kijanowski
