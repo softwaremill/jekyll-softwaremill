@@ -14,7 +14,7 @@ We have been enjoying the status of **Confluent Premier Consulting Partner** for
 
 The invitation to participate in a partnership program was connected, among others, with the opportunity for a professional training, which was held in London at the end of July. Two of our engineers: **Krzysztof Ciesielski** and **Andrzej Ludwikowski**, participated in the training.
  
-> As a contributor to the akka-streams-kafka project, I wanted to understand how to optimally configure Kafka. Apart from that, I perceive Kafka as a very promising technology in projects. Customers often ask about it and we wanted to have experts on our team,” 
+> As a contributor to the akka-streams-kafka project, I wanted to understand how to optimally configure Kafka. Apart from that, I perceive Kafka as a very promising technology in projects. Customers often ask about it and we wanted to have experts on our team, 
 
 explains Krzysztof.
 
