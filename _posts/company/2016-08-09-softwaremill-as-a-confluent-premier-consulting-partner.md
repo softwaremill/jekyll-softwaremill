@@ -38,4 +38,4 @@ Before we entered the partnership program, we had to be sure that it would be a 
 
 ## What are the top requirements for a company to become a Confluent Partner?
 
-> Confluent has announced its Partner Program just a few months ago and we've had tremendous demand from both the perspective of Technology Partners as well as Consulting Partners. We look at each application before allowing anyone into the program. Specifically, we're looking for **Big Data experience, team background**/experience, **reputation**, and examples of **previous work**[...].
+> Confluent announced its Partner Program just a few months ago and we've had tremendous demand from both the perspective of Technology Partners as well as Consulting Partners. We look at each application before allowing anyone into the program. Specifically, we're looking for **Big Data experience, team background**/experience, **reputation**, and examples of **previous work**[...].
