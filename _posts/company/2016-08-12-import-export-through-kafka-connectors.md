@@ -25,10 +25,10 @@ What would you say, if there would be a way to just provide some configuration d
 * fault tolerance
 
 ## Kafka Connect
-It is an open source import and export framework shipped with the [Confluent Platform](http://www.confluent.io). There are a couple of supported connectors built upon Kafka Connect, which also are part of the Confluent Platform. Below you will find examples of using the File Connector and JDBC Connector. Besides that, the community also offers connectors, which of I'd like to present the Cassandra Connector by [datamountaineer](https://github.com/datamountaineer/stream-reactor/tree/master/kafka-connect-cassandra).
+It is an open source import and export framework shipped with the [Confluent Platform](http://www.confluent.io). There are a couple of supported connectors built upon Kafka Connect, which also are part of the Confluent Platform. Below you will find examples of using the File Connector and JDBC Connector. Besides that, the community also offers connectors, which of I'd like to present the Cassandra Connector by [DataMountaineer](https://github.com/datamountaineer/stream-reactor/tree/master/kafka-connect-cassandra).
 Here’s a [rather incomplete list of available connectors](http://www.confluent.io/product/connectors).
 
-To run the examples, the Confluent Platform is needed. It can be downloaded from http://www.confluent.io/download. The price is your email address.
+To run the examples, the Confluent Platform is needed. It can be downloaded from [http://www.confluent.io/download](http://www.confluent.io/download). The price is your email address.
 
 
 ## File Connector
@@ -93,7 +93,7 @@ Obviously it is possible to read from multiple files simultaneously by running m
 
 The key take away here is, that we haven't written any Producer nor Consumer code to load data into Kafka from a file and to load data off from Kafka to a file.
 
-One thing to note is that when you restart the Source Connector, it will not read the whole file again, since it knows exactly, where it left off. This is the role of the offset, which in this scenario is persisted to /tmp/connect.offsets. Offsets are configured through the worker properties by `offset.storage.file.filename.`
+One thing to note is that when you restart the Source Connector, it will not read the whole file again, since it knows exactly, where it left off. This is the role of the offset, which in this scenario is persisted to `/tmp/connect.offsets`. Offsets are configured through the worker properties by `offset.storage.file.filename.`
 
 Same goes for the Sink Connector, which persist its offset in Zookeeper:
 
@@ -182,7 +182,7 @@ $ ./bin/kafka-console-consumer --from-beginning --zookeeper 127.0.0.1:2181 --top
 This is just the tip of the iceberg. You can configure white and black lists to specify which tables to include or exclude, the poll interval, even tailored sql statements to query for new and modified records just to name the most important ones. More details about the JDBC Connector can be found at [Confluent’s JDBC Connector documentation](http://docs.confluent.io/3.0.0/connect/connect-jdbc/docs/jdbc_connector.html).
 
 What about that precision in `LOCALTIMESTAMP(3)`? Compared to `now()`, it creates a timestamp rounded to the milliseconds part, like `2016-07-09 15:12:58.257` instead of `2016-07-09 15:12:58.257191`.
-Now when you look at the /tmp/connect.offsets file, you'll see that the timestamp, used to find new or modified records, is in milliseconds:
+Now when you look at the `/tmp/connect.offsets` file, you'll see that the timestamp, used to find new or modified records, is in milliseconds:
 
 ```
 ... {"incrementing":6,"timestamp":1470209167516}...
@@ -259,7 +259,6 @@ And execute:
 
 ```
 CLASSPATH=/PATH_TO_PROJECT/cassandra-connector/stream-reactor/kafka-connect-cassandra/build/libs/kafka-connect-cassandra-0.1-3.0.0-all.jar ./bin/connect-standalone etc/kafka/connect-standalone.properties etc/kafka/cassandra-source-bulk-metrics.properties
-
 
 [2016-07-26 23:27:17,622] INFO Query SELECT * FROM connector.metrics executing. (com.datamountaineer.streamreactor.connect.cassandra.source.CassandraTableReader:173)
 [2016-07-26 23:27:17,625] INFO Querying returning results for connector.metrics. (com.datamountaineer.streamreactor.connect.cassandra.source.CassandraTableReader:189)
