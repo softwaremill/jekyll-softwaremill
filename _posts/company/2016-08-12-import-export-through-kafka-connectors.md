@@ -8,6 +8,7 @@ categories:
 - Kafka Connect
 - kafka
 - bigdata
+- company
 layout: simple_post
 ---
 
