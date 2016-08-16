@@ -35,7 +35,7 @@ visualisation. A similar approach, just for Cassandra,
 ## Monitoring Infrastructure
 
 The examples here will be mainly based on Docker to keep things simple, but if you require assistance in setting up a
-production ready monitoring environment, feel free to [contact us](https://softwaremill.com/contactus). For the same
+production ready monitoring environment, feel free to [contact us](https://softwaremill.com/contact). For the same
 reason JMX authentication and authorization is out of scope for this post, however keep in mind that it is supported.
 
 ### InfluxDB
@@ -149,7 +149,7 @@ Some parameters have been extracted, like URLs and credentials to make it easier
 variables. The jmxtrans script has to be executed with `JMXTRANS_OPTS`:
 
 ```
-$ JMXTRANS_OPTS="-Dport1=55555 -Durl1=localhost -DinfluxUrl=http://XYZ:8086/ -DinfluxDb=kafka -DinfluxUser=admin -DinfluxPwd=admin" \
+$ JMXTRANS_OPTS="-Dport1=55555 -Durl1=localhost -DinfluxUrl=http://INFLUXDB_IP:8086/ -DinfluxDb=kafka -DinfluxUser=admin -DinfluxPwd=admin" \
     JAR_FILE=jmxtrans-259-all.jar ./jmxtrans.sh start
 ```
 
