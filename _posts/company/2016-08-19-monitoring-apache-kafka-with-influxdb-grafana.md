@@ -9,6 +9,7 @@ categories:
 - InfluxDB
 - jmxtrans
 - BigData
+- company
 
 layout: simple_post
 ---
@@ -72,7 +73,7 @@ $ curl 'http://admin:admin@GRAFANA_IP:3000/api/datasources' -X POST \
 ### Kafka
 Kafka metrics will be gathered via JMX. I know, not a perfect solution, it has drawbacks and I'm going to address them
 later in this post. To expose metrics via remote JMX, a JMX port has to be chosen. This can be achieved by exporting
-`JMX_PORT`` or starting Kafka like this:
+`JMX_PORT` or starting Kafka like this:
 
 ```
 kafka_2.11-0.10.0.1$ JMX_PORT=55555 ./bin/kafka-server-start.sh config/server.properties
@@ -80,7 +81,7 @@ kafka_2.11-0.10.0.1$ JMX_PORT=55555 ./bin/kafka-server-start.sh config/server.pr
 
 ### Kafka(JMX) -> ??? -> InfluxDB
 One interesting tool for this job is [jmxtrans](https://github.com/jmxtrans/jmxtrans/wiki).
-Let's [download jmxtrans-###-all.jar](http://central.maven.org/maven2/org/jmxtrans/jmxtrans/) and configure it to gather some
+Let's [download jmxtrans-259-all.jar](http://central.maven.org/maven2/org/jmxtrans/jmxtrans/) and configure it to gather some
 JVM metrics.
 
 ```
