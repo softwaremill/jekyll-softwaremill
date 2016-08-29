@@ -2024,3 +2024,8 @@ a#do_logout {
 .project.sms-portal:after {
   margin-top: -98px;
 }
+
+.illustration {
+  text-align: center !important;
+  font-style: italic;
+}

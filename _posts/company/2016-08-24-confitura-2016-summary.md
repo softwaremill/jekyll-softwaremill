@@ -17,6 +17,11 @@ Notice: this article is available in two versions. The second, looonger one, ful
 
 For over a decade, Confitura has been opening the summer conference season by providing expanded knowledge from the universe of Java and JVM languages. This year, we met on the 2nd of July with the good old formula but wearing a brand new cover.
 
+<figure class="illustration">
+    <img src="/img/uploads/2016/08/confitura_2016_marta_smektala_ux.jpg">
+    <figcaption>Marta Smektała presenting at Confitura 2016</figcaption>
+</figure>
+
 ###Times are changing
 As a conference organiser, we know that it’s not easy to fulfill all the expectations of our participants, because they’re different every year. Venue, line-up, catering, contests - they all count in an attendee’s eyes.
 
@@ -24,6 +29,11 @@ The 10th edition was full of changes - the logo was refreshed and, after years o
 
 ### The golden mean
 As always, this was an opportunity for networking and getting to know new things. Traditionally, the presentations at Confitura were a mix of various topics: practical experience, methodologies, soft skills, new languages. That’s why everyone could find something interesting for themselves.
+
+<figure class="illustration">
+    <img src="/img/uploads/2016/08/confitura_2016_jacek_at_sml_stand.jpg">
+    <figcaption>Jacek manning SoftwareMill's stand</figcaption>
+</figure>
 
 First of all, Confitura is made by the community, for the community - there’s a little something for everyone. Presentations are dedicated to, both newbies and advanced programmers. Even know-it-alls should try not to miss Confitura, and attend the event - for fun and keeping up to date with new opportunities. 
 
@@ -36,3 +46,8 @@ After 10 hours we had to say that it was over. Months of preparation reached the
 
 ###That’s all folks!
 Confitura 2016 went down in history. 1400 participants in one place, crowded for one reason – the joy of sharing knowledge of the JVM world. It was a great success, the organisers prepared a truly excellent line-up, cool swag and an amazing atmosphere. As a multiannual partner and supporter of the event, SoftwareMill received a special statuette for our involvement in the organisation. Bravo to the team for the huge scale of this anniversary edition. Also huge congrats to Tomasz Nurkiewicz for the title of the best Confitura speaker of 2015. It was a real pleasure to be a part of this event. Hope to see you all next year!
+
+<figure class="illustration">
+    <img src="/img/uploads/2016/08/confitura_2016_sml_statuette.jpg">
+    <figcaption>SoftwareMill's appreciation award</figcaption>
+</figure>
