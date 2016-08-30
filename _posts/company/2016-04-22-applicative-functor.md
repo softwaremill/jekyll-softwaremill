@@ -40,7 +40,7 @@ The `getProfilePhoto()` function **depends on `user`**, so calling `Future[Photo
 ```scala
 val res: Future[Result] = for {
   user <- getUserFuture()
-  data <- getAdditionalDataFuture()
+  data <- getDataFuture()
 }
   yield Result(user, data)
 ```
