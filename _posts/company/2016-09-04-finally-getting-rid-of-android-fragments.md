@@ -2,6 +2,7 @@
 title: Finally getting rid of Android Fragments
 description: Why we should use Conductor to build Android apps
 author: Sebastian Drygalski
+author_login: no-image
 categories:
 - android
 - mobile
@@ -23,7 +24,7 @@ As stated on their [github](https://github.com/bluelinelabs/Conductor), Conducto
 
 If you want to know why Fragments are bad, read Square’s article about them:[Advocating against android fragments](https://corner.squareup.com/2014/10/advocating-against-android-fragments.html)
 
-The first goal of Conductor is simplicity. Here is the entire lifecycle of a Controller, the basic building block of layouts built with Conductor: ![A lifecycle diagram](https://github.com/bluelinelabs/Conductor/blob/develop/docs/Controller%20Lifecycle.jpg)
+The first goal of Conductor is simplicity. Here is the entire lifecycle of a Controller, the basic building block of layouts built with Conductor: ![A lifecycle diagram](https://github.com/bluelinelabs/Conductor/blob/develop/docs/Controller%20Lifecycle.jpg?raw=true)
 Conductor will handle navigation and the backstack for you, to the point where you can finally build apps that consist only of a single Activity (no more undocumented behaviours with Activity flags!). It also supports new, fancy transitions with shared elements.
 Remember, it’s build on top of `View`, so there is no reason to expect any lack of compatibility in the future. This means that state persistence and all kinds of callbacks are supported too.
 The newest version (2.0 at the time of writing this) also supports unlimited nesting of controllers, something that Fragments still have problems with. Additionally, Conductor doesn’t force any kind of architecture on the developer, you can still use whatever paradigm you like: fragments, activities or other libraries.
