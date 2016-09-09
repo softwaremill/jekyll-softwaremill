@@ -121,6 +121,25 @@ return array(
       <p>In her free time she tries to understand her dog and sleep more. Coffee and soft-cover-books lover.</p>",
     ),
     array(
+        'name' => 'Grzegorz Kocur',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'kocur',
+        'codingSince' => '1996',
+        'leader' => 0,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'DevOps Engineer',
+        'image' => 'no-image.jpg',
+        'bio' => "
+          <p>Grzegorz has more than twenty years of experience in Linux systems administration. He loves to automate everything and is always open to learn new technologies.
+          He strongly believes in open-source philosophy.<p>
+
+         <p>Privately - husband, father of two daughters, mountain hiker and rock climber.</p>",
+    ),
+    array(
         'name' => 'Jacek Kunicki',
         'twitter' => 'rucek',
         'blog' => 'http://blog.kunicki.org',
