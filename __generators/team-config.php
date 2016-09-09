@@ -593,24 +593,6 @@ In his free
         ",
     ),
     array(
-        'name' => 'Oskar Strączkowski',
-        'twitter' => 'ostraczkowski',
-        'blog' => NULL,
-        'username' => 'straczkowski',
-        'codingSince' => '2009',
-        'leader' => 1,
-        'opensource' => 0,
-        'blogger' => 0,
-        'parent' => 0,
-        'conference' => 0,
-        'title' => 'Passionate Software Engineer',
-        'image' => 'oskar_straczkowski.jpg',
-        'bio' => "
-        <p>Prior SoftwareMill, Oskar worked in Lufthansa Systems where he developed solutions for airlines.
-        He's also a glider fan and promised to take all of the team for a flight someday.</p>
-        ",
-    ),
-    array(
         'name' => 'Paweł Stawicki',
         'twitter' => 'pawelstawicki',
         'blog' => 'http://pawelstawicki.blogspot.com/',
