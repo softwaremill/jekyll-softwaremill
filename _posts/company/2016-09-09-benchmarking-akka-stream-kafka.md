@@ -5,6 +5,7 @@ author: Krzysiek Ciesielski
 author_login: ciesielski
 categories:
 - scala
+- company
 - akka
 - kafka
 layout: simple_post
