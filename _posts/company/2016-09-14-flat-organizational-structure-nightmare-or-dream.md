@@ -57,8 +57,6 @@ Maintaining a flat structure given a growing number of employees seems like a da
 
 ## What makes me (personally) happy, and what I have learned
 
-What makes me (personally) happy, and what I have learned
-
 Despite the fact that the company grows and new people appear, we still maintain a friendly, almost family-like, atmosphere. I feel a personal satisfaction in seeing how our approach towards managing our business translates into financial results and respect in the industry. The lack of hierarchy additionally introduces several less apparent perks that I can enjoy thanks to being a member of SoftwareMill:
 
  - Full trust in people who are motivated to constantly improve their work. The truth is that it was only after joining the company that I’ve learnt to trust people, their promises and work output. And it goes both ways - the effects of my work build the trust of others.
