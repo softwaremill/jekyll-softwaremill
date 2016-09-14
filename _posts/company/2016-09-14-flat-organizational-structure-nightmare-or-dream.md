@@ -1,5 +1,5 @@
 ---
-title: A flat organizational structure: nightmare or dream?
+title: "A flat organizational structure: nightmare or dream?"
 description: 3 years have passed and 20 people have joined the company since its founders decided to change the organizational structure to a flat one. During that time period we had the opportunity to experience, first-hand, the challenges that were to be faced.
 author: Katarzyna Leszczyńska-Bohdan
 author_login: kasia_l-b
