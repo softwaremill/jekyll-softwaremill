@@ -67,6 +67,6 @@ Despite the fact that the company grows and new people appear, we still maintain
 
 So, from a practical point of view, what does a company with a flat organizational structure mean? That everyone has to regard the company from a CEO’s point of view. Employees themselves define their tasks and scopes of duties. Therefore, the sense of responsibility, self-organization and discipline are key. A flat structure introduces transparency – all employees are free to examine the company’s actions; we can engage in existing projects or execute our own ideas. Initiative and will to share experience and knowledge are praised within the team. In our case, it is also a democracy in which each and every one of us has an equal saying when it comes to making strategic decisions. Such a mode of organization is, for some, the worst nightmare, but for us… a dream come true.
 
-C2A: What other challenges do you see facing a company with a flat structure?
+What other challenges do you see facing a company with a flat structure?
 
-C2A: How does management look like at your company?
+How does management look like at your company?
