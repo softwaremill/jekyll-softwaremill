@@ -5,7 +5,7 @@ conference: Codemotion Warsaw, Poland
 abstract_fragment: Introduction to the Big Data world
 keywords: big data
 speaker: Michał Matłoka
-speaker_login: mmatloka
+speaker_login: matloka
 categories:
 - presentations
 ---
