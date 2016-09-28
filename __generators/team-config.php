@@ -428,7 +428,7 @@ In his free
         'title' => 'Passionate Software Developer',
         'image' => 'stozek.jpg',
         'bio' => "
-        <p>Software developer devoted to doing things \"the right way\". Fan of coding standards and conventions.</p>
+        <p>Software developer devoted to doing things 'the right way'. Fan of coding standards and conventions.</p>
         <p>Before joining SoftwareMill she worked for a small Glasgow-based chauffeur-driven transportation company and a worldwide corporation producing recruitment software.
             Specialises in Java SE/EE but likes to learn new things all the time.</p> <p>After hours Magda enjoys tap dancing, books and board games.</p>
         ",
@@ -580,7 +580,7 @@ In his free
         'title' => 'Software Wizard',
         'image' => 'ostruszka.jpg',
         'bio' => "
-        <p>\"Both-ends\" developer, in love with building web applications
+        <p>'Both-ends' developer, in love with building web applications
         (from monoliths to modular Single Page Apps today) since beginning of his developer career.
         Speaker and active member of local Java, Ruby and JS groups, conference speaker at Confitura, GeeCON, ABE, 4Developers.
         Founder of Łódź Meet.js developer meetups.

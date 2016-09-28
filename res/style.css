@@ -2003,7 +2003,7 @@ a#do_logout {
 }
 
 .support .text {
-  width: 640px;
+  max-width: 640px;
   float: left;
   text-align: justify;
   margin-right: 24px;
