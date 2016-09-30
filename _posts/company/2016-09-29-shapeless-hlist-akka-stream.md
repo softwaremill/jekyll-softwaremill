@@ -207,7 +207,7 @@ val specsSize = specs.length.toInt
 Now, for the mapping from `ParserStageDefs` into `Flows`, we need to take a different approach, as the `map` for `HList` 
 requires something called `Poly` - a [polymorphic function value](https://github.com/milessabin/shapeless/wiki/Feature-overview:-shapeless-2.0.0#polymorphic-function-values).
 
-Here's how one would like in our case:
+Here's how one would look like in our case:
 
 ```scala
 import shapeless.PolyDefns.~>
