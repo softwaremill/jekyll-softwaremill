@@ -5,7 +5,7 @@ conference: Confitura, Poland
 abstract_fragment: Cassandra for beginners and experts
 keywords: cassandra, big data
 speaker: Andrzej Ludwikowski
-speaker_login: aludwikowski
+speaker_login: andrzej_ludwikowski
 categories:
 - presentations
 ---
