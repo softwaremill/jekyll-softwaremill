@@ -55,7 +55,7 @@ hList: Int :: String :: Boolean :: HNil = 1 :: SomeString :: true :: HNil
 Two things happening here that are worth mention:
 
 1. The `HList`s are created similarly to "normal" Lists:
-    - the "start element" is `HNil`, like a `List`'s `Nil`,
+    - the process is started by consing to `HNil`, just like with `List`'s `Nil`,
     - elements are added via a cons `::` operator.
 1. The types are indeed preserved ( `Int :: String :: Boolean :: HNil` vs `List[Any]` in our example).
 
