@@ -1,6 +1,6 @@
 ---
 title: DataStax partnership
-description: We recantly bacame a DataStax Consulting Partner
+description: We recently became a DataStax Consulting Partner
 author: Katarzyna Leszczyńska-Bohdan
 author_login: kasia_l-b
 categories:
