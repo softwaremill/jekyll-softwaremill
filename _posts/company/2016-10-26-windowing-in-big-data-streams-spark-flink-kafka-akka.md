@@ -141,6 +141,8 @@ As for windowing, Kafka has the following options:
 
 The options here are much more modest comparing to Flink, but the processing and clustering models are simple to understand, which is definitely a plus when designing a system. And - it works great with Kafka! ;)
 
+*Update:* Under [KIP-63](https://cwiki.apache.org/confluence/display/KAFKA/KIP-63%3A+Unify+store+and+downstream+caching+in+streams), window output will be cached hence triggering not on each element, but only when the cache is full. This should improve preformance of window processing.
+
 ## Akka
 
 [Akka Streams](http://akka.io) is a bit different than the other systems described here - it is designed for processing data on a single node, there’s no clustering support. Still, very large amounts of data can be processed on a single node when streaming - and sometimes that’s more than enough. There’s no support in Akka Streams for windowing data built-in, but it’s quite easy to do as described in [another of our blogs](https://softwaremill.com/windowing-data-in-akka-streams/). As it’s a "manual" implementation of windowing in some aspects it’s quite flexible:
