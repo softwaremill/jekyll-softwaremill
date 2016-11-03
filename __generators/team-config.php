@@ -104,23 +104,6 @@ return array(
         ",
     ),
     array(
-      'name' => 'Ida Bzowska',
-      'twitter' => NULL,
-      'blog' => NULL,
-      'username' => 'bzowska',
-      'leader' => 1,
-      'opensource' => 0,
-      'blogger' => 0,
-      'parent' => 0,
-      'conference' => 0,
-      'title' => 'Community Evangelist',
-      'image' => 'bzowska.jpg',
-      'bio' => "
-      <p>Passionate about people. Ida is active within the IT community, spending her time organizing numerous conferences and meetups.</p>
-      <p>Believes that every day is an opportunity to learn something new.</p>
-      <p>In her free time she tries to understand her dog and sleep more. Coffee and soft-cover-books lover.</p>",
-    ),
-    array(
         'name' => 'Grzegorz Kocur',
         'twitter' => NULL,
         'blog' => NULL,
@@ -138,6 +121,23 @@ return array(
           He strongly believes in open-source philosophy.<p>
 
          <p>Privately - husband, father of two daughters, mountain hiker and rock climber.</p>",
+    ),
+    array(
+      'name' => 'Ida Bzowska',
+      'twitter' => NULL,
+      'blog' => NULL,
+      'username' => 'bzowska',
+      'leader' => 1,
+      'opensource' => 0,
+      'blogger' => 0,
+      'parent' => 0,
+      'conference' => 0,
+      'title' => 'Community Evangelist',
+      'image' => 'bzowska.jpg',
+      'bio' => "
+      <p>Passionate about people. Ida is active within the IT community, spending her time organizing numerous conferences and meetups.</p>
+      <p>Believes that every day is an opportunity to learn something new.</p>
+      <p>In her free time she tries to understand her dog and sleep more. Coffee and soft-cover-books lover.</p>",
     ),
     array(
         'name' => 'Jacek Kunicki',
