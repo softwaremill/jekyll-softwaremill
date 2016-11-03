@@ -2,7 +2,7 @@
 title: Akka Streams for Kafka. A piece of history
 description: The 0.11 release of Akka Streams for Kafka (a.k.a Reactive Kafka) was the topic of an interview for Lightbend. Markus Eisele asked Krzysztof about his work, passion for coding, and the role of community in building Open Source software.
 author: Ida Bzowska
-author_login: no-image
+author_login: bzowska
 categories:
 - company
 - akka

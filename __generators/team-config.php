@@ -114,7 +114,7 @@ return array(
       'parent' => 0,
       'conference' => 0,
       'title' => 'Community Evangelist',
-      'image' => 'no-image.jpg',
+      'image' => 'bzowska.jpg',
       'bio' => "
       <p>Passionate about people. Ida is active within the IT community, spending her time organizing numerous conferences and meetups.</p>
       <p>Believes that every day is an opportunity to learn something new.</p>
@@ -132,7 +132,7 @@ return array(
         'parent' => 1,
         'conference' => 0,
         'title' => 'DevOps Engineer',
-        'image' => 'no-image.jpg',
+        'image' => 'kocur.jpg',
         'bio' => "
           <p>Grzegorz has more than twenty years of experience in Linux systems administration. He loves to automate everything and is always open to learn new technologies.
           He strongly believes in open-source philosophy.<p>
@@ -191,7 +191,7 @@ return array(
         'parent' => 0,
         'conference' => 0,
         'title' => 'DevOps Engineer',
-        'image' => 'no-image.jpg',
+        'image' => 'jan_rotter.jpg',
         'bio' => "<p>Janek is an experienced Linux systems administrator and a C++ developer. He is a devotee of elegant solutions, and an Unix philosophy follower. He strongly believes that less is more, more or less.
 
                  </p><p>When away from keyboard, he is Mister Fixit, a beginning beekeeper and a runner.</p>",
@@ -408,7 +408,7 @@ In his free
       'parent' => 0,
       'conference' => 1,
       'title' => 'Senior Software Engineer',
-      'image' => 'no-image.jpg',
+      'image' => 'opala.jpg',
       'bio' => "
       <p>Maciek likes well formatted, clean, readable code with idiomatic flavor. Specializes in Java technology and its surroundings, actively working on it for the last 7 years.</p>
       <p>Particularly interested in developing the server side of applications. Also keen on scripting languages and shell programming.

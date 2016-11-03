@@ -2,7 +2,7 @@
 title: Confitura Summary
 description: For over a decade, Confitura has been opening the summer conference season by providing expanded knowledge from the universe of Java and JVM languages.
 author: Ida Bzowska
-author_login: no-image
+author_login: bzowska
 categories:
 - company
 - conference
