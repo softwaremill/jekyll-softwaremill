@@ -585,4 +585,6 @@ Turns out, the above & much more is already implemented in [Algebird](https://gi
 
 Algebird is used at Twitter in conjunction with [Scalding](https://github.com/twitter/scalding) and [Storm](http://storm.apache.org/) for big data analysis, and if anybody has Big Data - it's Twitter, so Algebird is definitely worth looking into.
 
+All of the code above is available in a [runnable version on GitHub](https://github.com/adamw/beautiful-folds).
+
 I'll leave it as an exercise for the reader to figure out if the folds in Scala are actually beautiful :).
