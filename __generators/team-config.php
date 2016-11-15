@@ -104,6 +104,24 @@ return array(
         ",
     ),
     array(
+        'name' => 'Ewa Bilska',
+        'twitter' => NULL,
+        'blog' => NULL,
+        'username' => 'ewa_bilska',
+        'codingSince' => 2010,
+        'leader' => 0,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 0,
+        'conference' => 1,
+        'title' => 'UX/UI Designer',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>Ewa graduated as an architect from the Poznań University of Technology. She fell in love with technology, so she left architecture for UX and UI Design.
+        She joined SoftwareMill to help with creating a better user experience, as well as beautiful interfaces.</p>
+           <p>She also loves traveling, sailing, and photography.</p>",
+    ),
+    array(
         'name' => 'Grzegorz Kocur',
         'twitter' => NULL,
         'blog' => NULL,
