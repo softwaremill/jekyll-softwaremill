@@ -1,6 +1,26 @@
 <?php
 return array(
     array(
+        'name' => 'Adam Gatnar',
+        'twitter' => 'AdamGatnar',
+        'blog' => NULL,
+        'username' => 'gatnar',
+        'codingSince' => 2006,
+        'leader' => 0,
+        'opensource' => 0,
+        'blogger' => 0,
+        'parent' => 1,
+        'conference' => 0,
+        'title' => 'Senior Software Engineer',
+        'image' => 'no-image.jpg',
+        'bio' => "
+        <p>Experienced developer and lead with 10 years of diverse experience working on software projects
+        in both corporate and startup environment. Focused on JVM ecosystem, while keen on applying other technology stacks where it is beneficial.
+        Passionate about code quality and efficient lightweight software development processes. Data science enthusiast.
+        </p>
+        ",
+    ),
+    array(
         'name' => 'Adam Warski',
         'twitter' => 'adamwarski',
         'blog' => 'http://www.warski.org/blog/',
