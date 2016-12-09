@@ -10,7 +10,7 @@ categories:
 layout: simple_post
 ---
 
-Being a distributed company and working remotely creates new challenges when it comes to efficient communication. Part of our solution is to use a push-to-talk system, [TeamSpeak](https://www.teamspeak.com) in our case. You might have last used it when playing your favorite PlayStation game game, but it turns out it's also very useful for remote work. For more details on how we use Teamspeak, [see Tomek's blog](https://softwaremill.com/six-steps-to-improve-your-remote-communication-with-teamspeak/).
+Being a distributed company and working remotely creates new challenges when it comes to efficient communication. Part of our solution is to use a push-to-talk system, [TeamSpeak](https://www.teamspeak.com) in our case. You might have last used it when playing your favorite PlayStation game, but it turns out it's also very useful for remote work. For more details on how we use Teamspeak, [see Tomek's blog](https://softwaremill.com/six-steps-to-improve-your-remote-communication-with-teamspeak/).
 
 A crucial component in a push-to-talk (PTT) system is the way you activate it. If you're not familiar with the concept, in TeamSpeak you join a room, and when you want to say something to your team members (well, other people in the same room), you activate voice transmission with a special keyboard shortcut. Everybody (who's not muted) can hear you and respond. 
 
