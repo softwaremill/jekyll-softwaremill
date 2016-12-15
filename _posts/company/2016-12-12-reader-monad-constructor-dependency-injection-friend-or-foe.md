@@ -30,7 +30,7 @@ The fundamental difference in the two approaches to DI is what the caller knows 
 object Example1 {
   import scalaz._
   import Scalaz._
-  import scalaz.concurrent.Future
+  import scala.concurrent.Future
   import scala.concurrent.ExecutionContext.Implicits.global
 
   case class User(email: String)
@@ -139,7 +139,7 @@ If we use a `Kleisli[Future, EmailServer, ?]` instead of `Reader`, the example i
 object Example3 {
   import scalaz._
   import Scalaz._
-  import scalaz.concurrent.Future
+  import scala.concurrent.Future
   import scala.concurrent.ExecutionContext.Implicits.global
 
   case class User(email: String)
