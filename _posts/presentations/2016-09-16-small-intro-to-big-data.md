@@ -20,3 +20,7 @@ I'll try to spark off interest in Big Data by showing application areas and by t
 <h4>Slides</h4>
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/a2wa7UX0d2nySd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/SoftwareMill/small-intro-to-big-data" title="Small intro to Big Data" target="_blank">Small intro to Big Data</a> </strong> from <strong><a href="//www.slideshare.net/SoftwareMill" target="_blank">SoftwareMill</a></strong> </div>
+
+<h4>Video</h4>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3aN_j_RxKQc?list=PLnKL6-WWWE_WSskE6BkP3KmGEWrlA-3lR" frameborder="0" allowfullscreen></iframe>
