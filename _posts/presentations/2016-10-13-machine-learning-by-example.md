@@ -16,3 +16,7 @@ Are the machines learning on their own? Wait, is Skynet already here? During thi
 <h4>Slides</h4>
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/mlhDGtC31u3OZP" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/SoftwareMill/machine-learning-by-example" title="Machine learning by example" target="_blank">Machine learning by example</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/SoftwareMill">SoftwareMill</a></strong> </div>
+
+<h4>Video in Polish</h4>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fxKs8uLGt2w?list=PL8D3cJ-AwCY10glb5N8Bn6jL4PunEiciJ" frameborder="0" allowfullscreen></iframe>
