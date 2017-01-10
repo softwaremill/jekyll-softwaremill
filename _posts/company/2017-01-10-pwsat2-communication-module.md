@@ -19,7 +19,7 @@ As a part of PW-Sat2 Ground Station project we need to implement a command modul
 <img src="/img/uploads/2017/01/satellite_trajectory.png" alt="Satellite trajectory" />
 </div>
 
-An electromagnetic wave is generated to convey binary data based on a chosen modulation schema. On the other site the received radio wave needs to be demodulated using the same schema. An appliance for converting digital binary data to analog signal and the other way round is called a modem (Modulator/Demodulator). The basic communication schema looks as follows:
+An electromagnetic wave is generated to convey binary data based on a chosen modulation schema. On the other side the received radio wave needs to be demodulated using the same schema. An appliance for converting digital binary data to an analog signal - and the other way round - is called a modem (Modulator/Demodulator). The basic communication schema looks as follows:
 
 <div style="width: 100%; text-align: center">
 <img src="/img/uploads/2017/01/comunication_schema.png" alt="Simple communication schema" />
@@ -34,15 +34,15 @@ The modem needs to extract the signal and demodulate it into binary form. Fortun
 * [mixW](http://mixw.net/)
 * [Digital Master from ham radio delux](http://ham-radio-deluxe.com/)
 
-others can be found in the [QRZCQ - The database for radio hams](https://ssl.qrzcq.com/page/articles/showsingle/id/6) article. What is crucial for us - most of the presented soundmodems expose an API over TCP/IP using [KISS]('https://en.wikipedia.org/wiki/KISS_(TNC)') or [AGWPE](http://www.sv2agw.com/ham/develop.htm) protocols making integration quite straightforward.
+others can be found in the [QRZCQ - The database for radio hams](https://ssl.qrzcq.com/page/articles/showsingle/id/6) article. What is crucial for us - most of the presented soundmodems expose an API over TCP/IP using [KISS](https://en.wikipedia.org/wiki/KISS_\(TNC\)) or [AGWPE](http://www.sv2agw.com/ham/develop.htm) protocols making integration quite straightforward.
 
 #Next steps#
 
-Evidently, we decided not to implement a modem on our own but to use one of the available solutions. As a result the PW-Sat2 Ground Station was divided into two modules:
+Evidently, we decided not to implement a modem on our own, but to use one of the available solutions. As a result, the PW-Sat2 Ground Station was divided into two modules:
 
 * pwsat-gs - the main application, responsible for presenting data, composing commands, etc. 
 * [modem-connector](https://github.com/softwaremill/modem-connector) - a Scala wrapper for the AGWPE protocol for soundmodem integration
 
 The [modem-connector](https://github.com/softwaremill/modem-connector) is still in its early stages, but it was successfully tested with the [UZ7HO SoundModem](http://uz7.ho.ua/packetradio.htm). Now we are waiting for integration tests in a [cleanroom](https://en.wikipedia.org/wiki/Cleanroom) with a physical satellite radio.
 
-You can find more details about the [modem-connector](https://github.com/softwaremill/modem-connector) implementation on [the Softwarepassion blog﻿](http://www.softwarepassion.com/agwpe-protocol-based-modem-connector-library/) or at [GitHub](http://uz7.ho.ua/packetradio.htm) itself. The library has been released under [the Apache 2.0 License](https://github.com/softwaremill/modem-connector/blob/master/LICENSE).
+You can find more details about the [modem-connector](https://github.com/softwaremill/modem-connector) implementation on [the Softwarepassion blog﻿](http://www.softwarepassion.com/agwpe-protocol-based-modem-connector-library/) or on [GitHub](http://uz7.ho.ua/packetradio.htm) itself. The library has been released under [the Apache 2.0 License](https://github.com/softwaremill/modem-connector/blob/master/LICENSE).
