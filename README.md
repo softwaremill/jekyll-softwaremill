@@ -1,3 +1,5 @@
+# THIS IS AN OLD SITE. IT IS NO LONGER USED. NEW SITE IS AT https://github.com/softwaremill/website
+
 # softwaremill.com v2.5 based on Jekyll
 
 # Quick howtos
